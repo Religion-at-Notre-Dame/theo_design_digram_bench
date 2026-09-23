@@ -1,0 +1,552 @@
+[
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 66,
+    "date_promulgated": "1965-11-18",
+    "document_abbrev": "AA",
+    "document_title": "Apostolicam Actuositatem",
+    "document_type": "decree",
+    "languages": [
+      "en",
+      "la"
+    ],
+    "promulgating_authority": "Second Vatican Council",
+    "record_count": 66,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 84,
+    "date_promulgated": "1965-12-07",
+    "document_abbrev": "AG",
+    "document_title": "Decree on the Mission Activity of the Church (Ad Gentes)",
+    "document_type": "decree",
+    "languages": [
+      "en",
+      "la"
+    ],
+    "promulgating_authority": "Second Vatican Council",
+    "record_count": 84,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 88,
+    "date_promulgated": "1965-10-28",
+    "document_abbrev": "CD",
+    "document_title": "Decree Concerning the Pastoral Office of Bishops in the Church (Christus Dominus)",
+    "document_type": "decree",
+    "languages": [
+      "en",
+      "la"
+    ],
+    "promulgating_authority": "Second Vatican Council",
+    "record_count": 88,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 32,
+    "date_promulgated": "451",
+    "document_abbrev": "CHAL",
+    "document_title": "Council of Chalcedon (451) - Definition of Faith and Canons",
+    "document_type": "council_canon",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "Council of Chalcedon",
+    "record_count": 31,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 68,
+    "date_promulgated": "1414-1418",
+    "document_abbrev": "CON",
+    "document_title": "Council of Constance (1414–1418), Sessions",
+    "document_type": "council_decree",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "Council of Constance",
+    "record_count": 68,
+    "source_family": "council",
+    "supplemental": true,
+    "source_url": "https://www.papalencyclicals.net/councils/ecum16.htm"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 10,
+    "date_promulgated": "381",
+    "document_abbrev": "CON1",
+    "document_title": "First Council of Constantinople (381) - Creed, Synodal Letter, and Canons",
+    "document_type": "council_canon",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "First Council of Constantinople",
+    "record_count": 10,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 21,
+    "date_promulgated": "553",
+    "document_abbrev": "CON2",
+    "document_title": "Second Council of Constantinople (553) - Capitula (Anathemas) and Sentence against the Three Chapters",
+    "document_type": "council_canon",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "Second Council of Constantinople",
+    "record_count": 15,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 4,
+    "date_promulgated": "680-681",
+    "document_abbrev": "CON3",
+    "document_title": "Third Council of Constantinople (680-681) - Definition of Faith and Sentence against the Monothelites",
+    "document_type": "council_definition",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "Third Council of Constantinople",
+    "record_count": 2,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 27,
+    "date_promulgated": "869-870",
+    "document_abbrev": "CON4",
+    "document_title": "Fourth Council of Constantinople (869–870), Canons",
+    "document_type": "council_canon",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "Fourth Council of Constantinople",
+    "record_count": 27,
+    "source_family": "council",
+    "supplemental": true,
+    "source_url": "https://www.papalencyclicals.net/councils/ecum08.htm"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 65,
+    "date_promulgated": "1870-04-24",
+    "document_abbrev": "DF",
+    "document_title": "Dei Filius — Dogmatic Constitution on the Catholic Faith",
+    "document_type": "dogmatic_constitution",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "First Vatican Council",
+    "record_count": 64,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 30,
+    "date_promulgated": "1965-12-07",
+    "document_abbrev": "DH",
+    "document_title": "Declaration on Religious Freedom (Dignitatis Humanae)",
+    "document_type": "declaration",
+    "languages": [
+      "en",
+      "la"
+    ],
+    "promulgating_authority": "Second Vatican Council",
+    "record_count": 30,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 52,
+    "date_promulgated": "1965-11-18",
+    "document_abbrev": "DV",
+    "document_title": "Dogmatic Constitution on Divine Revelation (Dei Verbum)",
+    "document_type": "dogmatic_constitution",
+    "languages": [
+      "en",
+      "la"
+    ],
+    "promulgating_authority": "Second Vatican Council",
+    "record_count": 52,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 31,
+    "date_promulgated": "431",
+    "document_abbrev": "EPH",
+    "document_title": "Council of Ephesus (431) - Cyrillian Letters, Anathemas, Decrees, and Canons",
+    "document_type": "council_definition",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "Council of Ephesus",
+    "record_count": 25,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 70,
+    "date_promulgated": "1442-02-04",
+    "document_abbrev": "FLO",
+    "document_title": "Council of Florence, Cantate Domino (Decree for the Jacobites)",
+    "document_type": "decree",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "Council of Florence",
+    "record_count": 69,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 24,
+    "date_promulgated": "1965-10-28",
+    "document_abbrev": "GE",
+    "document_title": "Gravissimum Educationis",
+    "document_type": "declaration",
+    "languages": [
+      "en",
+      "la"
+    ],
+    "promulgating_authority": "Second Vatican Council",
+    "record_count": 24,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 187,
+    "date_promulgated": "1965-12-07",
+    "document_abbrev": "GS",
+    "document_title": "Pastoral Constitution on the Church in the Modern World (Gaudium et Spes)",
+    "document_type": "pastoral_constitution",
+    "languages": [
+      "en",
+      "la"
+    ],
+    "promulgating_authority": "Second Vatican Council",
+    "record_count": 186,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 48,
+    "date_promulgated": "1963-12-04",
+    "document_abbrev": "IM",
+    "document_title": "Decree on the Media of Social Communications (Inter Mirifica)",
+    "document_type": "decree",
+    "languages": [
+      "en",
+      "la"
+    ],
+    "promulgating_authority": "Second Vatican Council",
+    "record_count": 48,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 22,
+    "date_promulgated": "1123",
+    "document_abbrev": "LAT1",
+    "document_title": "First Lateran Council (1123), Canons",
+    "document_type": "council_canon",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "First Lateran Council",
+    "record_count": 22,
+    "source_family": "council",
+    "supplemental": true,
+    "source_url": "https://www.papalencyclicals.net/councils/ecum09.htm"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 30,
+    "date_promulgated": "1139",
+    "document_abbrev": "LAT2",
+    "document_title": "Second Lateran Council (1139), Canons",
+    "document_type": "council_canon",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "Second Lateran Council",
+    "record_count": 30,
+    "source_family": "council",
+    "supplemental": true,
+    "source_url": "https://www.papalencyclicals.net/councils/ecum10.htm"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 27,
+    "date_promulgated": "1179",
+    "document_abbrev": "LAT3",
+    "document_title": "Third Lateran Council (1179), Canons",
+    "document_type": "council_canon",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "Third Lateran Council",
+    "record_count": 27,
+    "source_family": "council",
+    "supplemental": true,
+    "source_url": "https://www.papalencyclicals.net/councils/ecum11.htm"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 75,
+    "date_promulgated": "1215",
+    "document_abbrev": "LAT4",
+    "document_title": "Fourth Lateran Council (1215), Constitutions",
+    "document_type": "constitution",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "Fourth Lateran Council",
+    "record_count": 71,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 22,
+    "date_promulgated": "1512-1517",
+    "document_abbrev": "LAT5",
+    "document_title": "Fifth Lateran Council (1512–1517), Sessions",
+    "document_type": "council_decree",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "Fifth Lateran Council",
+    "record_count": 22,
+    "source_family": "council",
+    "supplemental": true,
+    "source_url": "https://www.papalencyclicals.net/councils/ecum18.htm"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 151,
+    "date_promulgated": "1964-11-21",
+    "document_abbrev": "LG",
+    "document_title": "Dogmatic Constitution on the Church (Lumen Gentium)",
+    "document_type": "dogmatic_constitution",
+    "languages": [
+      "en",
+      "la"
+    ],
+    "promulgating_authority": "Second Vatican Council",
+    "record_count": 150,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 28,
+    "date_promulgated": "1245",
+    "document_abbrev": "LYO1",
+    "document_title": "First Council of Lyons (1245), Bull Deposing Frederick II",
+    "document_type": "bull",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "First Council of Lyons",
+    "record_count": 28,
+    "source_family": "council",
+    "supplemental": true,
+    "source_url": "https://www.papalencyclicals.net/councils/ecum13.htm"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 43,
+    "date_promulgated": "1274",
+    "document_abbrev": "LYO2",
+    "document_title": "Second Council of Lyons (1274), Constitutions",
+    "document_type": "constitution",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "Second Council of Lyons",
+    "record_count": 41,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 10,
+    "date_promulgated": "1965-10-28",
+    "document_abbrev": "NA",
+    "document_title": "Nostra Aetate",
+    "document_type": "declaration",
+    "languages": [
+      "en",
+      "la"
+    ],
+    "promulgating_authority": "Second Vatican Council",
+    "record_count": 10,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 23,
+    "date_promulgated": "325",
+    "document_abbrev": "NIC1",
+    "document_title": "First Council of Nicaea (325) - Creed, Canons, and Synodal Letter",
+    "document_type": "council_canon",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "First Council of Nicaea",
+    "record_count": 22,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 24,
+    "date_promulgated": "787",
+    "document_abbrev": "NIC2",
+    "document_title": "Second Council of Nicaea (787) - Decree on Sacred Images and Canons",
+    "document_type": "council_canon",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "Second Council of Nicaea",
+    "record_count": 23,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 60,
+    "date_promulgated": "1964-11-21",
+    "document_abbrev": "OE",
+    "document_title": "Decree on the Catholic Churches of the Eastern Rite (Orientalium Ecclesiarum)",
+    "document_type": "decree",
+    "languages": [
+      "en",
+      "la"
+    ],
+    "promulgating_authority": "Second Vatican Council",
+    "record_count": 60,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 44,
+    "date_promulgated": "1965-10-28",
+    "document_abbrev": "OT",
+    "document_title": "Decree on Priestly Training (Optatam Totius)",
+    "document_type": "decree",
+    "languages": [
+      "en",
+      "la"
+    ],
+    "promulgating_authority": "Second Vatican Council",
+    "record_count": 44,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 31,
+    "date_promulgated": "1870-07-18",
+    "document_abbrev": "PA",
+    "document_title": "Pastor Aeternus — First Dogmatic Constitution on the Church of Christ",
+    "document_type": "dogmatic_constitution",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "First Vatican Council",
+    "record_count": 31,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 50,
+    "date_promulgated": "1965-10-28",
+    "document_abbrev": "PC",
+    "document_title": "Perfectae Caritatis",
+    "document_type": "decree",
+    "languages": [
+      "en",
+      "la"
+    ],
+    "promulgating_authority": "Second Vatican Council",
+    "record_count": 50,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 44,
+    "date_promulgated": "1965-12-07",
+    "document_abbrev": "PO",
+    "document_title": "Presbyterorum Ordinis",
+    "document_type": "decree",
+    "languages": [
+      "en",
+      "la"
+    ],
+    "promulgating_authority": "Second Vatican Council",
+    "record_count": 44,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 260,
+    "date_promulgated": "1963-12-04",
+    "document_abbrev": "SC",
+    "document_title": "Sacrosanctum Concilium",
+    "document_type": "constitution",
+    "languages": [
+      "en",
+      "la"
+    ],
+    "promulgating_authority": "Second Vatican Council",
+    "record_count": 260,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 203,
+    "date_promulgated": "1551-10-11",
+    "document_abbrev": "Trent",
+    "document_title": "The Canons and Decrees of the Sacred and Oecumenical Council of Trent",
+    "document_type": "council_canon",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "Council of Trent",
+    "record_count": 201,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 49,
+    "date_promulgated": "1964-11-21",
+    "document_abbrev": "UR",
+    "document_title": "Unitatis Redintegratio",
+    "document_type": "decree",
+    "languages": [
+      "en",
+      "la"
+    ],
+    "promulgating_authority": "Second Vatican Council",
+    "record_count": 48,
+    "source_family": "council"
+  },
+  {
+    "authority_class": "ecumenical_council",
+    "chunk_count": 45,
+    "date_promulgated": "1311-1312",
+    "document_abbrev": "VIE",
+    "document_title": "Council of Vienne (1311–1312), Decrees",
+    "document_type": "decree",
+    "languages": [
+      "en"
+    ],
+    "promulgating_authority": "Council of Vienne",
+    "record_count": 45,
+    "source_family": "council",
+    "supplemental": true,
+    "source_url": "https://www.papalencyclicals.net/councils/ecum15.htm"
+  }
+]

@@ -1,0 +1,1192 @@
+{
+  "version": 1,
+  "description": "Decision-complete Required-tier inventory for Step 1 council mapping.",
+  "councils": [
+    {
+      "council": "First Council of Nicaea",
+      "document_abbrev": "NIC1",
+      "required_decisions": [
+        {
+          "id": "nicaea1.creed",
+          "theme": "Nicene Creed consubstantial with the Father",
+          "breakaway_hint": "Arians / Homoeans",
+          "keywords": [
+            "creed",
+            "consubstantial",
+            "begotten"
+          ]
+        },
+        {
+          "id": "nicaea1.canon6",
+          "theme": "Authority of Alexandria, Rome, Antioch",
+          "breakaway_hint": null,
+          "keywords": [
+            "alexandria",
+            "jurisdiction"
+          ],
+          "canon": 6
+        },
+        {
+          "id": "nicaea1.easter",
+          "theme": "Common celebration of Easter / against Quartodecimans",
+          "breakaway_hint": null,
+          "keywords": [
+            "synodal",
+            "alexandria",
+            "pascha"
+          ],
+          "citation_contains": [
+            "Synodal Letter"
+          ]
+        },
+        {
+          "id": "nicaea1.canon1",
+          "theme": "Disciplinary canons on clerical integrity",
+          "breakaway_hint": null,
+          "canon": 1,
+          "keywords": [
+            "canon"
+          ]
+        }
+      ]
+    },
+    {
+      "council": "First Council of Constantinople",
+      "document_abbrev": "CON1",
+      "required_decisions": [
+        {
+          "id": "const1.creed",
+          "theme": "Expanded creed; divinity of the Holy Spirit",
+          "breakaway_hint": "Pneumatomachi / Macedonians",
+          "keywords": [
+            "creed",
+            "holy spirit",
+            "spirit"
+          ]
+        },
+        {
+          "id": "const1.canon1",
+          "theme": "Confirmation of Nicaea; anathemas of heresies",
+          "breakaway_hint": null,
+          "canon": 1,
+          "keywords": [
+            "nicaea",
+            "anathema"
+          ]
+        },
+        {
+          "id": "const1.canon3",
+          "theme": "Honor of the see of Constantinople",
+          "breakaway_hint": null,
+          "canon": 3,
+          "keywords": [
+            "constantinople",
+            "bishop"
+          ]
+        }
+      ]
+    },
+    {
+      "council": "Council of Ephesus",
+      "document_abbrev": "EPH",
+      "required_decisions": [
+        {
+          "id": "ephesus.theotokos",
+          "theme": "Mary as Theotokos; Cyril against Nestorius",
+          "breakaway_hint": "Church of the East / Nestorians",
+          "keywords": [
+            "mother of god",
+            "theotokos",
+            "nestorius"
+          ],
+          "citation_contains": [
+            "Cyril"
+          ]
+        },
+        {
+          "id": "ephesus.anathemas",
+          "theme": "Cyrillian anathemas against Nestorius",
+          "breakaway_hint": "Church of the East / Nestorians",
+          "keywords": [
+            "anathema"
+          ],
+          "citation_contains": [
+            "Cyril anathema 1"
+          ]
+        },
+        {
+          "id": "ephesus.canons",
+          "theme": "Canons deposing supporters of Nestorius",
+          "breakaway_hint": "Church of the East / Nestorians",
+          "keywords": [
+            "canon"
+          ],
+          "citation_contains": [
+            "Ephesus canon"
+          ]
+        },
+        {
+          "id": "ephesus.messalians",
+          "theme": "Definition against the Messalians",
+          "breakaway_hint": null,
+          "keywords": [
+            "messalian"
+          ]
+        }
+      ]
+    },
+    {
+      "council": "Council of Chalcedon",
+      "document_abbrev": "CHAL",
+      "required_decisions": [
+        {
+          "id": "chalcedon.definition",
+          "theme": "Definition of two natures in one person",
+          "breakaway_hint": "Oriental Orthodox churches",
+          "keywords": [
+            "definition",
+            "two natures"
+          ],
+          "citation_contains": [
+            "Definition of Faith"
+          ]
+        },
+        {
+          "id": "chalcedon.canon28",
+          "theme": "Privileges of the see of Constantinople",
+          "breakaway_hint": null,
+          "canon": 28,
+          "keywords": [
+            "constantinople",
+            "privileges"
+          ]
+        },
+        {
+          "id": "chalcedon.canon1",
+          "theme": "Reception of prior canons",
+          "breakaway_hint": null,
+          "canon": 1,
+          "keywords": [
+            "canon"
+          ]
+        },
+        {
+          "id": "chalcedon.canon4",
+          "theme": "Monastic discipline under the bishop",
+          "breakaway_hint": null,
+          "canon": 4,
+          "keywords": [
+            "monk",
+            "monastery"
+          ]
+        }
+      ]
+    },
+    {
+      "council": "Second Council of Constantinople",
+      "document_abbrev": "CON2",
+      "required_decisions": [
+        {
+          "id": "const2.three_chapters",
+          "theme": "Condemnation of the Three Chapters",
+          "breakaway_hint": null,
+          "keywords": [
+            "three chapters",
+            "theodore",
+            "anathema"
+          ]
+        },
+        {
+          "id": "const2.origen",
+          "theme": "Anathemas related to Origenist errors",
+          "breakaway_hint": null,
+          "keywords": [
+            "origen",
+            "anathema"
+          ]
+        },
+        {
+          "id": "const2.chalcedon_confirm",
+          "theme": "Confirmation of Chalcedon within the anathemas",
+          "breakaway_hint": "Oriental Orthodox churches",
+          "keywords": [
+            "chalcedon",
+            "definition"
+          ]
+        }
+      ]
+    },
+    {
+      "council": "Third Council of Constantinople",
+      "document_abbrev": "CON3",
+      "required_decisions": [
+        {
+          "id": "const3.two_wills",
+          "theme": "Two wills and two operations in Christ",
+          "breakaway_hint": "Monothelites",
+          "keywords": [
+            "will",
+            "operation",
+            "definition"
+          ]
+        },
+        {
+          "id": "const3.sentence",
+          "theme": "Sentence against the Monothelites",
+          "breakaway_hint": "Monothelites",
+          "keywords": [
+            "monothelite"
+          ],
+          "citation_contains": [
+            "Sentence against the Monothelites"
+          ]
+        }
+      ]
+    },
+    {
+      "council": "Second Council of Nicaea",
+      "document_abbrev": "NIC2",
+      "required_decisions": [
+        {
+          "id": "nicaea2.icons",
+          "theme": "Decree restoring veneration of holy images",
+          "breakaway_hint": "Iconoclasts",
+          "keywords": [
+            "image",
+            "icon",
+            "veneration"
+          ]
+        },
+        {
+          "id": "nicaea2.canon1",
+          "theme": "Reception of prior ecumenical canons",
+          "breakaway_hint": null,
+          "canon": 1,
+          "keywords": [
+            "canon"
+          ]
+        },
+        {
+          "id": "nicaea2.clergy_icons",
+          "theme": "Canons on clergy and image discipline",
+          "breakaway_hint": "Iconoclasts",
+          "keywords": [
+            "image",
+            "bishop",
+            "canon"
+          ]
+        }
+      ]
+    },
+    {
+      "council": "Fourth Council of Constantinople",
+      "document_abbrev": "CON4",
+      "required_decisions": [
+        {
+          "id": "const4.photius",
+          "theme": "Condemnation of Photius and related acts",
+          "breakaway_hint": null,
+          "keywords": [
+            "photius",
+            "anathema"
+          ]
+        },
+        {
+          "id": "const4.icons",
+          "theme": "Veneration of the image of Christ",
+          "breakaway_hint": null,
+          "keywords": [
+            "image",
+            "christ",
+            "icon"
+          ]
+        },
+        {
+          "id": "const4.canons",
+          "theme": "Canons on ecclesiastical order after the Photian conflict",
+          "breakaway_hint": null,
+          "keywords": [
+            "canon",
+            "bishop"
+          ]
+        }
+      ]
+    },
+    {
+      "council": "First Lateran Council",
+      "document_abbrev": "LAT1",
+      "required_decisions": [
+        {
+          "id": "lat1.simony",
+          "theme": "Condemnation of simony in ordinations",
+          "breakaway_hint": null,
+          "canon": 1,
+          "keywords": [
+            "simony",
+            "ordained"
+          ]
+        },
+        {
+          "id": "lat1.investiture",
+          "theme": "Canonical election of bishops; lay investiture aftermath",
+          "breakaway_hint": null,
+          "keywords": [
+            "elected",
+            "consecrate",
+            "bishop"
+          ]
+        },
+        {
+          "id": "lat1.celibacy",
+          "theme": "Clerical continence / against clerical marriage",
+          "breakaway_hint": null,
+          "keywords": [
+            "concubine",
+            "wife",
+            "priest"
+          ]
+        },
+        {
+          "id": "lat1.crusade",
+          "theme": "Privileges for those going to Jerusalem",
+          "breakaway_hint": null,
+          "keywords": [
+            "jerusalem",
+            "crusade",
+            "defence"
+          ]
+        }
+      ]
+    },
+    {
+      "council": "Second Lateran Council",
+      "document_abbrev": "LAT2",
+      "required_decisions": [
+        {
+          "id": "lat2.simony",
+          "theme": "Simoniacal ordinations void",
+          "breakaway_hint": null,
+          "canon": 1,
+          "keywords": [
+            "simoniacally"
+          ]
+        },
+        {
+          "id": "lat2.clerical_marriage",
+          "theme": "Deprivation for clerical marriage/concubinage",
+          "breakaway_hint": null,
+          "canon": 6,
+          "keywords": [
+            "wives",
+            "concubines"
+          ]
+        },
+        {
+          "id": "lat2.usury",
+          "theme": "Condemnation of usury",
+          "breakaway_hint": null,
+          "keywords": [
+            "usurer",
+            "usury"
+          ],
+          "canon": 13,
+          "citation_contains": [
+            "canon 13"
+          ]
+        },
+        {
+          "id": "lat2.truce",
+          "theme": "Truce of God",
+          "breakaway_hint": null,
+          "keywords": [
+            "truce"
+          ]
+        },
+        {
+          "id": "lat2.schismatics",
+          "theme": "Voiding ordinances of schismatics (Peter Leoni)",
+          "breakaway_hint": null,
+          "keywords": [
+            "schismatic",
+            "peter leoni"
+          ]
+        }
+      ]
+    },
+    {
+      "council": "Third Lateran Council",
+      "document_abbrev": "LAT3",
+      "required_decisions": [
+        {
+          "id": "lat3.papal_election",
+          "theme": "Two-thirds majority for papal election",
+          "breakaway_hint": null,
+          "canon": 1,
+          "keywords": [
+            "pontiff",
+            "election",
+            "two"
+          ]
+        },
+        {
+          "id": "lat3.heretics",
+          "theme": "Measures against heretics and their protectors",
+          "breakaway_hint": "Cathars / Waldensians (context)",
+          "keywords": [
+            "heretic",
+            "heresy"
+          ]
+        },
+        {
+          "id": "lat3.lepers",
+          "theme": "Provision for leper communities",
+          "breakaway_hint": null,
+          "keywords": [
+            "leper"
+          ]
+        },
+        {
+          "id": "lat3.Jews_saracens",
+          "theme": "Regulations concerning Jews and Saracens",
+          "breakaway_hint": null,
+          "keywords": [
+            "jews",
+            "saracens"
+          ]
+        }
+      ]
+    },
+    {
+      "council": "Fourth Lateran Council",
+      "document_abbrev": "LAT4",
+      "required_decisions": [
+        {
+          "id": "lat4.firmiter",
+          "theme": "Firmiter — confession of the Catholic faith / Trinity",
+          "breakaway_hint": null,
+          "canon": 1,
+          "keywords": [
+            "firmiter",
+            "trinity",
+            "faith"
+          ]
+        },
+        {
+          "id": "lat4.heretics",
+          "theme": "Condemnation of heretics; inquisitorial duty of bishops",
+          "breakaway_hint": "Cathars / Albigensians",
+          "canon": 3,
+          "keywords": [
+            "heretic",
+            "excommunicat"
+          ]
+        },
+        {
+          "id": "lat4.transubstantiation",
+          "theme": "Eucharistic teaching (transubstantiation language in Firmiter)",
+          "breakaway_hint": null,
+          "canon": 1,
+          "keywords": [
+            "transubstantiation",
+            "body",
+            "blood"
+          ]
+        },
+        {
+          "id": "lat4.confession",
+          "theme": "Annual confession and communion",
+          "breakaway_hint": null,
+          "keywords": [
+            "confess",
+            "eucharist",
+            "year"
+          ]
+        },
+        {
+          "id": "lat4.jews",
+          "theme": "Distinguishing dress and related canons on Jews",
+          "breakaway_hint": null,
+          "keywords": [
+            "jews",
+            "dress"
+          ]
+        }
+      ]
+    },
+    {
+      "council": "First Council of Lyons",
+      "document_abbrev": "LYO1",
+      "required_decisions": [
+        {
+          "id": "lyo1.frederick",
+          "theme": "Bull deposing Emperor Frederick II",
+          "breakaway_hint": null,
+          "keywords": [
+            "frederick",
+            "deposing",
+            "emperor"
+          ]
+        },
+        {
+          "id": "lyo1.tartars",
+          "theme": "Constitutions concerning the Tartars",
+          "breakaway_hint": null,
+          "keywords": [
+            "tartar"
+          ]
+        },
+        {
+          "id": "lyo1.crusade",
+          "theme": "Aid for the Holy Land / crusade constitutions",
+          "breakaway_hint": null,
+          "keywords": [
+            "crusade",
+            "holy land"
+          ]
+        },
+        {
+          "id": "lyo1.constantinople_aid",
+          "theme": "Help for the Latin empire of Constantinople",
+          "breakaway_hint": null,
+          "keywords": [
+            "constantinople",
+            "empire"
+          ]
+        }
+      ]
+    },
+    {
+      "council": "Second Council of Lyons",
+      "document_abbrev": "LYO2",
+      "required_decisions": [
+        {
+          "id": "lyo2.filioque",
+          "theme": "Holy Spirit proceeds from Father and Son",
+          "breakaway_hint": "Eastern Orthodox (Filioque controversy)",
+          "keywords": [
+            "holy spirit",
+            "proceeds",
+            "father and the son"
+          ]
+        },
+        {
+          "id": "lyo2.zelus",
+          "theme": "Zelus fidei — crusade zeal for the Holy Land",
+          "breakaway_hint": null,
+          "keywords": [
+            "zelus",
+            "holy land",
+            "zeal"
+          ]
+        },
+        {
+          "id": "lyo2.conclave",
+          "theme": "Conclave rules for papal election",
+          "breakaway_hint": null,
+          "keywords": [
+            "conclave",
+            "cardinal",
+            "election"
+          ]
+        },
+        {
+          "id": "lyo2.profession",
+          "theme": "Profession of faith of Michael Palaeologus",
+          "breakaway_hint": "Eastern Orthodox",
+          "keywords": [
+            "palaeologus",
+            "profession",
+            "faith"
+          ]
+        }
+      ]
+    },
+    {
+      "council": "Council of Vienne",
+      "document_abbrev": "VIE",
+      "required_decisions": [
+        {
+          "id": "vie.templars",
+          "theme": "Suppression of the Knights Templar",
+          "breakaway_hint": null,
+          "keywords": [
+            "templar",
+            "order"
+          ]
+        },
+        {
+          "id": "vie.holy_land",
+          "theme": "Aid for the Holy Land",
+          "breakaway_hint": null,
+          "keywords": [
+            "holy land",
+            "zion"
+          ],
+          "citation_contains": [
+            "decree [5]"
+          ]
+        },
+        {
+          "id": "vie.beghards",
+          "theme": "Condemnation of errors of Beghards/Beguines (Free Spirit)",
+          "breakaway_hint": null,
+          "keywords": [
+            "beghard",
+            "beguine",
+            "spirit"
+          ]
+        },
+        {
+          "id": "vie.franciscan",
+          "theme": "Poverty disputes / Franciscan-related decrees",
+          "breakaway_hint": null,
+          "keywords": [
+            "poverty",
+            "francis",
+            "minor"
+          ]
+        }
+      ]
+    },
+    {
+      "council": "Council of Constance",
+      "document_abbrev": "CON",
+      "required_decisions": [
+        {
+          "id": "constance.haec_sancta",
+          "theme": "Haec sancta — authority of the council",
+          "breakaway_hint": null,
+          "keywords": [
+            "authority",
+            "council",
+            "haec",
+            "integrity"
+          ],
+          "session": 5
+        },
+        {
+          "id": "constance.frequens",
+          "theme": "Frequens — periodic general councils",
+          "breakaway_hint": null,
+          "keywords": [
+            "frequens",
+            "next council",
+            "place"
+          ],
+          "session": 39
+        },
+        {
+          "id": "constance.wyclif",
+          "theme": "Condemnation of Wyclif's errors",
+          "breakaway_hint": "Wycliffites / Lollards",
+          "keywords": [
+            "wyclif"
+          ],
+          "session": 8,
+          "citation_contains": [
+            "Wyclif"
+          ]
+        },
+        {
+          "id": "constance.hus",
+          "theme": "Condemnation of Jan Hus",
+          "breakaway_hint": "Hussites",
+          "keywords": [
+            "hus"
+          ],
+          "session": 15,
+          "citation_contains": [
+            "Hus"
+          ]
+        },
+        {
+          "id": "constance.jerome",
+          "theme": "Condemnation of Jerome of Prague",
+          "breakaway_hint": "Hussites",
+          "keywords": [
+            "jerome"
+          ],
+          "session": 21
+        },
+        {
+          "id": "constance.end_schism",
+          "theme": "Ending the Western Schism / papal settlement",
+          "breakaway_hint": null,
+          "keywords": [
+            "resign",
+            "martin",
+            "schism"
+          ],
+          "session": 14
+        }
+      ]
+    },
+    {
+      "council": "Council of Florence",
+      "document_abbrev": "FLO",
+      "required_decisions": [
+        {
+          "id": "florence.greeks",
+          "theme": "Laetentur Caeli — union with the Greeks; Filioque",
+          "breakaway_hint": "Eastern Orthodox (rejection of union)",
+          "keywords": [
+            "laetentur",
+            "filioque",
+            "greek"
+          ]
+        },
+        {
+          "id": "florence.armenians",
+          "theme": "Exsultate Deo — decree for the Armenians; sacraments",
+          "breakaway_hint": null,
+          "keywords": [
+            "exsultate",
+            "armenian",
+            "sacrament"
+          ]
+        },
+        {
+          "id": "florence.jacobites",
+          "theme": "Cantate Domino — decree for the Jacobites; extra ecclesiam",
+          "breakaway_hint": "Oriental Orthodox / non-union churches",
+          "keywords": [
+            "cantate",
+            "jacobite",
+            "outside the church"
+          ]
+        }
+      ]
+    },
+    {
+      "council": "Fifth Lateran Council",
+      "document_abbrev": "LAT5",
+      "required_decisions": [
+        {
+          "id": "lat5.pisa",
+          "theme": "Condemnation of the quasi-council of Pisa",
+          "breakaway_hint": null,
+          "keywords": [
+            "pisa",
+            "quasi-council"
+          ],
+          "session": 2
+        },
+        {
+          "id": "lat5.simony_election",
+          "theme": "Constitution against simony in papal election",
+          "breakaway_hint": null,
+          "keywords": [
+            "simony",
+            "electing"
+          ],
+          "session": 5
+        },
+        {
+          "id": "lat5.immortality",
+          "theme": "Teaching on the immortality of the soul (against Averroists)",
+          "breakaway_hint": null,
+          "keywords": [
+            "soul",
+            "immortal",
+            "philosoph"
+          ],
+          "session": 8
+        },
+        {
+          "id": "lat5.pragmatic",
+          "theme": "Revocation of the Pragmatic Sanction",
+          "breakaway_hint": null,
+          "keywords": [
+            "pragmatic"
+          ],
+          "session": 4
+        },
+        {
+          "id": "lat5.close",
+          "theme": "Closing of the council",
+          "breakaway_hint": null,
+          "keywords": [
+            "closing",
+            "taxes"
+          ],
+          "session": 12
+        }
+      ]
+    },
+    {
+      "council": "Council of Trent",
+      "document_abbrev": "Trent",
+      "required_decisions": [
+        {
+          "id": "trent.scripture",
+          "theme": "Canon of Scripture and tradition",
+          "breakaway_hint": "Protestant Reformers",
+          "keywords": [
+            "scripture",
+            "canonical",
+            "tradition"
+          ],
+          "session": 4
+        },
+        {
+          "id": "trent.original_sin",
+          "theme": "Decree on original sin",
+          "breakaway_hint": "Protestant Reformers",
+          "keywords": [
+            "original sin"
+          ],
+          "session": 5
+        },
+        {
+          "id": "trent.justification",
+          "theme": "Decree on justification",
+          "breakaway_hint": "Protestant Reformers",
+          "keywords": [
+            "justification"
+          ],
+          "session": 6
+        },
+        {
+          "id": "trent.sacraments_general",
+          "theme": "Canons on the sacraments in general",
+          "breakaway_hint": "Protestant Reformers",
+          "keywords": [
+            "sacraments"
+          ],
+          "session": 7
+        },
+        {
+          "id": "trent.eucharist",
+          "theme": "Real presence / Eucharist",
+          "breakaway_hint": "Protestant Reformers",
+          "keywords": [
+            "eucharist",
+            "presence",
+            "transubstantiation"
+          ],
+          "session": 13
+        },
+        {
+          "id": "trent.penance",
+          "theme": "Sacrament of penance",
+          "breakaway_hint": "Protestant Reformers",
+          "keywords": [
+            "penance",
+            "confession"
+          ],
+          "session": 14
+        },
+        {
+          "id": "trent.orders",
+          "theme": "Sacrament of order",
+          "breakaway_hint": "Protestant Reformers",
+          "keywords": [
+            "order",
+            "priesthood"
+          ],
+          "session": 23
+        },
+        {
+          "id": "trent.marriage",
+          "theme": "Sacrament of matrimony",
+          "breakaway_hint": "Protestant Reformers",
+          "keywords": [
+            "matrimony",
+            "marriage"
+          ],
+          "session": 24
+        },
+        {
+          "id": "trent.purgatory",
+          "theme": "Purgatory",
+          "breakaway_hint": "Protestant Reformers",
+          "keywords": [
+            "purgatory"
+          ],
+          "session": 25
+        },
+        {
+          "id": "trent.saints_images",
+          "theme": "Invocation of saints and sacred images",
+          "breakaway_hint": "Protestant Reformers",
+          "keywords": [
+            "saints",
+            "images",
+            "relics"
+          ],
+          "session": 25
+        },
+        {
+          "id": "trent.indulgences",
+          "theme": "Indulgences",
+          "breakaway_hint": "Protestant Reformers",
+          "keywords": [
+            "indulgence"
+          ],
+          "session": 25
+        },
+        {
+          "id": "trent.mass",
+          "theme": "Doctrine on the Sacrifice of the Mass",
+          "breakaway_hint": "Protestant Reformers",
+          "keywords": [
+            "sacrifice",
+            "mass"
+          ],
+          "citation_contains": [
+            "Doctrine on the Sacrifice of the Mass"
+          ],
+          "session": 22
+        }
+      ]
+    },
+    {
+      "council": "First Vatican Council",
+      "document_abbrev": "DF",
+      "required_decisions": [
+        {
+          "id": "vat1.dei_filius_god",
+          "theme": "Dei Filius — God the creator and Lord",
+          "breakaway_hint": null,
+          "keywords": [
+            "creator",
+            "god"
+          ],
+          "document_abbrev": "DF"
+        },
+        {
+          "id": "vat1.dei_filius_revelation",
+          "theme": "Dei Filius — revelation and faith",
+          "breakaway_hint": null,
+          "keywords": [
+            "revelation",
+            "faith"
+          ],
+          "document_abbrev": "DF"
+        },
+        {
+          "id": "vat1.dei_filius_reason",
+          "theme": "Dei Filius — faith and reason",
+          "breakaway_hint": null,
+          "keywords": [
+            "reason",
+            "faith"
+          ],
+          "document_abbrev": "DF"
+        },
+        {
+          "id": "vat1.pastor_primacy",
+          "theme": "Pastor Aeternus — primacy of the Roman pontiff",
+          "breakaway_hint": "Old Catholics",
+          "keywords": [
+            "primacy",
+            "peter",
+            "pontiff"
+          ],
+          "document_abbrev": "PA"
+        },
+        {
+          "id": "vat1.pastor_infallibility",
+          "theme": "Pastor Aeternus — papal infallibility",
+          "breakaway_hint": "Old Catholics",
+          "keywords": [
+            "infallible",
+            "ex cathedra",
+            "define"
+          ],
+          "document_abbrev": "PA"
+        }
+      ]
+    },
+    {
+      "council": "Second Vatican Council",
+      "document_abbrev": "LG",
+      "required_decisions": [
+        {
+          "id": "vat2.sc.liturgy",
+          "theme": "Sacrosanctum Concilium — reform of the liturgy",
+          "breakaway_hint": null,
+          "document_abbrev": "SC",
+          "keywords": [
+            "liturgy",
+            "rite"
+          ]
+        },
+        {
+          "id": "vat2.im.media",
+          "theme": "Inter Mirifica — social communication",
+          "breakaway_hint": null,
+          "document_abbrev": "IM",
+          "keywords": [
+            "communication",
+            "media"
+          ]
+        },
+        {
+          "id": "vat2.lg.mystery",
+          "theme": "Lumen Gentium — mystery of the Church",
+          "breakaway_hint": null,
+          "document_abbrev": "LG",
+          "keywords": [
+            "mystery",
+            "church",
+            "sacrament"
+          ]
+        },
+        {
+          "id": "vat2.lg.people",
+          "theme": "Lumen Gentium — people of God",
+          "breakaway_hint": null,
+          "document_abbrev": "LG",
+          "keywords": [
+            "people of god"
+          ]
+        },
+        {
+          "id": "vat2.lg.hierarchy",
+          "theme": "Lumen Gentium — hierarchical constitution / episcopal collegiality",
+          "breakaway_hint": "Society of St. Pius X / sedeprivationist critics (contested reception)",
+          "document_abbrev": "LG",
+          "keywords": [
+            "college",
+            "bishop",
+            "successor"
+          ]
+        },
+        {
+          "id": "vat2.ur.ecumenism",
+          "theme": "Unitatis Redintegratio — ecumenism",
+          "breakaway_hint": null,
+          "document_abbrev": "UR",
+          "keywords": [
+            "ecumenism",
+            "separated"
+          ]
+        },
+        {
+          "id": "vat2.oe.eastern",
+          "theme": "Orientalium Ecclesiarum — Eastern Catholic churches",
+          "breakaway_hint": null,
+          "document_abbrev": "OE",
+          "keywords": [
+            "eastern",
+            "rite"
+          ]
+        },
+        {
+          "id": "vat2.cd.bishops",
+          "theme": "Christus Dominus — pastoral office of bishops",
+          "breakaway_hint": null,
+          "document_abbrev": "CD",
+          "keywords": [
+            "bishop",
+            "diocese"
+          ]
+        },
+        {
+          "id": "vat2.pc.religious",
+          "theme": "Perfectae Caritatis — renewal of religious life",
+          "breakaway_hint": null,
+          "document_abbrev": "PC",
+          "keywords": [
+            "religious",
+            "institute"
+          ]
+        },
+        {
+          "id": "vat2.ot.seminaries",
+          "theme": "Optatam Totius — priestly training",
+          "breakaway_hint": null,
+          "document_abbrev": "OT",
+          "keywords": [
+            "seminary",
+            "training"
+          ]
+        },
+        {
+          "id": "vat2.ge.education",
+          "theme": "Gravissimum Educationis — Christian education",
+          "breakaway_hint": null,
+          "document_abbrev": "GE",
+          "keywords": [
+            "education",
+            "school"
+          ]
+        },
+        {
+          "id": "vat2.na.nonchristian",
+          "theme": "Nostra Aetate — relation to non-Christian religions",
+          "breakaway_hint": null,
+          "document_abbrev": "NA",
+          "keywords": [
+            "non-christian",
+            "jews",
+            "muslim"
+          ]
+        },
+        {
+          "id": "vat2.dv.revelation",
+          "theme": "Dei Verbum — divine revelation / Scripture and tradition",
+          "breakaway_hint": null,
+          "document_abbrev": "DV",
+          "keywords": [
+            "revelation",
+            "scripture",
+            "tradition"
+          ]
+        },
+        {
+          "id": "vat2.aa.laity",
+          "theme": "Apostolicam Actuositatem — apostolate of the laity",
+          "breakaway_hint": null,
+          "document_abbrev": "AA",
+          "keywords": [
+            "laity",
+            "apostolate"
+          ]
+        },
+        {
+          "id": "vat2.dh.religious_freedom",
+          "theme": "Dignitatis Humanae — religious freedom",
+          "breakaway_hint": "Society of St. Pius X / traditionalist rejection",
+          "document_abbrev": "DH",
+          "keywords": [
+            "religious freedom",
+            "conscience"
+          ]
+        },
+        {
+          "id": "vat2.ag.missions",
+          "theme": "Ad Gentes — missionary activity",
+          "breakaway_hint": null,
+          "document_abbrev": "AG",
+          "keywords": [
+            "mission",
+            "gospel"
+          ]
+        },
+        {
+          "id": "vat2.po.priests",
+          "theme": "Presbyterorum Ordinis — ministry and life of priests",
+          "breakaway_hint": null,
+          "document_abbrev": "PO",
+          "keywords": [
+            "priest",
+            "presbyter"
+          ]
+        },
+        {
+          "id": "vat2.gs.world",
+          "theme": "Gaudium et Spes — Church in the modern world",
+          "breakaway_hint": null,
+          "document_abbrev": "GS",
+          "keywords": [
+            "world",
+            "human",
+            "society"
+          ]
+        }
+      ]
+    }
+  ]
+}

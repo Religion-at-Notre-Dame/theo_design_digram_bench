@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Step 1 — Council overview</title>
+  <style>
+    :root {
+      --ink: #1c2430;
+      --muted: #5c6b7a;
+      --line: #d5dde5;
+      --fill: #e8eef4;
+      --accent: #2a5f7a;
+      --paper: #f7f5f1;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Source Serif 4", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse at top, #fffdf8 0%, var(--paper) 55%, #efebe4 100%);
+      min-height: 100vh;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.4rem;
+    }
+    .lede {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 42rem;
+      line-height: 1.5;
+      margin: 0 0 1.75rem;
+    }
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 2rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .stat strong {
+      display: block;
+      font-size: 1.75rem;
+      color: var(--accent);
+      font-variant-numeric: tabular-nums;
+    }
+    .stat span {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    th {
+      text-align: left;
+      font-weight: 600;
+      color: var(--muted);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 0.55rem 0.6rem;
+      border-bottom: 1px solid var(--line);
+    }
+    td {
+      padding: 0.55rem 0.6rem;
+      border-bottom: 1px solid var(--fill);
+      vertical-align: middle;
+      font-variant-numeric: tabular-nums;
+    }
+    tr:hover td { background: rgba(42, 95, 122, 0.04); }
+    .year { width: 4.5rem; color: var(--muted); }
+    .council { min-width: 12rem; }
+    .count { width: 4rem; text-align: right; }
+    .break { width: 4.5rem; text-align: right; color: var(--accent); }
+    .bar-cell { width: 28%; }
+    .bar {
+      height: 0.7rem;
+      background: linear-gradient(90deg, #3d7a96, var(--accent));
+      border-radius: 2px;
+      min-width: 4px;
+    }
+    .labels {
+      color: var(--muted);
+      font-size: 0.85rem;
+      max-width: 22rem;
+    }
+    footer {
+      margin-top: 2rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.86em; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Step 1 council overview</h1>
+    <p class="lede">
+      Every verified mapping entry across the 21 ecumenical councils, in chronological
+      order. Bar length is entry count; breakaway column counts loci tagged with a
+      departing group (see also <code>council_map.mmd</code>).
+    </p>
+    <div class="stats">
+      <div class="stat"><strong>1488</strong><span>verified entries</span></div>
+      <div class="stat"><strong>21</strong><span>councils</span></div>
+      <div class="stat"><strong>93</strong><span>with breakaway</span></div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Council</th>
+          <th>Entries</th>
+          <th>Volume</th>
+          <th>Breakaways</th>
+          <th>Top groups</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      <tr>
+        <td class="year">325</td>
+        <td class="council">First Council of Nicaea</td>
+        <td class="count">22</td>
+        <td class="bar-cell"><div class="bar" style="width:4%" title="22 entries"></div></td>
+        <td class="break">1</td>
+        <td class="labels">Arians / Homoeans (1)</td>
+      </tr>
+      <tr>
+        <td class="year">381</td>
+        <td class="council">First Council of Constantinople</td>
+        <td class="count">10</td>
+        <td class="bar-cell"><div class="bar" style="width:2%" title="10 entries"></div></td>
+        <td class="break">0</td>
+        <td class="labels">—</td>
+      </tr>
+      <tr>
+        <td class="year">431</td>
+        <td class="council">Council of Ephesus</td>
+        <td class="count">25</td>
+        <td class="bar-cell"><div class="bar" style="width:4%" title="25 entries"></div></td>
+        <td class="break">15</td>
+        <td class="labels">Church of the East / Nestorians (15)</td>
+      </tr>
+      <tr>
+        <td class="year">451</td>
+        <td class="council">Council of Chalcedon</td>
+        <td class="count">31</td>
+        <td class="bar-cell"><div class="bar" style="width:5%" title="31 entries"></div></td>
+        <td class="break">1</td>
+        <td class="labels">Oriental Orthodox churches (1)</td>
+      </tr>
+      <tr>
+        <td class="year">553</td>
+        <td class="council">Second Council of Constantinople</td>
+        <td class="count">15</td>
+        <td class="bar-cell"><div class="bar" style="width:2%" title="15 entries"></div></td>
+        <td class="break">1</td>
+        <td class="labels">Oriental Orthodox churches (1)</td>
+      </tr>
+      <tr>
+        <td class="year">680</td>
+        <td class="council">Third Council of Constantinople</td>
+        <td class="count">2</td>
+        <td class="bar-cell"><div class="bar" style="width:2%" title="2 entries"></div></td>
+        <td class="break">2</td>
+        <td class="labels">Monothelites (2)</td>
+      </tr>
+      <tr>
+        <td class="year">787</td>
+        <td class="council">Second Council of Nicaea</td>
+        <td class="count">23</td>
+        <td class="bar-cell"><div class="bar" style="width:4%" title="23 entries"></div></td>
+        <td class="break">5</td>
+        <td class="labels">Iconoclasts (5)</td>
+      </tr>
+      <tr>
+        <td class="year">869</td>
+        <td class="council">Fourth Council of Constantinople</td>
+        <td class="count">27</td>
+        <td class="bar-cell"><div class="bar" style="width:4%" title="27 entries"></div></td>
+        <td class="break">0</td>
+        <td class="labels">—</td>
+      </tr>
+      <tr>
+        <td class="year">1123</td>
+        <td class="council">First Lateran Council</td>
+        <td class="count">22</td>
+        <td class="bar-cell"><div class="bar" style="width:4%" title="22 entries"></div></td>
+        <td class="break">0</td>
+        <td class="labels">—</td>
+      </tr>
+      <tr>
+        <td class="year">1139</td>
+        <td class="council">Second Lateran Council</td>
+        <td class="count">30</td>
+        <td class="bar-cell"><div class="bar" style="width:5%" title="30 entries"></div></td>
+        <td class="break">0</td>
+        <td class="labels">—</td>
+      </tr>
+      <tr>
+        <td class="year">1179</td>
+        <td class="council">Third Lateran Council</td>
+        <td class="count">27</td>
+        <td class="bar-cell"><div class="bar" style="width:4%" title="27 entries"></div></td>
+        <td class="break">0</td>
+        <td class="labels">—</td>
+      </tr>
+      <tr>
+        <td class="year">1215</td>
+        <td class="council">Fourth Lateran Council</td>
+        <td class="count">71</td>
+        <td class="bar-cell"><div class="bar" style="width:11%" title="71 entries"></div></td>
+        <td class="break">11</td>
+        <td class="labels">Cathars / Albigensians (11)</td>
+      </tr>
+      <tr>
+        <td class="year">1245</td>
+        <td class="council">First Council of Lyons</td>
+        <td class="count">28</td>
+        <td class="bar-cell"><div class="bar" style="width:5%" title="28 entries"></div></td>
+        <td class="break">0</td>
+        <td class="labels">—</td>
+      </tr>
+      <tr>
+        <td class="year">1274</td>
+        <td class="council">Second Council of Lyons</td>
+        <td class="count">41</td>
+        <td class="bar-cell"><div class="bar" style="width:7%" title="41 entries"></div></td>
+        <td class="break">1</td>
+        <td class="labels">Eastern Orthodox (1)</td>
+      </tr>
+      <tr>
+        <td class="year">1311</td>
+        <td class="council">Council of Vienne</td>
+        <td class="count">37</td>
+        <td class="bar-cell"><div class="bar" style="width:6%" title="37 entries"></div></td>
+        <td class="break">0</td>
+        <td class="labels">—</td>
+      </tr>
+      <tr>
+        <td class="year">1414</td>
+        <td class="council">Council of Constance</td>
+        <td class="count">68</td>
+        <td class="bar-cell"><div class="bar" style="width:11%" title="68 entries"></div></td>
+        <td class="break">10</td>
+        <td class="labels">Wycliffites / Lollards (6), Hussites (4)</td>
+      </tr>
+      <tr>
+        <td class="year">1439</td>
+        <td class="council">Council of Florence</td>
+        <td class="count">69</td>
+        <td class="bar-cell"><div class="bar" style="width:11%" title="69 entries"></div></td>
+        <td class="break">12</td>
+        <td class="labels">Oriental Orthodox / non-union churches (11), Eastern Orthodox (rejection of union) (1)</td>
+      </tr>
+      <tr>
+        <td class="year">1512</td>
+        <td class="council">Fifth Lateran Council</td>
+        <td class="count">22</td>
+        <td class="bar-cell"><div class="bar" style="width:4%" title="22 entries"></div></td>
+        <td class="break">0</td>
+        <td class="labels">—</td>
+      </tr>
+      <tr>
+        <td class="year">1546</td>
+        <td class="council">Council of Trent</td>
+        <td class="count">201</td>
+        <td class="bar-cell"><div class="bar" style="width:32%" title="201 entries"></div></td>
+        <td class="break">24</td>
+        <td class="labels">Protestant Reformers (24)</td>
+      </tr>
+      <tr>
+        <td class="year">1870</td>
+        <td class="council">First Vatican Council</td>
+        <td class="count">95</td>
+        <td class="bar-cell"><div class="bar" style="width:15%" title="95 entries"></div></td>
+        <td class="break">2</td>
+        <td class="labels">Old Catholics (2)</td>
+      </tr>
+      <tr>
+        <td class="year">1965</td>
+        <td class="council">Second Vatican Council</td>
+        <td class="count">622</td>
+        <td class="bar-cell"><div class="bar" style="width:100%" title="622 entries"></div></td>
+        <td class="break">8</td>
+        <td class="labels">Society of St. Pius X / traditionalist rejection (7), Society of St. Pius X / sedeprivationist critics (contested reception) (1)</td>
+      </tr>
+      </tbody>
+    </table>
+    <footer>
+      Generated from <code>outputs/step1/entries.jsonl</code> by
+      <code>scripts/step1/export_overview.py</code>.
+    </footer>
+  </main>
+</body>
+</html>

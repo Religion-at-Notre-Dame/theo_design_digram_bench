@@ -1,0 +1,161 @@
+{
+  "total_required": 1488,
+  "total_filled": 1488,
+  "total_verified": 1488,
+  "complete": true,
+  "corpus_english_records": 1488,
+  "entries_with_record_id": 1488,
+  "corpus_loci_missing_from_entries": 0,
+  "corpus_complete": true,
+  "missing_record_ids_sample": [],
+  "extra_record_ids": 0,
+  "councils": [
+    {
+      "council": "Council of Chalcedon",
+      "required": 31,
+      "filled": 31,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "Council of Constance",
+      "required": 68,
+      "filled": 68,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "Council of Ephesus",
+      "required": 25,
+      "filled": 25,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "Council of Florence",
+      "required": 69,
+      "filled": 69,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "Council of Trent",
+      "required": 201,
+      "filled": 201,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "Council of Vienne",
+      "required": 37,
+      "filled": 37,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "Fifth Lateran Council",
+      "required": 22,
+      "filled": 22,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "First Council of Constantinople",
+      "required": 10,
+      "filled": 10,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "First Council of Lyons",
+      "required": 28,
+      "filled": 28,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "First Council of Nicaea",
+      "required": 22,
+      "filled": 22,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "First Lateran Council",
+      "required": 22,
+      "filled": 22,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "First Vatican Council",
+      "required": 95,
+      "filled": 95,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "Fourth Council of Constantinople",
+      "required": 27,
+      "filled": 27,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "Fourth Lateran Council",
+      "required": 71,
+      "filled": 71,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "Second Council of Constantinople",
+      "required": 15,
+      "filled": 15,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "Second Council of Lyons",
+      "required": 41,
+      "filled": 41,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "Second Council of Nicaea",
+      "required": 23,
+      "filled": 23,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "Second Lateran Council",
+      "required": 30,
+      "filled": 30,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "Second Vatican Council",
+      "required": 622,
+      "filled": 622,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "Third Council of Constantinople",
+      "required": 2,
+      "filled": 2,
+      "missing_count": 0,
+      "missing": []
+    },
+    {
+      "council": "Third Lateran Council",
+      "required": 27,
+      "filled": 27,
+      "missing_count": 0,
+      "missing": []
+    }
+  ]
+}
