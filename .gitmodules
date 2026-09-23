@@ -1,0 +1,3 @@
+[submodule "data/catholic_text_json"]
+	path = data/catholic_text_json
+	url = https://github.com/Religion-at-Notre-Dame/catholic_text_json.git
