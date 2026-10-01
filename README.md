@@ -13,6 +13,29 @@ Map each church council and each of its documents to something that was decided.
 - A sentence phrased as a question, rooted in a specific paragraph or section of a council document. The citation has to be precise enough that a reader can go find the passage — canon, session, chapter, or paragraph number, not just the document name.
 - The religion, church, or movement that broke off, where one applies. Many decisions have no schism attached to them; leave the field empty rather than inventing a connection.
 
+### Breakaway group (formal definition)
+
+A **breakaway group**, for Step 1, is a **historically identifiable community** that, in lasting consequence of rejecting (or being rejected over) a **specific conciliar decision**, ceased to share **full communion** with the Catholic Church as that communion was understood by the council’s reception—or never entered / refused that communion after the decision—such that the group’s **distinct ecclesial identity** is thereafter marked by that rupture.
+
+**Necessary conditions (all must hold):**
+
+1. **Communal, not individual** — A named people, church, order, or movement with ongoing existence (or clear successor identity), not a lone theologian or temporary faction.
+2. **Tied to a decision** — The rupture is historically linked to a **citable conciliar act** (creed, definition, canon, decree), not only to vague “atmosphere” or later politics alone.
+3. **Ecclesial separation** — Outcome is loss or refusal of **full communion** / recognition as remaining within the same visible Church, not merely contested opinion inside it.
+4. **Durable** — The separation is not a short-lived riot or retracted protest; it leaves a **recognizable tradition** (even if later reunions or fragments occur).
+
+**Not a breakaway group** (leave `breakaway` empty):
+
+- Intra-Catholic schools or parties that remained in communion.
+- Individuals condemned as heretics without a lasting separate church.
+- Later movements only loosely associated with a text (do not back-project).
+- Groups that reject a council’s *implementation* while claiming the same communion (unless historians treat them as a distinct communion—and then mark that judgment as contested).
+- Undifferentiated “Protestantism” unless the locus is actually about a Reformational break tied to that decree (prefer precise labels when history supports them).
+
+**One-line test:** *If this council locus had never been decided that way, would this community’s lasting separation from Catholic communion still be the same story?* If **no** → candidate breakaway. If **yes** or **unclear** → leave empty.
+
+Normalize labels in the dataset with `python scripts/step1/clean_breakaways.py` (clears Cathars / Iconoclasts / Monothelites / contested SSPX tags; renames kept groups to stable names).
+
 **Optional:** a visualization. Councils over time, decisions branching into the groups that rejected them, and documents linked to the questions they settle are all reasonable things to draw.
 
 **On automation:** this step is factual, so a model should do well at it with the source documents in hand. Spot-check the citations anyway — a plausible-looking paragraph number that points at the wrong text is the most likely failure mode.
@@ -29,13 +52,16 @@ python scripts/step1/expand_inventory.py --min-chars 0
 python scripts/step1/draft_entries.py
 
 python scripts/step1/verify_entries.py --write-status
+python scripts/step1/clean_breakaways.py  # apply formal breakaway definition
+python scripts/step1/compile_breakaways.py  # breakaway-only subset -> outputs/step1/breakaways/
 python scripts/step1/coverage_report.py   # also checks every corpus record_id is covered
 python scripts/step1/export_graph.py      # schism-only Mermaid map
 python scripts/step1/export_overview.py   # chronological HTML overview of all councils
 ```
 
 - Coverage checklist: [`scripts/step1/coverage_inventory.json`](scripts/step1/coverage_inventory.json) — **comprehensive** (1:1 with English loci in `data/councils/`).
-- Current verified set: **1488** entries in [`outputs/step1/entries.jsonl`](outputs/step1/entries.jsonl) (`corpus_complete=True`).
+- Current verified set: **1760** entries in [`outputs/step1/entries.jsonl`](outputs/step1/entries.jsonl) (`corpus_complete=True`).
+- Breakaway subset: **130** entries in [`outputs/step1/breakaways/`](outputs/step1/breakaways/) (questions + full passage text).
 - Only `status: verified` entries count; the verifier resolves `record_id` and matches `canonical_citation` to the corpus.
 - Next improvement: re-draft with `--mode llm` for more natural questions (same citations).
 - See [`outputs/step1/README.md`](outputs/step1/README.md) for the entry schema.

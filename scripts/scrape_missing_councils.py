@@ -557,6 +557,9 @@ def parse_sessions(cfg: dict, blocks) -> list[dict]:
             if session is not None and re.match(r"(?i)^FOOTNOTES", text):
                 break
             continue
+        # Skip known e-text editor interpolations (not conciliar text).
+        if re.match(r"(?i)^The famous Haec Sancta decree contradicting", text):
+            continue
         sm = SESSION_RE.match(text)
         if sm:
             current = flush_unit(units, current)

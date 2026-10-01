@@ -1,10 +1,10 @@
 {
-  "total_required": 1488,
-  "total_filled": 1488,
-  "total_verified": 1488,
+  "total_required": 1760,
+  "total_filled": 1760,
+  "total_verified": 1760,
   "complete": true,
-  "corpus_english_records": 1488,
-  "entries_with_record_id": 1488,
+  "corpus_english_records": 1760,
+  "entries_with_record_id": 1760,
   "corpus_loci_missing_from_entries": 0,
   "corpus_complete": true,
   "missing_record_ids_sample": [],
@@ -19,8 +19,8 @@
     },
     {
       "council": "Council of Constance",
-      "required": 68,
-      "filled": 68,
+      "required": 67,
+      "filled": 67,
       "missing_count": 0,
       "missing": []
     },
@@ -33,15 +33,15 @@
     },
     {
       "council": "Council of Florence",
-      "required": 69,
-      "filled": 69,
+      "required": 308,
+      "filled": 308,
       "missing_count": 0,
       "missing": []
     },
     {
       "council": "Council of Trent",
-      "required": 201,
-      "filled": 201,
+      "required": 227,
+      "filled": 227,
       "missing_count": 0,
       "missing": []
     },
@@ -145,8 +145,8 @@
     },
     {
       "council": "Third Council of Constantinople",
-      "required": 2,
-      "filled": 2,
+      "required": 10,
+      "filled": 10,
       "missing_count": 0,
       "missing": []
     },

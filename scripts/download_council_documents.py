@@ -160,6 +160,10 @@ def build_index(documents_dir: Path) -> dict:
 
 
 def write_readme(out_dir: Path, index: dict) -> None:
+    readme_path = out_dir / "README.md"
+    # Preserve the hand-maintained coverage section if present.
+    if readme_path.exists() and "Coverage status" in readme_path.read_text(encoding="utf-8"):
+        return
     lines = [
         "# Council documents",
         "",
@@ -168,62 +172,28 @@ def write_readme(out_dir: Path, index: dict) -> None:
         f"{index['source']['version']}.",
         "",
         "Each `.jsonl` line is one citable unit with fields such as `session`,",
-        "`canon`, `paragraph`, `chapter`, `canonical_citation`, `text`, and",
-        "`source_url`. Prefer `canonical_citation` when writing question sentences.",
+        "`canon`, `paragraph`, `chapter`, `canonical_citation`, `text`,",
+        "`text_status`, and `source_url`. Prefer `canonical_citation` when writing",
+        "question sentences.",
         "",
-        "## Layout",
+        "**Text preference:** full decree text > edition summary > empty.",
         "",
-        "```",
-        "data/councils/",
-        "├── index.json",
-        "├── document_catalog.json",
-        "├── COPYRIGHT_AND_SOURCES.md",
-        "└── documents/",
-        "    ├── Nicaea_I.jsonl",
-        "    ├── Trent.jsonl",
-        "    ├── Vatican_II/",
-        "    │   ├── LG.jsonl",
-        "    │   └── ...",
-        "    └── ...",
-        "```",
+        "See **Coverage status** in this README after running",
+        "`scripts/annotate_council_text_status.py` (writes `coverage_status.json`).",
         "",
         f"**{index['count']} documents** in this extract.",
         "",
+        "## Refresh",
+        "",
+        "```bash",
+        "python scripts/download_council_documents.py",
+        "python scripts/scrape_missing_councils.py",
+        "python scripts/complete_incomplete_councils.py",
+        "python scripts/annotate_council_text_status.py",
+        "```",
+        "",
     ]
-    missing = index.get("missingCouncils") or MISSING_COUNCILS
-    if missing:
-        lines.extend(["## Gaps", ""])
-        for name in missing:
-            lines.append(f"- {name}")
-        lines.append("")
-    else:
-        lines.extend(
-            [
-                "The eight councils absent from the upstream release "
-                "(Constantinople IV, Lateran I–III, Lyons I, Vienne, Constance, "
-                "Lateran V) were scraped from Papal Encyclicals Online (Tanner) "
-                "into the same JSONL schema by `scripts/scrape_missing_councils.py`.",
-                "",
-            ]
-        )
-    lines.extend(
-        [
-            "## Rights",
-            "",
-            "Upstream code/docs are MIT; the data-layer organization is CC0. The",
-            "underlying Church documents and translations retain their own rights.",
-            "See `COPYRIGHT_AND_SOURCES.md` before redistributing.",
-            "",
-            "## Refresh",
-            "",
-            "```bash",
-            "python scripts/download_council_documents.py",
-            "python scripts/scrape_missing_councils.py",
-            "```",
-            "",
-        ]
-    )
-    (out_dir / "README.md").write_text("\n".join(lines), encoding="utf-8")
+    readme_path.write_text("\n".join(lines), encoding="utf-8")
 
 
 def main() -> int:
@@ -283,11 +253,19 @@ def main() -> int:
 
     # Re-apply Tanner scrapes for councils absent from the release.
     scrape_script = Path(__file__).resolve().parent / "scrape_missing_councils.py"
+    complete_script = Path(__file__).resolve().parent / "complete_incomplete_councils.py"
     if scrape_script.is_file():
         import subprocess
 
         print("Running scrape_missing_councils.py to restore supplemental councils…")
         subprocess.check_call([sys.executable, str(scrape_script)])
+        if complete_script.is_file():
+            print("Running complete_incomplete_councils.py for Florence/Trent/CON3…")
+            subprocess.check_call([sys.executable, str(complete_script)])
+        annotate_script = Path(__file__).resolve().parent / "annotate_council_text_status.py"
+        if annotate_script.is_file():
+            print("Running annotate_council_text_status.py…")
+            subprocess.check_call([sys.executable, str(annotate_script)])
     else:
         index = build_index(documents_dir)
         (out_dir / "index.json").write_text(

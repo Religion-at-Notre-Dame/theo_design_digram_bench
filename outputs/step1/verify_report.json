@@ -1,6 +1,6 @@
 {
-  "total": 1488,
-  "verified": 1488,
+  "total": 1760,
+  "verified": 1760,
   "failed": 0,
   "details": [
     {
@@ -290,14 +290,6 @@
       "errors": [],
       "record_id": "mag:CON:s4:next-it-was-declared-and-decided-that-three-persons-should-be-chosen-from-each-n:en",
       "canonical_citation": "Constance S4 [Next, it was declared and decided that three persons should be chosen from each nation who know both the reasons of those wishing to depart and the punishments that ought to be inflicted on those departing without permission. [20 ]]"
-    },
-    {
-      "id": "con-s5-p1-en",
-      "inventory_id": "con-s5-p1-en",
-      "status": "verified",
-      "errors": [],
-      "record_id": "mag:CON:s5:p1:en",
-      "canonical_citation": "Constance S5 para. 1"
     },
     {
       "id": "con-s5-decrees-of-the-council-concerning-its-authority-and-integrity-which-had-b",
@@ -996,556 +988,2500 @@
       "canonical_citation": "Ephesus, definition against the Messalians"
     },
     {
-      "id": "flo-laetentur-caeli-p1-en",
-      "inventory_id": "flo-laetentur-caeli-p1-en",
+      "id": "flo-basel-s1-p1-en",
+      "inventory_id": "flo-basel-s1-p1-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:laetentur-caeli:p1:en",
-      "canonical_citation": "Florence, Laetentur Caeli para. 1"
+      "record_id": "mag:FLO:basel:s1:p1:en",
+      "canonical_citation": "Florence (Basel) S1 para. 1"
     },
     {
-      "id": "flo-laetentur-caeli-p2-en",
-      "inventory_id": "flo-laetentur-caeli-p2-en",
+      "id": "flo-ferrara-s1-declaration-of-cardinal-nicholas-albergati-president-of-the-counc",
+      "inventory_id": "flo-ferrara-s1-declaration-of-cardinal-nicholas-albergati-president-of-the-counc",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:laetentur-caeli:p2:en",
-      "canonical_citation": "Florence, Laetentur Caeli para. 2"
+      "record_id": "mag:FLO:ferrara:s1:declaration-of-cardinal-nicholas-albergati-president-of-the-council:en",
+      "canonical_citation": "Florence (Ferrara) S1 [Declaration of cardinal Nicholas Albergati, president of the council]"
     },
     {
-      "id": "flo-laetentur-caeli-p3-en",
-      "inventory_id": "flo-laetentur-caeli-p3-en",
+      "id": "flo-basel-s1-establishment-of-the-holy-council-of-basel-en",
+      "inventory_id": "flo-basel-s1-establishment-of-the-holy-council-of-basel-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:laetentur-caeli:p3:en",
-      "canonical_citation": "Florence, Laetentur Caeli para. 3"
+      "record_id": "mag:FLO:basel:s1:establishment-of-the-holy-council-of-basel:en",
+      "canonical_citation": "Florence (Basel) S1 [Establishment of the holy council of Basel]"
     },
     {
-      "id": "flo-laetentur-caeli-p4-en",
-      "inventory_id": "flo-laetentur-caeli-p4-en",
+      "id": "flo-basel-s1-purpose-of-the-council-of-basel-en",
+      "inventory_id": "flo-basel-s1-purpose-of-the-council-of-basel-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:laetentur-caeli:p4:en",
-      "canonical_citation": "Florence, Laetentur Caeli para. 4"
+      "record_id": "mag:FLO:basel:s1:purpose-of-the-council-of-basel:en",
+      "canonical_citation": "Florence (Basel) S1 [Purpose of the council of Basel]"
     },
     {
-      "id": "flo-laetentur-caeli-p5-en",
-      "inventory_id": "flo-laetentur-caeli-p5-en",
+      "id": "flo-basel-s2-p1-en",
+      "inventory_id": "flo-basel-s2-p1-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:laetentur-caeli:p5:en",
-      "canonical_citation": "Florence, Laetentur Caeli para. 5"
+      "record_id": "mag:FLO:basel:s2:p1:en",
+      "canonical_citation": "Florence (Basel) S2 para. 1"
     },
     {
-      "id": "flo-laetentur-caeli-p6-en",
-      "inventory_id": "flo-laetentur-caeli-p6-en",
+      "id": "flo-ferrara-s2-p1-en",
+      "inventory_id": "flo-ferrara-s2-p1-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:laetentur-caeli:p6:en",
-      "canonical_citation": "Florence, Laetentur Caeli para. 6"
+      "record_id": "mag:FLO:ferrara:s2:p1:en",
+      "canonical_citation": "Florence (Ferrara) S2 para. 1"
     },
     {
-      "id": "flo-laetentur-caeli-p7-en",
-      "inventory_id": "flo-laetentur-caeli-p7-en",
+      "id": "flo-basel-s2-decree-that-the-council-of-basel-is-legitimately-begun-en",
+      "inventory_id": "flo-basel-s2-decree-that-the-council-of-basel-is-legitimately-begun-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:laetentur-caeli:p7:en",
-      "canonical_citation": "Florence, Laetentur Caeli para. 7"
+      "record_id": "mag:FLO:basel:s2:decree-that-the-council-of-basel-is-legitimately-begun:en",
+      "canonical_citation": "Florence (Basel) S2 [Decree that the council of Basel is legitimately begun]"
     },
     {
-      "id": "flo-laetentur-caeli-p8-en",
-      "inventory_id": "flo-laetentur-caeli-p8-en",
+      "id": "flo-ferrara-s2-p2-en",
+      "inventory_id": "flo-ferrara-s2-p2-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:laetentur-caeli:p8:en",
-      "canonical_citation": "Florence, Laetentur Caeli para. 8"
+      "record_id": "mag:FLO:ferrara:s2:p2:en",
+      "canonical_citation": "Florence (Ferrara) S2 para. 2"
     },
     {
-      "id": "flo-laetentur-caeli-p9-en",
-      "inventory_id": "flo-laetentur-caeli-p9-en",
+      "id": "flo-ferrara-s2-p3-en",
+      "inventory_id": "flo-ferrara-s2-p3-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:laetentur-caeli:p9:en",
-      "canonical_citation": "Florence, Laetentur Caeli para. 9"
+      "record_id": "mag:FLO:ferrara:s2:p3:en",
+      "canonical_citation": "Florence (Ferrara) S2 para. 3"
     },
     {
-      "id": "flo-laetentur-caeli-p10-en",
-      "inventory_id": "flo-laetentur-caeli-p10-en",
+      "id": "flo-ferrara-s2-p4-en",
+      "inventory_id": "flo-ferrara-s2-p4-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:laetentur-caeli:p10:en",
-      "canonical_citation": "Florence, Laetentur Caeli para. 10"
+      "record_id": "mag:FLO:ferrara:s2:p4:en",
+      "canonical_citation": "Florence (Ferrara) S2 para. 4"
     },
     {
-      "id": "flo-laetentur-caeli-p11-en",
-      "inventory_id": "flo-laetentur-caeli-p11-en",
+      "id": "flo-ferrara-s2-p5-en",
+      "inventory_id": "flo-ferrara-s2-p5-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:laetentur-caeli:p11:en",
-      "canonical_citation": "Florence, Laetentur Caeli para. 11"
+      "record_id": "mag:FLO:ferrara:s2:p5:en",
+      "canonical_citation": "Florence (Ferrara) S2 para. 5"
     },
     {
-      "id": "flo-exsultate-deo-p1-en",
-      "inventory_id": "flo-exsultate-deo-p1-en",
+      "id": "flo-ferrara-s2-p6-en",
+      "inventory_id": "flo-ferrara-s2-p6-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p1:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 1"
+      "record_id": "mag:FLO:ferrara:s2:p6:en",
+      "canonical_citation": "Florence (Ferrara) S2 para. 6"
     },
     {
-      "id": "flo-exsultate-deo-p2-en",
-      "inventory_id": "flo-exsultate-deo-p2-en",
+      "id": "flo-ferrara-s2-p7-en",
+      "inventory_id": "flo-ferrara-s2-p7-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p2:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 2"
+      "record_id": "mag:FLO:ferrara:s2:p7:en",
+      "canonical_citation": "Florence (Ferrara) S2 para. 7"
     },
     {
-      "id": "flo-exsultate-deo-p3-en",
-      "inventory_id": "flo-exsultate-deo-p3-en",
+      "id": "flo-ferrara-s2-p8-en",
+      "inventory_id": "flo-ferrara-s2-p8-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p3:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 3"
+      "record_id": "mag:FLO:ferrara:s2:p8:en",
+      "canonical_citation": "Florence (Ferrara) S2 para. 8"
     },
     {
-      "id": "flo-exsultate-deo-p4-en",
-      "inventory_id": "flo-exsultate-deo-p4-en",
+      "id": "flo-ferrara-s2-p9-en",
+      "inventory_id": "flo-ferrara-s2-p9-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p4:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 4"
+      "record_id": "mag:FLO:ferrara:s2:p9:en",
+      "canonical_citation": "Florence (Ferrara) S2 para. 9"
     },
     {
-      "id": "flo-exsultate-deo-p5-en",
-      "inventory_id": "flo-exsultate-deo-p5-en",
+      "id": "flo-ferrara-s2-p10-en",
+      "inventory_id": "flo-ferrara-s2-p10-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p5:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 5"
+      "record_id": "mag:FLO:ferrara:s2:p10:en",
+      "canonical_citation": "Florence (Ferrara) S2 para. 10"
     },
     {
-      "id": "flo-exsultate-deo-p6-en",
-      "inventory_id": "flo-exsultate-deo-p6-en",
+      "id": "flo-ferrara-s2-p11-en",
+      "inventory_id": "flo-ferrara-s2-p11-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p6:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 6"
+      "record_id": "mag:FLO:ferrara:s2:p11:en",
+      "canonical_citation": "Florence (Ferrara) S2 para. 11"
     },
     {
-      "id": "flo-exsultate-deo-p7-en",
-      "inventory_id": "flo-exsultate-deo-p7-en",
+      "id": "flo-basel-s3-impossibility-of-the-dissolution-of-the-council-is-decreed-en",
+      "inventory_id": "flo-basel-s3-impossibility-of-the-dissolution-of-the-council-is-decreed-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p7:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 7"
+      "record_id": "mag:FLO:basel:s3:impossibility-of-the-dissolution-of-the-council-is-decreed:en",
+      "canonical_citation": "Florence (Basel) S3 [Impossibility of the dissolution of the council is decreed]"
     },
     {
-      "id": "flo-exsultate-deo-p8-en",
-      "inventory_id": "flo-exsultate-deo-p8-en",
+      "id": "flo-basel-s3-p2-en",
+      "inventory_id": "flo-basel-s3-p2-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p8:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 8"
+      "record_id": "mag:FLO:basel:s3:p2:en",
+      "canonical_citation": "Florence (Basel) S3 para. 2"
     },
     {
-      "id": "flo-exsultate-deo-p9-en",
-      "inventory_id": "flo-exsultate-deo-p9-en",
+      "id": "flo-basel-s3-p3-en",
+      "inventory_id": "flo-basel-s3-p3-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p9:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 9"
+      "record_id": "mag:FLO:basel:s3:p3:en",
+      "canonical_citation": "Florence (Basel) S3 para. 3"
     },
     {
-      "id": "flo-exsultate-deo-p10-en",
-      "inventory_id": "flo-exsultate-deo-p10-en",
+      "id": "flo-basel-s3-p4-en",
+      "inventory_id": "flo-basel-s3-p4-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p10:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 10"
+      "record_id": "mag:FLO:basel:s3:p4:en",
+      "canonical_citation": "Florence (Basel) S3 para. 4"
     },
     {
-      "id": "flo-exsultate-deo-p11-en",
-      "inventory_id": "flo-exsultate-deo-p11-en",
+      "id": "flo-basel-s3-p5-en",
+      "inventory_id": "flo-basel-s3-p5-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p11:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 11"
+      "record_id": "mag:FLO:basel:s3:p5:en",
+      "canonical_citation": "Florence (Basel) S3 para. 5"
     },
     {
-      "id": "flo-exsultate-deo-p12-en",
-      "inventory_id": "flo-exsultate-deo-p12-en",
+      "id": "flo-basel-s3-p6-en",
+      "inventory_id": "flo-basel-s3-p6-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p12:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 12"
+      "record_id": "mag:FLO:basel:s3:p6:en",
+      "canonical_citation": "Florence (Basel) S3 para. 6"
     },
     {
-      "id": "flo-exsultate-deo-p13-en",
-      "inventory_id": "flo-exsultate-deo-p13-en",
+      "id": "flo-basel-s4-p1-en",
+      "inventory_id": "flo-basel-s4-p1-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p13:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 13"
+      "record_id": "mag:FLO:basel:s4:p1:en",
+      "canonical_citation": "Florence (Basel) S4 para. 1"
     },
     {
-      "id": "flo-exsultate-deo-p14-en",
-      "inventory_id": "flo-exsultate-deo-p14-en",
+      "id": "flo-basel-s4-p2-en",
+      "inventory_id": "flo-basel-s4-p2-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p14:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 14"
+      "record_id": "mag:FLO:basel:s4:p2:en",
+      "canonical_citation": "Florence (Basel) S4 para. 2"
     },
     {
-      "id": "flo-exsultate-deo-p15-en",
-      "inventory_id": "flo-exsultate-deo-p15-en",
+      "id": "flo-basel-s4-p3-en",
+      "inventory_id": "flo-basel-s4-p3-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p15:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 15"
+      "record_id": "mag:FLO:basel:s4:p3:en",
+      "canonical_citation": "Florence (Basel) S4 para. 3"
     },
     {
-      "id": "flo-exsultate-deo-p16-en",
-      "inventory_id": "flo-exsultate-deo-p16-en",
+      "id": "flo-basel-s4-p4-en",
+      "inventory_id": "flo-basel-s4-p4-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p16:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 16"
+      "record_id": "mag:FLO:basel:s4:p4:en",
+      "canonical_citation": "Florence (Basel) S4 para. 4"
     },
     {
-      "id": "flo-exsultate-deo-p17-en",
-      "inventory_id": "flo-exsultate-deo-p17-en",
+      "id": "flo-basel-s4-p5-en",
+      "inventory_id": "flo-basel-s4-p5-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p17:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 17"
+      "record_id": "mag:FLO:basel:s4:p5:en",
+      "canonical_citation": "Florence (Basel) S4 para. 5"
     },
     {
-      "id": "flo-exsultate-deo-p18-en",
-      "inventory_id": "flo-exsultate-deo-p18-en",
+      "id": "flo-basel-s4-p6-en",
+      "inventory_id": "flo-basel-s4-p6-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p18:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 18"
+      "record_id": "mag:FLO:basel:s4:p6:en",
+      "canonical_citation": "Florence (Basel) S4 para. 6"
     },
     {
-      "id": "flo-exsultate-deo-p19-en",
-      "inventory_id": "flo-exsultate-deo-p19-en",
+      "id": "flo-basel-s4-p7-en",
+      "inventory_id": "flo-basel-s4-p7-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p19:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 19"
+      "record_id": "mag:FLO:basel:s4:p7:en",
+      "canonical_citation": "Florence (Basel) S4 para. 7"
     },
     {
-      "id": "flo-exsultate-deo-p20-en",
-      "inventory_id": "flo-exsultate-deo-p20-en",
+      "id": "flo-basel-s5-in-this-session-there-were-approved-rules-about-the-organization-of",
+      "inventory_id": "flo-basel-s5-in-this-session-there-were-approved-rules-about-the-organization-of",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p20:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 20"
+      "record_id": "mag:FLO:basel:s5:in-this-session-there-were-approved-rules-about-the-organization-of-the-council-:en",
+      "canonical_citation": "Florence (Basel) S5 [In this session there were approved rules about the organization of the council: On cases and the procurator of the faith; Judges are deputed for the general examination of cases; That members of the council may not be brought to trial outside the place of this council; Officials are appointed.]"
     },
     {
-      "id": "flo-exsultate-deo-p21-en",
-      "inventory_id": "flo-exsultate-deo-p21-en",
+      "id": "flo-florence-s5-decree-translating-the-council-of-ferrara-to-florence-en",
+      "inventory_id": "flo-florence-s5-decree-translating-the-council-of-ferrara-to-florence-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p21:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 21"
+      "record_id": "mag:FLO:florence:s5:decree-translating-the-council-of-ferrara-to-florence:en",
+      "canonical_citation": "Florence (Florence) S5 [Decree translating the council of Ferrara to Florence]"
     },
     {
-      "id": "flo-exsultate-deo-p22-en",
-      "inventory_id": "flo-exsultate-deo-p22-en",
+      "id": "flo-florence-s5-p2-en",
+      "inventory_id": "flo-florence-s5-p2-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p22:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 22"
+      "record_id": "mag:FLO:florence:s5:p2:en",
+      "canonical_citation": "Florence (Florence) S5 para. 2"
     },
     {
-      "id": "flo-exsultate-deo-p23-en",
-      "inventory_id": "flo-exsultate-deo-p23-en",
+      "id": "flo-florence-s5-p3-en",
+      "inventory_id": "flo-florence-s5-p3-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p23:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 23"
+      "record_id": "mag:FLO:florence:s5:p3:en",
+      "canonical_citation": "Florence (Florence) S5 para. 3"
     },
     {
-      "id": "flo-exsultate-deo-p24-en",
-      "inventory_id": "flo-exsultate-deo-p24-en",
+      "id": "flo-florence-s5-p4-en",
+      "inventory_id": "flo-florence-s5-p4-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p24:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 24"
+      "record_id": "mag:FLO:florence:s5:p4:en",
+      "canonical_citation": "Florence (Florence) S5 para. 4"
     },
     {
-      "id": "flo-exsultate-deo-p25-en",
-      "inventory_id": "flo-exsultate-deo-p25-en",
+      "id": "flo-basel-s6-this-session-was-devoted-to-reading-petition-of-the-promoters-of-th",
+      "inventory_id": "flo-basel-s6-this-session-was-devoted-to-reading-petition-of-the-promoters-of-th",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p25:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 25"
+      "record_id": "mag:FLO:basel:s6:this-session-was-devoted-to-reading-petition-of-the-promoters-of-the-council-aga:en",
+      "canonical_citation": "Florence (Basel) S6 [This session was devoted to reading: Petition of the promoters of the council against the pope and the cardinals.]"
     },
     {
-      "id": "flo-exsultate-deo-p26-en",
-      "inventory_id": "flo-exsultate-deo-p26-en",
+      "id": "flo-florence-s6-definition-of-the-holy-ecumenical-synod-of-florence-en",
+      "inventory_id": "flo-florence-s6-definition-of-the-holy-ecumenical-synod-of-florence-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p26:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 26"
+      "record_id": "mag:FLO:florence:s6:definition-of-the-holy-ecumenical-synod-of-florence:en",
+      "canonical_citation": "Florence (Florence) S6 [Definition of the holy ecumenical synod of Florence]"
     },
     {
-      "id": "flo-exsultate-deo-p27-en",
-      "inventory_id": "flo-exsultate-deo-p27-en",
+      "id": "flo-florence-s6-p2-en",
+      "inventory_id": "flo-florence-s6-p2-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p27:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 27"
+      "record_id": "mag:FLO:florence:s6:p2:en",
+      "canonical_citation": "Florence (Florence) S6 para. 2"
     },
     {
-      "id": "flo-exsultate-deo-p28-en",
-      "inventory_id": "flo-exsultate-deo-p28-en",
+      "id": "flo-florence-s6-p3-en",
+      "inventory_id": "flo-florence-s6-p3-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p28:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 28"
+      "record_id": "mag:FLO:florence:s6:p3:en",
+      "canonical_citation": "Florence (Florence) S6 para. 3"
     },
     {
-      "id": "flo-exsultate-deo-p29-en",
-      "inventory_id": "flo-exsultate-deo-p29-en",
+      "id": "flo-florence-s6-p4-en",
+      "inventory_id": "flo-florence-s6-p4-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p29:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 29"
+      "record_id": "mag:FLO:florence:s6:p4:en",
+      "canonical_citation": "Florence (Florence) S6 para. 4"
     },
     {
-      "id": "flo-exsultate-deo-p30-en",
-      "inventory_id": "flo-exsultate-deo-p30-en",
+      "id": "flo-florence-s6-p5-en",
+      "inventory_id": "flo-florence-s6-p5-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p30:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 30"
+      "record_id": "mag:FLO:florence:s6:p5:en",
+      "canonical_citation": "Florence (Florence) S6 para. 5"
     },
     {
-      "id": "flo-exsultate-deo-p31-en",
-      "inventory_id": "flo-exsultate-deo-p31-en",
+      "id": "flo-florence-s6-p6-en",
+      "inventory_id": "flo-florence-s6-p6-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p31:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 31"
+      "record_id": "mag:FLO:florence:s6:p6:en",
+      "canonical_citation": "Florence (Florence) S6 para. 6"
     },
     {
-      "id": "flo-exsultate-deo-p32-en",
-      "inventory_id": "flo-exsultate-deo-p32-en",
+      "id": "flo-florence-s6-p7-en",
+      "inventory_id": "flo-florence-s6-p7-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p32:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 32"
+      "record_id": "mag:FLO:florence:s6:p7:en",
+      "canonical_citation": "Florence (Florence) S6 para. 7"
     },
     {
-      "id": "flo-exsultate-deo-p33-en",
-      "inventory_id": "flo-exsultate-deo-p33-en",
+      "id": "flo-florence-s6-p8-en",
+      "inventory_id": "flo-florence-s6-p8-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:exsultate-deo:p33:en",
-      "canonical_citation": "Florence, Exsultate Deo para. 33"
+      "record_id": "mag:FLO:florence:s6:p8:en",
+      "canonical_citation": "Florence (Florence) S6 para. 8"
     },
     {
-      "id": "flo-cantate-domino-p1-en",
-      "inventory_id": "flo-cantate-domino-p1-en",
+      "id": "flo-florence-s6-p9-en",
+      "inventory_id": "flo-florence-s6-p9-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p1:en",
-      "canonical_citation": "Florence, Cantate Domino para. 1"
+      "record_id": "mag:FLO:florence:s6:p9:en",
+      "canonical_citation": "Florence (Florence) S6 para. 9"
     },
     {
-      "id": "flo-cantate-domino-p2-en",
-      "inventory_id": "flo-cantate-domino-p2-en",
+      "id": "flo-florence-s6-p10-en",
+      "inventory_id": "flo-florence-s6-p10-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p2:en",
-      "canonical_citation": "Florence, Cantate Domino para. 2"
+      "record_id": "mag:FLO:florence:s6:p10:en",
+      "canonical_citation": "Florence (Florence) S6 para. 10"
     },
     {
-      "id": "flo-cantate-domino-p3-en",
-      "inventory_id": "flo-cantate-domino-p3-en",
+      "id": "flo-florence-s6-p11-en",
+      "inventory_id": "flo-florence-s6-p11-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p3:en",
-      "canonical_citation": "Florence, Cantate Domino para. 3"
+      "record_id": "mag:FLO:florence:s6:p11:en",
+      "canonical_citation": "Florence (Florence) S6 para. 11"
     },
     {
-      "id": "flo-cantate-domino-p4-en",
-      "inventory_id": "flo-cantate-domino-p4-en",
+      "id": "flo-florence-s6-p12-en",
+      "inventory_id": "flo-florence-s6-p12-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p4:en",
-      "canonical_citation": "Florence, Cantate Domino para. 4"
+      "record_id": "mag:FLO:florence:s6:p12:en",
+      "canonical_citation": "Florence (Florence) S6 para. 12"
     },
     {
-      "id": "flo-cantate-domino-p5-en",
-      "inventory_id": "flo-cantate-domino-p5-en",
+      "id": "flo-basel-s7-p1-en",
+      "inventory_id": "flo-basel-s7-p1-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p5:en",
-      "canonical_citation": "Florence, Cantate Domino para. 5"
+      "record_id": "mag:FLO:basel:s7:p1:en",
+      "canonical_citation": "Florence (Basel) S7 para. 1"
     },
     {
-      "id": "flo-cantate-domino-p6-en",
-      "inventory_id": "flo-cantate-domino-p6-en",
+      "id": "flo-florence-s7-decree-of-the-council-of-florence-against-the-synod-at-basel-en",
+      "inventory_id": "flo-florence-s7-decree-of-the-council-of-florence-against-the-synod-at-basel-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p6:en",
-      "canonical_citation": "Florence, Cantate Domino para. 6"
+      "record_id": "mag:FLO:florence:s7:decree-of-the-council-of-florence-against-the-synod-at-basel:en",
+      "canonical_citation": "Florence (Florence) S7 [Decree of the council of Florence against the synod at Basel]"
     },
     {
-      "id": "flo-cantate-domino-p7-en",
-      "inventory_id": "flo-cantate-domino-p7-en",
+      "id": "flo-florence-s7-p2-en",
+      "inventory_id": "flo-florence-s7-p2-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p7:en",
-      "canonical_citation": "Florence, Cantate Domino para. 7"
+      "record_id": "mag:FLO:florence:s7:p2:en",
+      "canonical_citation": "Florence (Florence) S7 para. 2"
     },
     {
-      "id": "flo-cantate-domino-p8-en",
-      "inventory_id": "flo-cantate-domino-p8-en",
+      "id": "flo-florence-s7-p3-en",
+      "inventory_id": "flo-florence-s7-p3-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p8:en",
-      "canonical_citation": "Florence, Cantate Domino para. 8"
+      "record_id": "mag:FLO:florence:s7:p3:en",
+      "canonical_citation": "Florence (Florence) S7 para. 3"
     },
     {
-      "id": "flo-cantate-domino-p9-en",
-      "inventory_id": "flo-cantate-domino-p9-en",
+      "id": "flo-florence-s7-p4-en",
+      "inventory_id": "flo-florence-s7-p4-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p9:en",
-      "canonical_citation": "Florence, Cantate Domino para. 9"
+      "record_id": "mag:FLO:florence:s7:p4:en",
+      "canonical_citation": "Florence (Florence) S7 para. 4"
     },
     {
-      "id": "flo-cantate-domino-p10-en",
-      "inventory_id": "flo-cantate-domino-p10-en",
+      "id": "flo-florence-s7-p5-en",
+      "inventory_id": "flo-florence-s7-p5-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p10:en",
-      "canonical_citation": "Florence, Cantate Domino para. 10"
+      "record_id": "mag:FLO:florence:s7:p5:en",
+      "canonical_citation": "Florence (Florence) S7 para. 5"
     },
     {
-      "id": "flo-cantate-domino-p11-en",
-      "inventory_id": "flo-cantate-domino-p11-en",
+      "id": "flo-florence-s7-p6-en",
+      "inventory_id": "flo-florence-s7-p6-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p11:en",
-      "canonical_citation": "Florence, Cantate Domino para. 11"
+      "record_id": "mag:FLO:florence:s7:p6:en",
+      "canonical_citation": "Florence (Florence) S7 para. 6"
     },
     {
-      "id": "flo-cantate-domino-p12-en",
-      "inventory_id": "flo-cantate-domino-p12-en",
+      "id": "flo-florence-s7-p7-en",
+      "inventory_id": "flo-florence-s7-p7-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p12:en",
-      "canonical_citation": "Florence, Cantate Domino para. 12"
+      "record_id": "mag:FLO:florence:s7:p7:en",
+      "canonical_citation": "Florence (Florence) S7 para. 7"
     },
     {
-      "id": "flo-cantate-domino-p13-en",
-      "inventory_id": "flo-cantate-domino-p13-en",
+      "id": "flo-florence-s7-p8-en",
+      "inventory_id": "flo-florence-s7-p8-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p13:en",
-      "canonical_citation": "Florence, Cantate Domino para. 13"
+      "record_id": "mag:FLO:florence:s7:p8:en",
+      "canonical_citation": "Florence (Florence) S7 para. 8"
     },
     {
-      "id": "flo-cantate-domino-p14-en",
-      "inventory_id": "flo-cantate-domino-p14-en",
+      "id": "flo-florence-s7-p9-en",
+      "inventory_id": "flo-florence-s7-p9-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p14:en",
-      "canonical_citation": "Florence, Cantate Domino para. 14"
+      "record_id": "mag:FLO:florence:s7:p9:en",
+      "canonical_citation": "Florence (Florence) S7 para. 9"
     },
     {
-      "id": "flo-cantate-domino-p15-en",
-      "inventory_id": "flo-cantate-domino-p15-en",
+      "id": "flo-florence-s7-p10-en",
+      "inventory_id": "flo-florence-s7-p10-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p15:en",
-      "canonical_citation": "Florence, Cantate Domino para. 15"
+      "record_id": "mag:FLO:florence:s7:p10:en",
+      "canonical_citation": "Florence (Florence) S7 para. 10"
     },
     {
-      "id": "flo-cantate-domino-p16-en",
-      "inventory_id": "flo-cantate-domino-p16-en",
+      "id": "flo-florence-s7-p11-en",
+      "inventory_id": "flo-florence-s7-p11-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p16:en",
-      "canonical_citation": "Florence, Cantate Domino para. 16"
+      "record_id": "mag:FLO:florence:s7:p11:en",
+      "canonical_citation": "Florence (Florence) S7 para. 11"
     },
     {
-      "id": "flo-cantate-domino-p17-en",
-      "inventory_id": "flo-cantate-domino-p17-en",
+      "id": "flo-florence-s7-p12-en",
+      "inventory_id": "flo-florence-s7-p12-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p17:en",
-      "canonical_citation": "Florence, Cantate Domino para. 17"
+      "record_id": "mag:FLO:florence:s7:p12:en",
+      "canonical_citation": "Florence (Florence) S7 para. 12"
     },
     {
-      "id": "flo-cantate-domino-p18-en",
-      "inventory_id": "flo-cantate-domino-p18-en",
+      "id": "flo-florence-s7-p13-en",
+      "inventory_id": "flo-florence-s7-p13-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p18:en",
-      "canonical_citation": "Florence, Cantate Domino para. 18"
+      "record_id": "mag:FLO:florence:s7:p13:en",
+      "canonical_citation": "Florence (Florence) S7 para. 13"
     },
     {
-      "id": "flo-cantate-domino-p19-en",
-      "inventory_id": "flo-cantate-domino-p19-en",
+      "id": "flo-florence-s7-p14-en",
+      "inventory_id": "flo-florence-s7-p14-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p19:en",
-      "canonical_citation": "Florence, Cantate Domino para. 19"
+      "record_id": "mag:FLO:florence:s7:p14:en",
+      "canonical_citation": "Florence (Florence) S7 para. 14"
     },
     {
-      "id": "flo-cantate-domino-p20-en",
-      "inventory_id": "flo-cantate-domino-p20-en",
+      "id": "flo-florence-s7-p15-en",
+      "inventory_id": "flo-florence-s7-p15-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p20:en",
-      "canonical_citation": "Florence, Cantate Domino para. 20"
+      "record_id": "mag:FLO:florence:s7:p15:en",
+      "canonical_citation": "Florence (Florence) S7 para. 15"
     },
     {
-      "id": "flo-cantate-domino-p21-en",
-      "inventory_id": "flo-cantate-domino-p21-en",
+      "id": "flo-florence-s7-p16-en",
+      "inventory_id": "flo-florence-s7-p16-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p21:en",
-      "canonical_citation": "Florence, Cantate Domino para. 21"
+      "record_id": "mag:FLO:florence:s7:p16:en",
+      "canonical_citation": "Florence (Florence) S7 para. 16"
     },
     {
-      "id": "flo-cantate-domino-p22-en",
-      "inventory_id": "flo-cantate-domino-p22-en",
+      "id": "flo-florence-s7-p17-en",
+      "inventory_id": "flo-florence-s7-p17-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p22:en",
-      "canonical_citation": "Florence, Cantate Domino para. 22"
+      "record_id": "mag:FLO:florence:s7:p17:en",
+      "canonical_citation": "Florence (Florence) S7 para. 17"
     },
     {
-      "id": "flo-cantate-domino-p23-en",
-      "inventory_id": "flo-cantate-domino-p23-en",
+      "id": "flo-florence-s7-p18-en",
+      "inventory_id": "flo-florence-s7-p18-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p23:en",
-      "canonical_citation": "Florence, Cantate Domino para. 23"
+      "record_id": "mag:FLO:florence:s7:p18:en",
+      "canonical_citation": "Florence (Florence) S7 para. 18"
     },
     {
-      "id": "flo-cantate-domino-p24-en",
-      "inventory_id": "flo-cantate-domino-p24-en",
+      "id": "flo-florence-s7-p19-en",
+      "inventory_id": "flo-florence-s7-p19-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p24:en",
-      "canonical_citation": "Florence, Cantate Domino para. 24"
+      "record_id": "mag:FLO:florence:s7:p19:en",
+      "canonical_citation": "Florence (Florence) S7 para. 19"
     },
     {
-      "id": "flo-cantate-domino-p25-en",
-      "inventory_id": "flo-cantate-domino-p25-en",
+      "id": "flo-florence-s7-p20-en",
+      "inventory_id": "flo-florence-s7-p20-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:FLO:cantate-domino:p25:en",
-      "canonical_citation": "Florence, Cantate Domino para. 25"
+      "record_id": "mag:FLO:florence:s7:p20:en",
+      "canonical_citation": "Florence (Florence) S7 para. 20"
+    },
+    {
+      "id": "flo-florence-s7-p21-en",
+      "inventory_id": "flo-florence-s7-p21-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s7:p21:en",
+      "canonical_citation": "Florence (Florence) S7 para. 21"
+    },
+    {
+      "id": "flo-florence-s7-p22-en",
+      "inventory_id": "flo-florence-s7-p22-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s7:p22:en",
+      "canonical_citation": "Florence (Florence) S7 para. 22"
+    },
+    {
+      "id": "flo-florence-s7-p23-en",
+      "inventory_id": "flo-florence-s7-p23-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s7:p23:en",
+      "canonical_citation": "Florence (Florence) S7 para. 23"
+    },
+    {
+      "id": "flo-basel-s8-decree-that-there-ought-to-be-only-one-council-en",
+      "inventory_id": "flo-basel-s8-decree-that-there-ought-to-be-only-one-council-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s8:decree-that-there-ought-to-be-only-one-council:en",
+      "canonical_citation": "Florence (Basel) S8 [Decree that there ought to be only one council]"
+    },
+    {
+      "id": "flo-florence-s8-p1-en",
+      "inventory_id": "flo-florence-s8-p1-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p1:en",
+      "canonical_citation": "Florence (Florence) S8 para. 1"
+    },
+    {
+      "id": "flo-florence-s8-p2-en",
+      "inventory_id": "flo-florence-s8-p2-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p2:en",
+      "canonical_citation": "Florence (Florence) S8 para. 2"
+    },
+    {
+      "id": "flo-florence-s8-p3-en",
+      "inventory_id": "flo-florence-s8-p3-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p3:en",
+      "canonical_citation": "Florence (Florence) S8 para. 3"
+    },
+    {
+      "id": "flo-florence-s8-p4-en",
+      "inventory_id": "flo-florence-s8-p4-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p4:en",
+      "canonical_citation": "Florence (Florence) S8 para. 4"
+    },
+    {
+      "id": "flo-florence-s8-p5-en",
+      "inventory_id": "flo-florence-s8-p5-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p5:en",
+      "canonical_citation": "Florence (Florence) S8 para. 5"
+    },
+    {
+      "id": "flo-florence-s8-p6-en",
+      "inventory_id": "flo-florence-s8-p6-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p6:en",
+      "canonical_citation": "Florence (Florence) S8 para. 6"
+    },
+    {
+      "id": "flo-florence-s8-p7-en",
+      "inventory_id": "flo-florence-s8-p7-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p7:en",
+      "canonical_citation": "Florence (Florence) S8 para. 7"
+    },
+    {
+      "id": "flo-florence-s8-p8-en",
+      "inventory_id": "flo-florence-s8-p8-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p8:en",
+      "canonical_citation": "Florence (Florence) S8 para. 8"
+    },
+    {
+      "id": "flo-florence-s8-p9-en",
+      "inventory_id": "flo-florence-s8-p9-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p9:en",
+      "canonical_citation": "Florence (Florence) S8 para. 9"
+    },
+    {
+      "id": "flo-florence-s8-p10-en",
+      "inventory_id": "flo-florence-s8-p10-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p10:en",
+      "canonical_citation": "Florence (Florence) S8 para. 10"
+    },
+    {
+      "id": "flo-florence-s8-p11-en",
+      "inventory_id": "flo-florence-s8-p11-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p11:en",
+      "canonical_citation": "Florence (Florence) S8 para. 11"
+    },
+    {
+      "id": "flo-florence-s8-p12-en",
+      "inventory_id": "flo-florence-s8-p12-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p12:en",
+      "canonical_citation": "Florence (Florence) S8 para. 12"
+    },
+    {
+      "id": "flo-florence-s8-p13-en",
+      "inventory_id": "flo-florence-s8-p13-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p13:en",
+      "canonical_citation": "Florence (Florence) S8 para. 13"
+    },
+    {
+      "id": "flo-florence-s8-p14-en",
+      "inventory_id": "flo-florence-s8-p14-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p14:en",
+      "canonical_citation": "Florence (Florence) S8 para. 14"
+    },
+    {
+      "id": "flo-florence-s8-p15-en",
+      "inventory_id": "flo-florence-s8-p15-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p15:en",
+      "canonical_citation": "Florence (Florence) S8 para. 15"
+    },
+    {
+      "id": "flo-florence-s8-p16-en",
+      "inventory_id": "flo-florence-s8-p16-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p16:en",
+      "canonical_citation": "Florence (Florence) S8 para. 16"
+    },
+    {
+      "id": "flo-florence-s8-p17-en",
+      "inventory_id": "flo-florence-s8-p17-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p17:en",
+      "canonical_citation": "Florence (Florence) S8 para. 17"
+    },
+    {
+      "id": "flo-florence-s8-p18-en",
+      "inventory_id": "flo-florence-s8-p18-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p18:en",
+      "canonical_citation": "Florence (Florence) S8 para. 18"
+    },
+    {
+      "id": "flo-florence-s8-p19-en",
+      "inventory_id": "flo-florence-s8-p19-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p19:en",
+      "canonical_citation": "Florence (Florence) S8 para. 19"
+    },
+    {
+      "id": "flo-florence-s8-p20-en",
+      "inventory_id": "flo-florence-s8-p20-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p20:en",
+      "canonical_citation": "Florence (Florence) S8 para. 20"
+    },
+    {
+      "id": "flo-florence-s8-p21-en",
+      "inventory_id": "flo-florence-s8-p21-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p21:en",
+      "canonical_citation": "Florence (Florence) S8 para. 21"
+    },
+    {
+      "id": "flo-florence-s8-p22-en",
+      "inventory_id": "flo-florence-s8-p22-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p22:en",
+      "canonical_citation": "Florence (Florence) S8 para. 22"
+    },
+    {
+      "id": "flo-florence-s8-p23-en",
+      "inventory_id": "flo-florence-s8-p23-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p23:en",
+      "canonical_citation": "Florence (Florence) S8 para. 23"
+    },
+    {
+      "id": "flo-florence-s8-p24-en",
+      "inventory_id": "flo-florence-s8-p24-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p24:en",
+      "canonical_citation": "Florence (Florence) S8 para. 24"
+    },
+    {
+      "id": "flo-florence-s8-p25-en",
+      "inventory_id": "flo-florence-s8-p25-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p25:en",
+      "canonical_citation": "Florence (Florence) S8 para. 25"
+    },
+    {
+      "id": "flo-florence-s8-p26-en",
+      "inventory_id": "flo-florence-s8-p26-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p26:en",
+      "canonical_citation": "Florence (Florence) S8 para. 26"
+    },
+    {
+      "id": "flo-florence-s8-p27-en",
+      "inventory_id": "flo-florence-s8-p27-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p27:en",
+      "canonical_citation": "Florence (Florence) S8 para. 27"
+    },
+    {
+      "id": "flo-florence-s8-p28-en",
+      "inventory_id": "flo-florence-s8-p28-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p28:en",
+      "canonical_citation": "Florence (Florence) S8 para. 28"
+    },
+    {
+      "id": "flo-florence-s8-p29-en",
+      "inventory_id": "flo-florence-s8-p29-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p29:en",
+      "canonical_citation": "Florence (Florence) S8 para. 29"
+    },
+    {
+      "id": "flo-florence-s8-p30-en",
+      "inventory_id": "flo-florence-s8-p30-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p30:en",
+      "canonical_citation": "Florence (Florence) S8 para. 30"
+    },
+    {
+      "id": "flo-florence-s8-p31-en",
+      "inventory_id": "flo-florence-s8-p31-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p31:en",
+      "canonical_citation": "Florence (Florence) S8 para. 31"
+    },
+    {
+      "id": "flo-florence-s8-p32-en",
+      "inventory_id": "flo-florence-s8-p32-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p32:en",
+      "canonical_citation": "Florence (Florence) S8 para. 32"
+    },
+    {
+      "id": "flo-florence-s8-p33-en",
+      "inventory_id": "flo-florence-s8-p33-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s8:p33:en",
+      "canonical_citation": "Florence (Florence) S8 para. 33"
+    },
+    {
+      "id": "flo-basel-s9-this-session-was-entirely-taken-up-with-the-solemn-reception-of-the",
+      "inventory_id": "flo-basel-s9-this-session-was-entirely-taken-up-with-the-solemn-reception-of-the",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s9:this-session-was-entirely-taken-up-with-the-solemn-reception-of-the-emperor-sigi:en",
+      "canonical_citation": "Florence (Basel) S9 [This session was entirely taken up with the solemn reception of the emperor Sigismund.]"
+    },
+    {
+      "id": "flo-florence-s9-monition-of-the-council-of-florence-against-the-antipope-felix-v",
+      "inventory_id": "flo-florence-s9-monition-of-the-council-of-florence-against-the-antipope-felix-v",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:monition-of-the-council-of-florence-against-the-antipope-felix-v:en",
+      "canonical_citation": "Florence (Florence) S9 [Monition of the council of Florence against the antipope Felix V]"
+    },
+    {
+      "id": "flo-florence-s9-p2-en",
+      "inventory_id": "flo-florence-s9-p2-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p2:en",
+      "canonical_citation": "Florence (Florence) S9 para. 2"
+    },
+    {
+      "id": "flo-florence-s9-p3-en",
+      "inventory_id": "flo-florence-s9-p3-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p3:en",
+      "canonical_citation": "Florence (Florence) S9 para. 3"
+    },
+    {
+      "id": "flo-florence-s9-p4-en",
+      "inventory_id": "flo-florence-s9-p4-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p4:en",
+      "canonical_citation": "Florence (Florence) S9 para. 4"
+    },
+    {
+      "id": "flo-florence-s9-p5-en",
+      "inventory_id": "flo-florence-s9-p5-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p5:en",
+      "canonical_citation": "Florence (Florence) S9 para. 5"
+    },
+    {
+      "id": "flo-florence-s9-p6-en",
+      "inventory_id": "flo-florence-s9-p6-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p6:en",
+      "canonical_citation": "Florence (Florence) S9 para. 6"
+    },
+    {
+      "id": "flo-florence-s9-p7-en",
+      "inventory_id": "flo-florence-s9-p7-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p7:en",
+      "canonical_citation": "Florence (Florence) S9 para. 7"
+    },
+    {
+      "id": "flo-florence-s9-p8-en",
+      "inventory_id": "flo-florence-s9-p8-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p8:en",
+      "canonical_citation": "Florence (Florence) S9 para. 8"
+    },
+    {
+      "id": "flo-florence-s9-p9-en",
+      "inventory_id": "flo-florence-s9-p9-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p9:en",
+      "canonical_citation": "Florence (Florence) S9 para. 9"
+    },
+    {
+      "id": "flo-florence-s9-p10-en",
+      "inventory_id": "flo-florence-s9-p10-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p10:en",
+      "canonical_citation": "Florence (Florence) S9 para. 10"
+    },
+    {
+      "id": "flo-florence-s9-p11-en",
+      "inventory_id": "flo-florence-s9-p11-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p11:en",
+      "canonical_citation": "Florence (Florence) S9 para. 11"
+    },
+    {
+      "id": "flo-florence-s9-p12-en",
+      "inventory_id": "flo-florence-s9-p12-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p12:en",
+      "canonical_citation": "Florence (Florence) S9 para. 12"
+    },
+    {
+      "id": "flo-florence-s9-p13-en",
+      "inventory_id": "flo-florence-s9-p13-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p13:en",
+      "canonical_citation": "Florence (Florence) S9 para. 13"
+    },
+    {
+      "id": "flo-florence-s9-p14-en",
+      "inventory_id": "flo-florence-s9-p14-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p14:en",
+      "canonical_citation": "Florence (Florence) S9 para. 14"
+    },
+    {
+      "id": "flo-florence-s9-p15-en",
+      "inventory_id": "flo-florence-s9-p15-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p15:en",
+      "canonical_citation": "Florence (Florence) S9 para. 15"
+    },
+    {
+      "id": "flo-florence-s9-p16-en",
+      "inventory_id": "flo-florence-s9-p16-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p16:en",
+      "canonical_citation": "Florence (Florence) S9 para. 16"
+    },
+    {
+      "id": "flo-florence-s9-p17-en",
+      "inventory_id": "flo-florence-s9-p17-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p17:en",
+      "canonical_citation": "Florence (Florence) S9 para. 17"
+    },
+    {
+      "id": "flo-florence-s9-p18-en",
+      "inventory_id": "flo-florence-s9-p18-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p18:en",
+      "canonical_citation": "Florence (Florence) S9 para. 18"
+    },
+    {
+      "id": "flo-florence-s9-p19-en",
+      "inventory_id": "flo-florence-s9-p19-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p19:en",
+      "canonical_citation": "Florence (Florence) S9 para. 19"
+    },
+    {
+      "id": "flo-florence-s9-p20-en",
+      "inventory_id": "flo-florence-s9-p20-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p20:en",
+      "canonical_citation": "Florence (Florence) S9 para. 20"
+    },
+    {
+      "id": "flo-florence-s9-p21-en",
+      "inventory_id": "flo-florence-s9-p21-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p21:en",
+      "canonical_citation": "Florence (Florence) S9 para. 21"
+    },
+    {
+      "id": "flo-florence-s9-p22-en",
+      "inventory_id": "flo-florence-s9-p22-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p22:en",
+      "canonical_citation": "Florence (Florence) S9 para. 22"
+    },
+    {
+      "id": "flo-florence-s9-p23-en",
+      "inventory_id": "flo-florence-s9-p23-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p23:en",
+      "canonical_citation": "Florence (Florence) S9 para. 23"
+    },
+    {
+      "id": "flo-florence-s9-p24-en",
+      "inventory_id": "flo-florence-s9-p24-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p24:en",
+      "canonical_citation": "Florence (Florence) S9 para. 24"
+    },
+    {
+      "id": "flo-florence-s9-p25-en",
+      "inventory_id": "flo-florence-s9-p25-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p25:en",
+      "canonical_citation": "Florence (Florence) S9 para. 25"
+    },
+    {
+      "id": "flo-florence-s9-p26-en",
+      "inventory_id": "flo-florence-s9-p26-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p26:en",
+      "canonical_citation": "Florence (Florence) S9 para. 26"
+    },
+    {
+      "id": "flo-florence-s9-p27-en",
+      "inventory_id": "flo-florence-s9-p27-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s9:p27:en",
+      "canonical_citation": "Florence (Florence) S9 para. 27"
+    },
+    {
+      "id": "flo-basel-s10-this-session-was-almost-entirely-taken-up-with-reading-accusation",
+      "inventory_id": "flo-basel-s10-this-session-was-almost-entirely-taken-up-with-reading-accusation-",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s10:this-session-was-almost-entirely-taken-up-with-reading-accusation-of-contumacy-o:en",
+      "canonical_citation": "Florence (Basel) S10 [This session was almost entirely taken up with reading: Accusation of contumacy of the pope.]"
+    },
+    {
+      "id": "flo-florence-s10-eugenius-iv-exhorts-the-members-of-the-synod-at-basel-to-desist",
+      "inventory_id": "flo-florence-s10-eugenius-iv-exhorts-the-members-of-the-synod-at-basel-to-desist",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s10:eugenius-iv-exhorts-the-members-of-the-synod-at-basel-to-desist-from-their-oppos:en",
+      "canonical_citation": "Florence (Florence) S10 [Eugenius IV exhorts the members of the synod at Basel to desist from their opposition]"
+    },
+    {
+      "id": "flo-basel-s11-for-the-permanent-validity-of-the-authority-of-general-councils-en",
+      "inventory_id": "flo-basel-s11-for-the-permanent-validity-of-the-authority-of-general-councils-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s11:for-the-permanent-validity-of-the-authority-of-general-councils:en",
+      "canonical_citation": "Florence (Basel) S11 [For the permanent validity of the authority of general councils]"
+    },
+    {
+      "id": "flo-florence-s11-bull-of-union-with-the-copts-en",
+      "inventory_id": "flo-florence-s11-bull-of-union-with-the-copts-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:bull-of-union-with-the-copts:en",
+      "canonical_citation": "Florence (Florence) S11 [Bull of union with the Copts]"
+    },
+    {
+      "id": "flo-basel-s11-that-everybody-is-free-to-come-to-the-council-en",
+      "inventory_id": "flo-basel-s11-that-everybody-is-free-to-come-to-the-council-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s11:that-everybody-is-free-to-come-to-the-council:en",
+      "canonical_citation": "Florence (Basel) S11 [That everybody is free to come to the council]"
+    },
+    {
+      "id": "flo-florence-s11-p2-en",
+      "inventory_id": "flo-florence-s11-p2-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p2:en",
+      "canonical_citation": "Florence (Florence) S11 para. 2"
+    },
+    {
+      "id": "flo-basel-s11-the-council-explains-the-phrase-about-prorogation-of-the-council-a",
+      "inventory_id": "flo-basel-s11-the-council-explains-the-phrase-about-prorogation-of-the-council-a",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s11:the-council-explains-the-phrase-about-prorogation-of-the-council-and-annuls-atte:en",
+      "canonical_citation": "Florence (Basel) S11 [The council explains the phrase about prorogation of the council, and annuls attempts to the contrary, including future attempts]"
+    },
+    {
+      "id": "flo-florence-s11-p3-en",
+      "inventory_id": "flo-florence-s11-p3-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p3:en",
+      "canonical_citation": "Florence (Florence) S11 para. 3"
+    },
+    {
+      "id": "flo-basel-s11-that-the-council-may-not-be-dissolved-or-moved-without-the-express",
+      "inventory_id": "flo-basel-s11-that-the-council-may-not-be-dissolved-or-moved-without-the-express",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s11:that-the-council-may-not-be-dissolved-or-moved-without-the-express-consent-of-tw:en",
+      "canonical_citation": "Florence (Basel) S11 [That the council may not be dissolved or moved without the express consent of two-thirds of each deputation, etc.]"
+    },
+    {
+      "id": "flo-florence-s11-p4-en",
+      "inventory_id": "flo-florence-s11-p4-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p4:en",
+      "canonical_citation": "Florence (Florence) S11 para. 4"
+    },
+    {
+      "id": "flo-basel-s11-that-the-place-of-the-council-should-be-chosen-a-month-before-the",
+      "inventory_id": "flo-basel-s11-that-the-place-of-the-council-should-be-chosen-a-month-before-the-",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s11:that-the-place-of-the-council-should-be-chosen-a-month-before-the-dissolution-an:en",
+      "canonical_citation": "Florence (Basel) S11 [That the place of the council should be chosen a month before the dissolution, and the phrase “in ten years” is clarified]"
+    },
+    {
+      "id": "flo-florence-s11-p5-en",
+      "inventory_id": "flo-florence-s11-p5-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p5:en",
+      "canonical_citation": "Florence (Florence) S11 para. 5"
+    },
+    {
+      "id": "flo-basel-s11-p6-en",
+      "inventory_id": "flo-basel-s11-p6-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s11:p6:en",
+      "canonical_citation": "Florence (Basel) S11 para. 6"
+    },
+    {
+      "id": "flo-florence-s11-p6-en",
+      "inventory_id": "flo-florence-s11-p6-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p6:en",
+      "canonical_citation": "Florence (Florence) S11 para. 6"
+    },
+    {
+      "id": "flo-basel-s11-p7-en",
+      "inventory_id": "flo-basel-s11-p7-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s11:p7:en",
+      "canonical_citation": "Florence (Basel) S11 para. 7"
+    },
+    {
+      "id": "flo-florence-s11-p7-en",
+      "inventory_id": "flo-florence-s11-p7-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p7:en",
+      "canonical_citation": "Florence (Florence) S11 para. 7"
+    },
+    {
+      "id": "flo-basel-s11-that-this-decree-should-be-published-in-synods-en",
+      "inventory_id": "flo-basel-s11-that-this-decree-should-be-published-in-synods-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s11:that-this-decree-should-be-published-in-synods:en",
+      "canonical_citation": "Florence (Basel) S11 [That this decree should be published in synods]"
+    },
+    {
+      "id": "flo-florence-s11-p8-en",
+      "inventory_id": "flo-florence-s11-p8-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p8:en",
+      "canonical_citation": "Florence (Florence) S11 para. 8"
+    },
+    {
+      "id": "flo-florence-s11-p9-en",
+      "inventory_id": "flo-florence-s11-p9-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p9:en",
+      "canonical_citation": "Florence (Florence) S11 para. 9"
+    },
+    {
+      "id": "flo-florence-s11-p10-en",
+      "inventory_id": "flo-florence-s11-p10-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p10:en",
+      "canonical_citation": "Florence (Florence) S11 para. 10"
+    },
+    {
+      "id": "flo-florence-s11-p11-en",
+      "inventory_id": "flo-florence-s11-p11-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p11:en",
+      "canonical_citation": "Florence (Florence) S11 para. 11"
+    },
+    {
+      "id": "flo-florence-s11-p12-en",
+      "inventory_id": "flo-florence-s11-p12-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p12:en",
+      "canonical_citation": "Florence (Florence) S11 para. 12"
+    },
+    {
+      "id": "flo-florence-s11-p13-en",
+      "inventory_id": "flo-florence-s11-p13-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p13:en",
+      "canonical_citation": "Florence (Florence) S11 para. 13"
+    },
+    {
+      "id": "flo-florence-s11-p14-en",
+      "inventory_id": "flo-florence-s11-p14-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p14:en",
+      "canonical_citation": "Florence (Florence) S11 para. 14"
+    },
+    {
+      "id": "flo-florence-s11-p15-en",
+      "inventory_id": "flo-florence-s11-p15-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p15:en",
+      "canonical_citation": "Florence (Florence) S11 para. 15"
+    },
+    {
+      "id": "flo-florence-s11-p16-en",
+      "inventory_id": "flo-florence-s11-p16-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p16:en",
+      "canonical_citation": "Florence (Florence) S11 para. 16"
+    },
+    {
+      "id": "flo-florence-s11-p17-en",
+      "inventory_id": "flo-florence-s11-p17-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p17:en",
+      "canonical_citation": "Florence (Florence) S11 para. 17"
+    },
+    {
+      "id": "flo-florence-s11-p18-en",
+      "inventory_id": "flo-florence-s11-p18-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p18:en",
+      "canonical_citation": "Florence (Florence) S11 para. 18"
+    },
+    {
+      "id": "flo-florence-s11-p19-en",
+      "inventory_id": "flo-florence-s11-p19-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p19:en",
+      "canonical_citation": "Florence (Florence) S11 para. 19"
+    },
+    {
+      "id": "flo-florence-s11-p20-en",
+      "inventory_id": "flo-florence-s11-p20-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p20:en",
+      "canonical_citation": "Florence (Florence) S11 para. 20"
+    },
+    {
+      "id": "flo-florence-s11-p21-en",
+      "inventory_id": "flo-florence-s11-p21-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p21:en",
+      "canonical_citation": "Florence (Florence) S11 para. 21"
+    },
+    {
+      "id": "flo-florence-s11-p22-en",
+      "inventory_id": "flo-florence-s11-p22-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p22:en",
+      "canonical_citation": "Florence (Florence) S11 para. 22"
+    },
+    {
+      "id": "flo-florence-s11-p23-en",
+      "inventory_id": "flo-florence-s11-p23-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p23:en",
+      "canonical_citation": "Florence (Florence) S11 para. 23"
+    },
+    {
+      "id": "flo-florence-s11-p24-en",
+      "inventory_id": "flo-florence-s11-p24-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p24:en",
+      "canonical_citation": "Florence (Florence) S11 para. 24"
+    },
+    {
+      "id": "flo-florence-s11-p25-en",
+      "inventory_id": "flo-florence-s11-p25-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s11:p25:en",
+      "canonical_citation": "Florence (Florence) S11 para. 25"
+    },
+    {
+      "id": "flo-basel-s12-decree-on-elections-and-confirmations-of-bishops-and-prelates-en",
+      "inventory_id": "flo-basel-s12-decree-on-elections-and-confirmations-of-bishops-and-prelates-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s12:decree-on-elections-and-confirmations-of-bishops-and-prelates:en",
+      "canonical_citation": "Florence (Basel) S12 [Decree on elections and confirmations of bishops and prelates]"
+    },
+    {
+      "id": "flo-florence-s12-eugenius-iv-convokes-the-lateran-council-that-is-the-continuati",
+      "inventory_id": "flo-florence-s12-eugenius-iv-convokes-the-lateran-council-that-is-the-continuati",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s12:eugenius-iv-convokes-the-lateran-council-that-is-the-continuation-of-the-council:en",
+      "canonical_citation": "Florence (Florence) S12 [Eugenius IV convokes the Lateran council, that is, the continuation of the council of Florence]"
+    },
+    {
+      "id": "flo-basel-s12-p2-en",
+      "inventory_id": "flo-basel-s12-p2-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s12:p2:en",
+      "canonical_citation": "Florence (Basel) S12 para. 2"
+    },
+    {
+      "id": "flo-florence-s12-p2-en",
+      "inventory_id": "flo-florence-s12-p2-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s12:p2:en",
+      "canonical_citation": "Florence (Florence) S12 para. 2"
+    },
+    {
+      "id": "flo-basel-s12-p3-en",
+      "inventory_id": "flo-basel-s12-p3-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s12:p3:en",
+      "canonical_citation": "Florence (Basel) S12 para. 3"
+    },
+    {
+      "id": "flo-florence-s12-p3-en",
+      "inventory_id": "flo-florence-s12-p3-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s12:p3:en",
+      "canonical_citation": "Florence (Florence) S12 para. 3"
+    },
+    {
+      "id": "flo-basel-s12-p4-en",
+      "inventory_id": "flo-basel-s12-p4-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s12:p4:en",
+      "canonical_citation": "Florence (Basel) S12 para. 4"
+    },
+    {
+      "id": "flo-florence-s12-p4-en",
+      "inventory_id": "flo-florence-s12-p4-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s12:p4:en",
+      "canonical_citation": "Florence (Florence) S12 para. 4"
+    },
+    {
+      "id": "flo-basel-s12-p5-en",
+      "inventory_id": "flo-basel-s12-p5-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s12:p5:en",
+      "canonical_citation": "Florence (Basel) S12 para. 5"
+    },
+    {
+      "id": "flo-florence-s12-p5-en",
+      "inventory_id": "flo-florence-s12-p5-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s12:p5:en",
+      "canonical_citation": "Florence (Florence) S12 para. 5"
+    },
+    {
+      "id": "flo-florence-s12-p6-en",
+      "inventory_id": "flo-florence-s12-p6-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s12:p6:en",
+      "canonical_citation": "Florence (Florence) S12 para. 6"
+    },
+    {
+      "id": "flo-florence-s12-p7-en",
+      "inventory_id": "flo-florence-s12-p7-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s12:p7:en",
+      "canonical_citation": "Florence (Florence) S12 para. 7"
+    },
+    {
+      "id": "flo-florence-s12-p8-en",
+      "inventory_id": "flo-florence-s12-p8-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s12:p8:en",
+      "canonical_citation": "Florence (Florence) S12 para. 8"
+    },
+    {
+      "id": "flo-florence-s12-p9-en",
+      "inventory_id": "flo-florence-s12-p9-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s12:p9:en",
+      "canonical_citation": "Florence (Florence) S12 para. 9"
+    },
+    {
+      "id": "flo-basel-s13-in-this-session-there-was-read-out-accusation-of-contumacy-of-the",
+      "inventory_id": "flo-basel-s13-in-this-session-there-was-read-out-accusation-of-contumacy-of-the-",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s13:in-this-session-there-was-read-out-accusation-of-contumacy-of-the-pope-made-by-t:en",
+      "canonical_citation": "Florence (Basel) S13 [In this session there was read out, Accusation of contumacy of the pope made by the promoters of the sacred council; the time-limit already intimated to Eugenius IV for him to come to Basel and to abrogate his decree dissolving the council was deferred; finally a new Decree for the protection of members was approved.]"
+    },
+    {
+      "id": "flo-florence-s13-bull-of-union-with-the-syrians-en",
+      "inventory_id": "flo-florence-s13-bull-of-union-with-the-syrians-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s13:bull-of-union-with-the-syrians:en",
+      "canonical_citation": "Florence (Florence) S13 [Bull of union with the Syrians]"
+    },
+    {
+      "id": "flo-florence-s13-p2-en",
+      "inventory_id": "flo-florence-s13-p2-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s13:p2:en",
+      "canonical_citation": "Florence (Florence) S13 para. 2"
+    },
+    {
+      "id": "flo-florence-s13-p3-en",
+      "inventory_id": "flo-florence-s13-p3-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s13:p3:en",
+      "canonical_citation": "Florence (Florence) S13 para. 3"
+    },
+    {
+      "id": "flo-florence-s13-p4-en",
+      "inventory_id": "flo-florence-s13-p4-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s13:p4:en",
+      "canonical_citation": "Florence (Florence) S13 para. 4"
+    },
+    {
+      "id": "flo-florence-s13-p5-en",
+      "inventory_id": "flo-florence-s13-p5-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s13:p5:en",
+      "canonical_citation": "Florence (Florence) S13 para. 5"
+    },
+    {
+      "id": "flo-florence-s13-p6-en",
+      "inventory_id": "flo-florence-s13-p6-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s13:p6:en",
+      "canonical_citation": "Florence (Florence) S13 para. 6"
+    },
+    {
+      "id": "flo-florence-s13-p7-en",
+      "inventory_id": "flo-florence-s13-p7-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s13:p7:en",
+      "canonical_citation": "Florence (Florence) S13 para. 7"
+    },
+    {
+      "id": "flo-florence-s13-p8-en",
+      "inventory_id": "flo-florence-s13-p8-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s13:p8:en",
+      "canonical_citation": "Florence (Florence) S13 para. 8"
+    },
+    {
+      "id": "flo-florence-s13-p9-en",
+      "inventory_id": "flo-florence-s13-p9-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s13:p9:en",
+      "canonical_citation": "Florence (Florence) S13 para. 9"
+    },
+    {
+      "id": "flo-florence-s13-p10-en",
+      "inventory_id": "flo-florence-s13-p10-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s13:p10:en",
+      "canonical_citation": "Florence (Florence) S13 para. 10"
+    },
+    {
+      "id": "flo-basel-s14-in-this-session-there-was-made-another-deferral-for-ninety-days-of",
+      "inventory_id": "flo-basel-s14-in-this-session-there-was-made-another-deferral-for-ninety-days-of",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s14:in-this-session-there-was-made-another-deferral-for-ninety-days-of-the-monition-:en",
+      "canonical_citation": "Florence (Basel) S14 [In this session there was made, Another deferral, for ninety days, of the monition to the pope, to which were added two proposals, one regarding the revoking of the suspension of the council. the other regarding Eugenius IV’s assent to the council.]"
+    },
+    {
+      "id": "flo-florence-s14-bull-of-union-with-the-chaldeans-and-the-maronites-of-cyprus-en",
+      "inventory_id": "flo-florence-s14-bull-of-union-with-the-chaldeans-and-the-maronites-of-cyprus-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s14:bull-of-union-with-the-chaldeans-and-the-maronites-of-cyprus:en",
+      "canonical_citation": "Florence (Florence) S14 [Bull of union with the Chaldeans and the Maronites of Cyprus]"
+    },
+    {
+      "id": "flo-florence-s14-p2-en",
+      "inventory_id": "flo-florence-s14-p2-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s14:p2:en",
+      "canonical_citation": "Florence (Florence) S14 para. 2"
+    },
+    {
+      "id": "flo-florence-s14-p3-en",
+      "inventory_id": "flo-florence-s14-p3-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s14:p3:en",
+      "canonical_citation": "Florence (Florence) S14 para. 3"
+    },
+    {
+      "id": "flo-florence-s14-p4-en",
+      "inventory_id": "flo-florence-s14-p4-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s14:p4:en",
+      "canonical_citation": "Florence (Florence) S14 para. 4"
+    },
+    {
+      "id": "flo-florence-s14-p5-en",
+      "inventory_id": "flo-florence-s14-p5-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s14:p5:en",
+      "canonical_citation": "Florence (Florence) S14 para. 5"
+    },
+    {
+      "id": "flo-florence-s14-p6-en",
+      "inventory_id": "flo-florence-s14-p6-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s14:p6:en",
+      "canonical_citation": "Florence (Florence) S14 para. 6"
+    },
+    {
+      "id": "flo-florence-s14-p7-en",
+      "inventory_id": "flo-florence-s14-p7-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s14:p7:en",
+      "canonical_citation": "Florence (Florence) S14 para. 7"
+    },
+    {
+      "id": "flo-florence-s14-p8-en",
+      "inventory_id": "flo-florence-s14-p8-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s14:p8:en",
+      "canonical_citation": "Florence (Florence) S14 para. 8"
+    },
+    {
+      "id": "flo-florence-s14-p9-en",
+      "inventory_id": "flo-florence-s14-p9-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s14:p9:en",
+      "canonical_citation": "Florence (Florence) S14 para. 9"
+    },
+    {
+      "id": "flo-florence-s14-p10-en",
+      "inventory_id": "flo-florence-s14-p10-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s14:p10:en",
+      "canonical_citation": "Florence (Florence) S14 para. 10"
+    },
+    {
+      "id": "flo-florence-s14-p11-en",
+      "inventory_id": "flo-florence-s14-p11-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s14:p11:en",
+      "canonical_citation": "Florence (Florence) S14 para. 11"
+    },
+    {
+      "id": "flo-florence-s14-p12-en",
+      "inventory_id": "flo-florence-s14-p12-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s14:p12:en",
+      "canonical_citation": "Florence (Florence) S14 para. 12"
+    },
+    {
+      "id": "flo-florence-s14-p13-en",
+      "inventory_id": "flo-florence-s14-p13-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s14:p13:en",
+      "canonical_citation": "Florence (Florence) S14 para. 13"
+    },
+    {
+      "id": "flo-florence-s14-p14-en",
+      "inventory_id": "flo-florence-s14-p14-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s14:p14:en",
+      "canonical_citation": "Florence (Florence) S14 para. 14"
+    },
+    {
+      "id": "flo-florence-s14-p15-en",
+      "inventory_id": "flo-florence-s14-p15-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s14:p15:en",
+      "canonical_citation": "Florence (Florence) S14 para. 15"
+    },
+    {
+      "id": "flo-florence-s14-p16-en",
+      "inventory_id": "flo-florence-s14-p16-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s14:p16:en",
+      "canonical_citation": "Florence (Florence) S14 para. 16"
+    },
+    {
+      "id": "flo-florence-s14-p17-en",
+      "inventory_id": "flo-florence-s14-p17-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:florence:s14:p17:en",
+      "canonical_citation": "Florence (Florence) S14 para. 17"
+    },
+    {
+      "id": "flo-basel-s15-on-provincial-and-synodal-councils-en",
+      "inventory_id": "flo-basel-s15-on-provincial-and-synodal-councils-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s15:on-provincial-and-synodal-councils:en",
+      "canonical_citation": "Florence (Basel) S15 [On provincial and synodal councils]"
+    },
+    {
+      "id": "flo-basel-s15-p2-en",
+      "inventory_id": "flo-basel-s15-p2-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s15:p2:en",
+      "canonical_citation": "Florence (Basel) S15 para. 2"
+    },
+    {
+      "id": "flo-basel-s15-p3-en",
+      "inventory_id": "flo-basel-s15-p3-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s15:p3:en",
+      "canonical_citation": "Florence (Basel) S15 para. 3"
+    },
+    {
+      "id": "flo-basel-s15-p4-en",
+      "inventory_id": "flo-basel-s15-p4-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s15:p4:en",
+      "canonical_citation": "Florence (Basel) S15 para. 4"
+    },
+    {
+      "id": "flo-basel-s16-this-session-declares-the-adherence-of-pope-eugenius-to-the-counci",
+      "inventory_id": "flo-basel-s16-this-session-declares-the-adherence-of-pope-eugenius-to-the-counci",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s16:this-session-declares-the-adherence-of-pope-eugenius-to-the-council-with-the-usu:en",
+      "canonical_citation": "Florence (Basel) S16 [This session declares the adherence of Pope Eugenius to the council, with the usual ceremonies; Eugenius’s bull Dudum sacrum, and three other bulls abrogated by that bull, are incorporated into the acts.]"
+    },
+    {
+      "id": "flo-basel-s17-on-the-admission-of-the-presidents-into-the-council-in-the-name-of",
+      "inventory_id": "flo-basel-s17-on-the-admission-of-the-presidents-into-the-council-in-the-name-of",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s17:on-the-admission-of-the-presidents-into-the-council-in-the-name-of-the-lord-pope:en",
+      "canonical_citation": "Florence (Basel) S17 [On the admission of the presidents into the council in the name of the lord pope Eugenius IV]"
+    },
+    {
+      "id": "flo-basel-s18-on-the-renewal-of-the-decree-of-the-council-of-constance-about-the",
+      "inventory_id": "flo-basel-s18-on-the-renewal-of-the-decree-of-the-council-of-constance-about-the",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s18:on-the-renewal-of-the-decree-of-the-council-of-constance-about-the-authority-and:en",
+      "canonical_citation": "Florence (Basel) S18 [On the renewal of the decree of the council of Constance about the authority and power of general councils]"
+    },
+    {
+      "id": "flo-basel-s19-on-the-agreement-between-the-council-and-the-greeks-about-union-en",
+      "inventory_id": "flo-basel-s19-on-the-agreement-between-the-council-and-the-greeks-about-union-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s19:on-the-agreement-between-the-council-and-the-greeks-about-union:en",
+      "canonical_citation": "Florence (Basel) S19 [On the agreement between the council and the Greeks about union]"
+    },
+    {
+      "id": "flo-basel-s19-p2-en",
+      "inventory_id": "flo-basel-s19-p2-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s19:p2:en",
+      "canonical_citation": "Florence (Basel) S19 para. 2"
+    },
+    {
+      "id": "flo-basel-s19-agreement-of-the-deputies-of-the-sacred-council-with-the-ambassado",
+      "inventory_id": "flo-basel-s19-agreement-of-the-deputies-of-the-sacred-council-with-the-ambassado",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s19:agreement-of-the-deputies-of-the-sacred-council-with-the-ambassadors-of-the-gree:en",
+      "canonical_citation": "Florence (Basel) S19 [Agreement of the deputies of the sacred council with the ambassadors of the Greeks]"
+    },
+    {
+      "id": "flo-basel-s19-p4-en",
+      "inventory_id": "flo-basel-s19-p4-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s19:p4:en",
+      "canonical_citation": "Florence (Basel) S19 para. 4"
+    },
+    {
+      "id": "flo-basel-s19-p5-en",
+      "inventory_id": "flo-basel-s19-p5-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s19:p5:en",
+      "canonical_citation": "Florence (Basel) S19 para. 5"
+    },
+    {
+      "id": "flo-basel-s19-p6-en",
+      "inventory_id": "flo-basel-s19-p6-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s19:p6:en",
+      "canonical_citation": "Florence (Basel) S19 para. 6"
+    },
+    {
+      "id": "flo-basel-s19-p7-en",
+      "inventory_id": "flo-basel-s19-p7-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s19:p7:en",
+      "canonical_citation": "Florence (Basel) S19 para. 7"
+    },
+    {
+      "id": "flo-basel-s19-p8-en",
+      "inventory_id": "flo-basel-s19-p8-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s19:p8:en",
+      "canonical_citation": "Florence (Basel) S19 para. 8"
+    },
+    {
+      "id": "flo-basel-s19-p9-en",
+      "inventory_id": "flo-basel-s19-p9-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s19:p9:en",
+      "canonical_citation": "Florence (Basel) S19 para. 9"
+    },
+    {
+      "id": "flo-basel-s19-decree-on-jews-and-neophytes-en",
+      "inventory_id": "flo-basel-s19-decree-on-jews-and-neophytes-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s19:decree-on-jews-and-neophytes:en",
+      "canonical_citation": "Florence (Basel) S19 [Decree on Jews and neophytes]"
+    },
+    {
+      "id": "flo-basel-s19-p11-en",
+      "inventory_id": "flo-basel-s19-p11-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s19:p11:en",
+      "canonical_citation": "Florence (Basel) S19 para. 11"
+    },
+    {
+      "id": "flo-basel-s19-p12-en",
+      "inventory_id": "flo-basel-s19-p12-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s19:p12:en",
+      "canonical_citation": "Florence (Basel) S19 para. 12"
+    },
+    {
+      "id": "flo-basel-s19-about-those-who-desire-conversion-to-the-faith-en",
+      "inventory_id": "flo-basel-s19-about-those-who-desire-conversion-to-the-faith-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s19:about-those-who-desire-conversion-to-the-faith:en",
+      "canonical_citation": "Florence (Basel) S19 [About those who desire conversion to the faith]"
+    },
+    {
+      "id": "flo-basel-s19-p14-en",
+      "inventory_id": "flo-basel-s19-p14-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s19:p14:en",
+      "canonical_citation": "Florence (Basel) S19 para. 14"
+    },
+    {
+      "id": "flo-basel-s19-p15-en",
+      "inventory_id": "flo-basel-s19-p15-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s19:p15:en",
+      "canonical_citation": "Florence (Basel) S19 para. 15"
+    },
+    {
+      "id": "flo-basel-s20-decree-on-concubinaries-en",
+      "inventory_id": "flo-basel-s20-decree-on-concubinaries-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s20:decree-on-concubinaries:en",
+      "canonical_citation": "Florence (Basel) S20 [Decree on concubinaries]"
+    },
+    {
+      "id": "flo-basel-s20-p2-en",
+      "inventory_id": "flo-basel-s20-p2-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s20:p2:en",
+      "canonical_citation": "Florence (Basel) S20 para. 2"
+    },
+    {
+      "id": "flo-basel-s20-p3-en",
+      "inventory_id": "flo-basel-s20-p3-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s20:p3:en",
+      "canonical_citation": "Florence (Basel) S20 para. 3"
+    },
+    {
+      "id": "flo-basel-s20-excommunicates-are-not-to-be-shunned-unless-specifically-named-en",
+      "inventory_id": "flo-basel-s20-excommunicates-are-not-to-be-shunned-unless-specifically-named-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s20:excommunicates-are-not-to-be-shunned-unless-specifically-named:en",
+      "canonical_citation": "Florence (Basel) S20 [Excommunicates are not to be shunned unless specifically named]"
+    },
+    {
+      "id": "flo-basel-s20-interdicts-are-not-to-be-imposed-lightly-en",
+      "inventory_id": "flo-basel-s20-interdicts-are-not-to-be-imposed-lightly-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s20:interdicts-are-not-to-be-imposed-lightly:en",
+      "canonical_citation": "Florence (Basel) S20 [Interdicts are not to be imposed lightly]"
+    },
+    {
+      "id": "flo-basel-s20-p6-en",
+      "inventory_id": "flo-basel-s20-p6-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s20:p6:en",
+      "canonical_citation": "Florence (Basel) S20 para. 6"
+    },
+    {
+      "id": "flo-basel-s21-on-annates-en",
+      "inventory_id": "flo-basel-s21-on-annates-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s21:on-annates:en",
+      "canonical_citation": "Florence (Basel) S21 [On annates]"
+    },
+    {
+      "id": "flo-basel-s21-about-those-in-peaceful-possession-en",
+      "inventory_id": "flo-basel-s21-about-those-in-peaceful-possession-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s21:about-those-in-peaceful-possession:en",
+      "canonical_citation": "Florence (Basel) S21 [About those in peaceful possession]"
+    },
+    {
+      "id": "flo-basel-s21-how-the-divine-office-is-to-be-celebrated-in-church-en",
+      "inventory_id": "flo-basel-s21-how-the-divine-office-is-to-be-celebrated-in-church-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s21:how-the-divine-office-is-to-be-celebrated-in-church:en",
+      "canonical_citation": "Florence (Basel) S21 [How the divine office is to be celebrated in church]"
+    },
+    {
+      "id": "flo-basel-s21-the-times-at-which-each-one-should-be-in-choir-en",
+      "inventory_id": "flo-basel-s21-the-times-at-which-each-one-should-be-in-choir-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s21:the-times-at-which-each-one-should-be-in-choir:en",
+      "canonical_citation": "Florence (Basel) S21 [The times at which each one should be in choir]"
+    },
+    {
+      "id": "flo-basel-s21-how-the-canonical-hours-should-be-recited-outside-choir-en",
+      "inventory_id": "flo-basel-s21-how-the-canonical-hours-should-be-recited-outside-choir-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s21:how-the-canonical-hours-should-be-recited-outside-choir:en",
+      "canonical_citation": "Florence (Basel) S21 [How the canonical hours should be recited outside choir]"
+    },
+    {
+      "id": "flo-basel-s21-about-those-who-wander-about-the-church-during-services-en",
+      "inventory_id": "flo-basel-s21-about-those-who-wander-about-the-church-during-services-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s21:about-those-who-wander-about-the-church-during-services:en",
+      "canonical_citation": "Florence (Basel) S21 [About those who wander about the church during services]"
+    },
+    {
+      "id": "flo-basel-s21-about-a-notice-board-hanging-in-the-choir-en",
+      "inventory_id": "flo-basel-s21-about-a-notice-board-hanging-in-the-choir-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s21:about-a-notice-board-hanging-in-the-choir:en",
+      "canonical_citation": "Florence (Basel) S21 [About a notice-board hanging in the choir]"
+    },
+    {
+      "id": "flo-basel-s21-on-those-who-at-mass-do-not-complete-the-creed-or-sing-songs-or-sa",
+      "inventory_id": "flo-basel-s21-on-those-who-at-mass-do-not-complete-the-creed-or-sing-songs-or-sa",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s21:on-those-who-at-mass-do-not-complete-the-creed-or-sing-songs-or-say-mass-in-too-:en",
+      "canonical_citation": "Florence (Basel) S21 [On those who at mass do not complete the creed, or sing songs, or say mass in too low a voice or without a server]"
+    },
+    {
+      "id": "flo-basel-s21-about-those-who-pledge-divine-worship-en",
+      "inventory_id": "flo-basel-s21-about-those-who-pledge-divine-worship-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s21:about-those-who-pledge-divine-worship:en",
+      "canonical_citation": "Florence (Basel) S21 [About those who pledge divine worship]"
+    },
+    {
+      "id": "flo-basel-s21-on-holding-chapters-at-the-same-time-as-the-principal-mass-en",
+      "inventory_id": "flo-basel-s21-on-holding-chapters-at-the-same-time-as-the-principal-mass-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s21:on-holding-chapters-at-the-same-time-as-the-principal-mass:en",
+      "canonical_citation": "Florence (Basel) S21 [On holding chapters at the same time as the principal’ mass]"
+    },
+    {
+      "id": "flo-basel-s21-on-not-performing-spectacles-in-churches-en",
+      "inventory_id": "flo-basel-s21-on-not-performing-spectacles-in-churches-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s21:on-not-performing-spectacles-in-churches:en",
+      "canonical_citation": "Florence (Basel) S21 [On not performing spectacles in churches]"
+    },
+    {
+      "id": "flo-basel-s22-on-the-condemnation-of-the-book-of-friar-augustine-of-rome-archbis",
+      "inventory_id": "flo-basel-s22-on-the-condemnation-of-the-book-of-friar-augustine-of-rome-archbis",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s22:on-the-condemnation-of-the-book-of-friar-augustine-of-rome-archbishop-of-nazaret:en",
+      "canonical_citation": "Florence (Basel) S22 [On the condemnation of the book of friar Augustine of Rome, archbishop of Nazareth]"
+    },
+    {
+      "id": "flo-basel-s22-p2-en",
+      "inventory_id": "flo-basel-s22-p2-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s22:p2:en",
+      "canonical_citation": "Florence (Basel) S22 para. 2"
+    },
+    {
+      "id": "flo-basel-s22-p3-en",
+      "inventory_id": "flo-basel-s22-p3-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s22:p3:en",
+      "canonical_citation": "Florence (Basel) S22 para. 3"
+    },
+    {
+      "id": "flo-basel-s23-on-the-election-of-the-supreme-pontiff-en",
+      "inventory_id": "flo-basel-s23-on-the-election-of-the-supreme-pontiff-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:on-the-election-of-the-supreme-pontiff:en",
+      "canonical_citation": "Florence (Basel) S23 [On the election of the supreme pontiff]"
+    },
+    {
+      "id": "flo-basel-s23-p2-en",
+      "inventory_id": "flo-basel-s23-p2-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:p2:en",
+      "canonical_citation": "Florence (Basel) S23 para. 2"
+    },
+    {
+      "id": "flo-basel-s23-on-the-profession-of-the-supreme-pontiff-en",
+      "inventory_id": "flo-basel-s23-on-the-profession-of-the-supreme-pontiff-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:on-the-profession-of-the-supreme-pontiff:en",
+      "canonical_citation": "Florence (Basel) S23 [On the profession of the supreme pontiff]"
+    },
+    {
+      "id": "flo-basel-s23-form-of-consent-en",
+      "inventory_id": "flo-basel-s23-form-of-consent-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:form-of-consent:en",
+      "canonical_citation": "Florence (Basel) S23 [Form of consent]"
+    },
+    {
+      "id": "flo-basel-s23-p5-en",
+      "inventory_id": "flo-basel-s23-p5-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:p5:en",
+      "canonical_citation": "Florence (Basel) S23 para. 5"
+    },
+    {
+      "id": "flo-basel-s23-p6-en",
+      "inventory_id": "flo-basel-s23-p6-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:p6:en",
+      "canonical_citation": "Florence (Basel) S23 para. 6"
+    },
+    {
+      "id": "flo-basel-s23-p7-en",
+      "inventory_id": "flo-basel-s23-p7-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:p7:en",
+      "canonical_citation": "Florence (Basel) S23 para. 7"
+    },
+    {
+      "id": "flo-basel-s23-p8-en",
+      "inventory_id": "flo-basel-s23-p8-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:p8:en",
+      "canonical_citation": "Florence (Basel) S23 para. 8"
+    },
+    {
+      "id": "flo-basel-s23-p9-en",
+      "inventory_id": "flo-basel-s23-p9-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:p9:en",
+      "canonical_citation": "Florence (Basel) S23 para. 9"
+    },
+    {
+      "id": "flo-basel-s23-p10-en",
+      "inventory_id": "flo-basel-s23-p10-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:p10:en",
+      "canonical_citation": "Florence (Basel) S23 para. 10"
+    },
+    {
+      "id": "flo-basel-s23-p11-en",
+      "inventory_id": "flo-basel-s23-p11-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:p11:en",
+      "canonical_citation": "Florence (Basel) S23 para. 11"
+    },
+    {
+      "id": "flo-basel-s23-on-the-number-and-qualities-of-cardinals-en",
+      "inventory_id": "flo-basel-s23-on-the-number-and-qualities-of-cardinals-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:on-the-number-and-qualities-of-cardinals:en",
+      "canonical_citation": "Florence (Basel) S23 [On the number and qualities of cardinals]"
+    },
+    {
+      "id": "flo-basel-s23-p13-en",
+      "inventory_id": "flo-basel-s23-p13-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:p13:en",
+      "canonical_citation": "Florence (Basel) S23 para. 13"
+    },
+    {
+      "id": "flo-basel-s23-p14-en",
+      "inventory_id": "flo-basel-s23-p14-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:p14:en",
+      "canonical_citation": "Florence (Basel) S23 para. 14"
+    },
+    {
+      "id": "flo-basel-s23-p15-en",
+      "inventory_id": "flo-basel-s23-p15-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:p15:en",
+      "canonical_citation": "Florence (Basel) S23 para. 15"
+    },
+    {
+      "id": "flo-basel-s23-p16-en",
+      "inventory_id": "flo-basel-s23-p16-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:p16:en",
+      "canonical_citation": "Florence (Basel) S23 para. 16"
+    },
+    {
+      "id": "flo-basel-s23-p17-en",
+      "inventory_id": "flo-basel-s23-p17-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:p17:en",
+      "canonical_citation": "Florence (Basel) S23 para. 17"
+    },
+    {
+      "id": "flo-basel-s23-p18-en",
+      "inventory_id": "flo-basel-s23-p18-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:p18:en",
+      "canonical_citation": "Florence (Basel) S23 para. 18"
+    },
+    {
+      "id": "flo-basel-s23-p19-en",
+      "inventory_id": "flo-basel-s23-p19-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:p19:en",
+      "canonical_citation": "Florence (Basel) S23 para. 19"
+    },
+    {
+      "id": "flo-basel-s23-on-elections-en",
+      "inventory_id": "flo-basel-s23-on-elections-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:on-elections:en",
+      "canonical_citation": "Florence (Basel) S23 [On elections]"
+    },
+    {
+      "id": "flo-basel-s23-on-reservations-en",
+      "inventory_id": "flo-basel-s23-on-reservations-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:on-reservations:en",
+      "canonical_citation": "Florence (Basel) S23 [On reservations]"
+    },
+    {
+      "id": "flo-basel-s23-p22-en",
+      "inventory_id": "flo-basel-s23-p22-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:p22:en",
+      "canonical_citation": "Florence (Basel) S23 para. 22"
+    },
+    {
+      "id": "flo-basel-s23-p23-en",
+      "inventory_id": "flo-basel-s23-p23-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s23:p23:en",
+      "canonical_citation": "Florence (Basel) S23 para. 23"
+    },
+    {
+      "id": "flo-basel-s24-about-business-with-the-greeks-and-about-indulgences-etc-en",
+      "inventory_id": "flo-basel-s24-about-business-with-the-greeks-and-about-indulgences-etc-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s24:about-business-with-the-greeks-and-about-indulgences-etc:en",
+      "canonical_citation": "Florence (Basel) S24 [About business with the Greeks and about indulgences, etc.]"
+    },
+    {
+      "id": "flo-basel-s24-p2-en",
+      "inventory_id": "flo-basel-s24-p2-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s24:p2:en",
+      "canonical_citation": "Florence (Basel) S24 para. 2"
+    },
+    {
+      "id": "flo-basel-s24-safe-conduct-for-the-greeks-given-by-the-sacred-council-of-basel-t",
+      "inventory_id": "flo-basel-s24-safe-conduct-for-the-greeks-given-by-the-sacred-council-of-basel-t",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s24:safe-conduct-for-the-greeks-given-by-the-sacred-council-of-basel-to-the-lord-emp:en",
+      "canonical_citation": "Florence (Basel) S24 [Safe-conduct for the Greeks given by the sacred council of Basel to the lord emperor of the Greeks and the patriarch of Constantinople]"
+    },
+    {
+      "id": "flo-basel-s24-p4-en",
+      "inventory_id": "flo-basel-s24-p4-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s24:p4:en",
+      "canonical_citation": "Florence (Basel) S24 para. 4"
+    },
+    {
+      "id": "flo-basel-s24-p5-en",
+      "inventory_id": "flo-basel-s24-p5-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s24:p5:en",
+      "canonical_citation": "Florence (Basel) S24 para. 5"
+    },
+    {
+      "id": "flo-basel-s24-p6-en",
+      "inventory_id": "flo-basel-s24-p6-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s24:p6:en",
+      "canonical_citation": "Florence (Basel) S24 para. 6"
+    },
+    {
+      "id": "flo-basel-s25-on-the-places-for-the-future-ecumenical-council-for-the-greeks-en",
+      "inventory_id": "flo-basel-s25-on-the-places-for-the-future-ecumenical-council-for-the-greeks-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s25:on-the-places-for-the-future-ecumenical-council-for-the-greeks:en",
+      "canonical_citation": "Florence (Basel) S25 [On the places for the future ecumenical council for the Greeks]"
+    },
+    {
+      "id": "flo-basel-s25-p2-en",
+      "inventory_id": "flo-basel-s25-p2-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s25:p2:en",
+      "canonical_citation": "Florence (Basel) S25 para. 2"
+    },
+    {
+      "id": "flo-basel-s25-p3-en",
+      "inventory_id": "flo-basel-s25-p3-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s25:p3:en",
+      "canonical_citation": "Florence (Basel) S25 para. 3"
+    },
+    {
+      "id": "flo-basel-s25-p4-en",
+      "inventory_id": "flo-basel-s25-p4-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s25:p4:en",
+      "canonical_citation": "Florence (Basel) S25 para. 4"
+    },
+    {
+      "id": "flo-basel-s25-p5-en",
+      "inventory_id": "flo-basel-s25-p5-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:basel:s25:p5:en",
+      "canonical_citation": "Florence (Basel) S25 para. 5"
+    },
+    {
+      "id": "flo-ferrara-s31-ecclesiastical-penalties-against-members-of-the-basel-synod-en",
+      "inventory_id": "flo-ferrara-s31-ecclesiastical-penalties-against-members-of-the-basel-synod-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s31:ecclesiastical-penalties-against-members-of-the-basel-synod:en",
+      "canonical_citation": "Florence (Ferrara) S31 [Ecclesiastical penalties against members of the Basel synod]"
+    },
+    {
+      "id": "flo-ferrara-s31-p2-en",
+      "inventory_id": "flo-ferrara-s31-p2-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s31:p2:en",
+      "canonical_citation": "Florence (Ferrara) S31 para. 2"
+    },
+    {
+      "id": "flo-ferrara-s31-p3-en",
+      "inventory_id": "flo-ferrara-s31-p3-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s31:p3:en",
+      "canonical_citation": "Florence (Ferrara) S31 para. 3"
+    },
+    {
+      "id": "flo-ferrara-s31-p4-en",
+      "inventory_id": "flo-ferrara-s31-p4-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s31:p4:en",
+      "canonical_citation": "Florence (Ferrara) S31 para. 4"
+    },
+    {
+      "id": "flo-ferrara-s31-p5-en",
+      "inventory_id": "flo-ferrara-s31-p5-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s31:p5:en",
+      "canonical_citation": "Florence (Ferrara) S31 para. 5"
+    },
+    {
+      "id": "flo-ferrara-s31-p6-en",
+      "inventory_id": "flo-ferrara-s31-p6-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s31:p6:en",
+      "canonical_citation": "Florence (Ferrara) S31 para. 6"
+    },
+    {
+      "id": "flo-ferrara-s31-p7-en",
+      "inventory_id": "flo-ferrara-s31-p7-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s31:p7:en",
+      "canonical_citation": "Florence (Ferrara) S31 para. 7"
+    },
+    {
+      "id": "flo-ferrara-s31-p8-en",
+      "inventory_id": "flo-ferrara-s31-p8-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s31:p8:en",
+      "canonical_citation": "Florence (Ferrara) S31 para. 8"
+    },
+    {
+      "id": "flo-ferrara-s31-p9-en",
+      "inventory_id": "flo-ferrara-s31-p9-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s31:p9:en",
+      "canonical_citation": "Florence (Ferrara) S31 para. 9"
+    },
+    {
+      "id": "flo-ferrara-s31-p10-en",
+      "inventory_id": "flo-ferrara-s31-p10-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s31:p10:en",
+      "canonical_citation": "Florence (Ferrara) S31 para. 10"
+    },
+    {
+      "id": "flo-ferrara-s31-p11-en",
+      "inventory_id": "flo-ferrara-s31-p11-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s31:p11:en",
+      "canonical_citation": "Florence (Ferrara) S31 para. 11"
+    },
+    {
+      "id": "flo-ferrara-s31-p12-en",
+      "inventory_id": "flo-ferrara-s31-p12-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s31:p12:en",
+      "canonical_citation": "Florence (Ferrara) S31 para. 12"
+    },
+    {
+      "id": "flo-ferrara-s31-p13-en",
+      "inventory_id": "flo-ferrara-s31-p13-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s31:p13:en",
+      "canonical_citation": "Florence (Ferrara) S31 para. 13"
+    },
+    {
+      "id": "flo-ferrara-s31-p14-en",
+      "inventory_id": "flo-ferrara-s31-p14-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s31:p14:en",
+      "canonical_citation": "Florence (Ferrara) S31 para. 14"
+    },
+    {
+      "id": "flo-ferrara-s31-p15-en",
+      "inventory_id": "flo-ferrara-s31-p15-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s31:p15:en",
+      "canonical_citation": "Florence (Ferrara) S31 para. 15"
+    },
+    {
+      "id": "flo-ferrara-s42-eugenius-iv-and-the-fathers-of-the-council-at-ferrara-declare-th",
+      "inventory_id": "flo-ferrara-s42-eugenius-iv-and-the-fathers-of-the-council-at-ferrara-declare-th",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s42:eugenius-iv-and-the-fathers-of-the-council-at-ferrara-declare-the-council-at-fer:en",
+      "canonical_citation": "Florence (Ferrara) S42 [Eugenius IV and the fathers of the council at Ferrara declare the council at Ferrara to be legitimate and ecumenical]"
+    },
+    {
+      "id": "flo-ferrara-s42-p2-en",
+      "inventory_id": "flo-ferrara-s42-p2-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s42:p2:en",
+      "canonical_citation": "Florence (Ferrara) S42 para. 2"
+    },
+    {
+      "id": "flo-ferrara-s42-p3-en",
+      "inventory_id": "flo-ferrara-s42-p3-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s42:p3:en",
+      "canonical_citation": "Florence (Ferrara) S42 para. 3"
+    },
+    {
+      "id": "flo-ferrara-s42-p4-en",
+      "inventory_id": "flo-ferrara-s42-p4-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s42:p4:en",
+      "canonical_citation": "Florence (Ferrara) S42 para. 4"
+    },
+    {
+      "id": "flo-ferrara-s42-p5-en",
+      "inventory_id": "flo-ferrara-s42-p5-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:FLO:ferrara:s42:p5:en",
+      "canonical_citation": "Florence (Ferrara) S42 para. 5"
+    },
+    {
+      "id": "trent-s1-decree-touching-the-opening-of-the-council-en",
+      "inventory_id": "trent-s1-decree-touching-the-opening-of-the-council-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s1:decree-touching-the-opening-of-the-council:en",
+      "canonical_citation": "Trent S1 DECREE TOUCHING THE OPENING OF THE COUNCIL"
+    },
+    {
+      "id": "trent-s1-indiction-of-the-next-session-en",
+      "inventory_id": "trent-s1-indiction-of-the-next-session-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s1:indiction-of-the-next-session:en",
+      "canonical_citation": "Trent S1 INDICTION OF THE NEXT SESSION"
+    },
+    {
+      "id": "trent-s2-decree-touching-the-manner-of-living-en",
+      "inventory_id": "trent-s2-decree-touching-the-manner-of-living-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s2:decree-touching-the-manner-of-living:en",
+      "canonical_citation": "Trent S2 DECREE TOUCHING THE MANNER OF LIVING,"
+    },
+    {
+      "id": "trent-s2-indiction-of-the-next-session-en",
+      "inventory_id": "trent-s2-indiction-of-the-next-session-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s2:indiction-of-the-next-session:en",
+      "canonical_citation": "Trent S2 INDICTION OF THE NEXT SESSION"
     },
     {
       "id": "trent-s3-symbol-of-faith-decree-en",
@@ -2268,6 +4204,70 @@
       "canonical_citation": "Trent S7 Decree on the Sacraments, Proem"
     },
     {
+      "id": "trent-s8-decree-concerning-the-translation-of-the-council-en",
+      "inventory_id": "trent-s8-decree-concerning-the-translation-of-the-council-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s8:decree-concerning-the-translation-of-the-council:en",
+      "canonical_citation": "Trent S8 DECREE CONCERNING THE TRANSLATION OF THE COUNCIL"
+    },
+    {
+      "id": "trent-s9-decree-for-the-prorogation-of-the-session-en",
+      "inventory_id": "trent-s9-decree-for-the-prorogation-of-the-session-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s9:decree-for-the-prorogation-of-the-session:en",
+      "canonical_citation": "Trent S9 DECREE FOR THE PROROGATION OF THE SESSION"
+    },
+    {
+      "id": "trent-s10-bull-for-the-resumption-of-the-council-of-trent-under-the-sovereign-en",
+      "inventory_id": "trent-s10-bull-for-the-resumption-of-the-council-of-trent-under-the-sovereign-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s10:bull-for-the-resumption-of-the-council-of-trent-under-the-sovereign:en",
+      "canonical_citation": "Trent S10 BULL FOR THE RESUMPTION OF THE COUNCIL OF TRENT, UNDER THE SOVEREIGN"
+    },
+    {
+      "id": "trent-s10-decree-for-the-prorogation-of-the-session-en",
+      "inventory_id": "trent-s10-decree-for-the-prorogation-of-the-session-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s10:decree-for-the-prorogation-of-the-session:en",
+      "canonical_citation": "Trent S10 DECREE FOR THE PROROGATION OF THE SESSION"
+    },
+    {
+      "id": "trent-s10-on-the-fourteenth-day-of-september-mdxlvii-in-a-general-congregation-h",
+      "inventory_id": "trent-s10-on-the-fourteenth-day-of-september-mdxlvii-in-a-general-congregation-h",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s10:on-the-fourteenth-day-of-september-mdxlvii-in-a-general-congregation-held:en",
+      "canonical_citation": "Trent S10 On the fourteenth day of September, MDXLVII, in a general Congregation held"
+    },
+    {
+      "id": "trent-s11-decree-for-resuming-the-council-en",
+      "inventory_id": "trent-s11-decree-for-resuming-the-council-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s11:decree-for-resuming-the-council:en",
+      "canonical_citation": "Trent S11 DECREE FOR RESUMING THE COUNCIL"
+    },
+    {
+      "id": "trent-s11-indiction-of-the-next-session-en",
+      "inventory_id": "trent-s11-indiction-of-the-next-session-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s11:indiction-of-the-next-session:en",
+      "canonical_citation": "Trent S11 INDICTION OF THE NEXT SESSION"
+    },
+    {
+      "id": "trent-s12-session-text-en",
+      "inventory_id": "trent-s12-session-text-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s12:session-text:en",
+      "canonical_citation": "Trent S12"
+    },
+    {
       "id": "trent-s13-eucharist-canon1-en",
       "inventory_id": "trent-s13-eucharist-canon1-en",
       "status": "verified",
@@ -2698,6 +4698,118 @@
       "errors": [],
       "record_id": "mag:Trent:s14:penance:preamble:en",
       "canonical_citation": "Trent S14 Decree on Penance, Preamble"
+    },
+    {
+      "id": "trent-s15-decree-for-proroguing-the-session-en",
+      "inventory_id": "trent-s15-decree-for-proroguing-the-session-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s15:decree-for-proroguing-the-session:en",
+      "canonical_citation": "Trent S15 DECREE FOR PROROGUING THE SESSION"
+    },
+    {
+      "id": "trent-s15-safe-conduct-given-to-the-protestants-en",
+      "inventory_id": "trent-s15-safe-conduct-given-to-the-protestants-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s15:safe-conduct-given-to-the-protestants:en",
+      "canonical_citation": "Trent S15 SAFE-CONDUCT GIVEN TO THE PROTESTANTS"
+    },
+    {
+      "id": "trent-s15-safe-conduct-and-security-shall-stand-good-and-endure-both-from-and-du",
+      "inventory_id": "trent-s15-safe-conduct-and-security-shall-stand-good-and-endure-both-from-and-du",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s15:safe-conduct-and-security-shall-stand-good-and-endure-both-from-and-during:en",
+      "canonical_citation": "Trent S15 safe-conduct and security shall stand good and endure, both from and during"
+    },
+    {
+      "id": "trent-s15-safe-conduct-that-they-might-come-freely-and-without-any-hesitation-en",
+      "inventory_id": "trent-s15-safe-conduct-that-they-might-come-freely-and-without-any-hesitation-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s15:safe-conduct-that-they-might-come-freely-and-without-any-hesitation:en",
+      "canonical_citation": "Trent S15 safe-conduct, that they might come freely and without any hesitation;"
+    },
+    {
+      "id": "trent-s16-bull-for-the-celebration-of-the-council-of-trent-under-en",
+      "inventory_id": "trent-s16-bull-for-the-celebration-of-the-council-of-trent-under-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s16:bull-for-the-celebration-of-the-council-of-trent-under:en",
+      "canonical_citation": "Trent S16 BULL FOR THE CELEBRATION OF THE COUNCIL OF TRENT, UNDER"
+    },
+    {
+      "id": "trent-s16-decree-for-the-suspension-of-the-council-en",
+      "inventory_id": "trent-s16-decree-for-the-suspension-of-the-council-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s16:decree-for-the-suspension-of-the-council:en",
+      "canonical_citation": "Trent S16 DECREE FOR THE SUSPENSION OF THE COUNCIL"
+    },
+    {
+      "id": "trent-s17-decree-for-celebrating-the-council-en",
+      "inventory_id": "trent-s17-decree-for-celebrating-the-council-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s17:decree-for-celebrating-the-council:en",
+      "canonical_citation": "Trent S17 DECREE FOR CELEBRATING THE COUNCIL"
+    },
+    {
+      "id": "trent-s17-indiction-of-the-next-session-en",
+      "inventory_id": "trent-s17-indiction-of-the-next-session-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s17:indiction-of-the-next-session:en",
+      "canonical_citation": "Trent S17 INDICTION OF THE NEXT SESSION"
+    },
+    {
+      "id": "trent-s18-extension-thereof-to-other-nations-en",
+      "inventory_id": "trent-s18-extension-thereof-to-other-nations-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s18:extension-thereof-to-other-nations:en",
+      "canonical_citation": "Trent S18 EXTENSION THEREOF TO OTHER NATIONS"
+    },
+    {
+      "id": "trent-s18-indiction-of-the-next-session-en",
+      "inventory_id": "trent-s18-indiction-of-the-next-session-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s18:indiction-of-the-next-session:en",
+      "canonical_citation": "Trent S18 INDICTION OF THE NEXT SESSION"
+    },
+    {
+      "id": "trent-s18-on-the-public-faith-to-the-council-en",
+      "inventory_id": "trent-s18-on-the-public-faith-to-the-council-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s18:on-the-public-faith-to-the-council:en",
+      "canonical_citation": "Trent S18 ON THE PUBLIC FAITH TO THE COUNCIL"
+    },
+    {
+      "id": "trent-s18-safe-conduct-granted-to-the-german-nation-en",
+      "inventory_id": "trent-s18-safe-conduct-granted-to-the-german-nation-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s18:safe-conduct-granted-to-the-german-nation:en",
+      "canonical_citation": "Trent S18 SAFE-CONDUCT GRANTED TO THE GERMAN NATION"
+    },
+    {
+      "id": "trent-s19-decree-for-the-prorogation-of-the-session-en",
+      "inventory_id": "trent-s19-decree-for-the-prorogation-of-the-session-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s19:decree-for-the-prorogation-of-the-session:en",
+      "canonical_citation": "Trent S19 DECREE FOR THE PROROGATION OF THE SESSION"
+    },
+    {
+      "id": "trent-s20-decree-for-the-prorogation-of-the-session-en",
+      "inventory_id": "trent-s20-decree-for-the-prorogation-of-the-session-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:Trent:s20:decree-for-the-prorogation-of-the-session:en",
+      "canonical_citation": "Trent S20 DECREE FOR THE PROROGATION OF THE SESSION"
     },
     {
       "id": "trent-s21-communion-canon1-en",
@@ -11676,20 +13788,84 @@
       "canonical_citation": "UR 24"
     },
     {
-      "id": "con3-definition-en",
-      "inventory_id": "con3-definition-en",
+      "id": "con3-exposition-p1-en",
+      "inventory_id": "con3-exposition-p1-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:CON3:definition:en",
-      "canonical_citation": "Constantinople III, Definition of Faith (two wills and two operations)"
+      "record_id": "mag:CON3:exposition:p1:en",
+      "canonical_citation": "Constantinople III, Exposition of faith para. 1"
     },
     {
-      "id": "con3-sentence-en",
-      "inventory_id": "con3-sentence-en",
+      "id": "con3-exposition-p2-en",
+      "inventory_id": "con3-exposition-p2-en",
       "status": "verified",
       "errors": [],
-      "record_id": "mag:CON3:sentence:en",
-      "canonical_citation": "Constantinople III, Sentence against the Monothelites (Session XIII)"
+      "record_id": "mag:CON3:exposition:p2:en",
+      "canonical_citation": "Constantinople III, Exposition of faith para. 2"
+    },
+    {
+      "id": "con3-exposition-p3-en",
+      "inventory_id": "con3-exposition-p3-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:CON3:exposition:p3:en",
+      "canonical_citation": "Constantinople III, Exposition of faith para. 3"
+    },
+    {
+      "id": "con3-exposition-p4-en",
+      "inventory_id": "con3-exposition-p4-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:CON3:exposition:p4:en",
+      "canonical_citation": "Constantinople III, Exposition of faith para. 4"
+    },
+    {
+      "id": "con3-exposition-p6-en",
+      "inventory_id": "con3-exposition-p6-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:CON3:exposition:p6:en",
+      "canonical_citation": "Constantinople III, Exposition of faith para. 6"
+    },
+    {
+      "id": "con3-exposition-p7-en",
+      "inventory_id": "con3-exposition-p7-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:CON3:exposition:p7:en",
+      "canonical_citation": "Constantinople III, Exposition of faith para. 7"
+    },
+    {
+      "id": "con3-exposition-p8-en",
+      "inventory_id": "con3-exposition-p8-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:CON3:exposition:p8:en",
+      "canonical_citation": "Constantinople III, Exposition of faith para. 8"
+    },
+    {
+      "id": "con3-exposition-p9-en",
+      "inventory_id": "con3-exposition-p9-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:CON3:exposition:p9:en",
+      "canonical_citation": "Constantinople III, Exposition of faith para. 9"
+    },
+    {
+      "id": "con3-exposition-p10-en",
+      "inventory_id": "con3-exposition-p10-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:CON3:exposition:p10:en",
+      "canonical_citation": "Constantinople III, Exposition of faith para. 10"
+    },
+    {
+      "id": "con3-exposition-p11-en",
+      "inventory_id": "con3-exposition-p11-en",
+      "status": "verified",
+      "errors": [],
+      "record_id": "mag:CON3:exposition:p11:en",
+      "canonical_citation": "Constantinople III, Exposition of faith para. 11"
     },
     {
       "id": "lat3-canon1-en",

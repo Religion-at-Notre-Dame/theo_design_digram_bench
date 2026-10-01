@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Breakaway lineage — groups catalog</title>
+  <style>
+    :root {
+      --ink: #1c2430;
+      --muted: #5c6b7a;
+      --line: #d5dde5;
+      --fill: #e8eef4;
+      --accent: #2a5f7a;
+      --accent2: #8a4b2f;
+      --paper: #f7f5f1;
+      --step1: #2f6b4f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Source Serif 4", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse at top, #fffdf8 0%, var(--paper) 55%, #efebe4 100%);
+      min-height: 100vh;
+    }
+    main {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 3.5rem;
+    }
+    h1 {
+      font-size: clamp(1.7rem, 3vw, 2.3rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.35rem;
+    }
+    .lede {
+      color: var(--muted);
+      max-width: 42rem;
+      line-height: 1.5;
+      margin: 0 0 1.5rem;
+    }
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 1.75rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .stat strong {
+      display: block;
+      font-size: 1.55rem;
+      color: var(--accent);
+      font-variant-numeric: tabular-nums;
+    }
+    .stat span { color: var(--muted); font-size: 0.88rem; }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+      align-items: end;
+      margin-bottom: 1.25rem;
+    }
+    label {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    select, input[type="search"] {
+      font: inherit;
+      color: var(--ink);
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 0.4rem 0.55rem;
+      min-width: 10rem;
+    }
+    .check {
+      flex-direction: row;
+      align-items: center;
+      gap: 0.4rem;
+      text-transform: none;
+      letter-spacing: 0;
+      font-size: 0.95rem;
+      color: var(--ink);
+      padding-bottom: 0.35rem;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(16rem, 0.9fr);
+      gap: 1.25rem;
+    }
+    @media (max-width: 900px) {
+      .layout { grid-template-columns: 1fr; }
+    }
+    .panel {
+      background: rgba(255,255,255,0.55);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .panel h2 {
+      margin: 0;
+      padding: 0.7rem 0.9rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,0.7);
+    }
+    #graph {
+      width: 100%;
+      height: min(72vh, 820px);
+      display: block;
+      background: #fffef9;
+    }
+    .detail {
+      padding: 0.9rem 1rem 1.2rem;
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
+    .detail .name {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 0 0 0.35rem;
+    }
+    .detail .meta {
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-bottom: 0.75rem;
+    }
+    .pill {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 0.12rem 0.45rem;
+      border-radius: 3px;
+      border: 1px solid var(--line);
+      margin-right: 0.3rem;
+      color: var(--muted);
+    }
+    .pill.step1 { border-color: var(--step1); color: var(--step1); }
+    .pill.d1 { border-color: var(--accent); color: var(--accent); }
+    .pill.dhigh { border-color: var(--accent2); color: var(--accent2); }
+    .lineage {
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+      font-size: 0.78rem;
+      color: var(--muted);
+      word-break: break-word;
+    }
+    .bars {
+      display: flex;
+      gap: 0.35rem;
+      align-items: flex-end;
+      height: 3.2rem;
+      margin: 0.75rem 0 0.25rem;
+    }
+    .bars .b {
+      flex: 1;
+      background: var(--accent);
+      border-radius: 2px 2px 0 0;
+      min-width: 0;
+      opacity: 0.85;
+    }
+    .bars .b.hot { background: var(--accent2); }
+    .bar-labels {
+      display: flex;
+      gap: 0.35rem;
+      font-size: 0.72rem;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+    .bar-labels span { flex: 1; text-align: center; }
+    footer {
+      margin-top: 1.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.86em; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Breakaway lineage</h1>
+    <p class="lede">
+      Separation distance from the Catholic Church across the groups catalog.
+      Columns are degree (0 = Catholic root). Edges follow <code>broke_from</code>.
+    </p>
+    <div class="stats" id="stats"></div>
+    <div class="controls">
+      <label>Max degree
+        <select id="maxDegree"></select>
+      </label>
+      <label>Status
+        <select id="statusFilter">
+          <option value="all">All</option>
+          <option value="extant" selected>Extant</option>
+          <option value="historical">Historical</option>
+          <option value="real">Hide synthetic / sentinels</option>
+        </select>
+      </label>
+      <label>Search
+        <input id="search" type="search" placeholder="Name or id" />
+      </label>
+      <label class="check"><input type="checkbox" id="step1Only" /> Step 1 tagged only</label>
+    </div>
+    <div class="layout">
+      <div class="panel">
+        <h2>Lineage graph</h2>
+        <svg id="graph" role="img" aria-label="Breakaway lineage graph by separation degree"></svg>
+      </div>
+      <div class="panel">
+        <h2>Selected group</h2>
+        <div class="detail" id="detail">
+          <p class="meta">Click a node to inspect lineage, region, and notes.</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      Source: <code>outputs/step1/breakaways/groups_catalog.json</code>
+      · regenerate with <code>python scripts/step1/export_groups_viz.py</code>
+    </footer>
+  </main>
+  <script>
+    const DATA = {"root": {"id": "catholic-church", "name": "Catholic Church", "separation_degree": 0, "notes": "Root node for lineage distance. Not a breakaway."}, "stats": {"group_count": 95, "by_degree": {"0": 2, "1": 29, "2": 29, "3": 17, "4": 9, "5": 7, "6": 2}, "in_step1_true": 17, "extant": 81, "historical": 9, "synthetic_or_sentinel": 5}, "groups": [{"id": "eastern-catholic-note", "name": "Eastern Catholic churches (Uniates)", "approx_rupture": "n/a", "rupture_year": null, "broke_from": null, "separation_degree": 0, "confidence": "established", "status": "in_communion", "summary": "NOT breakaways: Byzantine, Maronite, Chaldean, Syro-Malabar, etc., in communion with Rome.", "in_step1_breakaways": false, "lineage": ["catholic-church"], "region": "Global"}, {"id": "maronites-note", "name": "Maronites", "approx_rupture": "n/a (Eastern Catholic)", "rupture_year": null, "broke_from": null, "separation_degree": 0, "confidence": "established", "status": "in_communion", "summary": "NOT a breakaway: Eastern Catholic church in communion with Rome. Included to prevent misclassification.", "in_step1_breakaways": false, "lineage": ["catholic-church"], "region": "Lebanon"}, {"id": "novatianists", "name": "Novatianists", "approx_rupture": "251–", "rupture_year": 251, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "historical", "summary": "Rigorist schism over lapsi; lasting parallel hierarchy for centuries.", "in_step1_breakaways": false, "lineage": ["catholic-church", "novatianists"], "region": "Rome / Empire"}, {"id": "melitians", "name": "Melitian schism (Egypt)", "approx_rupture": "306–", "rupture_year": 306, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "historical", "summary": "Egyptian rigorist schism contemporary with early Arian controversies.", "in_step1_breakaways": false, "lineage": ["catholic-church", "melitians"], "region": "Egypt"}, {"id": "donatists", "name": "Donatists", "approx_rupture": "311–411", "rupture_year": 311, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "historical", "summary": "North African rigorist church rejecting traditor clergy and Catholic episcopal legitimacy.", "in_step1_breakaways": false, "lineage": ["catholic-church", "donatists"], "region": "North Africa"}, {"id": "arian-churches", "name": "Arian churches", "approx_rupture": "325–381", "rupture_year": 325, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "historical", "summary": "Communities and royal churches refusing Nicene homoousios; Homoean/Arian ecclesial structures among Goths, Vandals, Lombards.", "in_step1_breakaways": true, "lineage": ["catholic-church", "arian-churches"], "region": "Roman Empire; later Germanic kingdoms"}, {"id": "assyrian-church-of-the-east", "name": "Assyrian Church of the East", "approx_rupture": "431 (same as Church of the East modern name)", "rupture_year": 431, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "Modern name of the historic Church of the East patriarchate (often overlapping id with church-of-the-east).", "in_step1_breakaways": true, "lineage": ["catholic-church", "assyrian-church-of-the-east"], "region": "Iraq / Iran / diaspora"}, {"id": "church-of-the-east", "name": "Church of the East", "approx_rupture": "431", "rupture_year": 431, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "East Syriac dyophysite communion not accepting Ephesus’s condemnation of Nestorius.", "in_step1_breakaways": true, "lineage": ["catholic-church", "church-of-the-east"], "region": "Persian Empire / East Syria / Central Asia / China (historical)"}, {"id": "armenian-apostolic", "name": "Armenian Apostolic Church", "approx_rupture": "451–506", "rupture_year": 451, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "National church rejecting Chalcedon; later Florence union attempt with Armenians.", "in_step1_breakaways": true, "lineage": ["catholic-church", "oriental-orthodox", "armenian-apostolic"], "region": "Armenia / diaspora"}, {"id": "coptic-orthodox", "name": "Coptic Orthodox Church", "approx_rupture": "451", "rupture_year": 451, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "Alexandrian miaphysite patriarchate after Chalcedon; head of much African Oriental Orthodoxy.", "in_step1_breakaways": true, "lineage": ["catholic-church", "oriental-orthodox", "coptic-orthodox"], "region": "Egypt / diaspora"}, {"id": "ethiopian-orthodox", "name": "Ethiopian Orthodox Tewahedo Church", "approx_rupture": "451 (via Coptic); autocephaly 1959", "rupture_year": 451, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "Tewahedo church in the Oriental Orthodox family; historically under Coptic guidance then autocephalous.", "in_step1_breakaways": true, "lineage": ["catholic-church", "oriental-orthodox", "ethiopian-orthodox"], "region": "Ethiopia"}, {"id": "malankara-orthodox", "name": "Malankara Orthodox Syrian Church", "approx_rupture": "451 lineage; modern autocephaly 1912", "rupture_year": 451, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "Indian Oriental Orthodox church of West Syriac liturgy; complex later splits with Jacobite and Catholic factions.", "in_step1_breakaways": true, "lineage": ["catholic-church", "oriental-orthodox", "malankara-orthodox"], "region": "India (Kerala) / diaspora"}, {"id": "oriental-orthodox", "name": "Oriental Orthodox churches", "approx_rupture": "451", "rupture_year": 451, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "Non-Chalcedonian (miaphysite) family: Coptic, Syriac, Armenian, Ethiopian, Eritrean, Malankara.", "in_step1_breakaways": true, "lineage": ["catholic-church", "oriental-orthodox"], "region": "Egypt, Syria, Armenia, Ethiopia, Eritrea, India"}, {"id": "syriac-orthodox", "name": "Syriac Orthodox Church", "approx_rupture": "451", "rupture_year": 451, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "West Syriac miaphysite patriarchate of Antioch (Jacobite).", "in_step1_breakaways": true, "lineage": ["catholic-church", "oriental-orthodox", "syriac-orthodox"], "region": "Syria / Middle East / India (historically) / diaspora"}, {"id": "eastern-orthodox", "name": "Eastern Orthodox churches", "approx_rupture": "1054 (crystallized); reunion refusals 1274/1439", "rupture_year": 1054, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "Byzantine-rite autocephalous churches out of full communion with Rome after the East–West schism.", "in_step1_breakaways": true, "lineage": ["catholic-church", "eastern-orthodox"], "region": "Byzantine East / Slavic world / global"}, {"id": "cathars", "name": "Cathars / Albigensians", "approx_rupture": "12th–13th c.", "rupture_year": 1140, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "contested", "status": "historical", "summary": "Dualist/dissenting networks opposed by crusade and Inquisition; no surviving organized communion.", "in_step1_breakaways": false, "lineage": ["catholic-church", "cathars"], "region": "Languedoc / northern Italy"}, {"id": "waldensians", "name": "Waldensians", "approx_rupture": "c. 1170–1215", "rupture_year": 1173, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "Poor of Lyons dissenting movement forming lasting communities; later joined Reformed Protestantism.", "in_step1_breakaways": false, "lineage": ["catholic-church", "waldensians"], "region": "Western Alps / Italy / South America (later)"}, {"id": "wycliffites", "name": "Wycliffites / Lollards", "approx_rupture": "1380s–1415", "rupture_year": 1382, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "historical", "summary": "English Wycliffite/Lollard reform networks condemned at Constance.", "in_step1_breakaways": true, "lineage": ["catholic-church", "wycliffites"], "region": "England"}, {"id": "hussites", "name": "Hussites", "approx_rupture": "1415–1430s", "rupture_year": 1415, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "historical", "summary": "Bohemian reform communion after Hus; Utraquist and Taborite wings.", "in_step1_breakaways": true, "lineage": ["catholic-church", "hussites"], "region": "Bohemia / Moravia"}, {"id": "lutheran", "name": "Lutheran churches", "approx_rupture": "1517–1555", "rupture_year": 1517, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "Evangelical churches of the Augsburg Confession rejecting papal jurisdiction and Tridentine soteriology/sacraments.", "in_step1_breakaways": true, "lineage": ["catholic-church", "lutheran"], "region": "Germany / Scandinavia / global"}, {"id": "reformed", "name": "Reformed / Calvinist churches", "approx_rupture": "1520s–1560s", "rupture_year": 1523, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "Magisterial Reformed communions (Zwinglian/Calvinist) rejecting Roman jurisdiction and Catholic sacramental order.", "in_step1_breakaways": true, "lineage": ["catholic-church", "reformed"], "region": "Switzerland / France / Netherlands / Scotland / global"}, {"id": "anabaptist", "name": "Anabaptist / Radical Reformation churches", "approx_rupture": "1525–", "rupture_year": 1525, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "Radical Reformation bodies practicing believers’ baptism and often separation from magisterial churches.", "in_step1_breakaways": true, "lineage": ["catholic-church", "anabaptist"], "region": "Central Europe; later North America / global"}, {"id": "anglican", "name": "Anglican Communion / Church of England", "approx_rupture": "1534", "rupture_year": 1534, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "English national church rejecting papal jurisdiction; later Anglican Communion provinces.", "in_step1_breakaways": true, "lineage": ["catholic-church", "anglican"], "region": "England / global Communion"}, {"id": "old-catholic", "name": "Old Catholic churches (Union of Utrecht)", "approx_rupture": "1870–", "rupture_year": 1870, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "Communions rejecting Vatican I papal infallibility/primacy definitions.", "in_step1_breakaways": true, "lineage": ["catholic-church", "old-catholic"], "region": "Germany / Netherlands / Switzerland / global"}, {"id": "polish-national-catholic", "name": "Polish National Catholic Church", "approx_rupture": "1897–", "rupture_year": 1897, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "Independent Catholic jurisdiction among Polish immigrants; historically allied with Old Catholics.", "in_step1_breakaways": false, "lineage": ["catholic-church", "polish-national-catholic"], "region": "United States / Poland / Canada"}, {"id": "philippine-independent", "name": "Philippine Independent Church (Aglipayan)", "approx_rupture": "1902", "rupture_year": 1902, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "National church separating from Rome under Gregorio Aglipay amid colonial transition.", "in_step1_breakaways": false, "lineage": ["catholic-church", "philippine-independent"], "region": "Philippines"}, {"id": "brazilian-catholic-apostolic", "name": "Brazilian Catholic Apostolic Church", "approx_rupture": "1945", "rupture_year": 1945, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "Independent Catholic church founded by Carlos Duarte Costa.", "in_step1_breakaways": false, "lineage": ["catholic-church", "brazilian-catholic-apostolic"], "region": "Brazil / South America"}, {"id": "chinese-patriotic", "name": "Chinese Catholic Patriotic Association structures", "approx_rupture": "1957–", "rupture_year": 1957, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "contested", "status": "extant", "summary": "State-supervised Catholic structures with contested communion claims regarding Rome.", "in_step1_breakaways": false, "lineage": ["catholic-church", "chinese-patriotic"], "region": "People’s Republic of China"}, {"id": "sedevacantist-bodies", "name": "Sedevacantist independent chapels and societies", "approx_rupture": "1970s–", "rupture_year": 1970, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "Bodies holding the post-conciliar Holy See vacant; separate sacramental networks (e.g. CMRI, SSPV).", "in_step1_breakaways": false, "lineage": ["catholic-church", "sedevacantist-bodies"], "region": "Global"}, {"id": "sspx", "name": "Society of St. Pius X", "approx_rupture": "1976/1988 irregularity", "rupture_year": 1976, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "contested", "status": "extant", "summary": "Traditionalist society rejecting aspects of Vatican II reception while claiming Catholic identity.", "in_step1_breakaways": false, "lineage": ["catholic-church", "sspx"], "region": "Global"}, {"id": "palmarian", "name": "Palmarian Catholic Church", "approx_rupture": "1978–", "rupture_year": 1978, "broke_from": "catholic-church", "separation_degree": 1, "confidence": "established", "status": "extant", "summary": "Conclavist church with its own papacy centered at El Palmar de Troya.", "in_step1_breakaways": false, "lineage": ["catholic-church", "palmarian"], "region": "Spain / small diaspora"}, {"id": "unitas-fratrum", "name": "Unitas Fratrum / Moravian Church", "approx_rupture": "1457 (from Hussite milieu)", "rupture_year": 1457, "broke_from": "hussites", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "Bohemian Brethren emerging from Hussite reform; renewed at Herrnhut as Moravian Church.", "in_step1_breakaways": false, "lineage": ["catholic-church", "hussites", "unitas-fratrum"], "region": "Bohemia; later global missions"}, {"id": "hutterite", "name": "Hutterites", "approx_rupture": "1528–", "rupture_year": 1528, "broke_from": "anabaptist", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "Communal Anabaptist tradition under Jakob Hutter.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anabaptist", "hutterite"], "region": "Tyrol / Moravia; later North America"}, {"id": "mennonite", "name": "Mennonite churches", "approx_rupture": "1530s–", "rupture_year": 1536, "broke_from": "anabaptist", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "Anabaptist tradition associated with Menno Simons; multiple conferences worldwide.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anabaptist", "mennonite"], "region": "Netherlands / Switzerland / global"}, {"id": "presbyterian", "name": "Presbyterian churches", "approx_rupture": "1560–", "rupture_year": 1560, "broke_from": "reformed", "separation_degree": 2, "confidence": "contested", "status": "extant", "summary": "Reformed churches with Presbyterian polity; often treated as the Scottish/English expression of Reformed rather than a later break.", "in_step1_breakaways": false, "lineage": ["catholic-church", "reformed", "presbyterian"], "region": "Scotland / Ireland / United States / global"}, {"id": "unitarian", "name": "Unitarian / Unitarian Universalist churches", "approx_rupture": "16th–19th c. (Poland/Transylvania; Anglo-American congregational Unitarianism)", "rupture_year": 1568, "broke_from": "reformed", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "Anti-Trinitarian and later liberal Protestant bodies; Anglo-American Unitarianism largely from Congregational/Reformed roots.", "in_step1_breakaways": false, "lineage": ["catholic-church", "reformed", "unitarian"], "region": "Transylvania / England / New England / global"}, {"id": "puritan-separatists", "name": "English Separatists / Congregationalists", "approx_rupture": "1580s–1620s", "rupture_year": 1581, "broke_from": "anglican", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "Separatist and non-separating Puritan congregational churches leaving Anglican settlement.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "puritan-separatists"], "region": "England / New England"}, {"id": "congregationalist-approx", "name": "Congregationalist / New England Protestant milieu", "approx_rupture": "1620s–", "rupture_year": 1620, "broke_from": "puritan-separatists", "separation_degree": 2, "confidence": "contested", "status": "synthetic", "summary": "Synthetic/near-duplicate of Puritan Separatist congregational culture for attaching New England-born movements.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "puritan-separatists", "congregationalist-approx"], "region": "New England"}, {"id": "old-believers", "name": "Russian Old Believers", "approx_rupture": "1650s–1667", "rupture_year": 1666, "broke_from": "eastern-orthodox", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "Split from Russian Orthodoxy over Nikonian liturgical reforms; popovtsy and bespopovtsy wings.", "in_step1_breakaways": false, "lineage": ["catholic-church", "eastern-orthodox", "old-believers"], "region": "Russia / diaspora"}, {"id": "pietist-movements", "name": "Pietist and Haugean movements", "approx_rupture": "1670s–", "rupture_year": 1675, "broke_from": "lutheran", "separation_degree": 2, "confidence": "contested", "status": "extant", "summary": "Renewal movements within Lutheranism; some remained inside, some formed free churches.", "in_step1_breakaways": false, "lineage": ["catholic-church", "lutheran", "pietist-movements"], "region": "Germany / Scandinavia"}, {"id": "methodist", "name": "Methodist churches", "approx_rupture": "1784 (US); 1795+ (UK separation trajectory)", "rupture_year": 1784, "broke_from": "anglican", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "Wesleyan movement that formed separate churches from Anglican structures.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "methodist"], "region": "Britain / United States / global"}, {"id": "swedenborgian", "name": "Swedenborgian / New Church", "approx_rupture": "1787–", "rupture_year": 1787, "broke_from": "lutheran", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "Churches based on Emanuel Swedenborg’s revelations; emerged in Lutheran/Anglican cultural settings.", "in_step1_breakaways": false, "lineage": ["catholic-church", "lutheran", "swedenborgian"], "region": "Britain / Europe / United States"}, {"id": "protestant-missions-umbrella", "name": "Protestant mission churches (umbrella)", "approx_rupture": "19th c.", "rupture_year": 1800, "broke_from": "reformed", "separation_degree": 2, "confidence": "contested", "status": "synthetic", "summary": "Synthetic node for mission-founded Protestant churches used when an AIC’s precise parent mission is mixed.", "in_step1_breakaways": false, "lineage": ["catholic-church", "reformed", "protestant-missions-umbrella"], "region": "Global South"}, {"id": "plymouth-brethren", "name": "Plymouth Brethren", "approx_rupture": "1820s–1830s", "rupture_year": 1827, "broke_from": "anglican", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "Restorationist evangelical assemblies rejecting denominationalism; Open and Exclusive wings.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "plymouth-brethren"], "region": "Britain / global"}, {"id": "dutch-reformed-splits", "name": "Dutch Reformed secession churches (Afscheiding/Doleantie)", "approx_rupture": "1834 / 1886", "rupture_year": 1834, "broke_from": "reformed", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "19th-c. orthodox secessions from state Dutch Reformed Church; roots of CRCNA/Gereformeerde kerken.", "in_step1_breakaways": false, "lineage": ["catholic-church", "reformed", "dutch-reformed-splits"], "region": "Netherlands / South Africa / North America"}, {"id": "mar-thoma", "name": "Mar Thoma Syrian Church", "approx_rupture": "1836–1889", "rupture_year": 1836, "broke_from": "malankara-orthodox", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "Reformed Oriental/West Syriac church influenced by Anglican CMS; distinct from both Rome and Malankara Orthodoxy.", "in_step1_breakaways": false, "lineage": ["catholic-church", "oriental-orthodox", "malankara-orthodox", "mar-thoma"], "region": "India (Kerala)"}, {"id": "missouri-synod", "name": "Lutheran Church–Missouri Synod", "approx_rupture": "1847", "rupture_year": 1847, "broke_from": "lutheran", "separation_degree": 2, "confidence": "contested", "status": "extant", "summary": "Confessional US Lutheran synod; differentiation within Lutheranism rather than a new religion.", "in_step1_breakaways": false, "lineage": ["catholic-church", "lutheran", "missouri-synod"], "region": "United States"}, {"id": "african-instituted-churches", "name": "African Instituted Churches (AIC umbrella)", "approx_rupture": "late 19th–20th c.", "rupture_year": 1884, "broke_from": "protestant-missions-umbrella", "separation_degree": 2, "confidence": "contested", "status": "extant", "summary": "Umbrella for African-founded churches separating from mission Protestantism/Catholicism (e.g. Zionist, Aladura, Kimbanguist).", "in_step1_breakaways": false, "lineage": ["catholic-church", "protestant-missions-umbrella", "african-instituted-churches"], "region": "Sub-Saharan Africa"}, {"id": "jacobite-syrian-malankara", "name": "Jacobite Syrian Christian Church (Malankara)", "approx_rupture": "20th c. jurisdiction disputes", "rupture_year": 1912, "broke_from": "malankara-orthodox", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "Malankara faction under Syriac Orthodox patriarch vs autocephalous Malankara Orthodox.", "in_step1_breakaways": false, "lineage": ["catholic-church", "oriental-orthodox", "malankara-orthodox", "jacobite-syrian-malankara"], "region": "India"}, {"id": "iglesia-ni-cristo", "name": "Iglesia ni Cristo", "approx_rupture": "1914", "rupture_year": 1914, "broke_from": "philippine-independent", "separation_degree": 2, "confidence": "contested", "status": "extant", "summary": "Restorationist Philippine church founded by Felix Manalo; distinct from Aglipayan Catholicism.", "in_step1_breakaways": false, "lineage": ["catholic-church", "philippine-independent", "iglesia-ni-cristo"], "region": "Philippines / global"}, {"id": "liberal-catholic", "name": "Liberal Catholic Church", "approx_rupture": "1916–", "rupture_year": 1916, "broke_from": "old-catholic", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "Theosophically influenced independent sacramental church deriving orders via Old Catholic lines.", "in_step1_breakaways": false, "lineage": ["catholic-church", "old-catholic", "liberal-catholic"], "region": "Global"}, {"id": "russian-orthodox-church-abroad", "name": "Russian Orthodox Church Outside Russia (ROCOR)", "approx_rupture": "1920–2007 (reconciled with Moscow; some resist)", "rupture_year": 1920, "broke_from": "eastern-orthodox", "separation_degree": 2, "confidence": "contested", "status": "extant", "summary": "Emigré Russian Orthodox jurisdiction; reconciled with Moscow Patriarchate in 2007 though some splinters remain separate.", "in_step1_breakaways": false, "lineage": ["catholic-church", "eastern-orthodox", "russian-orthodox-church-abroad"], "region": "Global diaspora"}, {"id": "greek-old-calendarists", "name": "Greek Old Calendarists", "approx_rupture": "1924–", "rupture_year": 1924, "broke_from": "eastern-orthodox", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "Greek jurisdictions rejecting the Revised Julian calendar; subset of True Orthodox phenomenon.", "in_step1_breakaways": false, "lineage": ["catholic-church", "eastern-orthodox", "greek-old-calendarists"], "region": "Greece / diaspora"}, {"id": "true-orthodox", "name": "True Orthodox / Old Calendarist churches", "approx_rupture": "1920s–", "rupture_year": 1924, "broke_from": "eastern-orthodox", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "Jurisdictions rejecting mainstream Orthodox calendar reforms and/or perceived ecumenism.", "in_step1_breakaways": false, "lineage": ["catholic-church", "eastern-orthodox", "true-orthodox"], "region": "Greece / Russia / Romania / diaspora"}, {"id": "evangelical-free", "name": "Evangelical Free Church", "approx_rupture": "1950 (US merger; Scandinavian free-church roots earlier)", "rupture_year": 1950, "broke_from": "lutheran", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "Free-church evangelical tradition with Scandinavian Lutheran free-church ancestry.", "in_step1_breakaways": false, "lineage": ["catholic-church", "lutheran", "evangelical-free"], "region": "United States / Scandinavia / global"}, {"id": "oriental-orthodox-assyrian-split", "name": "Ancient Church of the East", "approx_rupture": "1968", "rupture_year": 1968, "broke_from": "church-of-the-east", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "Calendar/jurisdiction split from the Assyrian Church of the East.", "in_step1_breakaways": false, "lineage": ["catholic-church", "church-of-the-east", "oriental-orthodox-assyrian-split"], "region": "Iraq / diaspora"}, {"id": "continuing-anglican", "name": "Continuing Anglican churches", "approx_rupture": "1977–", "rupture_year": 1977, "broke_from": "anglican", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "Jurisdictions leaving Canterbury/ECUSA Communion over prayer book, ordination, and doctrinal changes (Congress of St. Louis).", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "continuing-anglican"], "region": "United States / global"}, {"id": "eritrean-orthodox", "name": "Eritrean Orthodox Tewahedo Church", "approx_rupture": "1993 (autocephaly from Ethiopian)", "rupture_year": 1993, "broke_from": "ethiopian-orthodox", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "Autocephalous Oriental Orthodox church separated from Ethiopian Orthodox after Eritrean independence.", "in_step1_breakaways": false, "lineage": ["catholic-church", "oriental-orthodox", "ethiopian-orthodox", "eritrean-orthodox"], "region": "Eritrea"}, {"id": "oriental-orthodox-twahedo-split-note", "name": "Ethiopian–Eritrean Tewahedo separation", "approx_rupture": "1993", "rupture_year": 1993, "broke_from": "ethiopian-orthodox", "separation_degree": 2, "confidence": "established", "status": "synthetic", "summary": "Alias/summary node pointing to eritrean-orthodox autocephaly.", "in_step1_breakaways": false, "lineage": ["catholic-church", "oriental-orthodox", "ethiopian-orthodox", "oriental-orthodox-twahedo-split-note"], "region": "Horn of Africa"}, {"id": "acna", "name": "Anglican Church in North America", "approx_rupture": "2009", "rupture_year": 2009, "broke_from": "anglican", "separation_degree": 2, "confidence": "established", "status": "extant", "summary": "Realignment province formed by conservatives leaving The Episcopal Church / ACC.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "acna"], "region": "United States / Canada"}, {"id": "baptist", "name": "Baptist churches", "approx_rupture": "1609–1640s", "rupture_year": 1609, "broke_from": "puritan-separatists", "separation_degree": 3, "confidence": "established", "status": "extant", "summary": "Believers’-baptism churches emerging from English Separatism (General/Particular Baptists); later global family.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "puritan-separatists", "baptist"], "region": "Netherlands / England / United States / global"}, {"id": "quakers", "name": "Religious Society of Friends (Quakers)", "approx_rupture": "1650s", "rupture_year": 1652, "broke_from": "puritan-separatists", "separation_degree": 3, "confidence": "established", "status": "extant", "summary": "Fox’s Friends movement arising in the English Civil War religious ferment.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "puritan-separatists", "quakers"], "region": "England / Pennsylvania / global"}, {"id": "amish", "name": "Amish", "approx_rupture": "1693", "rupture_year": 1693, "broke_from": "mennonite", "separation_degree": 3, "confidence": "established", "status": "extant", "summary": "Jakob Ammann split from Swiss Mennonites over discipline and shunning.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anabaptist", "mennonite", "amish"], "region": "Switzerland / Alsace; later North America"}, {"id": "restoration-movement", "name": "Restoration Movement (Stone–Campbell)", "approx_rupture": "1801–1832", "rupture_year": 1809, "broke_from": "presbyterian", "separation_degree": 3, "confidence": "established", "status": "extant", "summary": "American restorationists seeking New Testament church pattern; Churches of Christ / Christian Churches / Disciples.", "in_step1_breakaways": false, "lineage": ["catholic-church", "reformed", "presbyterian", "restoration-movement"], "region": "United States / global"}, {"id": "ame-church", "name": "African Methodist Episcopal Church", "approx_rupture": "1816", "rupture_year": 1816, "broke_from": "methodist", "separation_degree": 3, "confidence": "established", "status": "extant", "summary": "Black Methodist denomination founded by Richard Allen amid racial exclusion.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "methodist", "ame-church"], "region": "United States / global"}, {"id": "ame-zion", "name": "African Methodist Episcopal Zion Church", "approx_rupture": "1821", "rupture_year": 1821, "broke_from": "methodist", "separation_degree": 3, "confidence": "established", "status": "extant", "summary": "Independent Black Methodist body formed in New York.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "methodist", "ame-zion"], "region": "United States"}, {"id": "wesleyan-church", "name": "Wesleyan Church", "approx_rupture": "1843 / 1968 mergers", "rupture_year": 1843, "broke_from": "methodist", "separation_degree": 3, "confidence": "established", "status": "extant", "summary": "Wesleyan-Holiness denomination with roots in abolitionist Methodist splits.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "methodist", "wesleyan-church"], "region": "United States / global"}, {"id": "exclusive-brethren", "name": "Exclusive Brethren (Darbyite)", "approx_rupture": "1848–", "rupture_year": 1848, "broke_from": "plymouth-brethren", "separation_degree": 3, "confidence": "established", "status": "extant", "summary": "Darbyite Exclusive assemblies separating from Open Brethren.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "plymouth-brethren", "exclusive-brethren"], "region": "Britain / global"}, {"id": "free-methodist", "name": "Free Methodist Church", "approx_rupture": "1860", "rupture_year": 1860, "broke_from": "methodist", "separation_degree": 3, "confidence": "established", "status": "extant", "summary": "Holiness Methodist split emphasizing free pews and sanctification.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "methodist", "free-methodist"], "region": "United States / global"}, {"id": "salvation-army", "name": "Salvation Army", "approx_rupture": "1865–1878", "rupture_year": 1865, "broke_from": "methodist", "separation_degree": 3, "confidence": "established", "status": "extant", "summary": "Booth’s Wesleyan mission that became a distinct quasi-military church organization.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "methodist", "salvation-army"], "region": "Britain / global"}, {"id": "holiness-movement", "name": "Holiness movement churches", "approx_rupture": "19th c.", "rupture_year": 1867, "broke_from": "methodist", "separation_degree": 3, "confidence": "established", "status": "extant", "summary": "Wesleyan-holiness denominations emphasizing entire sanctification (e.g. Church of the Nazarene roots, Pilgrim Holiness).", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "methodist", "holiness-movement"], "region": "United States / global"}, {"id": "cme-church", "name": "Christian Methodist Episcopal Church", "approx_rupture": "1870", "rupture_year": 1870, "broke_from": "methodist", "separation_degree": 3, "confidence": "established", "status": "extant", "summary": "Black Methodist church organized from the Methodist Episcopal Church, South.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "methodist", "cme-church"], "region": "United States"}, {"id": "christian-science", "name": "Church of Christ, Scientist", "approx_rupture": "1879", "rupture_year": 1879, "broke_from": "congregationalist-approx", "separation_degree": 3, "confidence": "contested", "status": "extant", "summary": "Eddy’ s Christian Science church arising in New England Protestant culture.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "puritan-separatists", "christian-science"], "region": "United States / global"}, {"id": "christian-and-missionary-alliance", "name": "Christian and Missionary Alliance", "approx_rupture": "1887–", "rupture_year": 1887, "broke_from": "presbyterian", "separation_degree": 3, "confidence": "established", "status": "extant", "summary": "Simpson’s deeper-life missionary movement becoming a denomination.", "in_step1_breakaways": false, "lineage": ["catholic-church", "reformed", "presbyterian", "christian-and-missionary-alliance"], "region": "United States / Canada / global"}, {"id": "kimbanguist", "name": "Kimbanguist Church", "approx_rupture": "1921–", "rupture_year": 1921, "broke_from": "african-instituted-churches", "separation_degree": 3, "confidence": "established", "status": "extant", "summary": "Church of Jesus Christ on Earth founded by Simon Kimbangu.", "in_step1_breakaways": false, "lineage": ["catholic-church", "protestant-missions-umbrella", "african-instituted-churches", "kimbanguist"], "region": "Congo / Central Africa"}, {"id": "aladura", "name": "Aladura churches", "approx_rupture": "1920s–", "rupture_year": 1925, "broke_from": "african-instituted-churches", "separation_degree": 3, "confidence": "established", "status": "extant", "summary": "Prayer-healing AIC family (e.g. Christ Apostolic Church, Cherubim and Seraphim).", "in_step1_breakaways": false, "lineage": ["catholic-church", "protestant-missions-umbrella", "african-instituted-churches", "aladura"], "region": "Nigeria / West Africa"}, {"id": "united-church-of-christ", "name": "United Church of Christ", "approx_rupture": "1957", "rupture_year": 1957, "broke_from": "puritan-separatists", "separation_degree": 3, "confidence": "established", "status": "extant", "summary": "US merger of Congregational Christian and Evangelical & Reformed churches.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "puritan-separatists", "united-church-of-christ"], "region": "United States"}, {"id": "seventh-day-baptist", "name": "Seventh Day Baptist churches", "approx_rupture": "1650s–", "rupture_year": 1650, "broke_from": "baptist", "separation_degree": 4, "confidence": "established", "status": "extant", "summary": "Sabbatarian Baptists; earlier than Seventh-day Adventists.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "puritan-separatists", "baptist", "seventh-day-baptist"], "region": "England / United States / global"}, {"id": "latter-day-saints", "name": "Church of Jesus Christ of Latter-day Saints", "approx_rupture": "1830", "rupture_year": 1830, "broke_from": "restoration-movement", "separation_degree": 4, "confidence": "contested", "status": "extant", "summary": "Smith’s restorationist church; claims pristine restoration rather than reform of Protestantism. Placed near American restoration milieu for tracing.", "in_step1_breakaways": false, "lineage": ["catholic-church", "reformed", "presbyterian", "restoration-movement", "latter-day-saints"], "region": "United States / global"}, {"id": "adventist", "name": "Millerite / Adventist movement", "approx_rupture": "1830s–1844", "rupture_year": 1844, "broke_from": "baptist", "separation_degree": 4, "confidence": "established", "status": "historical", "summary": "Second Great Awakening advent expectation; parent of Seventh-day Adventists and other advent bodies. Mixed Baptist/Christian Connexion roots.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "puritan-separatists", "baptist", "adventist"], "region": "United States / global"}, {"id": "southern-baptist", "name": "Southern Baptist Convention", "approx_rupture": "1845", "rupture_year": 1845, "broke_from": "baptist", "separation_degree": 4, "confidence": "established", "status": "extant", "summary": "US Baptist split over slavery/missions organization; largest US Protestant denomination historically.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "puritan-separatists", "baptist", "southern-baptist"], "region": "United States"}, {"id": "church-of-god-anderson", "name": "Church of God (Anderson)", "approx_rupture": "1881", "rupture_year": 1881, "broke_from": "holiness-movement", "separation_degree": 4, "confidence": "established", "status": "extant", "summary": "Holiness restorationist movement under D. S. Warner.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "methodist", "holiness-movement", "church-of-god-anderson"], "region": "United States / global"}, {"id": "churches-of-christ", "name": "Churches of Christ (a cappella)", "approx_rupture": "1906 (US Census recognition of split)", "rupture_year": 1906, "broke_from": "restoration-movement", "separation_degree": 4, "confidence": "established", "status": "extant", "summary": "Conservative Restoration branch opposing instruments and missionary societies.", "in_step1_breakaways": false, "lineage": ["catholic-church", "reformed", "presbyterian", "restoration-movement", "churches-of-christ"], "region": "United States / global"}, {"id": "pentecostal", "name": "Pentecostal churches", "approx_rupture": "1901–1906", "rupture_year": 1906, "broke_from": "holiness-movement", "separation_degree": 4, "confidence": "established", "status": "extant", "summary": "Classical Pentecostal denominations emerging from Holiness revival (Azusa Street, etc.).", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "methodist", "holiness-movement", "pentecostal"], "region": "United States / global"}, {"id": "church-of-the-nazarene", "name": "Church of the Nazarene", "approx_rupture": "1908 (mergers from Holiness)", "rupture_year": 1908, "broke_from": "holiness-movement", "separation_degree": 4, "confidence": "established", "status": "extant", "summary": "Major Holiness denomination consolidated from Methodist-holiness bodies.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "methodist", "holiness-movement", "church-of-the-nazarene"], "region": "United States / global"}, {"id": "messianic-jewish", "name": "Messianic Jewish congregations", "approx_rupture": "1960s– (modern movement)", "rupture_year": 1967, "broke_from": "baptist", "separation_degree": 4, "confidence": "contested", "status": "extant", "summary": "Congregations affirming Jesus as Messiah while retaining Jewish identity; diverse Protestant evangelical parentage.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "puritan-separatists", "baptist", "messianic-jewish"], "region": "United States / Israel / global"}, {"id": "community-of-christ", "name": "Community of Christ (RLDS)", "approx_rupture": "1860", "rupture_year": 1860, "broke_from": "latter-day-saints", "separation_degree": 5, "confidence": "established", "status": "extant", "summary": "Reorganized Latter Day Saint church under Joseph Smith III lineage.", "in_step1_breakaways": false, "lineage": ["catholic-church", "reformed", "presbyterian", "restoration-movement", "latter-day-saints", "community-of-christ"], "region": "United States / global"}, {"id": "seventh-day-adventist", "name": "Seventh-day Adventist Church", "approx_rupture": "1863", "rupture_year": 1863, "broke_from": "adventist", "separation_degree": 5, "confidence": "established", "status": "extant", "summary": "Sabbatarian Adventist denomination organized after the Great Disappointment.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "puritan-separatists", "baptist", "adventist", "seventh-day-adventist"], "region": "United States / global"}, {"id": "bible-students", "name": "Bible Student movement", "approx_rupture": "1870s–", "rupture_year": 1879, "broke_from": "adventist", "separation_degree": 5, "confidence": "established", "status": "historical", "summary": "Russell’s Bible Student movement emerging from adventist/restorationist milieu.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "puritan-separatists", "baptist", "adventist", "bible-students"], "region": "United States / global"}, {"id": "assemblies-of-god", "name": "Assemblies of God", "approx_rupture": "1914", "rupture_year": 1914, "broke_from": "pentecostal", "separation_degree": 5, "confidence": "established", "status": "extant", "summary": "Largest classical Pentecostal fellowship, organized at Hot Springs, Arkansas.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "methodist", "holiness-movement", "pentecostal", "assemblies-of-god"], "region": "United States / global"}, {"id": "oneness-pentecostal", "name": "Oneness Pentecostal churches", "approx_rupture": "1913–1916", "rupture_year": 1916, "broke_from": "pentecostal", "separation_degree": 5, "confidence": "established", "status": "extant", "summary": "Non-Trinitarian Pentecostal bodies (e.g. UPCI) splitting from Trinitarian Pentecostalism.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "methodist", "holiness-movement", "pentecostal", "oneness-pentecostal"], "region": "United States / global"}, {"id": "grace-communion", "name": "Grace Communion International (ex–Worldwide Church of God)", "approx_rupture": "1934 / doctrinal reformation 1990s", "rupture_year": 1934, "broke_from": "adventist", "separation_degree": 5, "confidence": "established", "status": "extant", "summary": "Armstrong’s Radio/Worldwide Church of God; later trinitarian evangelical reformation as GCI; splinters remain.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "puritan-separatists", "baptist", "adventist", "grace-communion"], "region": "United States / global"}, {"id": "charismatic-renewal-independents", "name": "Independent Charismatic / neo-Pentecostal networks", "approx_rupture": "1960s–", "rupture_year": 1960, "broke_from": "pentecostal", "separation_degree": 5, "confidence": "contested", "status": "extant", "summary": "Post-classical charismatic megachurches and apostolic networks; many have mixed Protestant parentage.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "methodist", "holiness-movement", "pentecostal", "charismatic-renewal-independents"], "region": "Global"}, {"id": "jehovah-witnesses", "name": "Jehovah’s Witnesses", "approx_rupture": "1931 (name); organizational break earlier", "rupture_year": 1931, "broke_from": "bible-students", "separation_degree": 6, "confidence": "established", "status": "extant", "summary": "Watch Tower society under Rutherford; distinct doctrines on Trinity, governance, eschatology.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "puritan-separatists", "baptist", "adventist", "bible-students", "jehovah-witnesses"], "region": "Global"}, {"id": "vineyard", "name": "Vineyard Movement", "approx_rupture": "1970s–1982", "rupture_year": 1982, "broke_from": "charismatic-renewal-independents", "separation_degree": 6, "confidence": "established", "status": "extant", "summary": "Charismatic evangelical association founded by John Wimber et al.", "in_step1_breakaways": false, "lineage": ["catholic-church", "anglican", "methodist", "holiness-movement", "pentecostal", "charismatic-renewal-independents", "vineyard"], "region": "United States / global"}]};
+
+    const degColors = {
+      0: "#5c6b7a",
+      1: "#2a5f7a",
+      2: "#3d7a96",
+      3: "#8a4b2f",
+      4: "#a65d3a",
+      5: "#b8734d",
+      6: "#c98961",
+    };
+
+    const byId = Object.fromEntries(DATA.groups.map(g => [g.id, g]));
+    byId["catholic-church"] = {
+      id: "catholic-church",
+      name: DATA.root.name,
+      separation_degree: 0,
+      status: "in_communion",
+      confidence: "established",
+      summary: "Root node for lineage distance.",
+      broke_from: null,
+      lineage: ["catholic-church"],
+      in_step1_breakaways: false,
+      approx_rupture: "—",
+      region: "Global",
+    };
+
+    function renderStats() {
+      const s = DATA.stats;
+      const deg = s.by_degree || {};
+      const maxDeg = Math.max(...Object.keys(deg).map(Number));
+      const maxCount = Math.max(...Object.values(deg));
+      const bars = [];
+      const labels = [];
+      for (let d = 0; d <= maxDeg; d++) {
+        const n = deg[String(d)] || deg[d] || 0;
+        const h = Math.max(4, Math.round(48 * n / maxCount));
+        bars.push(`<div class="b${d >= 3 ? " hot" : ""}" style="height:${h}px" title="degree ${d}: ${n}"></div>`);
+        labels.push(`<span>d${d}<br>${n}</span>`);
+      }
+      document.getElementById("stats").innerHTML = `
+        <div class="stat"><strong>${s.group_count}</strong><span>groups in catalog</span></div>
+        <div class="stat"><strong>${s.in_step1_true}</strong><span>tagged in Step 1</span></div>
+        <div class="stat"><strong>${s.extant}</strong><span>extant</span></div>
+        <div class="stat" style="min-width:14rem">
+          <span>Groups by separation degree</span>
+          <div class="bars">${bars.join("")}</div>
+          <div class="bar-labels">${labels.join("")}</div>
+        </div>`;
+      const sel = document.getElementById("maxDegree");
+      sel.innerHTML = "";
+      for (let d = 1; d <= maxDeg; d++) {
+        const opt = document.createElement("option");
+        opt.value = d;
+        opt.textContent = String(d);
+        if (d === Math.min(4, maxDeg)) opt.selected = true;
+        sel.appendChild(opt);
+      }
+    }
+
+    function visibleGroups() {
+      const maxD = Number(document.getElementById("maxDegree").value);
+      const status = document.getElementById("statusFilter").value;
+      const step1 = document.getElementById("step1Only").checked;
+      const q = document.getElementById("search").value.trim().toLowerCase();
+      return DATA.groups.filter(g => {
+        if (g.separation_degree > maxD) return false;
+        if (step1 && !g.in_step1_breakaways) return false;
+        if (status === "extant" && g.status !== "extant") return false;
+        if (status === "historical" && g.status !== "historical") return false;
+        if (status === "real" && (g.status === "synthetic" || g.status === "in_communion")) return false;
+        if (q) {
+          const blob = (g.name + " " + g.id + " " + (g.summary || "")).toLowerCase();
+          if (!blob.includes(q)) return false;
+        }
+        return true;
+      });
+    }
+
+    function showDetail(id) {
+      const g = byId[id];
+      if (!g) return;
+      const deg = g.separation_degree;
+      const pills = [
+        `<span class="pill ${deg <= 1 ? "d1" : "dhigh"}">degree ${deg}</span>`,
+        `<span class="pill">${g.status || "—"}</span>`,
+        `<span class="pill">${g.confidence || "—"}</span>`,
+        g.in_step1_breakaways ? `<span class="pill step1">Step 1</span>` : "",
+      ].join("");
+      const parent = g.broke_from ? (byId[g.broke_from]?.name || g.broke_from) : "—";
+      document.getElementById("detail").innerHTML = `
+        <p class="name">${escapeHtml(g.name)}</p>
+        <div>${pills}</div>
+        <p class="meta">${escapeHtml(g.approx_rupture || "—")} · ${escapeHtml(g.region || "—")}</p>
+        <p><strong>Broke from:</strong> ${escapeHtml(parent)}</p>
+        <p>${escapeHtml(g.summary || "")}</p>
+        <p class="lineage">${escapeHtml((g.lineage || []).join(" → "))}</p>`;
+    }
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+    }
+
+    function draw() {
+      const svg = document.getElementById("graph");
+      const groups = visibleGroups();
+      const width = svg.clientWidth || 800;
+      const height = svg.clientHeight || 600;
+      svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+      svg.innerHTML = "";
+
+      const maxD = Number(document.getElementById("maxDegree").value);
+      const nodes = [byId["catholic-church"], ...groups];
+      // Ensure parents of visible nodes are present for edges even if filtered out
+      const needed = new Set(nodes.map(n => n.id));
+      for (const g of groups) {
+        let p = g.broke_from;
+        while (p && !needed.has(p)) {
+          if (byId[p]) {
+            nodes.push(byId[p]);
+            needed.add(p);
+            p = byId[p].broke_from;
+          } else break;
+        }
+      }
+      const uniq = [];
+      const seen = new Set();
+      for (const n of nodes) {
+        if (seen.has(n.id)) continue;
+        seen.add(n.id);
+        if ((n.separation_degree ?? 0) > maxD && n.id !== "catholic-church") continue;
+        uniq.push(n);
+      }
+
+      const byDeg = {};
+      for (const n of uniq) {
+        const d = n.separation_degree ?? 0;
+        (byDeg[d] ||= []).push(n);
+      }
+      const degrees = Object.keys(byDeg).map(Number).sort((a,b)=>a-b);
+      const pos = {};
+      const padX = 40, padY = 28;
+      const usableW = width - padX * 2;
+      const usableH = height - padY * 2;
+      const colW = degrees.length > 1 ? usableW / (degrees.length - 1 || 1) : 0;
+
+      for (let i = 0; i < degrees.length; i++) {
+        const d = degrees[i];
+        const col = byDeg[d];
+        col.sort((a,b) => (a.rupture_year||9999) - (b.rupture_year||9999) || a.name.localeCompare(b.name));
+        const x = padX + (degrees.length === 1 ? usableW / 2 : i * (usableW / (degrees.length - 1)));
+        for (let j = 0; j < col.length; j++) {
+          const y = padY + (col.length === 1 ? usableH / 2 : j * (usableH / Math.max(col.length - 1, 1)));
+          pos[col[j].id] = { x, y, n: col[j] };
+        }
+      }
+
+      // edges
+      const gEdges = document.createElementNS("http://www.w3.org/2000/svg", "g");
+      for (const n of uniq) {
+        if (!n.broke_from || !pos[n.id] || !pos[n.broke_from]) continue;
+        const a = pos[n.broke_from], b = pos[n.id];
+        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        const mx = (a.x + b.x) / 2;
+        path.setAttribute("d", `M${a.x},${a.y} C${mx},${a.y} ${mx},${b.y} ${b.x},${b.y}`);
+        path.setAttribute("fill", "none");
+        path.setAttribute("stroke", "#c5ced8");
+        path.setAttribute("stroke-width", "1.2");
+        gEdges.appendChild(path);
+      }
+      svg.appendChild(gEdges);
+
+      // column labels
+      const gLab = document.createElementNS("http://www.w3.org/2000/svg", "g");
+      for (let i = 0; i < degrees.length; i++) {
+        const d = degrees[i];
+        const x = padX + (degrees.length === 1 ? usableW / 2 : i * (usableW / (degrees.length - 1)));
+        const t = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        t.setAttribute("x", x);
+        t.setAttribute("y", 14);
+        t.setAttribute("text-anchor", "middle");
+        t.setAttribute("fill", "#5c6b7a");
+        t.setAttribute("font-size", "11");
+        t.textContent = d === 0 ? "Catholic" : `degree ${d}`;
+        gLab.appendChild(t);
+      }
+      svg.appendChild(gLab);
+
+      const gNodes = document.createElementNS("http://www.w3.org/2000/svg", "g");
+      for (const n of uniq) {
+        const p = pos[n.id];
+        if (!p) continue;
+        const c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        c.setAttribute("cx", p.x);
+        c.setAttribute("cy", p.y);
+        c.setAttribute("r", n.id === "catholic-church" ? 7 : 5);
+        c.setAttribute("fill", degColors[n.separation_degree] || "#2a5f7a");
+        c.setAttribute("stroke", n.in_step1_breakaways ? "#2f6b4f" : "#fff");
+        c.setAttribute("stroke-width", n.in_step1_breakaways ? 2.5 : 1);
+        c.style.cursor = "pointer";
+        c.addEventListener("click", () => showDetail(n.id));
+        gNodes.appendChild(c);
+
+        const t = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        t.setAttribute("x", p.x + 8);
+        t.setAttribute("y", p.y + 3);
+        t.setAttribute("fill", "#1c2430");
+        t.setAttribute("font-size", "10");
+        t.textContent = n.name.length > 28 ? n.name.slice(0, 26) + "…" : n.name;
+        t.style.cursor = "pointer";
+        t.addEventListener("click", () => showDetail(n.id));
+        gNodes.appendChild(t);
+      }
+      svg.appendChild(gNodes);
+    }
+
+    renderStats();
+    ["maxDegree","statusFilter","step1Only","search"].forEach(id => {
+      document.getElementById(id).addEventListener("input", draw);
+      document.getElementById(id).addEventListener("change", draw);
+    });
+    window.addEventListener("resize", draw);
+    draw();
+    showDetail("catholic-church");
+  </script>
+</body>
+</html>

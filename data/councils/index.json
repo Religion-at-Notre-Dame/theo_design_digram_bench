@@ -71,17 +71,17 @@
     },
     {
       "id": "CON3",
-      "title": "Third Council of Constantinople (680-681) - Definition of Faith and Sentence against the Monothelites",
+      "title": "Third Council of Constantinople (680–681), Exposition of Faith",
       "council": "Third Council of Constantinople",
       "documentType": "council_definition",
       "datePromulgated": "680-681",
-      "sourceUrl": "https://www.newadvent.org/fathers/3813.htm",
-      "edition": "Nicene and Post-Nicene Fathers, Second Series, Vol. 14: The Seven Ecumenical Councils, ed. Philip Schaff and Henry Wace (Buffalo, NY: Christian Literature Publishing Co., 1900); revised for New Advent by Kevin Knight",
-      "englishRecordCount": 2,
+      "sourceUrl": "https://www.papalencyclicals.net/councils/ecum06.htm",
+      "edition": "Decrees of the Ecumenical Councils, ed. Norman P. Tanner (1990), vol. 1; via Papal Encyclicals Online",
+      "englishRecordCount": 10,
       "latinRecordCount": 0,
       "englishCanonCount": 0,
       "englishSessionCount": 0,
-      "englishParagraphCount": 0,
+      "englishParagraphCount": 10,
       "file": "documents/Constantinople_III.jsonl"
     },
     {
@@ -131,17 +131,17 @@
     },
     {
       "id": "FLO",
-      "title": "Council of Florence, Laetentur Caeli (Decree for the Greeks)",
+      "title": "Council of Basel–Ferrara–Florence (1431–1445), Sessions",
       "council": "Council of Florence",
-      "documentType": "decree",
-      "datePromulgated": "1439-07-06",
+      "documentType": "council_decree",
+      "datePromulgated": "1431-1445",
       "sourceUrl": "https://www.papalencyclicals.net/councils/ecum17.htm",
       "edition": "Decrees of the Ecumenical Councils, ed. Norman P. Tanner (1990), vol. 1; via Papal Encyclicals Online",
-      "englishRecordCount": 69,
+      "englishRecordCount": 308,
       "latinRecordCount": 0,
       "englishCanonCount": 0,
-      "englishSessionCount": 69,
-      "englishParagraphCount": 69,
+      "englishSessionCount": 308,
+      "englishParagraphCount": 308,
       "file": "documents/Florence.jsonl"
     },
     {
@@ -302,10 +302,10 @@
       "datePromulgated": "1546-02-04",
       "sourceUrl": "https://history.hanover.edu/texts/trent/trentall.html",
       "edition": "J. Waterworth (ed. & trans.), The Canons and Decrees of the Sacred and Oecumenical Council of Trent (London: Dolman, 1848); Hanover Historical Texts Project scan",
-      "englishRecordCount": 201,
+      "englishRecordCount": 227,
       "latinRecordCount": 0,
       "englishCanonCount": 131,
-      "englishSessionCount": 201,
+      "englishSessionCount": 227,
       "englishParagraphCount": 0,
       "file": "documents/Trent.jsonl"
     },
@@ -566,8 +566,7 @@
     }
   ],
   "supplementalSource": {
-    "name": "Papal Encyclicals Online",
-    "edition": "Decrees of the Ecumenical Councils, ed. Norman P. Tanner (1990), vol. 1; via Papal Encyclicals Online",
-    "note": "Councils absent from the Magisterium RAG v1.0.0 release were scraped from Papal Encyclicals Online (Tanner) by scripts/scrape_missing_councils.py."
+    "name": "Papal Encyclicals Online / Hanover Historical Texts",
+    "note": "Missing RAG councils via scripts/scrape_missing_councils.py; Florence/Constantinople III/Trent gaps via scripts/complete_incomplete_councils.py."
   }
 }

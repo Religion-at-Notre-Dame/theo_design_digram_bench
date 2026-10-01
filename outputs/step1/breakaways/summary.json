@@ -1,0 +1,86 @@
+{
+  "description": "Verified Step 1 entries whose decision is linked to a breakaway group under the project formal definition, with matching council passage text.",
+  "entry_count": 130,
+  "passage_count": 130,
+  "missing_record_ids": [],
+  "by_breakaway": [
+    {
+      "breakaway": "Arian churches",
+      "count": 1
+    },
+    {
+      "breakaway": "Church of the East",
+      "count": 15
+    },
+    {
+      "breakaway": "Oriental Orthodox churches",
+      "count": 60
+    },
+    {
+      "breakaway": "Eastern Orthodox churches",
+      "count": 18
+    },
+    {
+      "breakaway": "Wycliffites / Lollards",
+      "count": 6
+    },
+    {
+      "breakaway": "Hussites",
+      "count": 4
+    },
+    {
+      "breakaway": "Protestant churches",
+      "count": 24
+    },
+    {
+      "breakaway": "Old Catholic churches",
+      "count": 2
+    }
+  ],
+  "by_council": [
+    {
+      "council": "Council of Florence",
+      "count": 70
+    },
+    {
+      "council": "Council of Trent",
+      "count": 24
+    },
+    {
+      "council": "Council of Ephesus",
+      "count": 15
+    },
+    {
+      "council": "Council of Constance",
+      "count": 10
+    },
+    {
+      "council": "Second Council of Lyons",
+      "count": 6
+    },
+    {
+      "council": "First Vatican Council",
+      "count": 2
+    },
+    {
+      "council": "First Council of Nicaea",
+      "count": 1
+    },
+    {
+      "council": "Council of Chalcedon",
+      "count": 1
+    },
+    {
+      "council": "Second Council of Constantinople",
+      "count": 1
+    }
+  ],
+  "passage_text_status": {
+    "full": 130
+  },
+  "files": {
+    "entries": "outputs/step1/breakaways/entries.jsonl",
+    "passages": "outputs/step1/breakaways/passages.jsonl",
+    "summary": "outputs/step1/breakaways/summary.json"
+  }
+}
