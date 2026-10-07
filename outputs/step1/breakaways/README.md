@@ -29,6 +29,11 @@ Each group includes `broke_from`, `separation_degree`, and `lineage`
 subset; higher degrees cover Methodist←Anglican, Baptist←Separatist,
 Pentecostal←Holiness←Methodist, Old Believers←Eastern Orthodox, etc.
 
+**Not breakaways** (Eastern Catholics/Maronites, SSPX, Cathars, duplicates,
+synthetic umbrellas) live in `excluded_non_breakaways`, not in `groups`.
+Family labels such as Oriental Orthodoxy are under `family_labels`.
+Re-audit parents with `python scripts/step1/audit_fix_groups_catalog.py`.
+
 ## By breakaway group
 
 - **Arian churches** — 1

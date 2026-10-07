@@ -1,5 +1,5 @@
 {
-  "description": "Comprehensive reference catalog of ecclesial communities for tracing breakaway lineages from the Catholic Church, including groups at separation_degree > 1 (broke from a prior breakaway rather than directly from Rome). Primary use: next-phase graph of Christian separations.",
+  "description": "Reference catalog of ecclesial communities for tracing breakaway lineages from the Catholic Church, including groups at separation_degree > 1. Only breakaway (or carefully marked synthetic/contested) nodes appear in `groups`. Communion bodies such as Eastern Catholics are listed under `excluded_non_breakaways`, not as breakaways.",
   "definition_ref": "README.md § Breakaway group (formal definition)",
   "root": {
     "id": "catholic-church",
@@ -16,64 +16,32 @@
     "confidence": "established | contested",
     "status": "extant | historical | synthetic | in_communion",
     "in_step1_breakaways": "whether tagged in outputs/step1/breakaways/entries.jsonl",
-    "notes": "Lineages for restorationist/charismatic/AIC bodies are sometimes heuristic."
+    "notes": "Lineages for restorationist/charismatic/AIC bodies are sometimes heuristic.",
+    "disagreement": "{kind: council_locus|summary, summary, optional record_id/canonical_citation/entry_id/related_loci/vs_parent}"
   },
-  "preference": "Prefer durable communal identities. Mark contested cases. Synthetic umbrella nodes exist only to support lineage edges. Degree counts follow the primary broke_from chain, not every historical influence.",
+  "preference": "Prefer durable communal identities. Mark contested cases. Synthetic nodes must not imply a false schism. Degree follows the primary broke_from chain. For each breakaway, prefer a concrete council locus; otherwise summarize. Eastern Catholics and other in-communion bodies are excluded from `groups`.",
   "stats": {
-    "group_count": 95,
+    "group_count": 118,
     "by_degree": {
-      "0": 2,
-      "1": 29,
-      "2": 29,
-      "3": 17,
-      "4": 9,
-      "5": 7,
-      "6": 2
+      "1": 28,
+      "2": 31,
+      "3": 25,
+      "4": 16,
+      "5": 12,
+      "6": 6
     },
-    "in_step1_true": 17,
-    "extant": 81,
-    "historical": 9,
-    "synthetic_or_sentinel": 5
+    "in_step1_true": 15,
+    "extant": 108,
+    "historical": 10,
+    "synthetic": 0,
+    "contested_confidence": 15,
+    "excluded_non_breakaways": 12,
+    "family_labels": 1,
+    "with_council_locus": 16,
+    "with_summary_only": 102,
+    "disagreement_coverage": 118
   },
   "groups": [
-    {
-      "id": "eastern-catholic-note",
-      "name": "Eastern Catholic churches (Uniates)",
-      "approx_rupture": "n/a",
-      "rupture_year": null,
-      "region": "Global",
-      "broke_from": null,
-      "separation_degree": 0,
-      "relation": "in_communion",
-      "confidence": "established",
-      "summary": "NOT breakaways: Byzantine, Maronite, Chaldean, Syro-Malabar, etc., in communion with Rome.",
-      "council_link_in_corpus": "Florence unions partially relevant",
-      "in_step1_breakaways": false,
-      "lineage": [
-        "catholic-church"
-      ],
-      "status": "in_communion",
-      "notes": "Sentinel against mis-tagging Eastern Catholics as Orthodox breakaways."
-    },
-    {
-      "id": "maronites-note",
-      "name": "Maronites",
-      "approx_rupture": "n/a (Eastern Catholic)",
-      "rupture_year": null,
-      "region": "Lebanon",
-      "broke_from": null,
-      "separation_degree": 0,
-      "relation": "in_communion",
-      "confidence": "established",
-      "summary": "NOT a breakaway: Eastern Catholic church in communion with Rome. Included to prevent misclassification.",
-      "council_link_in_corpus": null,
-      "in_step1_breakaways": false,
-      "lineage": [
-        "catholic-church"
-      ],
-      "status": "in_communion",
-      "notes": "Degree 0 sentinel."
-    },
     {
       "id": "novatianists",
       "name": "Novatianists",
@@ -91,7 +59,14 @@
         "catholic-church",
         "novatianists"
       ],
-      "status": "historical"
+      "status": "historical",
+      "disagreement": {
+        "kind": "council_locus",
+        "summary": "Rejected readmission of the lapsed and formed a rigorist parallel hierarchy; Nicaea I canon 8 regulates reception of ‘Cathari’ (Novatianist) clergy into the Catholic Church without endorsing the schism.",
+        "record_id": "mag:NIC1:canon8:en",
+        "canonical_citation": "Nicaea I canon 8",
+        "entry_id": "nic1-canon8-en"
+      }
     },
     {
       "id": "melitians",
@@ -110,7 +85,14 @@
         "catholic-church",
         "melitians"
       ],
-      "status": "historical"
+      "status": "historical",
+      "disagreement": {
+        "kind": "council_locus",
+        "summary": "Egyptian rigorist schism over discipline of the lapsed and episcopal legitimacy; Nicaea’s synodal letter to Alexandria regulates Melitian clergy without accepting the schism’s claims.",
+        "record_id": "mag:NIC1:synodal-letter:en",
+        "canonical_citation": "Nicaea I Synodal Letter to the Church of Alexandria",
+        "entry_id": "nic1-synodal-letter-en"
+      }
     },
     {
       "id": "donatists",
@@ -132,7 +114,11 @@
       "status": "historical",
       "aliases": [
         "Donatist Church"
-      ]
+      ],
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Denied the validity of sacraments and ordinations performed by traditores (clergy who had handed over scriptures in persecution); rejected Catholic bishops as compromised. No dedicated ecumenical-council decree on Donatism is in this corpus (settled mainly via African synods / Augustine)."
+      }
     },
     {
       "id": "arian-churches",
@@ -155,31 +141,18 @@
       "aliases": [
         "Arians",
         "Homoeans"
-      ]
-    },
-    {
-      "id": "assyrian-church-of-the-east",
-      "name": "Assyrian Church of the East",
-      "approx_rupture": "431 (same as Church of the East modern name)",
-      "rupture_year": 431,
-      "region": "Iraq / Iran / diaspora",
-      "broke_from": "catholic-church",
-      "separation_degree": 1,
-      "relation": "rejected_decision",
-      "confidence": "established",
-      "summary": "Modern name of the historic Church of the East patriarchate (often overlapping id with church-of-the-east).",
-      "council_link_in_corpus": "Council of Ephesus",
-      "in_step1_breakaways": true,
-      "lineage": [
-        "catholic-church",
-        "assyrian-church-of-the-east"
       ],
-      "status": "extant",
-      "notes": "Near-duplicate of church-of-the-east for common naming; prefer church-of-the-east as canonical id when linking."
+      "disagreement": {
+        "kind": "council_locus",
+        "summary": "Denied that the Son is consubstantial (homoousios) with the Father; rejected the Nicene Creed’s definition of the Son’s full divinity.",
+        "record_id": "mag:NIC1:creed:en",
+        "canonical_citation": "Nicaea I Creed (325 form)",
+        "entry_id": "nic1-creed-en"
+      }
     },
     {
       "id": "church-of-the-east",
-      "name": "Church of the East",
+      "name": "Church of the East (Assyrian Church of the East)",
       "approx_rupture": "431",
       "rupture_year": 431,
       "region": "Persian Empire / East Syria / Central Asia / China (historical)",
@@ -187,7 +160,7 @@
       "separation_degree": 1,
       "relation": "rejected_decision",
       "confidence": "established",
-      "summary": "East Syriac dyophysite communion not accepting Ephesus’s condemnation of Nestorius.",
+      "summary": "East Syriac dyophysite patriarchate that did not accept Ephesus’s condemnation of Nestorius; modern English name often ‘Assyrian Church of the East’.",
       "council_link_in_corpus": "Council of Ephesus",
       "in_step1_breakaways": true,
       "lineage": [
@@ -199,7 +172,21 @@
         "Nestorian Church",
         "Assyrian Church of the East",
         "East Syriac Church"
-      ]
+      ],
+      "disagreement": {
+        "kind": "council_locus",
+        "summary": "East Syriac dyophysite patriarchate that did not accept Ephesus’s condemnation of Nestorius; commonly called the Assyrian Church of the East in modern English.",
+        "record_id": "mag:EPH:cyril-letter3:en",
+        "canonical_citation": "Ephesus, Third Epistle of Cyril to Nestorius (Cum salvator noster)",
+        "entry_id": "eph-cyril-letter3-en",
+        "related_loci": [
+          {
+            "record_id": "mag:EPH:cyril-letter2:en",
+            "canonical_citation": "Ephesus, Epistle of Cyril to Nestorius (Intelligo quosdam)"
+          }
+        ]
+      },
+      "notes": "Canonical id for this communion. ‘Assyrian Church of the East’ is the usual modern name, not a separate breakaway."
     },
     {
       "id": "armenian-apostolic",
@@ -216,11 +203,22 @@
       "in_step1_breakaways": true,
       "lineage": [
         "catholic-church",
-        "oriental-orthodox",
         "armenian-apostolic"
       ],
       "parent_family": "oriental-orthodox",
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "council_locus",
+        "summary": "Armenian church’s non-reception of Chalcedon; later Florence session 8 sought reunion on Catholic terms that were not lastingly received as ending the schism.",
+        "record_id": "mag:CHAL:definition:en",
+        "canonical_citation": "Chalcedon, Definition of Faith",
+        "entry_id": "chal-definition-en",
+        "related_loci": [
+          {
+            "note": "Later reunion bull for Armenians (Florence S8) in corpus; primary doctrinal break remains Chalcedon."
+          }
+        ]
+      }
     },
     {
       "id": "coptic-orthodox",
@@ -237,85 +235,17 @@
       "in_step1_breakaways": true,
       "lineage": [
         "catholic-church",
-        "oriental-orthodox",
         "coptic-orthodox"
       ],
       "parent_family": "oriental-orthodox",
-      "status": "extant"
-    },
-    {
-      "id": "ethiopian-orthodox",
-      "name": "Ethiopian Orthodox Tewahedo Church",
-      "approx_rupture": "451 (via Coptic); autocephaly 1959",
-      "rupture_year": 451,
-      "region": "Ethiopia",
-      "broke_from": "catholic-church",
-      "separation_degree": 1,
-      "relation": "rejected_decision",
-      "confidence": "established",
-      "summary": "Tewahedo church in the Oriental Orthodox family; historically under Coptic guidance then autocephalous.",
-      "council_link_in_corpus": "Council of Chalcedon",
-      "in_step1_breakaways": true,
-      "lineage": [
-        "catholic-church",
-        "oriental-orthodox",
-        "ethiopian-orthodox"
-      ],
-      "parent_family": "oriental-orthodox",
-      "status": "extant"
-    },
-    {
-      "id": "malankara-orthodox",
-      "name": "Malankara Orthodox Syrian Church",
-      "approx_rupture": "451 lineage; modern autocephaly 1912",
-      "rupture_year": 451,
-      "region": "India (Kerala) / diaspora",
-      "broke_from": "catholic-church",
-      "separation_degree": 1,
-      "relation": "rejected_decision",
-      "confidence": "established",
-      "summary": "Indian Oriental Orthodox church of West Syriac liturgy; complex later splits with Jacobite and Catholic factions.",
-      "council_link_in_corpus": "Council of Chalcedon",
-      "in_step1_breakaways": true,
-      "lineage": [
-        "catholic-church",
-        "oriental-orthodox",
-        "malankara-orthodox"
-      ],
-      "parent_family": "oriental-orthodox",
-      "status": "extant"
-    },
-    {
-      "id": "oriental-orthodox",
-      "name": "Oriental Orthodox churches",
-      "approx_rupture": "451",
-      "rupture_year": 451,
-      "region": "Egypt, Syria, Armenia, Ethiopia, Eritrea, India",
-      "broke_from": "catholic-church",
-      "separation_degree": 1,
-      "relation": "rejected_decision",
-      "confidence": "established",
-      "summary": "Non-Chalcedonian (miaphysite) family: Coptic, Syriac, Armenian, Ethiopian, Eritrean, Malankara.",
-      "council_link_in_corpus": "Council of Chalcedon; Florence S8/S11",
-      "in_step1_breakaways": true,
-      "lineage": [
-        "catholic-church",
-        "oriental-orthodox"
-      ],
       "status": "extant",
-      "aliases": [
-        "Non-Chalcedonians",
-        "Miaphysite churches",
-        "Jacobites"
-      ],
-      "member_churches": [
-        "coptic-orthodox",
-        "syriac-orthodox",
-        "armenian-apostolic",
-        "ethiopian-orthodox",
-        "eritrean-orthodox",
-        "malankara-orthodox"
-      ]
+      "disagreement": {
+        "kind": "council_locus",
+        "summary": "Alexandrian non-reception of Chalcedon’s two-nature Definition; continuity with miaphysite confession after 451.",
+        "record_id": "mag:CHAL:definition:en",
+        "canonical_citation": "Chalcedon, Definition of Faith",
+        "entry_id": "chal-definition-en"
+      }
     },
     {
       "id": "syriac-orthodox",
@@ -332,14 +262,20 @@
       "in_step1_breakaways": true,
       "lineage": [
         "catholic-church",
-        "oriental-orthodox",
         "syriac-orthodox"
       ],
       "parent_family": "oriental-orthodox",
       "status": "extant",
       "aliases": [
         "Jacobite Church"
-      ]
+      ],
+      "disagreement": {
+        "kind": "council_locus",
+        "summary": "West Syriac non-reception of Chalcedon’s two-nature Definition after 451.",
+        "record_id": "mag:CHAL:definition:en",
+        "canonical_citation": "Chalcedon, Definition of Faith",
+        "entry_id": "chal-definition-en"
+      }
     },
     {
       "id": "eastern-orthodox",
@@ -363,27 +299,20 @@
         "Byzantine Orthodox",
         "Greek Orthodox",
         "Russian Orthodox"
-      ]
-    },
-    {
-      "id": "cathars",
-      "name": "Cathars / Albigensians",
-      "approx_rupture": "12th–13th c.",
-      "rupture_year": 1140,
-      "region": "Languedoc / northern Italy",
-      "broke_from": "catholic-church",
-      "separation_degree": 1,
-      "relation": "rejected_by_decision",
-      "confidence": "contested",
-      "summary": "Dualist/dissenting networks opposed by crusade and Inquisition; no surviving organized communion.",
-      "council_link_in_corpus": "Fourth Lateran Council",
-      "in_step1_breakaways": false,
-      "lineage": [
-        "catholic-church",
-        "cathars"
       ],
-      "status": "historical",
-      "notes": "Contested durability as a ‘church’."
+      "disagreement": {
+        "kind": "council_locus",
+        "summary": "East–West rupture over papal primacy, the Filioque, and related Latin practices; Florence’s union definition (Laetentur Caeli / session 6) and Lyons II’s reunion profession were not lastingly received in the Byzantine East.",
+        "record_id": "mag:FLO:florence:s6:definition-of-the-holy-ecumenical-synod-of-florence:en",
+        "canonical_citation": "Florence (Florence) S6 [Definition of the holy ecumenical synod of Florence]",
+        "entry_id": "flo-florence-s6-definition-of-the-holy-ecumenical-synod-of-florence-en",
+        "related_loci": [
+          {
+            "record_id": "mag:LYO2:profession-palaeologus:p1:en",
+            "canonical_citation": "Lyons II, Profession of Faith of Michael Palaeologus (Denzinger 461)"
+          }
+        ]
+      }
     },
     {
       "id": "waldensians",
@@ -406,7 +335,19 @@
       "aliases": [
         "Poor of Lyons",
         "Vaudois"
-      ]
+      ],
+      "disagreement": {
+        "kind": "council_locus",
+        "summary": "Lay preaching and apostolic poverty outside episcopal authorization; Lateran IV’s anti-heresy constitution anathematizes dissent from the Catholic faith and orders episcopal/secular action against heretics and their supporters.",
+        "record_id": "mag:LAT4:constitution3:en",
+        "canonical_citation": "Fourth Lateran Council, constitution 3",
+        "entry_id": "lat4-constitution3-en",
+        "related_loci": [
+          {
+            "note": "Waldensian break is also disciplinary (unauthorized preaching); const. 3 is the council’s general heresy regime."
+          }
+        ]
+      }
     },
     {
       "id": "wycliffites",
@@ -428,7 +369,20 @@
       "status": "historical",
       "aliases": [
         "Lollards"
-      ]
+      ],
+      "disagreement": {
+        "kind": "council_locus",
+        "summary": "Condemned for Wyclif’s articles on the Eucharist, dominion, scripture, and church authority; Constance sentenced his teaching and memory.",
+        "record_id": "mag:CON:s15:sentence-condemning-260-articles-wyclif-31:en",
+        "canonical_citation": "Constance S15 [Sentence condemning 260 articles Wyclif] [31]",
+        "entry_id": "con-s15-sentence-condemning-260-articles-wyclif-31-en",
+        "related_loci": [
+          {
+            "record_id": "mag:CON:s15:articles-of-john-wyclif-selected-from-the-260:en",
+            "canonical_citation": "Constance S15 [Articles of John Wyclif selected from the 260]"
+          }
+        ]
+      }
     },
     {
       "id": "hussites",
@@ -451,7 +405,20 @@
       "aliases": [
         "Utraquists",
         "Taborites"
-      ]
+      ],
+      "disagreement": {
+        "kind": "council_locus",
+        "summary": "Bohemian reform after Hus: utraquism, critique of indulgences and papal power; Constance condemned Hus and his articles.",
+        "record_id": "mag:CON:s15:sentence-against-john-hus:en",
+        "canonical_citation": "Constance S15 [Sentence against John Hus]",
+        "entry_id": "con-s15-sentence-against-john-hus-en",
+        "related_loci": [
+          {
+            "record_id": "mag:CON:s15:condemned-articles-of-j-hus:en",
+            "canonical_citation": "Constance S15 [Condemned articles of J. Hus]"
+          }
+        ]
+      }
     },
     {
       "id": "lutheran",
@@ -474,7 +441,24 @@
       "parent_label_in_corpus": "Protestant churches",
       "aliases": [
         "Evangelical Lutheran churches"
-      ]
+      ],
+      "disagreement": {
+        "kind": "council_locus",
+        "summary": "Justification by faith apart from Catholic scholastic accounts of merit; rejection of papal jurisdiction and several sacramental/Mass teachings defined against the Reformers at Trent.",
+        "record_id": "mag:Trent:s6:justification:canon4:en",
+        "canonical_citation": "Trent S6 Justification canon 4",
+        "entry_id": "trent-s6-justification-canon4-en",
+        "related_loci": [
+          {
+            "record_id": "mag:Trent:s4:scripture:decree:en",
+            "canonical_citation": "Trent S4 Decree concerning the Canonical Scriptures"
+          },
+          {
+            "record_id": "mag:Trent:s22:mass:ch1:en",
+            "canonical_citation": "Trent S22 Doctrine on the Sacrifice of the Mass ch. 1"
+          }
+        ]
+      }
     },
     {
       "id": "reformed",
@@ -498,7 +482,20 @@
       "aliases": [
         "Presbyterian churches",
         "Continental Reformed"
-      ]
+      ],
+      "disagreement": {
+        "kind": "council_locus",
+        "summary": "Rejection of papal jurisdiction, Catholic sacrificial Mass, and Trent’s sacramental system; strong emphasis on absolute divine sovereignty and reformed eucharistic teaching.",
+        "record_id": "mag:Trent:s22:mass:ch1:en",
+        "canonical_citation": "Trent S22 Doctrine on the Sacrifice of the Mass ch. 1",
+        "entry_id": "trent-s22-mass-ch1-en",
+        "related_loci": [
+          {
+            "record_id": "mag:Trent:s6:justification:canon4:en",
+            "canonical_citation": "Trent S6 Justification canon 4"
+          }
+        ]
+      }
     },
     {
       "id": "anabaptist",
@@ -518,7 +515,19 @@
         "anabaptist"
       ],
       "status": "extant",
-      "parent_label_in_corpus": "Protestant churches"
+      "parent_label_in_corpus": "Protestant churches",
+      "disagreement": {
+        "kind": "council_locus",
+        "summary": "Believers’ baptism, separation of church from magisterial coercion, and rejection of infant baptism / state-church patterns shared by Catholics and magisterial Protestants.",
+        "record_id": "mag:Trent:s7:sacraments:canon1:en",
+        "canonical_citation": "Trent S7 Sacraments in General canon 1",
+        "entry_id": "trent-s7-sacraments-canon1-en",
+        "related_loci": [
+          {
+            "note": "Trent defends Catholic sacramental order; Anabaptist break is also vs magisterial Reformation."
+          }
+        ]
+      }
     },
     {
       "id": "anglican",
@@ -542,7 +551,71 @@
       "aliases": [
         "Church of England",
         "Episcopal Church"
-      ]
+      ],
+      "disagreement": {
+        "kind": "council_locus",
+        "summary": "Royal/national rejection of papal jurisdiction (1534) and later Protestant formularies; Trent addresses shared Reformational doctrinal disputes rather than the English Act of Supremacy itself.",
+        "record_id": "mag:Trent:s6:justification:canon4:en",
+        "canonical_citation": "Trent S6 Justification canon 4",
+        "entry_id": "trent-s6-justification-canon4-en",
+        "related_loci": [
+          {
+            "note": "Jurisdictional break is the 1534 Act of Supremacy (not in this council corpus)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "petite-eglise",
+      "name": "Petite Église (anticoncordataires)",
+      "approx_rupture": "1801–",
+      "rupture_year": 1801,
+      "region": "France / Belgium / Switzerland",
+      "broke_from": "catholic-church",
+      "relation": "refused_concordat",
+      "confidence": "established",
+      "status": "historical",
+      "summary": "Clergy and faithful who refused the 1801 Concordat between Napoleon and Pius VII (and related reorganizations), maintaining a small separated ‘Little Church’ in parts of France and neighboring regions.",
+      "notes": "Historical remnant communities; not to be confused with later Independent Catholic bodies. Durable enough for cataloguing; largely faded as an organized communion.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Rejected the Concordat settlement and papal/civil reorganization of French dioceses, continuing a parallel anticoncordataire hierarchy and congregations."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "petite-eglise"
+      ],
+      "separation_degree": 1
+    },
+    {
+      "id": "latter-day-saints",
+      "name": "Church of Jesus Christ of Latter-day Saints",
+      "approx_rupture": "1830",
+      "rupture_year": 1830,
+      "region": "United States / global",
+      "broke_from": "catholic-church",
+      "separation_degree": 1,
+      "relation": "restorationist_foundation",
+      "confidence": "contested",
+      "summary": "Church of Jesus Christ of Latter-day Saints founded by Joseph Smith as a restoration of primitive Christianity, not as a schism from the Stone–Campbell Restoration Movement.",
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "latter-day-saints"
+      ],
+      "status": "extant",
+      "aliases": [
+        "Mormons",
+        "LDS Church"
+      ],
+      "notes": "Prior broke_from=restoration-movement was historically false (parallel American restorationism, not a Campbellite split). Graph parent is catholic-church as the communion the movement claims was lost in apostasy; self-understanding is restoration, not Protestant denominational schism. confidence=contested for ‘breakaway’ typology.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Restorationist church founded by Joseph Smith (1830), claiming restoration of primitive Christianity after a universal apostasy—not a schism from the Stone–Campbell Restoration Movement."
+      }
     },
     {
       "id": "old-catholic",
@@ -565,7 +638,20 @@
       "aliases": [
         "Union of Utrecht",
         "Alt-Katholiken"
-      ]
+      ],
+      "disagreement": {
+        "kind": "council_locus",
+        "summary": "Rejected Vatican I’s definition of the Roman pontiff’s universal jurisdiction and ex cathedra infallibility.",
+        "record_id": "mag:PA:ch4:p9:en",
+        "canonical_citation": "PA ch. 4 §9",
+        "entry_id": "pa-ch4-p9-en",
+        "related_loci": [
+          {
+            "record_id": "mag:PA:ch2:canon1:en",
+            "canonical_citation": "PA ch. 2 canon 1"
+          }
+        ]
+      }
     },
     {
       "id": "polish-national-catholic",
@@ -587,7 +673,11 @@
       "status": "extant",
       "aliases": [
         "PNCC"
-      ]
+      ],
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Rejected Roman episcopal control over Polish immigrant parishes (property, language, appointment of pastors); formed an independent Catholic-style jurisdiction."
+      }
     },
     {
       "id": "philippine-independent",
@@ -610,7 +700,83 @@
       "aliases": [
         "Iglesia Filipina Independiente",
         "Aglipayans"
-      ]
+      ],
+      "disagreement": {
+        "kind": "summary",
+        "summary": "National church independence from Spanish/Roman hierarchy amid Philippine revolution and colonial transition; rejected continued Roman jurisdiction."
+      }
+    },
+    {
+      "id": "mariavite",
+      "name": "Mariavite Church (Old Catholic Church of the Mariavites)",
+      "approx_rupture": "1906",
+      "rupture_year": 1906,
+      "region": "Poland",
+      "broke_from": "catholic-church",
+      "relation": "excommunicated_separated",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Polish Catholic renewal movement around Feliksa Kozłowska; suppressed and leaders excommunicated (1906), then organized as an independent church (later allied with Utrecht Old Catholics; majority body based in Płock).",
+      "notes": "Papal encyclical Tribus Circiter (1906) and Holy Office acts condemn the movement; those texts are not in the Step 1 council corpus. 1935 internal split produced the smaller Catholic Mariavite Church (Felicjanów).",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Rejected Roman suppression of the Mariavite congregation and excommunication of its leaders (1906), forming an independent hierarchy after failed appeals to Rome."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "mariavite"
+      ],
+      "separation_degree": 1
+    },
+    {
+      "id": "iglesia-ni-cristo",
+      "name": "Iglesia ni Cristo",
+      "approx_rupture": "1914",
+      "rupture_year": 1914,
+      "region": "Philippines / global",
+      "broke_from": "catholic-church",
+      "separation_degree": 1,
+      "relation": "restorationist_foundation",
+      "confidence": "established",
+      "summary": "Restorationist church founded by Félix Manalo (registered 1914). Independent of the Philippine Independent Church; Manalo rejected Aglipayan doctrine as still essentially Catholic.",
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "iglesia-ni-cristo"
+      ],
+      "status": "extant",
+      "notes": "Prior catalog parent philippine-independent was incorrect. INC is a new restorationist body (Manalo had earlier Methodist and Adventist periods).",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Restorationist church founded by Félix Manalo (1914), teaching a restored Church of Christ after apostasy; independent of Rome and of the Philippine Independent Church."
+      }
+    },
+    {
+      "id": "czechoslovak-hussite",
+      "name": "Czechoslovak Hussite Church",
+      "approx_rupture": "1920",
+      "rupture_year": 1920,
+      "region": "Czech lands / Slovakia",
+      "broke_from": "catholic-church",
+      "relation": "national_reform_separation",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Founded 8 January 1920 by reformist Roman Catholic clergy (Karel Farský et al.) after Vatican rejection of vernacular liturgy, voluntary celibacy, and related demands; claims Hussite heritage while originating as a Catholic clerical schism.",
+      "notes": "Not a direct organizational continuation of medieval Hussites (already catalogued); degree-1 parent is the Catholic Church.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Czech Catholic modernist clergy separated when Rome refused reform demands (vernacular Mass, optional celibacy, national church order), constituting the Czechoslovak (later Hussite) Church."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "czechoslovak-hussite"
+      ],
+      "separation_degree": 1
     },
     {
       "id": "brazilian-catholic-apostolic",
@@ -632,7 +798,11 @@
       "status": "extant",
       "aliases": [
         "ICAB"
-      ]
+      ],
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Bishop Duarte Costa’s break over Vatican political alignments and discipline; established an independent Catholic church with married clergy and vernacular liturgy."
+      }
     },
     {
       "id": "chinese-patriotic",
@@ -642,7 +812,7 @@
       "region": "People’s Republic of China",
       "broke_from": "catholic-church",
       "separation_degree": 1,
-      "relation": "rejected_decision",
+      "relation": "contested_communion",
       "confidence": "contested",
       "summary": "State-supervised Catholic structures with contested communion claims regarding Rome.",
       "council_link_in_corpus": null,
@@ -652,7 +822,11 @@
         "chinese-patriotic"
       ],
       "status": "extant",
-      "notes": "Politically entangled; contested as classic breakaway."
+      "notes": "State-supervised Catholic structures; many participants still claim Catholic identity. Contested whether this is schism versus coerced jurisdictional control. Not a clean classic breakaway.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "State insistence on episcopal appointment and church governance independent of Roman mandate; contested whether this is schism or coerced parallel structure."
+      }
     },
     {
       "id": "sedevacantist-bodies",
@@ -663,7 +837,7 @@
       "broke_from": "catholic-church",
       "separation_degree": 1,
       "relation": "rejected_decision",
-      "confidence": "established",
+      "confidence": "contested",
       "summary": "Bodies holding the post-conciliar Holy See vacant; separate sacramental networks (e.g. CMRI, SSPV).",
       "council_link_in_corpus": "Second Vatican Council (indirect)",
       "in_step1_breakaways": false,
@@ -675,27 +849,12 @@
       "aliases": [
         "CMRI",
         "SSPV"
-      ]
-    },
-    {
-      "id": "sspx",
-      "name": "Society of St. Pius X",
-      "approx_rupture": "1976/1988 irregularity",
-      "rupture_year": 1976,
-      "region": "Global",
-      "broke_from": "catholic-church",
-      "separation_degree": 1,
-      "relation": "rejected_decision",
-      "confidence": "contested",
-      "summary": "Traditionalist society rejecting aspects of Vatican II reception while claiming Catholic identity.",
-      "council_link_in_corpus": "Second Vatican Council",
-      "in_step1_breakaways": false,
-      "lineage": [
-        "catholic-church",
-        "sspx"
       ],
-      "status": "extant",
-      "notes": "Claims same communion; irregular in Roman eyes."
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Hold that recent claimants to the papal see lost office through heresy or vacancy; reject post-conciliar papal authority as illegitimate. No ecumenical decree defines against sedevacantism as such—disagreement is over who holds Peter’s office after Vatican II."
+      },
+      "notes": "Hold the Holy See vacant and operate separate hierarchies/chapels. They claim to be the Catholic Church, not a new denomination; included as separated sacramental networks with contested typology."
     },
     {
       "id": "palmarian",
@@ -714,7 +873,11 @@
         "catholic-church",
         "palmarian"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Private-revelation conclavism: elected an alternative papacy at El Palmar de Troya and rejected the Roman line after Paul VI."
+      }
     },
     {
       "id": "unitas-fratrum",
@@ -739,7 +902,12 @@
         "Bohemian Brethren",
         "Moravian Church",
         "Herrnhuters"
-      ]
+      ],
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Further radicalization within the Hussite milieu toward a gathered ‘Unity of Brethren’ with distinct discipline and ministry—beyond Utraquist compromise with Rome.",
+        "vs_parent": "Separated from broader Hussite/Utraquist structures toward a stricter brotherhood model (later Moravian renewal)."
+      }
     },
     {
       "id": "hutterite",
@@ -759,7 +927,12 @@
         "anabaptist",
         "hutterite"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Communal-goods Anabaptist discipline under Jakob Hutter; same radical-baptism rupture with Catholic sacramental order, expressed as a distinct brotherhood.",
+        "vs_parent": "Community of goods and Hutterite colony discipline vs other Anabaptist groups."
+      }
     },
     {
       "id": "mennonite",
@@ -779,7 +952,12 @@
         "anabaptist",
         "mennonite"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Anabaptist continuity under Menno Simons’ pastoral leadership—believers’ baptism and gathered-church discipline—distinct from Catholic and magisterial Protestant infant-baptism establishments.",
+        "vs_parent": "Organized Menno-Simons Anabaptist churches from the broader Radical Reformation stream."
+      }
     },
     {
       "id": "presbyterian",
@@ -789,9 +967,9 @@
       "region": "Scotland / Ireland / United States / global",
       "broke_from": "reformed",
       "separation_degree": 2,
-      "relation": "rejected_decision",
+      "relation": "polity_expression_not_schism",
       "confidence": "contested",
-      "summary": "Reformed churches with Presbyterian polity; often treated as the Scottish/English expression of Reformed rather than a later break.",
+      "summary": "Reformed churches with Presbyterian polity (e.g. Church of Scotland). Generally the Scottish/English form of the Reformed Reformation, not a later schism *from* continental Reformed churches.",
       "council_link_in_corpus": null,
       "in_step1_breakaways": false,
       "lineage": [
@@ -800,28 +978,12 @@
         "presbyterian"
       ],
       "status": "extant",
-      "notes": "Degree 2 as national/polity differentiation within Reformed; still useful for lineage tracing."
-    },
-    {
-      "id": "unitarian",
-      "name": "Unitarian / Unitarian Universalist churches",
-      "approx_rupture": "16th–19th c. (Poland/Transylvania; Anglo-American congregational Unitarianism)",
-      "rupture_year": 1568,
-      "region": "Transylvania / England / New England / global",
-      "broke_from": "reformed",
-      "separation_degree": 2,
-      "relation": "rejected_decision",
-      "confidence": "established",
-      "summary": "Anti-Trinitarian and later liberal Protestant bodies; Anglo-American Unitarianism largely from Congregational/Reformed roots.",
-      "council_link_in_corpus": null,
-      "in_step1_breakaways": false,
-      "lineage": [
-        "catholic-church",
-        "reformed",
-        "unitarian"
-      ],
-      "status": "extant",
-      "notes": "Multiple origins; Transylvanian Unitarianism is early; US UU merges Unitarian and Universalist."
+      "notes": "Kept for tracing later American Presbyterian-linked movements (e.g. Restoration Movement leaders). Do not read broke_from=reformed as a 16th-c. secession event.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Reformed churches with Presbyterian polity (e.g. Church of Scotland)—typically the national form of the Reformed Reformation, not a later schism from continental Reformed churches.",
+        "vs_parent": "Polity/national expression within Reformed Protestantism (not a classic secession event)."
+      }
     },
     {
       "id": "puritan-separatists",
@@ -845,28 +1007,38 @@
       "aliases": [
         "Congregationalists",
         "Independents"
-      ]
+      ],
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Held that the Church of England remained insufficiently reformed; Separatists gathered autonomous congregations outside parish/episcopal structures.",
+        "vs_parent": "Congregational separation vs Anglican parish settlement."
+      }
     },
     {
-      "id": "congregationalist-approx",
-      "name": "Congregationalist / New England Protestant milieu",
-      "approx_rupture": "1620s–",
-      "rupture_year": 1620,
-      "region": "New England",
-      "broke_from": "puritan-separatists",
-      "separation_degree": 2,
-      "relation": "rejected_decision",
-      "confidence": "contested",
-      "summary": "Synthetic/near-duplicate of Puritan Separatist congregational culture for attaching New England-born movements.",
+      "id": "remonstrant-brotherhood",
+      "name": "Remonstrant Brotherhood",
+      "approx_rupture": "1619–",
+      "rupture_year": 1619,
+      "region": "Netherlands",
+      "broke_from": "reformed",
+      "relation": "doctrinal_expulsion",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Dutch Arminian (Remonstrant) churches organized after the Synod of Dort (1618–19) condemned the Remonstrant articles and expelled Arminian ministers from the Dutch Reformed Church.",
+      "notes": "Dort is a Reformed synod, not in the Catholic ecumenical council corpus. Lineage still traces Reformed → Catholic via the magisterial Reformation break.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Rejected Dort’s Calvinist condemnations of the five Remonstrant articles (conditional election, universal atonement, etc.) and formed a separate Remonstrant church.",
+        "vs_parent": "Arminian Remonstrant theology vs Synod of Dort / Dutch Reformed orthodoxy."
+      },
       "council_link_in_corpus": null,
       "in_step1_breakaways": false,
       "lineage": [
         "catholic-church",
-        "anglican",
-        "puritan-separatists",
-        "congregationalist-approx"
+        "reformed",
+        "remonstrant-brotherhood"
       ],
-      "status": "synthetic"
+      "separation_degree": 2
     },
     {
       "id": "old-believers",
@@ -889,27 +1061,38 @@
       "status": "extant",
       "aliases": [
         "Old Ritualists"
-      ]
+      ],
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Rejected Patriarch Nikon’s liturgical reforms (sign of the cross, books, rites) as illegitimate corruption of Russian Orthodoxy.",
+        "vs_parent": "Nikonian ritual reform vs pre-reform Russian rite."
+      }
     },
     {
-      "id": "pietist-movements",
-      "name": "Pietist and Haugean movements",
-      "approx_rupture": "1670s–",
-      "rupture_year": 1675,
-      "region": "Germany / Scandinavia",
-      "broke_from": "lutheran",
-      "separation_degree": 2,
-      "relation": "rejected_decision",
-      "confidence": "contested",
-      "summary": "Renewal movements within Lutheranism; some remained inside, some formed free churches.",
+      "id": "church-of-the-brethren",
+      "name": "Church of the Brethren (Schwarzenau Brethren)",
+      "approx_rupture": "1708",
+      "rupture_year": 1708,
+      "region": "Germany → North America",
+      "broke_from": "anabaptist",
+      "relation": "radical_reformation_branch",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Schwarzenau Brethren (German Baptists / Dunkers) formed 1708 under Alexander Mack with believers’ baptism and Anabaptist-Pietist practice; distinct from Mennonite conferences.",
+      "notes": "Parent anabaptist = Radical Reformation family; not a Mennonite conference schism.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Gathered a new believers’-baptism brotherhood at Schwarzenau with distinctive trine immersion and Pietist emphases alongside Anabaptist separationism.",
+        "vs_parent": "Schwarzenau Brethren identity vs other Anabaptist/Mennonite streams."
+      },
       "council_link_in_corpus": null,
       "in_step1_breakaways": false,
       "lineage": [
         "catholic-church",
-        "lutheran",
-        "pietist-movements"
+        "anabaptist",
+        "church-of-the-brethren"
       ],
-      "status": "extant"
+      "separation_degree": 2
     },
     {
       "id": "methodist",
@@ -933,7 +1116,12 @@
       "aliases": [
         "Wesleyan churches",
         "United Methodist Church"
-      ]
+      ],
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Wesleyan societies became a separate church with its own ordinations and conference polity, outside Anglican episcopal control.",
+        "vs_parent": "Conference ordination and connexional structure vs Church of England episcopacy."
+      }
     },
     {
       "id": "swedenborgian",
@@ -941,40 +1129,25 @@
       "approx_rupture": "1787–",
       "rupture_year": 1787,
       "region": "Britain / Europe / United States",
-      "broke_from": "lutheran",
-      "separation_degree": 2,
-      "relation": "rejected_decision",
-      "confidence": "established",
-      "summary": "Churches based on Emanuel Swedenborg’s revelations; emerged in Lutheran/Anglican cultural settings.",
-      "council_link_in_corpus": null,
-      "in_step1_breakaways": false,
-      "lineage": [
-        "catholic-church",
-        "lutheran",
-        "swedenborgian"
-      ],
-      "status": "extant"
-    },
-    {
-      "id": "protestant-missions-umbrella",
-      "name": "Protestant mission churches (umbrella)",
-      "approx_rupture": "19th c.",
-      "rupture_year": 1800,
-      "region": "Global South",
-      "broke_from": "reformed",
+      "broke_from": "anglican",
       "separation_degree": 2,
       "relation": "rejected_decision",
       "confidence": "contested",
-      "summary": "Synthetic node for mission-founded Protestant churches used when an AIC’s precise parent mission is mixed.",
+      "summary": "New Church / Swedenborgian bodies organized from the late 18th century, especially in England, on the basis of Emanuel Swedenborg’s writings.",
       "council_link_in_corpus": null,
       "in_step1_breakaways": false,
       "lineage": [
         "catholic-church",
-        "reformed",
-        "protestant-missions-umbrella"
+        "anglican",
+        "swedenborgian"
       ],
-      "status": "synthetic",
-      "notes": "Graph convenience node, not a single historical communion."
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "New Church bodies organized especially in England on Emanuel Swedenborg’s revelations.",
+        "vs_parent": "Swedenborgian revelation vs Anglican/English Protestant orthodoxy (Swedenborg himself was Lutheran by background)."
+      },
+      "notes": "Swedenborg was a Lutheran by background; the institutional New Church is best attached here to the English/Anglican religious setting of its organization."
     },
     {
       "id": "plymouth-brethren",
@@ -994,7 +1167,12 @@
         "anglican",
         "plymouth-brethren"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Rejected denominational clergy and formal membership for gathered open/exclusive assemblies under supposed New Testament pattern.",
+        "vs_parent": "Anti-denominational assembly fellowship vs Anglican/evangelical parish forms."
+      }
     },
     {
       "id": "dutch-reformed-splits",
@@ -1014,28 +1192,12 @@
         "reformed",
         "dutch-reformed-splits"
       ],
-      "status": "extant"
-    },
-    {
-      "id": "mar-thoma",
-      "name": "Mar Thoma Syrian Church",
-      "approx_rupture": "1836–1889",
-      "rupture_year": 1836,
-      "region": "India (Kerala)",
-      "broke_from": "malankara-orthodox",
-      "separation_degree": 2,
-      "relation": "rejected_decision",
-      "confidence": "established",
-      "summary": "Reformed Oriental/West Syriac church influenced by Anglican CMS; distinct from both Rome and Malankara Orthodoxy.",
-      "council_link_in_corpus": null,
-      "in_step1_breakaways": false,
-      "lineage": [
-        "catholic-church",
-        "oriental-orthodox",
-        "malankara-orthodox",
-        "mar-thoma"
-      ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Seceded from the Netherlands state church over doctrinal liberalism and church order (Afscheiding/Doleantie).",
+        "vs_parent": "Confessional orthodoxy and free-church order vs Nederlandse Hervormde Kerk."
+      }
     },
     {
       "id": "missouri-synod",
@@ -1045,9 +1207,9 @@
       "region": "United States",
       "broke_from": "lutheran",
       "separation_degree": 2,
-      "relation": "rejected_decision",
+      "relation": "immigrant_organization_not_schism",
       "confidence": "contested",
-      "summary": "Confessional US Lutheran synod; differentiation within Lutheranism rather than a new religion.",
+      "summary": "Lutheran Church–Missouri Synod organized (1847) by Saxon and other Lutheran immigrants in the U.S.; not founded as a schism from a single existing Lutheran synod abroad.",
       "council_link_in_corpus": null,
       "in_step1_breakaways": false,
       "lineage": [
@@ -1055,70 +1217,204 @@
         "lutheran",
         "missouri-synod"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "U.S. confessional Lutheran synod organized by immigrants (1847); confessional Lutheran identity rather than a schism from one European Lutheran church body.",
+        "vs_parent": "Immigrant confessional organization within Lutheranism (founding is not a secession decree from a parent synod)."
+      },
+      "notes": "broke_from=lutheran means confessional tradition parentage. Later LCMS fellowship disputes with other U.S. Lutherans are separate from the 1847 founding."
     },
     {
-      "id": "african-instituted-churches",
-      "name": "African Instituted Churches (AIC umbrella)",
-      "approx_rupture": "late 19th–20th c.",
-      "rupture_year": 1884,
-      "region": "Sub-Saharan Africa",
-      "broke_from": "protestant-missions-umbrella",
-      "separation_degree": 2,
-      "relation": "rejected_decision",
-      "confidence": "contested",
-      "summary": "Umbrella for African-founded churches separating from mission Protestantism/Catholicism (e.g. Zionist, Aladura, Kimbanguist).",
+      "id": "christian-reformed-church",
+      "name": "Christian Reformed Church in North America",
+      "approx_rupture": "1857",
+      "rupture_year": 1857,
+      "region": "United States / Canada",
+      "broke_from": "reformed",
+      "relation": "secession",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Dutch Reformed immigrants in Michigan seceded from the Reformed Church in America (1857), forming what became the Christian Reformed Church; linked to Afscheiding confessional concerns.",
+      "notes": "broke_from=reformed uses the Reformed family umbrella (immediate parent body: RCA). Related to Netherlands Afscheiding/Doleantie confessionalism already noted under dutch-reformed-splits.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Seceded from the Reformed Church in America over confessional laxity, Americanization, and Freemasonry concerns among Dutch seceder immigrants.",
+        "vs_parent": "Confessional Dutch seeder CRC vs RCA practice (1857)."
+      },
       "council_link_in_corpus": null,
       "in_step1_breakaways": false,
       "lineage": [
         "catholic-church",
-        "protestant-missions-umbrella",
-        "african-instituted-churches"
+        "reformed",
+        "christian-reformed-church"
+      ],
+      "separation_degree": 2
+    },
+    {
+      "id": "community-of-christ",
+      "name": "Community of Christ (RLDS)",
+      "approx_rupture": "1860",
+      "rupture_year": 1860,
+      "region": "United States / global",
+      "broke_from": "latter-day-saints",
+      "separation_degree": 2,
+      "relation": "rejected_decision",
+      "confidence": "established",
+      "summary": "Reorganized Latter Day Saint church under Joseph Smith III lineage.",
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "latter-day-saints",
+        "community-of-christ"
       ],
       "status": "extant",
-      "notes": "Parent is heterogeneous (often Anglican/Methodist/Baptist missions); degree path is approximate."
+      "aliases": [
+        "RLDS"
+      ],
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Reorganized Latter Day Saint succession under Joseph Smith III, rejecting Brigham Young’s Utah leadership and later polygamy.",
+        "vs_parent": "Lineal succession and rejection of Utah LDS developments."
+      }
+    },
+    {
+      "id": "church-of-christ-temple-lot",
+      "name": "Church of Christ (Temple Lot)",
+      "approx_rupture": "1863 / Hedrickite organization",
+      "rupture_year": 1863,
+      "region": "United States",
+      "broke_from": "latter-day-saints",
+      "relation": "succession_dispute",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Hedrickite Latter Day Saint body rejecting Brigham Young and plural marriage; claims the Independence Temple Lot and a restored church without Utah LDS developments.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Rejected Utah LDS leadership, temple theology as developed in Utah, and plural marriage; organized under Granville Hedrick with Temple Lot claims.",
+        "vs_parent": "Hedrickite Temple Lot succession vs Brighamite LDS (Utah) leadership."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "latter-day-saints",
+        "church-of-christ-temple-lot"
+      ],
+      "separation_degree": 2
+    },
+    {
+      "id": "reformed-episcopal-church",
+      "name": "Reformed Episcopal Church",
+      "approx_rupture": "1873",
+      "rupture_year": 1873,
+      "region": "United States (later wider)",
+      "broke_from": "anglican",
+      "relation": "evangelical_anglican_separation",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Evangelical Anglican body founded by Bishop George David Cummins and others leaving the Protestant Episcopal Church over ritualism and catholicizing trends.",
+      "notes": "broke_from=anglican denotes the Anglican/Episcopal communion umbrella (specifically PECUSA).",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Rejected advancing ritualism and exclusive sacramental claims in the Episcopal Church; organized a Reformed Episcopal jurisdiction with evangelical Anglican formularies.",
+        "vs_parent": "Evangelical/low-church protest vs ritualist trajectory in the Episcopal Church (1873)."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "anglican",
+        "reformed-episcopal-church"
+      ],
+      "separation_degree": 2
+    },
+    {
+      "id": "evangelical-covenant-church",
+      "name": "Evangelical Covenant Church",
+      "approx_rupture": "1885 (Mission Covenant)",
+      "rupture_year": 1885,
+      "region": "Sweden → United States",
+      "broke_from": "lutheran",
+      "relation": "mission_covenant_free_church",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Swedish Mission Covenant / Mission Friends free-church movement arising from Lutheran revivalism; American Evangelical Covenant Church continues that stream.",
+      "notes": "Parent lutheran = state-church Lutheran context of the Mission Covenant secession.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Formed a free Mission Covenant church emphasizing conversion, Bible, and congregational mission outside the Lutheran state-church establishment.",
+        "vs_parent": "Free-church Mission Covenant identity vs Swedish/American Lutheran establishment."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "lutheran",
+        "evangelical-covenant-church"
+      ],
+      "separation_degree": 2
     },
     {
       "id": "jacobite-syrian-malankara",
       "name": "Jacobite Syrian Christian Church (Malankara)",
-      "approx_rupture": "20th c. jurisdiction disputes",
+      "approx_rupture": "ongoing Antiochene jurisdiction; 20th-c. Malankara disputes",
       "rupture_year": 1912,
       "region": "India",
-      "broke_from": "malankara-orthodox",
+      "broke_from": "syriac-orthodox",
       "separation_degree": 2,
       "relation": "rejected_decision",
       "confidence": "established",
-      "summary": "Malankara faction under Syriac Orthodox patriarch vs autocephalous Malankara Orthodox.",
+      "summary": "Malankara church under the Syriac Orthodox Patriarch of Antioch (Jacobite Syrian Christian Church), as distinct from the autocephalous Malankara Orthodox Syrian Church.",
       "council_link_in_corpus": null,
       "in_step1_breakaways": false,
       "lineage": [
         "catholic-church",
-        "oriental-orthodox",
-        "malankara-orthodox",
+        "syriac-orthodox",
         "jacobite-syrian-malankara"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Malankara congregations under the Syriac Orthodox Patriarch of Antioch (Jacobite Syrian Christian Church), distinct from the autocephalous Malankara Orthodox Syrian Church.",
+        "vs_parent": "Remains under Antiochene patriarchal jurisdiction (not a secession from MOSC)."
+      },
+      "notes": "Not a breakaway *from* the Malankara Orthodox Syrian Church; both parties contest succession within Malankara. Catalog parent is syriac-orthodox (patriarchal jurisdiction)."
     },
     {
-      "id": "iglesia-ni-cristo",
-      "name": "Iglesia ni Cristo",
-      "approx_rupture": "1914",
-      "rupture_year": 1914,
-      "region": "Philippines / global",
-      "broke_from": "philippine-independent",
+      "id": "malankara-orthodox",
+      "name": "Malankara Orthodox Syrian Church",
+      "approx_rupture": "1912 autocephaly (Malankara Orthodox Syrian Church)",
+      "rupture_year": 1912,
+      "region": "India (Kerala) / diaspora",
+      "broke_from": "syriac-orthodox",
       "separation_degree": 2,
       "relation": "rejected_decision",
-      "confidence": "contested",
-      "summary": "Restorationist Philippine church founded by Felix Manalo; distinct from Aglipayan Catholicism.",
-      "council_link_in_corpus": null,
-      "in_step1_breakaways": false,
+      "confidence": "established",
+      "summary": "Indian Orthodox church of West Syriac liturgy that asserted autocephaly vis-à-vis the Syriac Orthodox Patriarchate of Antioch (1912).",
+      "council_link_in_corpus": "Council of Chalcedon",
+      "in_step1_breakaways": true,
       "lineage": [
         "catholic-church",
-        "philippine-independent",
-        "iglesia-ni-cristo"
+        "syriac-orthodox",
+        "malankara-orthodox"
       ],
+      "parent_family": "oriental-orthodox",
       "status": "extant",
-      "notes": "Historical relation to Aglipayan milieu is debated; alternative: treat as degree-1 restorationist from Catholic culture."
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Indian West Syriac Orthodox autocephaly vis-à-vis the Syriac Orthodox Patriarchate of Antioch (1912).",
+        "vs_parent": "Autocephaly / catholicate independence from the Syriac Orthodox Patriarchate of Antioch.",
+        "related_loci": [
+          {
+            "record_id": "mag:CHAL:definition:en",
+            "canonical_citation": "Chalcedon, Definition of Faith",
+            "note": "Shared miaphysite non-reception of Chalcedon with the Syriac Orthodox parent tradition."
+          }
+        ]
+      },
+      "notes": "Earlier Malankara Christianity has layered East/West Syriac and colonial history; primary modern broke_from for this body is syriac-orthodox (autocephaly dispute)."
     },
     {
       "id": "liberal-catholic",
@@ -1139,7 +1435,12 @@
         "liberal-catholic"
       ],
       "status": "extant",
-      "notes": "Degree 2 via Old Catholic succession; not a direct Roman doctrinal council break."
+      "notes": "Degree 2 via Old Catholic succession; not a direct Roman doctrinal council break.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Combined Catholic sacramental forms with Theosophical freedom of belief, outside Roman and Utrecht Old Catholic doctrinal limits.",
+        "vs_parent": "Theosophical doctrinal liberty vs Old Catholic/Roman dogma."
+      }
     },
     {
       "id": "russian-orthodox-church-abroad",
@@ -1150,7 +1451,7 @@
       "broke_from": "eastern-orthodox",
       "separation_degree": 2,
       "relation": "rejected_decision",
-      "confidence": "contested",
+      "confidence": "established",
       "summary": "Emigré Russian Orthodox jurisdiction; reconciled with Moscow Patriarchate in 2007 though some splinters remain separate.",
       "council_link_in_corpus": null,
       "in_step1_breakaways": false,
@@ -1160,7 +1461,12 @@
         "russian-orthodox-church-abroad"
       ],
       "status": "extant",
-      "notes": "Contested as lasting breakaway after 2007 reconciliation."
+      "notes": "Émigré Russian Orthodox jurisdiction formed amid Bolshevik-era disruption; conflict was with the Moscow Patriarchate’s situation, not a rejection of Eastern Orthodoxy as such. broke_from=eastern-orthodox is an umbrella parent.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Emigré refusal to submit to the Moscow Patriarchate under Soviet control; contested after 2007 reconciliation.",
+        "vs_parent": "Canonical submission to Moscow vs independent émigré synod."
+      }
     },
     {
       "id": "greek-old-calendarists",
@@ -1180,7 +1486,12 @@
         "eastern-orthodox",
         "greek-old-calendarists"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Greek jurisdictions that refused the 1924 calendar change in the Church of Greece.",
+        "vs_parent": "Revised Julian calendar introduction."
+      }
     },
     {
       "id": "true-orthodox",
@@ -1204,7 +1515,63 @@
       "aliases": [
         "Old Calendarists",
         "Catacomb Church"
-      ]
+      ],
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Reject mainstream Orthodox adoption of the Revised Julian calendar and/or participation in ecumenical dialogue as betrayal of Orthodoxy.",
+        "vs_parent": "Calendar reform and ecumenism within Eastern Orthodoxy."
+      }
+    },
+    {
+      "id": "aladura",
+      "name": "Aladura churches",
+      "approx_rupture": "1920s–",
+      "rupture_year": 1925,
+      "region": "Nigeria / West Africa",
+      "broke_from": "anglican",
+      "separation_degree": 2,
+      "relation": "rejected_decision",
+      "confidence": "contested",
+      "summary": "Yoruba prayer-healing (Aladura) churches in Nigeria emerging from Anglican and other Protestant mission settings (e.g. Christ Apostolic Church, Cherubim and Seraphim).",
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "anglican",
+        "aladura"
+      ],
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Yoruba Aladura prayer-healing churches emerging from Anglican and related Protestant mission settings in Nigeria.",
+        "vs_parent": "Prophetic-healing independence from Anglican/mission church forms."
+      },
+      "notes": "Parent anglican = primary mission context; some bodies have Methodist links."
+    },
+    {
+      "id": "catholic-mariavite-felicjanow",
+      "name": "Catholic Mariavite Church (Felicjanów)",
+      "approx_rupture": "1935",
+      "rupture_year": 1935,
+      "region": "Poland",
+      "broke_from": "mariavite",
+      "relation": "internal_schism",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Minority Mariavite body that remained with Archbishop Kowalski after the 1935 deposition dispute; headquartered at Felicjanów.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Split from the Płock Mariavite majority over Kowalski’s leadership and doctrinal/disciplinary innovations.",
+        "vs_parent": "Loyalty to Kowalski and Felicjanów line vs Płock Old Catholic Mariavite majority (1935)."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "mariavite",
+        "catholic-mariavite-felicjanow"
+      ],
+      "separation_degree": 2
     },
     {
       "id": "evangelical-free",
@@ -1224,10 +1591,49 @@
         "lutheran",
         "evangelical-free"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Scandinavian free-church evangelicalism: congregational, conversionist, outside state Lutheran churches.",
+        "vs_parent": "Free-church polity vs state Lutheran establishment."
+      }
     },
     {
-      "id": "oriental-orthodox-assyrian-split",
+      "id": "ethiopian-orthodox",
+      "name": "Ethiopian Orthodox Tewahedo Church",
+      "approx_rupture": "Coptic jurisdiction → autocephaly 1959 (miaphysite via Alexandria after 451)",
+      "rupture_year": 1959,
+      "region": "Ethiopia",
+      "broke_from": "coptic-orthodox",
+      "separation_degree": 2,
+      "relation": "rejected_decision",
+      "confidence": "established",
+      "summary": "Tewahedo church historically under the Coptic Orthodox Church of Alexandria; autocephalous since 1959. Miaphysite identity via Coptic / non-Chalcedonian lineage.",
+      "council_link_in_corpus": "Council of Chalcedon",
+      "in_step1_breakaways": true,
+      "lineage": [
+        "catholic-church",
+        "coptic-orthodox",
+        "ethiopian-orthodox"
+      ],
+      "parent_family": "oriental-orthodox",
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Miaphysite Tewahedo church under Coptic oversight after Chalcedon; modern autocephaly from the Coptic Orthodox Church (1959).",
+        "vs_parent": "Autocephaly and patriarchal independence from the Coptic Orthodox Church of Alexandria (1959).",
+        "related_loci": [
+          {
+            "record_id": "mag:CHAL:definition:en",
+            "canonical_citation": "Chalcedon, Definition of Faith",
+            "note": "Ancestral dogmatic non-reception of Chalcedon is via Coptic / Oriental Orthodox lineage, not a separate Ethiopian council act in 451."
+          }
+        ]
+      },
+      "notes": "broke_from=coptic-orthodox is jurisdictional/autocephalous history. Dogmatic separation from Catholic/imperial Chalcedonian communion is inherited via Coptic Orthodoxy."
+    },
+    {
+      "id": "ancient-church-of-the-east",
       "name": "Ancient Church of the East",
       "approx_rupture": "1968",
       "rupture_year": 1968,
@@ -1242,10 +1648,15 @@
       "lineage": [
         "catholic-church",
         "church-of-the-east",
-        "oriental-orthodox-assyrian-split"
+        "ancient-church-of-the-east"
       ],
       "status": "extant",
-      "notes": "Broke from Church of the East (degree 1 from Catholic), not from Oriental Orthodox."
+      "notes": "Broke from Church of the East (degree 1 from Catholic), not from Oriental Orthodox. Id normalized from oriental-orthodox-assyrian-split (not an Oriental Orthodox body).",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Split from the Assyrian Church of the East over calendar reform and patriarchal jurisdiction (1968).",
+        "vs_parent": "Gregorian calendar adoption and related governance."
+      }
     },
     {
       "id": "continuing-anglican",
@@ -1265,52 +1676,13 @@
         "anglican",
         "continuing-anglican"
       ],
-      "status": "extant"
-    },
-    {
-      "id": "eritrean-orthodox",
-      "name": "Eritrean Orthodox Tewahedo Church",
-      "approx_rupture": "1993 (autocephaly from Ethiopian)",
-      "rupture_year": 1993,
-      "region": "Eritrea",
-      "broke_from": "ethiopian-orthodox",
-      "separation_degree": 2,
-      "relation": "rejected_decision",
-      "confidence": "established",
-      "summary": "Autocephalous Oriental Orthodox church separated from Ethiopian Orthodox after Eritrean independence.",
-      "council_link_in_corpus": null,
-      "in_step1_breakaways": false,
-      "lineage": [
-        "catholic-church",
-        "oriental-orthodox",
-        "ethiopian-orthodox",
-        "eritrean-orthodox"
-      ],
-      "parent_family": "oriental-orthodox",
       "status": "extant",
-      "notes": "Degree 2 relative to Catholic via Ethiopian/Oriental Orthodox lineage."
-    },
-    {
-      "id": "oriental-orthodox-twahedo-split-note",
-      "name": "Ethiopian–Eritrean Tewahedo separation",
-      "approx_rupture": "1993",
-      "rupture_year": 1993,
-      "region": "Horn of Africa",
-      "broke_from": "ethiopian-orthodox",
-      "separation_degree": 2,
-      "relation": "rejected_decision",
-      "confidence": "established",
-      "summary": "Alias/summary node pointing to eritrean-orthodox autocephaly.",
-      "council_link_in_corpus": null,
-      "in_step1_breakaways": false,
-      "lineage": [
-        "catholic-church",
-        "oriental-orthodox",
-        "ethiopian-orthodox",
-        "oriental-orthodox-twahedo-split-note"
-      ],
-      "status": "synthetic",
-      "notes": "Prefer eritrean-orthodox for links."
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Rejected 1970s Prayer Book/ordination changes in ECUSA/Anglican Communion as departing from historic Anglican faith and order.",
+        "vs_parent": "1970s liturgical and ordination changes."
+      },
+      "notes": "Continuing churches after the 1977 Congress of St. Louis, chiefly from The Episcopal Church / Anglican realignment — not a break from every Anglican province."
     },
     {
       "id": "acna",
@@ -1330,7 +1702,40 @@
         "anglican",
         "acna"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Conservatives left TEC/ACC over sexuality, authority, and doctrine, forming a realignment province.",
+        "vs_parent": "Sexuality/doctrine disputes within North American Anglicanism."
+      },
+      "notes": "Formed by conservatives leaving The Episcopal Church and Anglican Church of Canada (and related realignments). broke_from=anglican = Anglican Communion umbrella."
+    },
+    {
+      "id": "unitarian",
+      "name": "Unitarian / Unitarian Universalist churches",
+      "approx_rupture": "16th–19th c. (Poland/Transylvania; Anglo-American congregational Unitarianism)",
+      "rupture_year": 1568,
+      "region": "Transylvania / England / New England / global",
+      "broke_from": "puritan-separatists",
+      "separation_degree": 3,
+      "relation": "rejected_decision",
+      "confidence": "contested",
+      "summary": "Anti-Trinitarian and later liberal Protestant churches. Anglo-American Unitarianism grew mainly from Congregational/Separatist settings; Transylvanian Unitarianism is an earlier, separate continental stream.",
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "anglican",
+        "puritan-separatists",
+        "unitarian"
+      ],
+      "status": "extant",
+      "notes": "broke_from=puritan-separatists tracks the Anglo-American story used elsewhere in this catalog; Transylvanian Unitarian Church is not a child of English Separatism.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Anti-Trinitarian and later liberal Protestant churches; Anglo-American Unitarianism grew mainly from Congregational/Separatist settings (Transylvanian Unitarianism is a separate early stream).",
+        "vs_parent": "Doctrinal liberalization / anti-Trinitarian identity within English-speaking Congregational-Separatist Protestantism."
+      }
     },
     {
       "id": "baptist",
@@ -1352,7 +1757,12 @@
         "baptist"
       ],
       "status": "extant",
-      "notes": "Some historians also stress continental Anabaptist influence; primary English lineage via Separatism."
+      "notes": "Some historians also stress continental Anabaptist influence; primary English lineage via Separatism.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Restricted baptism to believers (often by immersion) and gathered regenerate church membership, against infant baptism in Separatist/Anglican practice.",
+        "vs_parent": "Believers’ baptism and regenerate church membership."
+      }
     },
     {
       "id": "quakers",
@@ -1373,7 +1783,12 @@
         "puritan-separatists",
         "quakers"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Rejected outward sacraments, paid clergy, and set liturgy in favor of the inward light and silent worship.",
+        "vs_parent": "Inward light vs Separatist/Puritan sacramental and clerical forms."
+      }
     },
     {
       "id": "amish",
@@ -1394,7 +1809,12 @@
         "mennonite",
         "amish"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Jakob Ammann’s stricter ban (Meidung) and shunning practices split Swiss Mennonite communities; disagreement is disciplinary rigor within Anabaptism, not a new council-level doctrine vs Rome.",
+        "vs_parent": "Stricter shunning and footwashing discipline vs Swiss Mennonite practice (1693)."
+      }
     },
     {
       "id": "restoration-movement",
@@ -1419,7 +1839,38 @@
       "aliases": [
         "Disciples of Christ",
         "Churches of Christ"
-      ]
+      ],
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Sought to restore New Testament church pattern, rejecting creeds and denominational names as divisive.",
+        "vs_parent": "No-creed restorationism vs Presbyterian/denominational Protestantism."
+      }
+    },
+    {
+      "id": "primitive-methodist",
+      "name": "Primitive Methodist Church",
+      "approx_rupture": "1811",
+      "rupture_year": 1811,
+      "region": "England → wider",
+      "broke_from": "methodist",
+      "relation": "revivalist_separation",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Hugh Bourne / William Clowes camp-meeting Methodists, excluded from Wesleyan Methodist Connexion structures, organized the Primitive Methodist Connexion (1811).",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Continued open-air camp-meeting revivalism after Wesleyan Methodist authorities disciplined leaders; formed a separate Primitive Methodist connexion.",
+        "vs_parent": "Camp-meeting revivalism and lay intensity vs Wesleyan Methodist connexional control."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "anglican",
+        "methodist",
+        "primitive-methodist"
+      ],
+      "separation_degree": 3
     },
     {
       "id": "ame-church",
@@ -1443,7 +1894,12 @@
       "status": "extant",
       "aliases": [
         "AME"
-      ]
+      ],
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Black Methodists withdrew from white Methodist Episcopal control over seating and pastoral appointment (Allen).",
+        "vs_parent": "Racial exclusion and self-governance within Methodism."
+      }
     },
     {
       "id": "ame-zion",
@@ -1464,7 +1920,92 @@
         "methodist",
         "ame-zion"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Independent Black Methodist organization in New York amid similar racial barriers.",
+        "vs_parent": "Racial self-determination within Methodist structures."
+      }
+    },
+    {
+      "id": "catholic-apostolic-church",
+      "name": "Catholic Apostolic Church (Irvingite)",
+      "approx_rupture": "1835",
+      "rupture_year": 1835,
+      "region": "Britain → Europe / North America",
+      "broke_from": "presbyterian",
+      "relation": "apostolic_restoration",
+      "confidence": "contested",
+      "status": "historical",
+      "summary": "Apostolic restorationist body associated with Edward Irving and the Albury circle; organized with restored ‘apostles’ (c. 1835). Grew from Church of Scotland / Presbyterian and broader Protestant apocalyptic circles.",
+      "notes": "confidence=contested for single-parent simplicity: Irving was Church of Scotland; English participants included Anglicans. broke_from=presbyterian tracks Irving’s church. The original CAC largely ceased as apostles died; New Apostolic Church is the main living fork.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Taught a restored apostolate and charismatic order beyond historic Presbyterian/Anglican ministry, organizing the Catholic Apostolic Church.",
+        "vs_parent": "Restored apostles and prophetic office vs Presbyterian (and Anglican) ministry norms."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "reformed",
+        "presbyterian",
+        "catholic-apostolic-church"
+      ],
+      "separation_degree": 3
+    },
+    {
+      "id": "mar-thoma",
+      "name": "Mar Thoma Syrian Church",
+      "approx_rupture": "1836–1889",
+      "rupture_year": 1836,
+      "region": "India (Kerala)",
+      "broke_from": "malankara-orthodox",
+      "separation_degree": 3,
+      "relation": "rejected_decision",
+      "confidence": "established",
+      "summary": "Reformed Oriental/West Syriac church influenced by Anglican CMS; distinct from both Rome and Malankara Orthodoxy.",
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "syriac-orthodox",
+        "malankara-orthodox",
+        "mar-thoma"
+      ],
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Reforming party in Malankara under Anglican CMS influence; accepted reformed liturgy/theology while remaining West Syriac in heritage.",
+        "vs_parent": "Anglican-influenced reform vs Malankara Orthodox traditionalism."
+      }
+    },
+    {
+      "id": "free-church-of-scotland",
+      "name": "Free Church of Scotland",
+      "approx_rupture": "1843 (Disruption)",
+      "rupture_year": 1843,
+      "region": "Scotland",
+      "broke_from": "presbyterian",
+      "relation": "disruption",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Evangelical majority left the established Church of Scotland in the 1843 Disruption over spiritual independence and patronage, forming the Free Church of Scotland.",
+      "notes": "Parent presbyterian = Church of Scotland / Presbyterian establishment. Later Free Church history includes the 1900 United Free merger and a continuing Free Church remnant.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Rejected state intrusion via patronage and defended the spiritual independence of the church, leaving the establishment in the Disruption of 1843.",
+        "vs_parent": "Spiritual independence / anti-patronage Free Church vs established Church of Scotland."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "reformed",
+        "presbyterian",
+        "free-church-of-scotland"
+      ],
+      "separation_degree": 3
     },
     {
       "id": "wesleyan-church",
@@ -1485,7 +2026,12 @@
         "methodist",
         "wesleyan-church"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Abolitionist and Holiness Methodist secession emphasizing freedom from episcopal Methodist compromises on slavery and sanctification.",
+        "vs_parent": "Abolition + Holiness emphases vs MEC practice."
+      }
     },
     {
       "id": "exclusive-brethren",
@@ -1506,7 +2052,12 @@
         "plymouth-brethren",
         "exclusive-brethren"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Darbyite exclusivism: tight disciplinary separation from Open Brethren and other Christians.",
+        "vs_parent": "Exclusive table fellowship and Darbyite discipline."
+      }
     },
     {
       "id": "free-methodist",
@@ -1527,7 +2078,12 @@
         "methodist",
         "free-methodist"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Opposed rented pews and lax discipline; Holiness revival within a free Methodist free-church form.",
+        "vs_parent": "Free pews, Holiness, and anti-slavery free Methodism."
+      }
     },
     {
       "id": "salvation-army",
@@ -1548,7 +2104,12 @@
         "methodist",
         "salvation-army"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Booth’s mission adopted a quasi-military structure and largely set aside ordinary sacramental practice, separating from Methodist connexional forms.",
+        "vs_parent": "Military polity and non-sacramental mission methods."
+      }
     },
     {
       "id": "holiness-movement",
@@ -1569,7 +2130,12 @@
         "methodist",
         "holiness-movement"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Taught a distinct experience of entire sanctification beyond mainstream Methodist practice; formed separate Holiness denominations.",
+        "vs_parent": "Entire sanctification as a second definite work of grace; stricter lifestyle rules."
+      }
     },
     {
       "id": "cme-church",
@@ -1590,7 +2156,38 @@
         "methodist",
         "cme-church"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Organized from the Methodist Episcopal Church, South after emancipation as a separate Black Methodist body.",
+        "vs_parent": "Post-emancipation separate Black Methodist jurisdiction."
+      }
+    },
+    {
+      "id": "old-order-mennonite",
+      "name": "Old Order Mennonites",
+      "approx_rupture": "1872–",
+      "rupture_year": 1872,
+      "region": "North America",
+      "broke_from": "mennonite",
+      "relation": "discipline_separation",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Mennonite groups that refused progressive innovations (meetinghouses, revivalism, later technology) and retained older Ordnung discipline; distinct from the Amish though parallel in conservatism.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Rejected Mennonite progressivism in worship, education, and later technology, preserving Old Order discipline and plain patterns.",
+        "vs_parent": "Old Order Ordnung vs progressive Mennonite conferences (from 1870s)."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "anabaptist",
+        "mennonite",
+        "old-order-mennonite"
+      ],
+      "separation_degree": 3
     },
     {
       "id": "christian-science",
@@ -1598,11 +2195,11 @@
       "approx_rupture": "1879",
       "rupture_year": 1879,
       "region": "United States / global",
-      "broke_from": "congregationalist-approx",
+      "broke_from": "puritan-separatists",
       "separation_degree": 3,
-      "relation": "rejected_decision",
+      "relation": "new_religious_movement",
       "confidence": "contested",
-      "summary": "Eddy’ s Christian Science church arising in New England Protestant culture.",
+      "summary": "Church of Christ, Scientist founded by Mary Baker Eddy (1879) in New England Protestant culture; not a clean jurisdictional schism from a single denomination.",
       "council_link_in_corpus": null,
       "in_step1_breakaways": false,
       "lineage": [
@@ -1612,7 +2209,12 @@
         "christian-science"
       ],
       "status": "extant",
-      "notes": "broke_from uses congregational/New England Protestant milieu; not a clean jurisdictional split."
+      "notes": "broke_from=puritan-separatists is a cultural/lineage heuristic (Congregational New England), not a recorded congregational secession vote.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Mary Baker Eddy’s Church of Christ, Scientist (1879), arising in New England Protestant culture with a distinct metaphysics of healing and scripture interpretation.",
+        "vs_parent": "New religious movement in Congregational/New England Protestant culture (not a clean congregational secession)."
+      }
     },
     {
       "id": "christian-and-missionary-alliance",
@@ -1636,49 +2238,39 @@
       "status": "extant",
       "aliases": [
         "C&MA"
-      ]
+      ],
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Simpson’s deeper-life and missionary emphasis organized into a distinct evangelical denomination.",
+        "vs_parent": "Alliance missionary/deeper-life identity vs Presbyterian home structures."
+      }
     },
     {
-      "id": "kimbanguist",
-      "name": "Kimbanguist Church",
-      "approx_rupture": "1921–",
-      "rupture_year": 1921,
-      "region": "Congo / Central Africa",
-      "broke_from": "african-instituted-churches",
-      "separation_degree": 3,
-      "relation": "rejected_decision",
+      "id": "orthodox-presbyterian-church",
+      "name": "Orthodox Presbyterian Church",
+      "approx_rupture": "1936",
+      "rupture_year": 1936,
+      "region": "United States",
+      "broke_from": "presbyterian",
+      "relation": "confessional_separation",
       "confidence": "established",
-      "summary": "Church of Jesus Christ on Earth founded by Simon Kimbangu.",
+      "status": "extant",
+      "summary": "Confessional Presbyterian church formed under J. Gresham Machen after conflict with the Presbyterian Church in the U.S.A. over modernism and foreign missions.",
+      "notes": "broke_from=presbyterian tracks PCUSA as the Presbyterian parent body.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Separated from the Presbyterian Church in the U.S.A. over doctrinal modernism and control of missions (Independent Board conflict), organizing the OPC.",
+        "vs_parent": "Confessional orthodoxy and independent missions vs PCUSA modernism (1936)."
+      },
       "council_link_in_corpus": null,
       "in_step1_breakaways": false,
       "lineage": [
         "catholic-church",
-        "protestant-missions-umbrella",
-        "african-instituted-churches",
-        "kimbanguist"
+        "reformed",
+        "presbyterian",
+        "orthodox-presbyterian-church"
       ],
-      "status": "extant"
-    },
-    {
-      "id": "aladura",
-      "name": "Aladura churches",
-      "approx_rupture": "1920s–",
-      "rupture_year": 1925,
-      "region": "Nigeria / West Africa",
-      "broke_from": "african-instituted-churches",
-      "separation_degree": 3,
-      "relation": "rejected_decision",
-      "confidence": "established",
-      "summary": "Prayer-healing AIC family (e.g. Christ Apostolic Church, Cherubim and Seraphim).",
-      "council_link_in_corpus": null,
-      "in_step1_breakaways": false,
-      "lineage": [
-        "catholic-church",
-        "protestant-missions-umbrella",
-        "african-instituted-churches",
-        "aladura"
-      ],
-      "status": "extant"
+      "separation_degree": 3
     },
     {
       "id": "united-church-of-christ",
@@ -1689,7 +2281,7 @@
       "broke_from": "puritan-separatists",
       "separation_degree": 3,
       "relation": "rejected_decision",
-      "confidence": "established",
+      "confidence": "contested",
       "summary": "US merger of Congregational Christian and Evangelical & Reformed churches.",
       "council_link_in_corpus": null,
       "in_step1_breakaways": false,
@@ -1699,7 +2291,94 @@
         "puritan-separatists",
         "united-church-of-christ"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Mid-20th-century merger creating a liberal mainline Protestant body from Congregational and German Reformed streams.",
+        "vs_parent": "Ecumenical merger identity (organizational, not a classical heresy dispute)."
+      },
+      "notes": "1957 merger of Congregational Christian Churches and the Evangelical and Reformed Church. broke_from=puritan-separatists reflects only the Congregational side; E&R is German Reformed."
+    },
+    {
+      "id": "presbyterian-church-in-america",
+      "name": "Presbyterian Church in America",
+      "approx_rupture": "1973",
+      "rupture_year": 1973,
+      "region": "United States",
+      "broke_from": "presbyterian",
+      "relation": "confessional_separation",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Conservative Presbyterian denomination formed chiefly from the Presbyterian Church in the United States (Southern) over biblical authority, confessional standards, and opposition to liberal trends.",
+      "notes": "broke_from=presbyterian umbrella; immediate parent body was PCUS.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Left the Presbyterian Church in the United States citing theological liberalism and departure from confessional Reformed standards, organizing the PCA.",
+        "vs_parent": "Confessional PCA vs PCUS liberalism (1973)."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "reformed",
+        "presbyterian",
+        "presbyterian-church-in-america"
+      ],
+      "separation_degree": 3
+    },
+    {
+      "id": "evangelical-presbyterian-church",
+      "name": "Evangelical Presbyterian Church",
+      "approx_rupture": "1981",
+      "rupture_year": 1981,
+      "region": "United States",
+      "broke_from": "presbyterian",
+      "relation": "evangelical_separation",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Evangelical Presbyterian denomination formed mainly by congregations leaving the United Presbyterian Church / PC(USA) stream over theology, sexuality, and property/conscience issues, with an ‘essentials’ confessional approach.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Separated from mainline Presbyterian structures for evangelical orthodoxy and local-church liberty on contested ethical issues, forming the EPC.",
+        "vs_parent": "EPC evangelical essentials vs PC(USA)/UPCUSA mainline trajectory (1981)."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "reformed",
+        "presbyterian",
+        "evangelical-presbyterian-church"
+      ],
+      "separation_degree": 3
+    },
+    {
+      "id": "eritrean-orthodox",
+      "name": "Eritrean Orthodox Tewahedo Church",
+      "approx_rupture": "1993 (autocephaly from Ethiopian)",
+      "rupture_year": 1993,
+      "region": "Eritrea",
+      "broke_from": "ethiopian-orthodox",
+      "separation_degree": 3,
+      "relation": "rejected_decision",
+      "confidence": "established",
+      "summary": "Autocephalous Oriental Orthodox church separated from Ethiopian Orthodox after Eritrean independence.",
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "coptic-orthodox",
+        "ethiopian-orthodox",
+        "eritrean-orthodox"
+      ],
+      "parent_family": "oriental-orthodox",
+      "status": "extant",
+      "notes": "Degree 2 relative to Catholic via Ethiopian/Oriental Orthodox lineage.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Autocephaly from the Ethiopian Orthodox Tewahedo Church after Eritrean independence—jurisdictional separation within Oriental Orthodoxy, not a new Christological disagreement with Rome.",
+        "vs_parent": "National autocephaly and patriarchal independence from Ethiopian Tewahedo structures (1993)."
+      }
     },
     {
       "id": "seventh-day-baptist",
@@ -1721,34 +2400,40 @@
         "baptist",
         "seventh-day-baptist"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Observed the seventh-day Sabbath while remaining Baptist in baptism and congregational polity.",
+        "vs_parent": "Seventh-day Sabbath vs Sunday Baptist practice."
+      }
     },
     {
-      "id": "latter-day-saints",
-      "name": "Church of Jesus Christ of Latter-day Saints",
-      "approx_rupture": "1830",
-      "rupture_year": 1830,
-      "region": "United States / global",
-      "broke_from": "restoration-movement",
-      "separation_degree": 4,
-      "relation": "rejected_decision",
-      "confidence": "contested",
-      "summary": "Smith’s restorationist church; claims pristine restoration rather than reform of Protestantism. Placed near American restoration milieu for tracing.",
+      "id": "free-will-baptist",
+      "name": "Free Will Baptist churches (National Association of Free Will Baptists)",
+      "approx_rupture": "1727– / Nat’l Assoc. 1935",
+      "rupture_year": 1780,
+      "region": "United States",
+      "broke_from": "baptist",
+      "relation": "doctrinal_branch",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Arminian (‘General’ / Free Will) Baptist stream distinct from Particular/Calvinistic Baptists; northern and southern Free Will bodies united in the National Association of Free Will Baptists (1935).",
+      "notes": "broke_from=baptist as the believers’-baptism parent family. Free Will identity is doctrinal (general atonement, free will), not a single 1780 secession decree from one convention.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Affirmed general atonement and human free will against stricter Calvinistic Particular Baptist confessions, organizing lasting Free Will Baptist associations.",
+        "vs_parent": "Arminian Free Will Baptist theology vs Particular/Calvinistic Baptist orthodoxy."
+      },
       "council_link_in_corpus": null,
       "in_step1_breakaways": false,
       "lineage": [
         "catholic-church",
-        "reformed",
-        "presbyterian",
-        "restoration-movement",
-        "latter-day-saints"
+        "anglican",
+        "puritan-separatists",
+        "baptist",
+        "free-will-baptist"
       ],
-      "status": "extant",
-      "aliases": [
-        "Mormons",
-        "LDS Church"
-      ],
-      "notes": "Self-understanding is not ‘Protestant breakaway’; degree path is heuristic for graph distance from Catholic Church."
+      "separation_degree": 4
     },
     {
       "id": "adventist",
@@ -1770,7 +2455,12 @@
         "baptist",
         "adventist"
       ],
-      "status": "historical"
+      "status": "historical",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Millerite imminent second-coming calculations and advent expectation after the Great Disappointment.",
+        "vs_parent": "Specific advent chronology and remnant identity vs Baptist/evangelical churches."
+      }
     },
     {
       "id": "southern-baptist",
@@ -1792,7 +2482,39 @@
         "baptist",
         "southern-baptist"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Southern US Baptists formed a separate convention over slavery and missions board control.",
+        "vs_parent": "Regional convention autonomy and slavery-era missions dispute."
+      }
+    },
+    {
+      "id": "new-apostolic-church",
+      "name": "New Apostolic Church",
+      "approx_rupture": "1863",
+      "rupture_year": 1863,
+      "region": "Germany → global",
+      "broke_from": "catholic-apostolic-church",
+      "relation": "continued_apostolate",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Hamburg-centered continuation that called further apostles after conflict with remaining Catholic Apostolic apostles (1863); grew into the global New Apostolic Church.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Insisted on continuing to seal apostles beyond the original Catholic Apostolic college; organized separately after the Hamburg schism.",
+        "vs_parent": "Ongoing apostle calling (Hamburg) vs closed original Catholic Apostolic apostolate."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "reformed",
+        "presbyterian",
+        "catholic-apostolic-church",
+        "new-apostolic-church"
+      ],
+      "separation_degree": 4
     },
     {
       "id": "church-of-god-anderson",
@@ -1814,7 +2536,122 @@
         "holiness-movement",
         "church-of-god-anderson"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Warner’s ‘come-out’ Holiness restorationism rejected denominationalism while forming a distinct Church of God movement.",
+        "vs_parent": "Anti-denominational Holiness restoration vs existing Methodist/Holiness churches."
+      }
+    },
+    {
+      "id": "church-of-god-cleveland",
+      "name": "Church of God (Cleveland, Tennessee)",
+      "approx_rupture": "1886 / Pentecostal turn 1907–",
+      "rupture_year": 1886,
+      "region": "United States → global",
+      "broke_from": "holiness-movement",
+      "relation": "holiness_pentecostal_denomination",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Holiness church begun in the R. G. Spurling / A. J. Tomlinson stream (1886); became a major classical Pentecostal denomination after Azusa-era Spirit baptism teaching.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Organized a distinct Holiness (later Pentecostal) church government and doctrine of Spirit baptism apart from Methodist-Holiness parent bodies.",
+        "vs_parent": "Church of God (Cleveland) Holiness–Pentecostal order vs broader Holiness movement churches."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "anglican",
+        "methodist",
+        "holiness-movement",
+        "church-of-god-cleveland"
+      ],
+      "separation_degree": 4
+    },
+    {
+      "id": "evangelical-friends",
+      "name": "Evangelical Friends Church International",
+      "approx_rupture": "19th–20th c. (Gurneyite / evangelical Friends)",
+      "rupture_year": 1887,
+      "region": "United States → wider",
+      "broke_from": "quakers",
+      "relation": "evangelical_branch",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Gurneyite / evangelical Friends who adopted programmed worship, pastors, and evangelical doctrine, distinct from silent unprogrammed Liberal/Hicksite Friends.",
+      "notes": "1887 approximates major pastoral/programmed realignments; EFCI is the modern fellowship name.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Embraced evangelical Protestant orthodoxy and pastoral programmed worship against liberal/quietist Friends trajectories.",
+        "vs_parent": "Evangelical programmed Friends vs liberal/unprogrammed Quakerism."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "anglican",
+        "puritan-separatists",
+        "quakers",
+        "evangelical-friends"
+      ],
+      "separation_degree": 4
+    },
+    {
+      "id": "national-baptist-convention",
+      "name": "National Baptist Convention, USA",
+      "approx_rupture": "1895",
+      "rupture_year": 1895,
+      "region": "United States",
+      "broke_from": "baptist",
+      "relation": "separate_convention",
+      "confidence": "contested",
+      "status": "extant",
+      "summary": "Major African American Baptist convention organized 1895 from earlier Black Baptist mission/publishing unions—parallel to white Baptist conventions rather than a single congregational secession.",
+      "notes": "confidence=contested for ‘breakaway’ typology: largely organizational consolidation under segregation, not a doctrinal anathema against a parent synod. Kept because it is the parent of later clear Baptist schisms (e.g. Progressive National Baptists).",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Built independent Black Baptist national structures for missions, education, and publishing apart from white Baptist conventions.",
+        "vs_parent": "National Black Baptist convention autonomy vs white Baptist convention structures."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "anglican",
+        "puritan-separatists",
+        "baptist",
+        "national-baptist-convention"
+      ],
+      "separation_degree": 4
+    },
+    {
+      "id": "disciples-of-christ",
+      "name": "Christian Church (Disciples of Christ)",
+      "approx_rupture": "1906 (US Census recognition of Restoration three-way split)",
+      "rupture_year": 1906,
+      "region": "United States → wider",
+      "broke_from": "restoration-movement",
+      "relation": "restoration_wing",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Open-membership, instrumental Restoration wing that became the Christian Church (Disciples of Christ), distinguished from a cappella Churches of Christ after the early-20th-century Restoration division.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Accepted instrumental music, missionary societies, and broader open-membership practice within the Stone–Campbell movement, crystallizing as the Disciples of Christ.",
+        "vs_parent": "Disciples openness (instruments, societies, membership) vs stricter Restoration congregations."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "reformed",
+        "presbyterian",
+        "restoration-movement",
+        "disciples-of-christ"
+      ],
+      "separation_degree": 4
     },
     {
       "id": "churches-of-christ",
@@ -1836,7 +2673,12 @@
         "restoration-movement",
         "churches-of-christ"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Opposed instrumental music and missionary societies within the Restoration Movement.",
+        "vs_parent": "A cappella worship and anti-society congregationalism."
+      }
     },
     {
       "id": "pentecostal",
@@ -1863,7 +2705,12 @@
         "Assemblies of God",
         "Church of God in Christ",
         "Foursquare"
-      ]
+      ],
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Affirmed tongues and gifts of the Spirit as normative evidence of Spirit baptism, beyond Holiness second-blessing teaching.",
+        "vs_parent": "Spirit baptism evidenced by speaking in tongues."
+      }
     },
     {
       "id": "church-of-the-nazarene",
@@ -1885,19 +2732,24 @@
         "holiness-movement",
         "church-of-the-nazarene"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Consolidated Holiness bodies emphasizing entire sanctification and Wesleyan doctrine as a distinct denomination.",
+        "vs_parent": "Organized Holiness denominationalism from Methodist/Holiness streams."
+      }
     },
     {
-      "id": "messianic-jewish",
-      "name": "Messianic Jewish congregations",
-      "approx_rupture": "1960s– (modern movement)",
-      "rupture_year": 1967,
-      "region": "United States / Israel / global",
+      "id": "kimbanguist",
+      "name": "Kimbanguist Church",
+      "approx_rupture": "1921–",
+      "rupture_year": 1921,
+      "region": "Congo / Central Africa",
       "broke_from": "baptist",
       "separation_degree": 4,
       "relation": "rejected_decision",
       "confidence": "contested",
-      "summary": "Congregations affirming Jesus as Messiah while retaining Jewish identity; diverse Protestant evangelical parentage.",
+      "summary": "Church of Jesus Christ on Earth by the Prophet Simon Kimbangu; arose among Baptist-mission Christians in the Belgian Congo and became an independent AIC.",
       "council_link_in_corpus": null,
       "in_step1_breakaways": false,
       "lineage": [
@@ -1905,36 +2757,97 @@
         "anglican",
         "puritan-separatists",
         "baptist",
-        "messianic-jewish"
+        "kimbanguist"
       ],
       "status": "extant",
-      "notes": "Parentage mixed; Baptist/evangelical link is heuristic."
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Simon Kimbangu’s Church of Jesus Christ on Earth, arising among Baptist-mission Christians in the Belgian Congo as an independent African church.",
+        "vs_parent": "Independent prophetic church from Baptist mission Christianity in Congo."
+      },
+      "notes": "Parent baptist = mission context, not a formal Baptist denominational schism decree."
     },
     {
-      "id": "community-of-christ",
-      "name": "Community of Christ (RLDS)",
-      "approx_rupture": "1860",
-      "rupture_year": 1860,
-      "region": "United States / global",
-      "broke_from": "latter-day-saints",
-      "separation_degree": 5,
-      "relation": "rejected_decision",
+      "id": "bible-methodist",
+      "name": "Bible Methodist Connection of Churches",
+      "approx_rupture": "1968–1970s",
+      "rupture_year": 1970,
+      "region": "United States",
+      "broke_from": "wesleyan-church",
+      "relation": "conservative_holiness_separation",
       "confidence": "established",
-      "summary": "Reorganized Latter Day Saint church under Joseph Smith III lineage.",
+      "status": "extant",
+      "summary": "Conservative Holiness Methodist body formed by congregations leaving the Wesleyan Church over perceived relaxation of Holiness standards after mid-20th-century mergers.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Rejected Wesleyan Church compromises on Holiness lifestyle/standards and organized the Bible Methodist Connection.",
+        "vs_parent": "Conservative Holiness standards vs post-merger Wesleyan Church practice."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "anglican",
+        "methodist",
+        "wesleyan-church",
+        "bible-methodist"
+      ],
+      "separation_degree": 4
+    },
+    {
+      "id": "free-church-of-scotland-continuing",
+      "name": "Free Church of Scotland (Continuing)",
+      "approx_rupture": "2000",
+      "rupture_year": 2000,
+      "region": "Scotland",
+      "broke_from": "free-church-of-scotland",
+      "relation": "confessional_remnant",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Minority that left the Free Church of Scotland in 2000 amid worship and discipline controversies, claiming to continue historic Free Church practice.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Rejected Free Church Assembly decisions on worship/discipline as departing from historic Free Church standards; organized the Continuing Free Church.",
+        "vs_parent": "Continuing Free Church remnant vs Free Church of Scotland majority (2000)."
+      },
       "council_link_in_corpus": null,
       "in_step1_breakaways": false,
       "lineage": [
         "catholic-church",
         "reformed",
         "presbyterian",
-        "restoration-movement",
-        "latter-day-saints",
-        "community-of-christ"
+        "free-church-of-scotland",
+        "free-church-of-scotland-continuing"
       ],
+      "separation_degree": 4
+    },
+    {
+      "id": "advent-christian",
+      "name": "Advent Christian Church",
+      "approx_rupture": "1860",
+      "rupture_year": 1860,
+      "region": "United States",
+      "broke_from": "adventist",
+      "relation": "millerite_branch",
+      "confidence": "established",
       "status": "extant",
-      "aliases": [
-        "RLDS"
-      ]
+      "summary": "Conditionalist Adventist denomination organized from Millerite advent believers who did not accept Seventh-day Adventist distinctive doctrines (Sabbath, EGW, sanctuary).",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Continued adventist expectation with conditional immortality while rejecting Seventh-day Adventist Sabbath and prophetic claims as binding marks of the remnant.",
+        "vs_parent": "Advent Christian conditionalism vs emerging Sabbatarian Adventist (SDA) distinctives."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "anglican",
+        "puritan-separatists",
+        "baptist",
+        "adventist",
+        "advent-christian"
+      ],
+      "separation_degree": 5
     },
     {
       "id": "seventh-day-adventist",
@@ -1957,7 +2870,12 @@
         "adventist",
         "seventh-day-adventist"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Sabbatarian adventism with remnant theology, investigative judgment, and Ellen White’s prophetic role.",
+        "vs_parent": "Seventh-day Sabbath, sanctuary doctrine, and prophetic authority."
+      }
     },
     {
       "id": "bible-students",
@@ -1980,7 +2898,69 @@
         "adventist",
         "bible-students"
       ],
-      "status": "historical"
+      "status": "historical",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Russell’s chronological Adventism and rejection of mainstream church teaching on hell, Trinity, and organization.",
+        "vs_parent": "Russellite chronology and anti-Trinitarian trajectory from adventist milieu."
+      }
+    },
+    {
+      "id": "american-baptist-association",
+      "name": "American Baptist Association",
+      "approx_rupture": "1905",
+      "rupture_year": 1905,
+      "region": "United States",
+      "broke_from": "southern-baptist",
+      "relation": "landmark_separation",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Landmark Baptist fellowship organized after withdrawal from Southern Baptist Convention structures over local-church authority, closed communion, and opposition to centralized denominationalism (Baptist General Association → ABA).",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Landmark ecclesiology: absolute local-church autonomy, Baptist succession claims, and refusal of ‘alien immersion’ / open pulpit practices associated with Convention Baptists.",
+        "vs_parent": "Landmark associational Baptists vs Southern Baptist Convention centralization (1905)."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "anglican",
+        "puritan-separatists",
+        "baptist",
+        "southern-baptist",
+        "american-baptist-association"
+      ],
+      "separation_degree": 5
+    },
+    {
+      "id": "church-of-god-in-christ",
+      "name": "Church of God in Christ",
+      "approx_rupture": "1897 / Pentecostal reorganization 1907",
+      "rupture_year": 1907,
+      "region": "United States → global",
+      "broke_from": "pentecostal",
+      "relation": "denomination_foundation",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Major African American Pentecostal denomination under Charles H. Mason after Azusa Street; Holiness roots reorganized as Pentecostal COGIC.",
+      "notes": "Parent pentecostal = classical Pentecostal family. COGIC’s Holiness beginning (1897) predates the 1907 Pentecostal turn; catalog degree follows the Pentecostal identity.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Organized a distinct episcopal Pentecostal church (COGIC) emphasizing sanctification and Spirit baptism, separate from other Holiness and Pentecostal bodies.",
+        "vs_parent": "COGIC episcopal Pentecostal order vs other classical Pentecostal fellowships."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "anglican",
+        "methodist",
+        "holiness-movement",
+        "pentecostal",
+        "church-of-god-in-christ"
+      ],
+      "separation_degree": 5
     },
     {
       "id": "assemblies-of-god",
@@ -2003,7 +2983,12 @@
         "pentecostal",
         "assemblies-of-god"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Organized Trinitarian Pentecostal fellowship with doctrinal statements on Spirit baptism and tongues.",
+        "vs_parent": "Denominational organization of classical Pentecostalism."
+      }
     },
     {
       "id": "oneness-pentecostal",
@@ -2030,7 +3015,69 @@
       "aliases": [
         "UPCI",
         "Apostolic Pentecostals"
-      ]
+      ],
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Rejected Trinitarian baptismal formula and classical Trinitarian doctrine in favor of Jesus’-name Oneness teaching.",
+        "vs_parent": "Oneness vs Trinitarian Pentecostal theology."
+      }
+    },
+    {
+      "id": "foursquare",
+      "name": "International Church of the Foursquare Gospel",
+      "approx_rupture": "1923",
+      "rupture_year": 1923,
+      "region": "United States → global",
+      "broke_from": "pentecostal",
+      "relation": "denomination_foundation",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Pentecostal denomination founded by Aimee Semple McPherson (1923) with the ‘Foursquare’ gospel emphasis; distinct from Assemblies of God and other classical bodies.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Organized a separate Foursquare Pentecostal denomination around McPherson’s Angelus Temple ministry and foursquare doctrinal formula.",
+        "vs_parent": "Foursquare denominational organization vs other classical Pentecostal fellowships."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "anglican",
+        "methodist",
+        "holiness-movement",
+        "pentecostal",
+        "foursquare"
+      ],
+      "separation_degree": 5
+    },
+    {
+      "id": "independent-christian-churches",
+      "name": "Christian Churches and Churches of Christ (Independent)",
+      "approx_rupture": "1920s–1960s",
+      "rupture_year": 1927,
+      "region": "United States",
+      "broke_from": "disciples-of-christ",
+      "relation": "conservative_separation",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Conservative instrumental Restoration congregations that refused Disciples denominational structures and theological liberalism, remaining as Independent Christian Churches / Churches of Christ (not the a cappella Churches of Christ).",
+      "notes": "Date approximates North American Christian Convention / independent alignment period.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Rejected Disciples’ restructure and liberal theology while retaining instruments and remaining outside both the Disciples denomination and a cappella Churches of Christ.",
+        "vs_parent": "Independent Christian Church conservatism vs Disciples denominational liberalism/restructure."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "reformed",
+        "presbyterian",
+        "restoration-movement",
+        "disciples-of-christ",
+        "independent-christian-churches"
+      ],
+      "separation_degree": 5
     },
     {
       "id": "grace-communion",
@@ -2056,7 +3103,12 @@
       "status": "extant",
       "aliases": [
         "Worldwide Church of God"
-      ]
+      ],
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Armstrongism’s British-Israel and sabbatarian system; later GCI reformed toward evangelical Trinitarianism while splinters retained older teachings.",
+        "vs_parent": "Armstrongite doctrines (and later GCI’s break from them)."
+      }
     },
     {
       "id": "charismatic-renewal-independents",
@@ -2080,7 +3132,69 @@
         "charismatic-renewal-independents"
       ],
       "status": "extant",
-      "notes": "Lineage simplified; some emerge from Reformed/Baptist/Catholic charismatic streams."
+      "notes": "Umbrella for independent charismatic networks; parentage is mixed (Pentecostal, Baptist, Reformed, and some Catholic charismatic). broke_from=pentecostal is a simplification.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Independent charismatic networks emphasizing apostolic/prophetic leadership and contemporary gifts outside classical Pentecostal denominations.",
+        "vs_parent": "Apostolic-prophetic independent structures vs classical Pentecostal denominations."
+      }
+    },
+    {
+      "id": "progressive-national-baptist",
+      "name": "Progressive National Baptist Convention",
+      "approx_rupture": "1961",
+      "rupture_year": 1961,
+      "region": "United States",
+      "broke_from": "national-baptist-convention",
+      "relation": "civil_rights_separation",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Black Baptist convention formed in 1961 by leaders leaving the National Baptist Convention, USA, amid disputes over civil-rights activism and presidential tenure limits.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Split from NBCUSA over support for the civil-rights movement and convention governance (tenure) conflicts.",
+        "vs_parent": "Progressive National Baptists’ civil-rights activism vs NBCUSA leadership stance (1961)."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "anglican",
+        "puritan-separatists",
+        "baptist",
+        "national-baptist-convention",
+        "progressive-national-baptist"
+      ],
+      "separation_degree": 5
+    },
+    {
+      "id": "adventist-reform-movement",
+      "name": "Seventh Day Adventist Reform Movement",
+      "approx_rupture": "1920s (WWI crisis)",
+      "rupture_year": 1925,
+      "region": "Europe → global",
+      "broke_from": "seventh-day-adventist",
+      "relation": "discipline_separation",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Sabbatarian Adventist reform body arising from World War I conflicts over military service and church discipline within European Seventh-day Adventism.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Charged the Seventh-day Adventist Church with compromising Sabbath and noncombatant principles in wartime; organized a Reform Movement.",
+        "vs_parent": "Reform Movement wartime/Sabbath discipline vs SDA official wartime policy."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "anglican",
+        "puritan-separatists",
+        "baptist",
+        "adventist",
+        "seventh-day-adventist",
+        "adventist-reform-movement"
+      ],
+      "separation_degree": 6
     },
     {
       "id": "jehovah-witnesses",
@@ -2104,7 +3218,100 @@
         "bible-students",
         "jehovah-witnesses"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Watch Tower teachings denying the Trinity, affirming a modern governing organization, and distinctive eschatology under Rutherford.",
+        "vs_parent": "Governing Body authority and non-Trinitarian Watch Tower doctrine."
+      }
+    },
+    {
+      "id": "united-pentecostal-church",
+      "name": "United Pentecostal Church International",
+      "approx_rupture": "1945 (merger of Oneness bodies)",
+      "rupture_year": 1945,
+      "region": "United States → global",
+      "broke_from": "oneness-pentecostal",
+      "relation": "denominational_consolidation",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Largest Oneness Pentecostal denomination, formed by merger of Pentecostal Church, Incorporated and Pentecostal Assemblies of Jesus Christ (1945).",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Consolidated major Oneness Pentecostal organizations into UPCI with shared Jesus’-name baptism and non-Trinitarian confession.",
+        "vs_parent": "UPCI organizational merger within the Oneness Pentecostal family."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "anglican",
+        "methodist",
+        "holiness-movement",
+        "pentecostal",
+        "oneness-pentecostal",
+        "united-pentecostal-church"
+      ],
+      "separation_degree": 6
+    },
+    {
+      "id": "baptist-missionary-association",
+      "name": "Baptist Missionary Association of America",
+      "approx_rupture": "1950",
+      "rupture_year": 1950,
+      "region": "United States",
+      "broke_from": "american-baptist-association",
+      "relation": "associational_schism",
+      "confidence": "established",
+      "status": "extant",
+      "summary": "Landmark Baptist body formed in 1950 when churches left the American Baptist Association (initially North American Baptist Association; renamed BMAA).",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Split from the American Baptist Association over associational authority, missions administration, and leadership conflicts while remaining Landmark in ecclesiology.",
+        "vs_parent": "BMAA associational/missions dispute vs ABA (1950)."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "anglican",
+        "puritan-separatists",
+        "baptist",
+        "southern-baptist",
+        "american-baptist-association",
+        "baptist-missionary-association"
+      ],
+      "separation_degree": 6
+    },
+    {
+      "id": "calvary-chapel",
+      "name": "Calvary Chapel Association",
+      "approx_rupture": "1965–",
+      "rupture_year": 1965,
+      "region": "United States → global",
+      "broke_from": "foursquare",
+      "relation": "pastor_led_network",
+      "confidence": "contested",
+      "status": "extant",
+      "summary": "Chuck Smith’s Calvary Chapel movement emerging from Foursquare/Pentecostal contexts into an independent charismatic-evangelical association with distinctive verse-by-verse teaching and Jesus Movement outreach.",
+      "notes": "confidence=contested: Smith’s path involved Foursquare credentialing/influence but Calvary Chapel is not a simple congregational secession vote from ICFG. Parent foursquare = nearest classical Pentecostal institutional context.",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Developed an independent Calvary Chapel model (expositional preaching, balanced charismatic practice, association polity) outside Foursquare denominational structures.",
+        "vs_parent": "Calvary Chapel association model vs Foursquare denominational order."
+      },
+      "council_link_in_corpus": null,
+      "in_step1_breakaways": false,
+      "lineage": [
+        "catholic-church",
+        "anglican",
+        "methodist",
+        "holiness-movement",
+        "pentecostal",
+        "foursquare",
+        "calvary-chapel"
+      ],
+      "separation_degree": 6
     },
     {
       "id": "vineyard",
@@ -2128,7 +3335,103 @@
         "charismatic-renewal-independents",
         "vineyard"
       ],
-      "status": "extant"
+      "status": "extant",
+      "disagreement": {
+        "kind": "summary",
+        "summary": "Wimber’s ‘power evangelism’ charismatic evangelicalism organized apart from prior denominations.",
+        "vs_parent": "Signs-and-wonders charismatic practice in a distinct association."
+      }
+    }
+  ],
+  "excluded_non_breakaways": [
+    {
+      "id": "african-instituted-churches",
+      "name": "african-instituted-churches",
+      "reason": "Scholarly category, not a parent church; Kimbanguist/Aladura reattached to concrete mission contexts.",
+      "former_status": null
+    },
+    {
+      "id": "assyrian-church-of-the-east",
+      "name": "assyrian-church-of-the-east",
+      "reason": "Duplicate naming of the same historic Church of the East patriarchate; canonical catalog id is church-of-the-east (Assyrian Church of the East is the common modern English name for that body).",
+      "former_status": null
+    },
+    {
+      "id": "cathars",
+      "name": "cathars",
+      "reason": "Cathar/Albigensian networks are contested as a durable ‘church’; excluded under the formal breakaway definition (see root README / clean_breakaways).",
+      "former_status": null
+    },
+    {
+      "id": "congregationalist-approx",
+      "name": "congregationalist-approx",
+      "reason": "Synthetic milieu node, not a historical church people broke from.",
+      "former_status": null
+    },
+    {
+      "id": "eastern-catholic-note",
+      "name": "eastern-catholic-note",
+      "reason": "Eastern Catholic churches (Byzantine, Maronite, Chaldean, Syro-Malabar, etc.) are in full communion with Rome; not breakaways.",
+      "former_status": null
+    },
+    {
+      "id": "maronites-note",
+      "name": "maronites-note",
+      "reason": "Maronite Church is an Eastern Catholic church in full communion with Rome; not a breakaway.",
+      "former_status": null
+    },
+    {
+      "id": "messianic-jewish",
+      "name": "messianic-jewish",
+      "reason": "Modern Messianic congregations are not a schism from Baptist churches; mixed evangelical parentage — removed rather than assert a false parent.",
+      "former_status": null
+    },
+    {
+      "id": "oriental-orthodox",
+      "name": "oriental-orthodox",
+      "reason": "Modern family name for non-Chalcedonian miaphysite churches. Not a church polity that groups broke from; dogmatic rupture is Chalcedon (see each national church). Tracked under family_labels when present.",
+      "former_status": null
+    },
+    {
+      "id": "oriental-orthodox-twahedo-split-note",
+      "name": "oriental-orthodox-twahedo-split-note",
+      "reason": "Synthetic alias of eritrean-orthodox; removed as redundant.",
+      "former_status": null
+    },
+    {
+      "id": "pietist-movements",
+      "name": "pietist-movements",
+      "reason": "Pietism was largely an intra-Lutheran renewal; not a single durable separated communion.",
+      "former_status": null
+    },
+    {
+      "id": "protestant-missions-umbrella",
+      "name": "protestant-missions-umbrella",
+      "reason": "Synthetic umbrella, not a church; children reattached to real parents.",
+      "former_status": null
+    },
+    {
+      "id": "sspx",
+      "name": "sspx",
+      "reason": "Society of St. Pius X claims Catholic identity and the same communion; Rome treats it as irregular, not a separate church. Excluded under the formal definition (rejecting implementation while claiming same communion).",
+      "former_status": null
+    }
+  ],
+  "family_labels": [
+    {
+      "id": "oriental-orthodox",
+      "name": "Oriental Orthodox churches",
+      "member_ids": [
+        "coptic-orthodox",
+        "syriac-orthodox",
+        "armenian-apostolic",
+        "ethiopian-orthodox",
+        "eritrean-orthodox",
+        "malankara-orthodox",
+        "jacobite-syrian-malankara",
+        "mar-thoma"
+      ],
+      "reason": "Modern family name for non-Chalcedonian miaphysite churches. Not a church polity that groups broke from; dogmatic rupture is Chalcedon (see each national church). Tracked under family_labels when present."
     }
   ]
 }
