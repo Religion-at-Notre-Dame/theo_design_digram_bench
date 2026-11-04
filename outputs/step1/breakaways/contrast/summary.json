@@ -1,0 +1,47 @@
+{
+  "n_contrast": 82,
+  "n_source_breakaways": 156,
+  "n_excluded_not_contrastable": 74,
+  "mode": "heuristic",
+  "by_breakaway_group": {
+    "Lutheran churches": 22,
+    "Church of the East": 13,
+    "Eastern Orthodox churches": 10,
+    "Coptic Orthodox Church": 8,
+    "Armenian Apostolic Church": 7,
+    "Oriental Orthodox churches": 4,
+    "Hussites": 4,
+    "Wycliffites / Lollards": 2,
+    "Old Catholic churches": 2,
+    "Arian churches": 1,
+    "Melitian schism (Egypt)": 1,
+    "Syriac Orthodox Church": 1,
+    "Waldensians": 1,
+    "Reformed / Calvinist churches": 1,
+    "Anabaptist / Radical Reformation churches": 1,
+    "Anglican Communion / Church of England": 1,
+    "Polish National Catholic Church": 1,
+    "Philippine Independent Church (Aglipayan)": 1,
+    "Mariavite Church (Old Catholic Church of the Mariavites)": 1
+  },
+  "by_council": {
+    "Council of Trent": 25,
+    "Council of Florence": 22,
+    "Council of Ephesus": 11,
+    "Council of Constance": 6,
+    "Second Council of Constantinople": 5,
+    "First Vatican Council": 5,
+    "Second Council of Lyons": 4,
+    "First Council of Nicaea": 2,
+    "Council of Chalcedon": 1,
+    "Fourth Lateran Council": 1
+  },
+  "agent_prompt": "agent.md",
+  "files": [
+    "contrast.jsonl",
+    "contrast.html",
+    "agent.md",
+    "README.md",
+    "summary.json"
+  ]
+}

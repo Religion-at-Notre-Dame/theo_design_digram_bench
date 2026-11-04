@@ -1,0 +1,21 @@
+{
+  "total": 69,
+  "counts": {
+    "ADD": 7,
+    "SKIP_CEREMONY": 32,
+    "SKIP_OTHER": 1,
+    "SKIP_SHARED": 23,
+    "SKIP_WEAK": 6
+  },
+  "add_ids": [
+    "flo-florence-s6-p6-en",
+    "flo-florence-s8-p17-en",
+    "flo-florence-s8-p27-en",
+    "flo-florence-s8-p29-en",
+    "flo-florence-s8-p31-en",
+    "flo-florence-s11-p24-en",
+    "trent-s22-mass-preamble-en"
+  ],
+  "add_count": 7,
+  "note": "Conservative audit of previously excluded breakaway-tagged loci; ADD only when recoverable Catholic vs breakaway disagreement on this locus."
+}

@@ -1,0 +1,75 @@
+{
+  "n": 14,
+  "skipped": [
+    {
+      "group_id": "remonstrant-brotherhood",
+      "reason": "same_polarity_after_draft",
+      "locus": "trent-s6-justification-canon9-en"
+    },
+    {
+      "group_id": "extra-rca",
+      "reason": "same_polarity_after_draft",
+      "locus": "trent-s6-justification-canon9-en"
+    },
+    {
+      "group_id": "restoration-movement",
+      "reason": "same_polarity_after_draft",
+      "locus": "trent-s6-justification-canon9-en"
+    },
+    {
+      "group_id": "free-church-of-scotland",
+      "reason": "same_polarity_after_draft",
+      "locus": "trent-s6-justification-canon9-en"
+    },
+    {
+      "group_id": "christian-reformed-church",
+      "reason": "same_polarity_after_draft",
+      "locus": "trent-s6-justification-canon9-en"
+    },
+    {
+      "group_id": "holiness-movement",
+      "reason": "same_polarity_after_draft",
+      "locus": "trent-s6-justification-canon9-en"
+    },
+    {
+      "group_id": "cme-church",
+      "reason": "same_polarity_after_draft",
+      "locus": "trent-s6-justification-canon9-en"
+    },
+    {
+      "group_id": "churches-of-christ",
+      "reason": "same_polarity_after_draft",
+      "locus": "trent-s6-justification-canon9-en"
+    },
+    {
+      "group_id": "pentecostal",
+      "reason": "same_polarity_after_draft",
+      "locus": "trent-s6-justification-canon9-en"
+    },
+    {
+      "group_id": "church-of-god-in-christ",
+      "reason": "same_polarity_after_draft",
+      "locus": "trent-s6-justification-canon9-en"
+    },
+    {
+      "group_id": "church-of-the-nazarene",
+      "reason": "same_polarity_after_draft",
+      "locus": "trent-s6-justification-canon9-en"
+    },
+    {
+      "group_id": "assemblies-of-god",
+      "reason": "same_polarity_after_draft",
+      "locus": "trent-s6-justification-canon9-en"
+    },
+    {
+      "group_id": "extra-rcus",
+      "reason": "same_polarity_after_draft",
+      "locus": "trent-s6-justification-canon9-en"
+    },
+    {
+      "group_id": "calvary-chapel",
+      "reason": "same_polarity_after_draft",
+      "locus": "trent-s6-justification-canon9-en"
+    }
+  ]
+}

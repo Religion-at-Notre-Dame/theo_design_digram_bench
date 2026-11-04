@@ -41,10 +41,15 @@ python scripts/step1/expand_inventory.py --min-chars 0   # 1:1 with corpus
 python scripts/step1/draft_entries.py                    # heuristic; or --mode llm
 python scripts/step1/verify_entries.py --write-status
 python scripts/step1/clean_breakaways.py                 # formal breakaway definition
+python scripts/step1/refine_breakaway_labels.py          # Armenian / Coptic / Lutheran…
+python scripts/step1/naturalize_questions.py             # heuristic NL (LLM optional upstream)
 python scripts/step1/compile_breakaways.py               # breakaway-only subset
+python scripts/step1/build_contrast_db.py
+python scripts/step1/export_contrast_viz.py
 python scripts/step1/coverage_report.py                  # expect corpus_complete=True
 python scripts/step1/export_graph.py                     # schism map -> council_map.mmd
 python scripts/step1/export_overview.py                  # timeline bars -> council_overview.html
+python scripts/step1/export_groups_viz.py
 ```
 
-Only `status: verified` entries are Step 1 deliverables. Current full set covers all English council records; the breakaway subset is the schism-focused slice.
+Only `status: verified` entries are Step 1 deliverables. Current full set covers all English council records; the breakaway subset is the schism-focused slice. Precise labels and contrast coverage: see [`breakaways/groups_degree1_coverage.md`](breakaways/groups_degree1_coverage.md).

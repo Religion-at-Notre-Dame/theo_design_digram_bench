@@ -1,0 +1,4587 @@
+{
+  "window_years": 50,
+  "match_mode": "doctrinal",
+  "primary_selection": "doctrinal preference over nearest-year when known",
+  "n_catalog_groups": 118,
+  "n_extra_kept": 34,
+  "n_extra_skipped_dup": 0,
+  "extra_skipped_dup": [],
+  "n_denominations_total": 152,
+  "n_catholic_aligned_excluded": 12,
+  "n_matched": 152,
+  "n_unmatched": 0,
+  "n_outside_window": null,
+  "n_differs_from_doctrinal": null,
+  "by_primary_council": {
+    "Council of Trent": 107,
+    "First Vatican Council": 11,
+    "Council of Florence": 9,
+    "Council of Chalcedon": 8,
+    "First Council of Nicaea": 5,
+    "Council of Constance": 5,
+    "Council of Ephesus": 3,
+    "Second Vatican Council": 3,
+    "Fourth Lateran Council": 1
+  },
+  "complete": true,
+  "matches": [
+    {
+      "group_id": "novatianists",
+      "group_name": "Novatianists",
+      "start_year": 251,
+      "separation_degree": 1,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "First Council of Nicaea",
+          "council_span": [
+            325,
+            325
+          ],
+          "distance_years": 74,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "First Council of Nicaea",
+      "nearest_distance_years": 74,
+      "primary_council": "First Council of Nicaea",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "melitians",
+      "group_name": "Melitian schism (Egypt)",
+      "start_year": 306,
+      "separation_degree": 1,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "First Council of Nicaea",
+          "council_span": [
+            325,
+            325
+          ],
+          "distance_years": 19
+        }
+      ],
+      "nearest_council": "First Council of Nicaea",
+      "nearest_distance_years": 19,
+      "primary_council": "First Council of Nicaea",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "donatists",
+      "group_name": "Donatists",
+      "start_year": 311,
+      "separation_degree": 1,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "First Council of Nicaea",
+          "council_span": [
+            325,
+            325
+          ],
+          "distance_years": 14
+        }
+      ],
+      "nearest_council": "First Council of Nicaea",
+      "nearest_distance_years": 14,
+      "primary_council": "First Council of Nicaea",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "arian-churches",
+      "group_name": "Arian churches",
+      "start_year": 325,
+      "separation_degree": 1,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "First Council of Nicaea",
+          "council_span": [
+            325,
+            325
+          ],
+          "distance_years": 0
+        }
+      ],
+      "nearest_council": "First Council of Nicaea",
+      "nearest_distance_years": 0,
+      "primary_council": "First Council of Nicaea",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "church-of-the-east",
+      "group_name": "Church of the East (Assyrian Church of the East)",
+      "start_year": 431,
+      "separation_degree": 1,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Ephesus",
+          "council_span": [
+            431,
+            431
+          ],
+          "distance_years": 0
+        },
+        {
+          "council": "Council of Chalcedon",
+          "council_span": [
+            451,
+            451
+          ],
+          "distance_years": 20
+        },
+        {
+          "council": "First Council of Constantinople",
+          "council_span": [
+            381,
+            381
+          ],
+          "distance_years": 50
+        }
+      ],
+      "nearest_council": "Council of Ephesus",
+      "nearest_distance_years": 0,
+      "primary_council": "Council of Ephesus",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "armenian-apostolic",
+      "group_name": "Armenian Apostolic Church",
+      "start_year": 451,
+      "separation_degree": 1,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Chalcedon",
+          "council_span": [
+            451,
+            451
+          ],
+          "distance_years": 0
+        },
+        {
+          "council": "Council of Ephesus",
+          "council_span": [
+            431,
+            431
+          ],
+          "distance_years": 20
+        }
+      ],
+      "nearest_council": "Council of Chalcedon",
+      "nearest_distance_years": 0,
+      "primary_council": "Council of Chalcedon",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "coptic-orthodox",
+      "group_name": "Coptic Orthodox Church",
+      "start_year": 451,
+      "separation_degree": 1,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Chalcedon",
+          "council_span": [
+            451,
+            451
+          ],
+          "distance_years": 0
+        },
+        {
+          "council": "Council of Ephesus",
+          "council_span": [
+            431,
+            431
+          ],
+          "distance_years": 20
+        }
+      ],
+      "nearest_council": "Council of Chalcedon",
+      "nearest_distance_years": 0,
+      "primary_council": "Council of Chalcedon",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "syriac-orthodox",
+      "group_name": "Syriac Orthodox Church",
+      "start_year": 451,
+      "separation_degree": 1,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Chalcedon",
+          "council_span": [
+            451,
+            451
+          ],
+          "distance_years": 0
+        },
+        {
+          "council": "Council of Ephesus",
+          "council_span": [
+            431,
+            431
+          ],
+          "distance_years": 20
+        }
+      ],
+      "nearest_council": "Council of Chalcedon",
+      "nearest_distance_years": 0,
+      "primary_council": "Council of Chalcedon",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "eastern-orthodox",
+      "group_name": "Eastern Orthodox churches",
+      "start_year": 1054,
+      "separation_degree": 1,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Florence",
+          "council_span": [
+            1431,
+            1445
+          ],
+          "distance_years": 377,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "First Lateran Council",
+      "nearest_distance_years": 69,
+      "primary_council": "Council of Florence",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "waldensians",
+      "group_name": "Waldensians",
+      "start_year": 1173,
+      "separation_degree": 1,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Third Lateran Council",
+          "council_span": [
+            1179,
+            1179
+          ],
+          "distance_years": 6
+        },
+        {
+          "council": "Second Lateran Council",
+          "council_span": [
+            1139,
+            1139
+          ],
+          "distance_years": 34
+        },
+        {
+          "council": "Fourth Lateran Council",
+          "council_span": [
+            1215,
+            1215
+          ],
+          "distance_years": 42
+        },
+        {
+          "council": "First Lateran Council",
+          "council_span": [
+            1123,
+            1123
+          ],
+          "distance_years": 50
+        }
+      ],
+      "nearest_council": "Third Lateran Council",
+      "nearest_distance_years": 6,
+      "primary_council": "Fourth Lateran Council",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "wycliffites",
+      "group_name": "Wycliffites / Lollards",
+      "start_year": 1382,
+      "separation_degree": 1,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Constance",
+          "council_span": [
+            1414,
+            1418
+          ],
+          "distance_years": 32
+        },
+        {
+          "council": "Council of Florence",
+          "council_span": [
+            1431,
+            1445
+          ],
+          "distance_years": 49
+        }
+      ],
+      "nearest_council": "Council of Constance",
+      "nearest_distance_years": 32,
+      "primary_council": "Council of Constance",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "hussites",
+      "group_name": "Hussites",
+      "start_year": 1415,
+      "separation_degree": 1,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Constance",
+          "council_span": [
+            1414,
+            1418
+          ],
+          "distance_years": 0
+        },
+        {
+          "council": "Council of Florence",
+          "council_span": [
+            1431,
+            1445
+          ],
+          "distance_years": 16
+        }
+      ],
+      "nearest_council": "Council of Constance",
+      "nearest_distance_years": 0,
+      "primary_council": "Council of Constance",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "unitas-fratrum",
+      "group_name": "Unitas Fratrum / Moravian Church",
+      "start_year": 1457,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Florence",
+          "council_span": [
+            1431,
+            1445
+          ],
+          "distance_years": 12
+        },
+        {
+          "council": "Council of Constance",
+          "council_span": [
+            1414,
+            1418
+          ],
+          "distance_years": 39
+        }
+      ],
+      "nearest_council": "Council of Florence",
+      "nearest_distance_years": 12,
+      "primary_council": "Council of Constance",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "lutheran",
+      "group_name": "Lutheran churches",
+      "start_year": 1517,
+      "separation_degree": 1,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Fifth Lateran Council",
+          "council_span": [
+            1512,
+            1517
+          ],
+          "distance_years": 0
+        },
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 28
+        }
+      ],
+      "nearest_council": "Fifth Lateran Council",
+      "nearest_distance_years": 0,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "reformed",
+      "group_name": "Reformed / Calvinist churches",
+      "start_year": 1523,
+      "separation_degree": 1,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Fifth Lateran Council",
+          "council_span": [
+            1512,
+            1517
+          ],
+          "distance_years": 6
+        },
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 22
+        }
+      ],
+      "nearest_council": "Fifth Lateran Council",
+      "nearest_distance_years": 6,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "anabaptist",
+      "group_name": "Anabaptist / Radical Reformation churches",
+      "start_year": 1525,
+      "separation_degree": 1,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Fifth Lateran Council",
+          "council_span": [
+            1512,
+            1517
+          ],
+          "distance_years": 8
+        },
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 20
+        }
+      ],
+      "nearest_council": "Fifth Lateran Council",
+      "nearest_distance_years": 8,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "hutterite",
+      "group_name": "Hutterites",
+      "start_year": 1528,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Fifth Lateran Council",
+          "council_span": [
+            1512,
+            1517
+          ],
+          "distance_years": 11
+        },
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 17
+        }
+      ],
+      "nearest_council": "Fifth Lateran Council",
+      "nearest_distance_years": 11,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "anglican",
+      "group_name": "Anglican Communion / Church of England",
+      "start_year": 1534,
+      "separation_degree": 1,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 11
+        },
+        {
+          "council": "Fifth Lateran Council",
+          "council_span": [
+            1512,
+            1517
+          ],
+          "distance_years": 17
+        }
+      ],
+      "nearest_council": "Council of Trent",
+      "nearest_distance_years": 11,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "mennonite",
+      "group_name": "Mennonite churches",
+      "start_year": 1536,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 9
+        },
+        {
+          "council": "Fifth Lateran Council",
+          "council_span": [
+            1512,
+            1517
+          ],
+          "distance_years": 19
+        }
+      ],
+      "nearest_council": "Council of Trent",
+      "nearest_distance_years": 9,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-church-scotland",
+      "group_name": "Church of Scotland",
+      "start_year": 1560,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 0
+        },
+        {
+          "council": "Fifth Lateran Council",
+          "council_span": [
+            1512,
+            1517
+          ],
+          "distance_years": 43
+        }
+      ],
+      "nearest_council": "Council of Trent",
+      "nearest_distance_years": 0,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "presbyterian",
+      "group_name": "Presbyterian churches",
+      "start_year": 1560,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 0
+        },
+        {
+          "council": "Fifth Lateran Council",
+          "council_span": [
+            1512,
+            1517
+          ],
+          "distance_years": 43
+        }
+      ],
+      "nearest_council": "Council of Trent",
+      "nearest_distance_years": 0,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "unitarian",
+      "group_name": "Unitarian / Unitarian Universalist churches",
+      "start_year": 1568,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 5
+        }
+      ],
+      "nearest_council": "Council of Trent",
+      "nearest_distance_years": 5,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "puritan-separatists",
+      "group_name": "English Separatists / Congregationalists",
+      "start_year": 1581,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 18
+        }
+      ],
+      "nearest_council": "Council of Trent",
+      "nearest_distance_years": 18,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "baptist",
+      "group_name": "Baptist churches",
+      "start_year": 1609,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 46
+        }
+      ],
+      "nearest_council": "Council of Trent",
+      "nearest_distance_years": 46,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-general-baptists",
+      "group_name": "General Baptists",
+      "start_year": 1609,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 46
+        }
+      ],
+      "nearest_council": "Council of Trent",
+      "nearest_distance_years": 46,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "remonstrant-brotherhood",
+      "group_name": "Remonstrant Brotherhood",
+      "start_year": 1619,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 74,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "Council of Trent",
+      "nearest_distance_years": 56,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-rca",
+      "group_name": "Reformed Church in America",
+      "start_year": 1628,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 83,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "Council of Trent",
+      "nearest_distance_years": 65,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-particular-baptists",
+      "group_name": "Particular Baptists",
+      "start_year": 1638,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 93,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "Council of Trent",
+      "nearest_distance_years": 75,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-covenanting-scotland",
+      "group_name": "Scottish Covenanters",
+      "start_year": 1638,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 93,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "Council of Trent",
+      "nearest_distance_years": 75,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "seventh-day-baptist",
+      "group_name": "Seventh Day Baptist churches",
+      "start_year": 1650,
+      "separation_degree": 4,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 105,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "Council of Trent",
+      "nearest_distance_years": 87,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "quakers",
+      "group_name": "Religious Society of Friends (Quakers)",
+      "start_year": 1652,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 107,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "Council of Trent",
+      "nearest_distance_years": 89,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-old-ritualist-priestless",
+      "group_name": "Priestless Old Believers (Bespopovtsy)",
+      "start_year": 1666,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Florence",
+          "council_span": [
+            1431,
+            1445
+          ],
+          "distance_years": 235,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "Council of Trent",
+      "nearest_distance_years": 103,
+      "primary_council": "Council of Florence",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "old-believers",
+      "group_name": "Russian Old Believers",
+      "start_year": 1666,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Florence",
+          "council_span": [
+            1431,
+            1445
+          ],
+          "distance_years": 235,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "Council of Trent",
+      "nearest_distance_years": 103,
+      "primary_council": "Council of Florence",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "amish",
+      "group_name": "Amish",
+      "start_year": 1693,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 148,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "Council of Trent",
+      "nearest_distance_years": 130,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "church-of-the-brethren",
+      "group_name": "Church of the Brethren (Schwarzenau Brethren)",
+      "start_year": 1708,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 163,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "Council of Trent",
+      "nearest_distance_years": 145,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-moravian-unity",
+      "group_name": "Moravian Church (Unitas Fratrum worldwide)",
+      "start_year": 1727,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Constance",
+          "council_span": [
+            1414,
+            1418
+          ],
+          "distance_years": 313,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 142,
+      "primary_council": "Council of Constance",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-shakers",
+      "group_name": "United Society of Believers (Shakers)",
+      "start_year": 1747,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 202,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 122,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-dukhobors",
+      "group_name": "Doukhobors",
+      "start_year": 1750,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Florence",
+          "council_span": [
+            1431,
+            1445
+          ],
+          "distance_years": 319,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 119,
+      "primary_council": "Council of Florence",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-molokan",
+      "group_name": "Molokans",
+      "start_year": 1765,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Florence",
+          "council_span": [
+            1431,
+            1445
+          ],
+          "distance_years": 334,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 104,
+      "primary_council": "Council of Florence",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-brethren-christ",
+      "group_name": "Brethren in Christ Church",
+      "start_year": 1778,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 233,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 91,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "free-will-baptist",
+      "group_name": "Free Will Baptist churches (National Association of Free Will Baptists)",
+      "start_year": 1780,
+      "separation_degree": 4,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 235,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 89,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-associate-reformed",
+      "group_name": "Associate Reformed Presbyterian Church",
+      "start_year": 1782,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 237,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 87,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "methodist",
+      "group_name": "Methodist churches",
+      "start_year": 1784,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 239,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 85,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "swedenborgian",
+      "group_name": "Swedenborgian / New Church",
+      "start_year": 1787,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 242,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 82,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "petite-eglise",
+      "group_name": "Petite Église (anticoncordataires)",
+      "start_year": 1801,
+      "separation_degree": 1,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 68,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 68,
+      "primary_council": "First Vatican Council",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "restoration-movement",
+      "group_name": "Restoration Movement (Stone–Campbell)",
+      "start_year": 1809,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 264,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 60,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-cumberland-presbyterian",
+      "group_name": "Cumberland Presbyterian Church",
+      "start_year": 1810,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 265,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 59,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "primitive-methodist",
+      "group_name": "Primitive Methodist Church",
+      "start_year": 1811,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 266,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 58,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "ame-church",
+      "group_name": "African Methodist Episcopal Church",
+      "start_year": 1816,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 271,
+          "doctrinal_force": true
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 53,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "ame-zion",
+      "group_name": "African Methodist Episcopal Zion Church",
+      "start_year": 1821,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 276,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 48
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 48,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "plymouth-brethren",
+      "group_name": "Plymouth Brethren",
+      "start_year": 1827,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 282,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 42
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 42,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-open-brethren",
+      "group_name": "Open Brethren",
+      "start_year": 1828,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 283,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 41
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 41,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-apostolic-christian",
+      "group_name": "Apostolic Christian Church",
+      "start_year": 1830,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 285,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 39
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 39,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "latter-day-saints",
+      "group_name": "Church of Jesus Christ of Latter-day Saints",
+      "start_year": 1830,
+      "separation_degree": 1,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 39
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 39,
+      "primary_council": "First Vatican Council",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "dutch-reformed-splits",
+      "group_name": "Dutch Reformed secession churches (Afscheiding/Doleantie)",
+      "start_year": 1834,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 289,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 35
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 35,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "catholic-apostolic-church",
+      "group_name": "Catholic Apostolic Church (Irvingite)",
+      "start_year": 1835,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 290,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 34
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 34,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "mar-thoma",
+      "group_name": "Mar Thoma Syrian Church",
+      "start_year": 1836,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Chalcedon",
+          "council_span": [
+            451,
+            451
+          ],
+          "distance_years": 1385,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 33
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 33,
+      "primary_council": "Council of Chalcedon",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "free-church-of-scotland",
+      "group_name": "Free Church of Scotland",
+      "start_year": 1843,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 298,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 26
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 26,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "wesleyan-church",
+      "group_name": "Wesleyan Church",
+      "start_year": 1843,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 298,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 26
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 26,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "adventist",
+      "group_name": "Millerite / Adventist movement",
+      "start_year": 1844,
+      "separation_degree": 4,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 299,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 25
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 25,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "southern-baptist",
+      "group_name": "Southern Baptist Convention",
+      "start_year": 1845,
+      "separation_degree": 4,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 300,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 24
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 24,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "missouri-synod",
+      "group_name": "Lutheran Church–Missouri Synod",
+      "start_year": 1847,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 302,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 22
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 22,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "exclusive-brethren",
+      "group_name": "Exclusive Brethren (Darbyite)",
+      "start_year": 1848,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 303,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 21
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 21,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-wisconsin-synod",
+      "group_name": "Wisconsin Evangelical Lutheran Synod",
+      "start_year": 1850,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 305,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 19
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 19,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "christian-reformed-church",
+      "group_name": "Christian Reformed Church in North America",
+      "start_year": 1857,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 312,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 12
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 12,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "advent-christian",
+      "group_name": "Advent Christian Church",
+      "start_year": 1860,
+      "separation_degree": 5,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 315,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 9
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 9,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "community-of-christ",
+      "group_name": "Community of Christ (RLDS)",
+      "start_year": 1860,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 9
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 9,
+      "primary_council": "First Vatican Council",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "free-methodist",
+      "group_name": "Free Methodist Church",
+      "start_year": 1860,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 315,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 9
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 9,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-chaldean-syrian",
+      "group_name": "Chaldean Syrian Church of India",
+      "start_year": 1862,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Ephesus",
+          "council_span": [
+            431,
+            431
+          ],
+          "distance_years": 1431,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 7
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 7,
+      "primary_council": "Council of Ephesus",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "church-of-christ-temple-lot",
+      "group_name": "Church of Christ (Temple Lot)",
+      "start_year": 1863,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 6
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 6,
+      "primary_council": "First Vatican Council",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "new-apostolic-church",
+      "group_name": "New Apostolic Church",
+      "start_year": 1863,
+      "separation_degree": 4,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 318,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 6
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 6,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "seventh-day-adventist",
+      "group_name": "Seventh-day Adventist Church",
+      "start_year": 1863,
+      "separation_degree": 5,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 318,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 6
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 6,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "salvation-army",
+      "group_name": "Salvation Army",
+      "start_year": 1865,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 320,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 4
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 4,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "holiness-movement",
+      "group_name": "Holiness movement churches",
+      "start_year": 1867,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 322,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 2
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 2,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "cme-church",
+      "group_name": "Christian Methodist Episcopal Church",
+      "start_year": 1870,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 325,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 0
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 0,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "old-catholic",
+      "group_name": "Old Catholic churches (Union of Utrecht)",
+      "start_year": 1870,
+      "separation_degree": 1,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 0
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 0,
+      "primary_council": "First Vatican Council",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "old-order-mennonite",
+      "group_name": "Old Order Mennonites",
+      "start_year": 1872,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 327,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 2
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 2,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "reformed-episcopal-church",
+      "group_name": "Reformed Episcopal Church",
+      "start_year": 1873,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 328,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 3
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 3,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "bible-students",
+      "group_name": "Bible Student movement",
+      "start_year": 1879,
+      "separation_degree": 5,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 334,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 9
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 9,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "christian-science",
+      "group_name": "Church of Christ, Scientist",
+      "start_year": 1879,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 334,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 9
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 9,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "church-of-god-anderson",
+      "group_name": "Church of God (Anderson)",
+      "start_year": 1881,
+      "separation_degree": 4,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 336,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 11
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 11,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "evangelical-covenant-church",
+      "group_name": "Evangelical Covenant Church",
+      "start_year": 1885,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 340,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 15
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 15,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "church-of-god-cleveland",
+      "group_name": "Church of God (Cleveland, Tennessee)",
+      "start_year": 1886,
+      "separation_degree": 4,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 341,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 16
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 16,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "christian-and-missionary-alliance",
+      "group_name": "Christian and Missionary Alliance",
+      "start_year": 1887,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 342,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 17
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 17,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "evangelical-friends",
+      "group_name": "Evangelical Friends Church International",
+      "start_year": 1887,
+      "separation_degree": 4,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 342,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 17
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 17,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-unity-school",
+      "group_name": "Unity Church",
+      "start_year": 1889,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 344,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 19
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 19,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "national-baptist-convention",
+      "group_name": "National Baptist Convention, USA",
+      "start_year": 1895,
+      "separation_degree": 4,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 350,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 25
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 25,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-swedenborgian-us",
+      "group_name": "General Church of the New Jerusalem",
+      "start_year": 1897,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 352,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 27
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 27,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "polish-national-catholic",
+      "group_name": "Polish National Catholic Church",
+      "start_year": 1897,
+      "separation_degree": 1,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 27
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 27,
+      "primary_council": "First Vatican Council",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-friend-united",
+      "group_name": "Friends United Meeting",
+      "start_year": 1902,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 357,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 32
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 32,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "philippine-independent",
+      "group_name": "Philippine Independent Church (Aglipayan)",
+      "start_year": 1902,
+      "separation_degree": 1,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 32
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 32,
+      "primary_council": "First Vatican Council",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "american-baptist-association",
+      "group_name": "American Baptist Association",
+      "start_year": 1905,
+      "separation_degree": 5,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 360,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 35
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 35,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "disciples-of-christ",
+      "group_name": "Christian Church (Disciples of Christ)",
+      "start_year": 1906,
+      "separation_degree": 4,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 361,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 36
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 36,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "churches-of-christ",
+      "group_name": "Churches of Christ (a cappella)",
+      "start_year": 1906,
+      "separation_degree": 4,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 361,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 36
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 36,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "mariavite",
+      "group_name": "Mariavite Church (Old Catholic Church of the Mariavites)",
+      "start_year": 1906,
+      "separation_degree": 1,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 36
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 36,
+      "primary_council": "First Vatican Council",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "pentecostal",
+      "group_name": "Pentecostal churches",
+      "start_year": 1906,
+      "separation_degree": 4,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 361,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 36
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 36,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-american-baptist",
+      "group_name": "American Baptist Churches USA",
+      "start_year": 1907,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 362,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 37
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 37,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "church-of-god-in-christ",
+      "group_name": "Church of God in Christ",
+      "start_year": 1907,
+      "separation_degree": 5,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 362,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 37
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 37,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "church-of-the-nazarene",
+      "group_name": "Church of the Nazarene",
+      "start_year": 1908,
+      "separation_degree": 4,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 363,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 38
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 38,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "jacobite-syrian-malankara",
+      "group_name": "Jacobite Syrian Christian Church (Malankara)",
+      "start_year": 1912,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Chalcedon",
+          "council_span": [
+            451,
+            451
+          ],
+          "distance_years": 1461,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 42
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 50
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 42,
+      "primary_council": "Council of Chalcedon",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "malankara-orthodox",
+      "group_name": "Malankara Orthodox Syrian Church",
+      "start_year": 1912,
+      "separation_degree": 2,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Chalcedon",
+          "council_span": [
+            451,
+            451
+          ],
+          "distance_years": 1461,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 42
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 50
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 42,
+      "primary_council": "Council of Chalcedon",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "assemblies-of-god",
+      "group_name": "Assemblies of God",
+      "start_year": 1914,
+      "separation_degree": 5,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 369,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 44
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 48
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 44,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "iglesia-ni-cristo",
+      "group_name": "Iglesia ni Cristo",
+      "start_year": 1914,
+      "separation_degree": 1,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 44
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 48
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 44,
+      "primary_council": "First Vatican Council",
+      "primary_reason": "nearest_year",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "liberal-catholic",
+      "group_name": "Liberal Catholic Church",
+      "start_year": 1916,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 46
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 46
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 46,
+      "primary_council": "First Vatican Council",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "oneness-pentecostal",
+      "group_name": "Oneness Pentecostal churches",
+      "start_year": 1916,
+      "separation_degree": 5,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 371,
+          "doctrinal_force": true
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 46
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 46
+        }
+      ],
+      "nearest_council": "First Vatican Council",
+      "nearest_distance_years": 46,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "czechoslovak-hussite",
+      "group_name": "Czechoslovak Hussite Church",
+      "start_year": 1920,
+      "separation_degree": 1,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Constance",
+          "council_span": [
+            1414,
+            1418
+          ],
+          "distance_years": 506,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 42
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 50
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 42,
+      "primary_council": "Council of Constance",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "russian-orthodox-church-abroad",
+      "group_name": "Russian Orthodox Church Outside Russia (ROCOR)",
+      "start_year": 1920,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Florence",
+          "council_span": [
+            1431,
+            1445
+          ],
+          "distance_years": 489,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 42
+        },
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 50
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 42,
+      "primary_council": "Council of Florence",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "kimbanguist",
+      "group_name": "Kimbanguist Church",
+      "start_year": 1921,
+      "separation_degree": 4,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 376,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 41
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 41,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-ukrainian-autocephalous",
+      "group_name": "Ukrainian Autocephalous Orthodox Church",
+      "start_year": 1921,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Florence",
+          "council_span": [
+            1431,
+            1445
+          ],
+          "distance_years": 490,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 41
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 41,
+      "primary_council": "Council of Florence",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-church-god-prophecy",
+      "group_name": "Church of God of Prophecy",
+      "start_year": 1923,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 378,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 39
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 39,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "foursquare",
+      "group_name": "International Church of the Foursquare Gospel",
+      "start_year": 1923,
+      "separation_degree": 5,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 378,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 39
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 39,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "greek-old-calendarists",
+      "group_name": "Greek Old Calendarists",
+      "start_year": 1924,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Florence",
+          "council_span": [
+            1431,
+            1445
+          ],
+          "distance_years": 493,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 38
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 38,
+      "primary_council": "Council of Florence",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "true-orthodox",
+      "group_name": "True Orthodox / Old Calendarist churches",
+      "start_year": 1924,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Florence",
+          "council_span": [
+            1431,
+            1445
+          ],
+          "distance_years": 493,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 38
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 38,
+      "primary_council": "Council of Florence",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "aladura",
+      "group_name": "Aladura churches",
+      "start_year": 1925,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 380,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 37
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 37,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "adventist-reform-movement",
+      "group_name": "Seventh Day Adventist Reform Movement",
+      "start_year": 1925,
+      "separation_degree": 6,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 380,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 37
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 37,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-religious-science",
+      "group_name": "Centers for Spiritual Living",
+      "start_year": 1927,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 382,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 35
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 35,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "independent-christian-churches",
+      "group_name": "Christian Churches and Churches of Christ (Independent)",
+      "start_year": 1927,
+      "separation_degree": 5,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 382,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 35
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 35,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "jehovah-witnesses",
+      "group_name": "Jehovah’s Witnesses",
+      "start_year": 1931,
+      "separation_degree": 6,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 386,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 31
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 31,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-worldwide-church-god",
+      "group_name": "Grace Communion International (ex-WCG)",
+      "start_year": 1934,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 389,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 28
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 28,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "grace-communion",
+      "group_name": "Grace Communion International (ex–Worldwide Church of God)",
+      "start_year": 1934,
+      "separation_degree": 5,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 389,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 28
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 28,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-rcus",
+      "group_name": "Reformed Church in the United States",
+      "start_year": 1934,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 389,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 28
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 28,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "catholic-mariavite-felicjanow",
+      "group_name": "Catholic Mariavite Church (Felicjanów)",
+      "start_year": 1935,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "First Vatican Council",
+          "council_span": [
+            1869,
+            1870
+          ],
+          "distance_years": 66,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 27
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 27,
+      "primary_council": "First Vatican Council",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "orthodox-presbyterian-church",
+      "group_name": "Orthodox Presbyterian Church",
+      "start_year": 1936,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 391,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 26
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 26,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-bible-presbyterian",
+      "group_name": "Bible Presbyterian Church",
+      "start_year": 1937,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 392,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 25
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 25,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-grace-brethren",
+      "group_name": "Charis Fellowship (Grace Brethren)",
+      "start_year": 1939,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 394,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 23
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 23,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "brazilian-catholic-apostolic",
+      "group_name": "Brazilian Catholic Apostolic Church",
+      "start_year": 1945,
+      "separation_degree": 1,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 17
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 17,
+      "primary_council": "Second Vatican Council",
+      "primary_reason": "nearest_year",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "united-pentecostal-church",
+      "group_name": "United Pentecostal Church International",
+      "start_year": 1945,
+      "separation_degree": 6,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 400,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 17
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 17,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "baptist-missionary-association",
+      "group_name": "Baptist Missionary Association of America",
+      "start_year": 1950,
+      "separation_degree": 6,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 405,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 12
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 12,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "evangelical-free",
+      "group_name": "Evangelical Free Church",
+      "start_year": 1950,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 405,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 12
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 12,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "chinese-patriotic",
+      "group_name": "Chinese Catholic Patriotic Association structures",
+      "start_year": 1957,
+      "separation_degree": 1,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 5
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 5,
+      "primary_council": "Second Vatican Council",
+      "primary_reason": "nearest_year",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "united-church-of-christ",
+      "group_name": "United Church of Christ",
+      "start_year": 1957,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 412,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 5
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 5,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "ethiopian-orthodox",
+      "group_name": "Ethiopian Orthodox Tewahedo Church",
+      "start_year": 1959,
+      "separation_degree": 2,
+      "in_step1_breakaways": true,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Chalcedon",
+          "council_span": [
+            451,
+            451
+          ],
+          "distance_years": 1508,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 3
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 3,
+      "primary_council": "Council of Chalcedon",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "charismatic-renewal-independents",
+      "group_name": "Independent Charismatic / neo-Pentecostal networks",
+      "start_year": 1960,
+      "separation_degree": 5,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 415,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 2
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 2,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "progressive-national-baptist",
+      "group_name": "Progressive National Baptist Convention",
+      "start_year": 1961,
+      "separation_degree": 5,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 416,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 1
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 1,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "calvary-chapel",
+      "group_name": "Calvary Chapel Association",
+      "start_year": 1965,
+      "separation_degree": 6,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 420,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 0
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 0,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "ancient-church-of-the-east",
+      "group_name": "Ancient Church of the East",
+      "start_year": 1968,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Ephesus",
+          "council_span": [
+            431,
+            431
+          ],
+          "distance_years": 1537,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 3
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 3,
+      "primary_council": "Council of Ephesus",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-united-methodist",
+      "group_name": "United Methodist Church",
+      "start_year": 1968,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 423,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 3
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 3,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-missionary-church",
+      "group_name": "Missionary Church",
+      "start_year": 1969,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 424,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 4
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 4,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "bible-methodist",
+      "group_name": "Bible Methodist Connection of Churches",
+      "start_year": 1970,
+      "separation_degree": 4,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 425,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 5
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 5,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "sedevacantist-bodies",
+      "group_name": "Sedevacantist independent chapels and societies",
+      "start_year": 1970,
+      "separation_degree": 1,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 5
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 5,
+      "primary_council": "Second Vatican Council",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-united-reformed-uk",
+      "group_name": "United Reformed Church",
+      "start_year": 1972,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 427,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 7
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 7,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "presbyterian-church-in-america",
+      "group_name": "Presbyterian Church in America",
+      "start_year": 1973,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 428,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 8
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 8,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "continuing-anglican",
+      "group_name": "Continuing Anglican churches",
+      "start_year": 1977,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 432,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 12
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 12,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "palmarian",
+      "group_name": "Palmarian Catholic Church",
+      "start_year": 1978,
+      "separation_degree": 1,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "First Council of Nicaea",
+          "council_span": [
+            325,
+            325
+          ],
+          "distance_years": 1653,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 13
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 13,
+      "primary_council": "First Council of Nicaea",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "evangelical-presbyterian-church",
+      "group_name": "Evangelical Presbyterian Church",
+      "start_year": 1981,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 436,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 16
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 16,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "vineyard",
+      "group_name": "Vineyard Movement",
+      "start_year": 1982,
+      "separation_degree": 6,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 437,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 17
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 17,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-elca",
+      "group_name": "Evangelical Lutheran Church in America",
+      "start_year": 1988,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 443,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 23
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 23,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-cooperative-baptist",
+      "group_name": "Cooperative Baptist Fellowship",
+      "start_year": 1991,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 446,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 26
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 26,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "eritrean-orthodox",
+      "group_name": "Eritrean Orthodox Tewahedo Church",
+      "start_year": 1993,
+      "separation_degree": 3,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Chalcedon",
+          "council_span": [
+            451,
+            451
+          ],
+          "distance_years": 1542,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 28
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 28,
+      "primary_council": "Council of Chalcedon",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "free-church-of-scotland-continuing",
+      "group_name": "Free Church of Scotland (Continuing)",
+      "start_year": 2000,
+      "separation_degree": 4,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 455,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 35
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 35,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "extra-mennonite-church-usa",
+      "group_name": "Mennonite Church USA",
+      "start_year": 2002,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "denominations_extra",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 457,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 37
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 37,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    },
+    {
+      "group_id": "acna",
+      "group_name": "Anglican Church in North America",
+      "start_year": 2009,
+      "separation_degree": 2,
+      "in_step1_breakaways": false,
+      "source": "groups_catalog",
+      "councils_within_window": [
+        {
+          "council": "Council of Trent",
+          "council_span": [
+            1545,
+            1563
+          ],
+          "distance_years": 464,
+          "doctrinal_force": true
+        },
+        {
+          "council": "Second Vatican Council",
+          "council_span": [
+            1962,
+            1965
+          ],
+          "distance_years": 44
+        }
+      ],
+      "nearest_council": "Second Vatican Council",
+      "nearest_distance_years": 44,
+      "primary_council": "Council of Trent",
+      "primary_reason": "doctrinal",
+      "match_mode": "doctrinal"
+    }
+  ],
+  "unmatched": []
+}

@@ -1,0 +1,78 @@
+{
+  "description": "Bodies filtered out as Catholic-aligned / non-breakaway for contrast pairing.",
+  "n": 12,
+  "bodies": [
+    {
+      "id": "african-instituted-churches",
+      "name": "african-instituted-churches",
+      "reason": "excluded_non_breakaway",
+      "catholic_aligned": true
+    },
+    {
+      "id": "assyrian-church-of-the-east",
+      "name": "assyrian-church-of-the-east",
+      "reason": "excluded_non_breakaway",
+      "catholic_aligned": true
+    },
+    {
+      "id": "cathars",
+      "name": "cathars",
+      "reason": "excluded_non_breakaway",
+      "catholic_aligned": true
+    },
+    {
+      "id": "congregationalist-approx",
+      "name": "congregationalist-approx",
+      "reason": "excluded_non_breakaway",
+      "catholic_aligned": true
+    },
+    {
+      "id": "eastern-catholic-note",
+      "name": "eastern-catholic-note",
+      "reason": "excluded_non_breakaway",
+      "catholic_aligned": true
+    },
+    {
+      "id": "maronites-note",
+      "name": "maronites-note",
+      "reason": "excluded_non_breakaway",
+      "catholic_aligned": true
+    },
+    {
+      "id": "messianic-jewish",
+      "name": "messianic-jewish",
+      "reason": "excluded_non_breakaway",
+      "catholic_aligned": true
+    },
+    {
+      "id": "oriental-orthodox",
+      "name": "oriental-orthodox",
+      "reason": "excluded_non_breakaway",
+      "catholic_aligned": true
+    },
+    {
+      "id": "oriental-orthodox-twahedo-split-note",
+      "name": "oriental-orthodox-twahedo-split-note",
+      "reason": "excluded_non_breakaway",
+      "catholic_aligned": true
+    },
+    {
+      "id": "pietist-movements",
+      "name": "pietist-movements",
+      "reason": "excluded_non_breakaway",
+      "catholic_aligned": true
+    },
+    {
+      "id": "protestant-missions-umbrella",
+      "name": "protestant-missions-umbrella",
+      "reason": "excluded_non_breakaway",
+      "catholic_aligned": true
+    },
+    {
+      "id": "sspx",
+      "name": "sspx",
+      "reason": "excluded_non_breakaway",
+      "catholic_aligned": true
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "nic1-creed-en": {
+    "catholic_answer": "Yes. The Son is true God from true God, begotten not made, of one substance with the Father, through whom all things were made.",
+    "breakaway_answer": "No. The Son is not of one substance with the Father. He is a created being—or otherwise not true God in the same sense as the Father—and is subordinate to him."
+  },
+  "eph-canon2-en": {
+    "catholic_answer": "Yes. Bishops who reverse after subscribing that deposition have joined apostasy and are to be removed from the priesthood; the deposition stands as binding orthodoxy.",
+    "breakaway_answer": "No. That deposition is not binding orthodoxy. Communion may continue without treating reversal of subscription as apostasy from the faith."
+  },
+  "eph-canon7-en": {
+    "catholic_answer": "Yes. It is unlawful to compose or introduce a creed different from the faith already established by the fathers in the Holy Spirit; that creed alone settles the faith for reception.",
+    "breakaway_answer": "No. That ban is not authoritative. The faith may be confessed in a different settlement that distinguishes divinity and humanity more sharply than that synod required."
+  },
+  "eph-anathema10-en": {
+    "catholic_answer": "The divine Word made flesh himself is our Great High Priest and Apostle. There is not another man, distinct from the Word, who offers sacrifice for us.",
+    "breakaway_answer": "Not as a forced identity of the high priest with the Word alone. The high-priestly work is confessed in the humanity as distinct from the divinity (two qnome), without collapsing them into one subject in that way."
+  },
+  "eph-anathema11-en": {
+    "catholic_answer": "Yes. The Lord’s flesh gives life because it is the Word’s own flesh, belonging to him as his very own.",
+    "breakaway_answer": "No—not under that forced wording. The flesh may be life-giving, yet divinity and humanity remain sharply distinct qnome rather than one flesh that is simply ‘the Word’s own’ in that sense."
+  },
+  "eph-anathema12-en": {
+    "catholic_answer": "Yes. The Word of God suffered, was crucified, and tasted death in the flesh—those passions are truly said of the Word in his flesh.",
+    "breakaway_answer": "No—not in that sense. The Word’s divinity remains impassible; suffering, crucifixion, and death belong to the humanity distinctly, not to the divine nature."
+  },
+  "eph-anathema3-en": {
+    "catholic_answer": "No. After the hypostatic union one may not divide the hypostases as joined only by worthiness or authority. The union is a real, natural coming-together in one Christ.",
+    "breakaway_answer": "Yes, in this sense: divinity and humanity remain two qnome sharply distinguished. Their connection is not that ‘natural union’ which would erase the dual integrity of the natures."
+  },
+  "eph-anathema4-en": {
+    "catholic_answer": "No. Scriptural sayings about Christ must not be split between two persons—some applied only to a man apart from the Word, others only to the Word as God. They are said of the one Christ.",
+    "breakaway_answer": "Yes, in a careful dyophysite assignment: some sayings belong to the humanity, others to the divinity, because the two qnome are not collapsed into one subject of attribution."
+  },
+  "eph-anathema8-en": {
+    "catholic_answer": "Emmanuel is worshipped with one adoration. The assumed man is not worshipped together with the Word as two different things side by side.",
+    "breakaway_answer": "Worship may honor the distinction of the two qnome. A single ‘one adoration’ that forbids any dual reference is not required; the humanity is not absorbed into an undifferentiated cult of the Word alone."
+  },
+  "eph-anathema9-en": {
+    "catholic_answer": "He was glorified by his own Spirit working miracles—not by using a power foreign to himself.",
+    "breakaway_answer": "Not under that forced alternative. The Spirit’s wonders in Christ are confessed while keeping the distinction of divinity and humanity, without accepting that exclusive wording."
+  },
+  "eph-cyril-letter2-en": {
+    "catholic_answer": "Yes. The Holy Virgin is rightly called Mother of God, because the Word united to flesh is one Christ and one Son from two natures in true union—not because the Godhead began from her.",
+    "breakaway_answer": "No. The preferred title is Mother of Christ. Mother of God is not required; it risks confusing the natures if taken as that settlement enforced it."
+  },
+  "chal-definition-en": {
+    "catholic_answer": "Yes. After the Incarnation, the one and the same Son is confessed in two natures, without confusion, change, division, or separation, the property of each preserved in one person and one hypostasis.",
+    "breakaway_answer": "No. After the union he is confessed as one united nature of the Word incarnate (miaphysite)—perfect in divinity and humanity without separating them into two natures after the union."
+  },
+  "flo-florence-s11-p14-en": {
+    "catholic_answer": "No. Those outside the Church—pagans, Jews, heretics, or schismatics—cannot share eternal life unless joined to it before death. Only those who abide in that unity share the Church’s sacraments unto salvation.",
+    "breakaway_answer": "Yes, eternal life is not closed to everyone outside that Latin communion. Salvation is found in the older Eastern church of the fathers; joining that Roman-defined body is not the condition of eternal life."
+  },
+  "flo-florence-s11-p17-en": {
+    "catholic_answer": "Yes. That second synod should be condemned as impious for approving Eutychian error under its Alexandrian president, who defended that heresy and persecuted the orthodox bishop of Constantinople.",
+    "breakaway_answer": "No. That synod and its president are not to be condemned as impious Eutychian partisans. The president is remembered as a defender of orthodoxy against a wrong settlement, not as a heresiarch’s champion."
+  },
+  "flo-florence-s11-p18-en": {
+    "catholic_answer": "Yes. Christians must embrace that council of the 630 fathers as a universal council of the Church, fourth among the ecumenical synods.",
+    "breakaway_answer": "No. It is not a universal council of the Church. The binding christological settlement is the earlier miaphysite confession, not that two-nature definition."
+  },
+  "flo-florence-s11-p19-en": {
+    "catholic_answer": "Yes. Christians must accept that fifth synod, including its renewal of the two-nature definition in one person of Christ and its condemnation of Origenist errors.",
+    "breakaway_answer": "No. That synod is not accepted insofar as it renews the two-nature definition as binding. Orthodoxy is confessed in the miaphysite tradition without that renewal."
+  },
+  "flo-florence-s11-p20-en": {
+    "catholic_answer": "Yes. In Christ there are two perfect natures, two principles of action, and two wills, in one and the same person.",
+    "breakaway_answer": "No. That dyothelete / two-natures package is not required for communion. Christ is confessed in the miaphysite tradition without accepting those dualities as the binding settlement."
+  },
+  "flo-florence-s11-p21-en": {
+    "catholic_answer": "Yes. Universal synods are those legitimately confirmed by the Roman pontiff’s authority, including the recent unions and their definitions.",
+    "breakaway_answer": "No. Universal synods are not defined by papal confirmation. Authority rests in the consensus of the ancient churches; those unions are not binding conditions of the faith."
+  },
+  "flo-florence-s11-p5-en": {
+    "catholic_answer": "Yes. The Holy Spirit proceeds from the Father and the Son: one God in three persons, the Spirit having his being from both.",
+    "breakaway_answer": "No. The Holy Spirit proceeds from the Father. Procession ‘from the Father and the Son’ as from one principle is not confessed."
+  },
+  "flo-florence-s8-p28-en": {
+    "catholic_answer": "Yes. That synod and that pope rightly defined the truth about two natures in the one person of Christ.",
+    "breakaway_answer": "No. They did not rightly define that truth. After the union there is one united nature of the Word incarnate, not two natures as they taught."
+  },
+  "flo-florence-s8-p5-en": {
+    "catholic_answer": "Yes. The creed must be received with the added phrase ‘and the Son,’ as a licit clarification of the truth, and used in the liturgy as decreed.",
+    "breakaway_answer": "No. The creed must stand without that added phrase. Requiring ‘and the Son’ as a condition of communion is rejected; procession is confessed from the Father."
+  },
+  "flo-florence-s8-p6-en": {
+    "catholic_answer": "Yes. Those entering union must accept the definition of two natures in the one person of Christ as the faith of the universal synods.",
+    "breakaway_answer": "No. That two-nature definition is not the price of communion. The faith is the miaphysite confession of one united nature of the Word incarnate."
+  },
+  "flo-florence-s8-p7-en": {
+    "catholic_answer": "Yes. They must accept that later synod and that pope. The claim that both taught the condemned dyophysite heresy is false; their definition is orthodox.",
+    "breakaway_answer": "No. They are not to be accepted on those terms. The charge that they teach heresy is not settled by submitting to them; the miaphysite confession stands without that acceptance."
+  },
+  "con2-canon5-en": {
+    "catholic_answer": "It means the Word united to flesh in one hypostasis. It does not mean a mere union of many hypostases under one honorary ‘person.’",
+    "breakaway_answer": "That ‘one person’ language is not received in their sense. One united nature of the Word incarnate is confessed, without endorsing their gloss on that formula."
+  },
+  "flo-florence-s6-p10-en": {
+    "catholic_answer": "Yes on both counts. Christ’s body is truly confected in either unleavened or leavened wheat bread according to each church’s rite; and penitent souls who die without full satisfaction are cleansed after death by cleansing pains, helped by the suffrages of the living.",
+    "breakaway_answer": "No on purgatorial cleansing pains and those Mass-centered suffrages as defined—the dead are prayed for, but not under that doctrine. Unleavened bread also remains contested; leavened bread is the proper use in the Eastern rite."
+  },
+  "flo-florence-s6-p11-en": {
+    "catholic_answer": "Yes. Purified souls go straight to the beatific vision, graded by merits; those dying in mortal sin or original sin alone go straight to hell, with unequal pains.",
+    "breakaway_answer": "Not under that immediate heaven-or-hell schema as defined. The destiny of souls after death is confessed with prayer for the dead, without accepting that Latin mapping of destinies."
+  },
+  "flo-florence-s6-p12-en": {
+    "catholic_answer": "Yes. The Roman pontiff ranks first among the patriarchs, then Constantinople, Alexandria, Antioch, and Jerusalem, without prejudice to their privileges.",
+    "breakaway_answer": "No as a claim of supreme jurisdiction. A primacy of honor among equals may be granted to Rome; first place with power over the whole Church is rejected."
+  },
+  "flo-florence-s6-p7-en": {
+    "catholic_answer": "Yes. The Holy Spirit proceeds eternally from the Father and the Son as from one principle and a single spiration, having his being from both.",
+    "breakaway_answer": "No. The Holy Spirit proceeds from the Father alone as cause. Eternal procession from Father and Son as from one principle is rejected."
+  },
+  "flo-florence-s6-p8-en": {
+    "catholic_answer": "Yes. Because the Father gave the Son everything except being the Father, the Son also eternally has it that the Spirit proceeds from the Son.",
+    "breakaway_answer": "No. That inference does not hold. What the Son receives in being begotten does not include causing the Spirit’s procession; the Spirit proceeds from the Father."
+  },
+  "flo-florence-s6-p9-en": {
+    "catholic_answer": "Yes. Adding ‘and from the Son’ to the Creed was licit and reasonable, under urgent necessity, to declare the truth of the Spirit’s procession.",
+    "breakaway_answer": "No. The Creed must not be altered by that insertion. The faith is confessed with the older wording; adding the phrase was not licit."
+  },
+  "lyo2-profession-palaeologus-p3-en": {
+    "catholic_answer": "Yes. The Holy Spirit is true God, coequal and consubstantial with the Father and the Son, proceeding from the Father and the Son.",
+    "breakaway_answer": "The Holy Spirit is true God, coequal with the Father and the Son, but proceeds from the Father—not from the Father and the Son."
+  },
+  "lyo2-profession-palaeologus-p4-en": {
+    "catholic_answer": "Yes. Such souls are cleansed after death by purifying punishments, and the offerings of the living—Masses, prayers, and alms—relieve those pains.",
+    "breakaway_answer": "No. There is no such state of purifying punishments after death relieved by Masses. The dead are commemorated and prayed for, but not under that purgatorial doctrine."
+  },
+  "lyo2-profession-palaeologus-p5-en": {
+    "catholic_answer": "Yes. There are seven sacraments, and the Eucharist is prepared from unleavened bread, the bread changed into Christ’s body and the wine into his blood.",
+    "breakaway_answer": "Seven mysteries may be honored in another sense, but unleavened bread is not the norm—leavened bread is used. That Latin sacramental package is not binding as a condition of faith."
+  },
+  "lyo2-profession-palaeologus-p6-en": {
+    "catholic_answer": "Yes. The highest and complete primacy and spiritual power over the universal Church belongs to that see in Peter’s successor, received from the Lord with fullness of power.",
+    "breakaway_answer": "No. That see does not hold universal supremacy. Primacy, if any, is honor among sister churches, not complete spiritual power over the whole Church."
+  },
+  "con-s15-articles-of-john-wyclif-selected-from-the-260-en": {
+    "catholic_answer": "No. After consecration the host does not remain true bread in substance. The whole substance is converted; Christ’s body is truly present, not only figuratively.",
+    "breakaway_answer": "Yes. After consecration the host remains true bread in nature while being Christ’s body figuratively—or in figure—so remanence is affirmed."
+  },
+  "con-s8-the-council-pronounces-john-wyclif-a-heretic-condemns-his-memory-and-orde": {
+    "catholic_answer": "Yes. He was rightly judged a heretic whose memory and teaching are to be condemned; the process found no lawful defender.",
+    "breakaway_answer": "No. He was not a heretic. His memory and teaching should be honored as gospel reform, not condemned."
+  },
+  "con-s15-condemned-articles-of-j-hus-en": {
+    "catholic_answer": "No. The one holy universal church is not simply identical with the set of the predestined. The visible Church is the communion of the baptized under rightful pastors, not that number alone.",
+    "breakaway_answer": "Yes. The one holy universal church is precisely the total number of those predestined to salvation—that is what ‘church’ means."
+  },
+  "con-s15-sentence-against-john-hus-en": {
+    "catholic_answer": "Yes. He was rightly condemned as a heretic for obstinately holding those errors against the faith.",
+    "breakaway_answer": "No. He was not rightly condemned. The sentence was unjust; he is to be honored as a faithful witness, not a heretic."
+  },
+  "con-s21-sentence-condemning-jerome-of-prague-en": {
+    "catholic_answer": "Yes. He was rightly condemned as a heretic for not abiding in the faith as judged in that inquiry.",
+    "breakaway_answer": "No. He was not rightly condemned. He is to be honored among the faithful reformers and martyrs, not as a heretic."
+  },
+  "trent-s13-eucharist-canon2-en": {
+    "catholic_answer": "Yes. The whole substance of bread and wine is converted into Christ’s body and blood; only the appearances remain—that conversion is rightly called transubstantiation.",
+    "breakaway_answer": "No. There is no such conversion of the whole substance. Christ is present spiritually or sacramentally, or the elements remain bread and wine while signifying or conveying his body and blood."
+  },
+  "trent-s14-penance-canon4-en": {
+    "catholic_answer": "Yes. Contrition, confession, and satisfaction are required as the three parts—as it were the matter—of that sacrament for the entire remission of sins.",
+    "breakaway_answer": "No. Remission is not tied to those three acts as mandatory matter. Forgiveness comes by repentance and faith, without requiring auricular confession and satisfaction in that juridical form."
+  },
+  "trent-s22-mass-ch1-en": {
+    "catholic_answer": "Yes. Christ instituted the Sacrifice of the Mass as a true sacrifice of his body and blood, a visible sacrifice representing and continuing the sacrifice of the cross.",
+    "breakaway_answer": "No. Christ did not institute a propitiatory Mass-sacrifice. He instituted the Lord’s Supper as communion and remembrance of his once-for-all death, not a repeated sacrificial offering."
+  },
+  "trent-s22-mass-ch2-en": {
+    "catholic_answer": "Yes. In the Mass the same Christ is contained and immolated in an unbloody manner; the sacrifice is truly propitiatory for the living and the dead.",
+    "breakaway_answer": "No. The Mass is not a propitiatory sacrifice for the living and the dead. Christ’s sacrifice on the cross was once for all; the Supper does not re-offer him for sin."
+  },
+  "trent-s22-mass-ch3-en": {
+    "catholic_answer": "Yes. Masses may be offered in honor of the saints to obtain their intercession, while the sacrifice itself is offered to God alone.",
+    "breakaway_answer": "No. Masses should not be offered in honor of the saints. Worship and sacrificial offering belong to God alone; the saints are not to be honored that way in the Supper."
+  },
+  "trent-s22-mass-ch4-en": {
+    "catholic_answer": "Yes. The Canon of the Mass is free from error—drawn from the Lord’s words and apostolic piety—and is rightly retained for offering the sacrifice.",
+    "breakaway_answer": "No. That Canon is not free from error as a sacrificial prayer and should not be retained. The Supper should use a rite without that propitiatory canon."
+  },
+  "trent-s22-mass-ch5-en": {
+    "catholic_answer": "Yes. Lights, incense, vestments, and varied tones of voice are rightly instituted so that human minds may be raised to divine things.",
+    "breakaway_answer": "No. Those ceremonies are not apostolic necessities. Ritual may be simplified or stripped; such externals are human tradition, not required helps to true worship."
+  },
+  "trent-s22-mass-ch6-en": {
+    "catholic_answer": "Yes. Masses in which the priest alone communicates are lawful and approved; they remain true sacrifices even when the faithful do not communicate sacramentally.",
+    "breakaway_answer": "No. Private Masses of that kind are not lawful. The Lord’s Supper is a communion of the faithful; a priest communicating alone is not the Supper Christ instituted."
+  },
+  "trent-s22-mass-ch7-en": {
+    "catholic_answer": "Yes. Water must be mixed with the wine in the chalice, recalling Christ’s practice and the blood and water from his side, and the union of the people with him.",
+    "breakaway_answer": "No. Mixing water with the wine is not required by Christ or necessary to the sacrament. Wine alone suffices; that mixture is a human ceremony."
+  },
+  "trent-s22-mass-ch8-en": {
+    "catholic_answer": "Yes. It is not expedient that the Mass be celebrated everywhere in the vernacular, yet pastors must frequently explain its mysteries to the people.",
+    "breakaway_answer": "No. The vernacular should not be restricted that way. The Lord’s Supper ought to be in a language the people understand, so they can hear and take part."
+  },
+  "trent-s23-orders-canon1-en": {
+    "catholic_answer": "Yes. There is a visible New Testament priesthood with power to consecrate and offer Christ’s body and blood and to forgive and retain sins—not a mere office of preaching.",
+    "breakaway_answer": "No. There is no sacrificing ministerial priesthood of that kind. Ministry is chiefly preaching the gospel, and all believers share a priesthood; consecrating sacrifice is rejected."
+  },
+  "trent-s24-matrimony-canon7-en": {
+    "catholic_answer": "No. The Church has not erred. The marriage bond cannot be dissolved by adultery, and neither spouse may marry another during the other’s lifetime.",
+    "breakaway_answer": "Yes. The Church has erred on that point. For adultery or similar cause the bond may be treated as ended, and remarriage may be allowed while the other party still lives."
+  },
+  "trent-s25-indulgences-decree-en": {
+    "catholic_answer": "Yes. Christ granted the Church power to confer indulgences, she has used it from ancient times, and that power should continue to be used.",
+    "breakaway_answer": "No. Christ did not grant a power to confer indulgences, and they should not be used. Remission of temporal penalty by that system has no place in the gospel."
+  },
+  "trent-s25-purgatory-decree-en": {
+    "catholic_answer": "Yes. There is a purgatory, and souls detained there are helped by the suffrages of the faithful, especially the sacrifice of the altar.",
+    "breakaway_answer": "No. There is no purgatory as a post-mortem purifying state. The faithful departed are with Christ or await judgment without that intermediate purifying detention helped by Masses."
+  },
+  "trent-s25-saints-images-decree-en": {
+    "catholic_answer": "Yes. The faithful should invoke the saints, venerate their relics, and honor sacred images as helps to devotion toward God.",
+    "breakaway_answer": "No. The faithful should not invoke the saints, venerate relics, or honor sacred images. Prayer is directed to God alone; such practices are rejected as unbiblical."
+  },
+  "trent-s4-scripture-decree-en": {
+    "catholic_answer": "Yes. The canon is authoritatively fixed, including the deuterocanonical books, and apostolic traditions concerning faith and morals are to be received with equal reverence alongside Scripture.",
+    "breakaway_answer": "No. Scripture alone is the final rule. That closed canon—especially the deuterocanonicals as equal Scripture—is not binding, and tradition does not stand with equal authority beside Scripture."
+  },
+  "trent-s5-original-sin-canon1-en": {
+    "catholic_answer": "Yes. By transgressing, Adam immediately lost holiness and justice, incurred God’s wrath and death, captivity under the devil, and the whole human race was changed for the worse in body and soul.",
+    "breakaway_answer": "Yes, Adam’s fall brought sin and death on the race—but the account of total depravity, imputed guilt, and what remains after baptism is stated differently, without accepting every clause of that formulation."
+  },
+  "trent-s6-justification-canon4-en": {
+    "catholic_answer": "Yes. When God moves and calls, free will can and does cooperate by assenting, and can refuse; it is not merely passive like an inanimate thing.",
+    "breakaway_answer": "No. In receiving justifying grace the will is passive, or does not synergistically cooperate. Justification is by grace through faith without that preparatory cooperation."
+  },
+  "trent-s7-sacraments-canon1-en": {
+    "catholic_answer": "Yes. Christ instituted exactly seven sacraments—Baptism, Confirmation, Eucharist, Penance, Extreme Unction, Order, and Matrimony—each truly and properly a sacrament.",
+    "breakaway_answer": "No. Christ did not institute exactly those seven. In the strict sense there are two—baptism and the Lord’s Supper—though other rites may be valued without being sacraments of that kind."
+  },
+  "trent-s7-sacraments-canon10-en": {
+    "catholic_answer": "No. Not all Christians have power to administer the word and all the sacraments. That power belongs to those rightly ordained for the ministry.",
+    "breakaway_answer": "Yes. All Christians share a priesthood of believers with broad power to minister the word and sacraments; ministry is not reserved to a sacrificing hierarchy."
+  },
+  "trent-s7-sacraments-canon11-en": {
+    "catholic_answer": "Yes. When ministers confer the sacraments they must intend at least to do what the Church does; without that intention the sacrament is not effected.",
+    "breakaway_answer": "No. Validity is not bound to that intention rule. What makes the rite effective is not dependence on intending ‘what the Church does’ in that sense."
+  },
+  "trent-s7-sacraments-canon12-en": {
+    "catholic_answer": "Yes. A minister in mortal sin who observes the essentials still truly effects or confers the sacrament; the minister’s personal unworthiness does not void it.",
+    "breakaway_answer": "Yes. The minister’s personal mortal sin does not void the sacrament when the essentials are observed—the worthiness of the minister is not what makes it effective."
+  },
+  "pa-ch2-canon1-en": {
+    "catholic_answer": "Yes. By Christ’s own institution Peter has perpetual successors in the primacy over the whole Church, and the Roman pontiff is that successor by divine law.",
+    "breakaway_answer": "No. Universal primacy of that kind is not by Christ’s institution. The Roman pontiff is not the perpetual successor of Peter over the whole Church in that sense; primacy is differently understood."
+  },
+  "pa-ch4-p9-en": {
+    "catholic_answer": "Yes. When the Roman pontiff speaks ex cathedra defining a doctrine of faith or morals to be held by the whole Church, he possesses that infallible teaching authority by the divine assistance promised in Peter.",
+    "breakaway_answer": "No. He does not possess ex cathedra infallible authority from himself apart from the Church’s consent. Doctrinal definitions require the Church’s wider authority, not a personal infallible privilege of that kind."
+  },
+  "flo-florence-s8-p29-en": {
+    "catholic_answer": "Yes. While the chalice is offered, a little water is to be mixed with the wine.",
+    "breakaway_answer": "No. The wine is offered unmixed; mixing water with the wine at the altar is not required."
+  },
+  "flo-florence-s8-p31-en": {
+    "catholic_answer": "Yes. The Spirit proceeds from the Father and the Son; the penitent may be cleansed after death by purifying pains; and the Roman pontiff holds primacy over the whole Church.",
+    "breakaway_answer": "No. The Spirit proceeds from the Father; that purgatory formulation of purifying pains is not received; and Roman universal primacy is refused."
+  },
+  "flo-florence-s8-p27-en": {
+    "catholic_answer": "Yes. The creed is to be received with ‘and the Son,’ and Chalcedon’s two natures in one person and the sixth council’s two wills are to be accepted.",
+    "breakaway_answer": "No. The Filioque addition is refused, and Christ is confessed in the miaphysite settlement rather than under those two-natures and two-wills union terms."
+  },
+  "flo-florence-s11-p24-en": {
+    "catholic_answer": "Yes. When no canonical impediment exists, not only second and third but also fourth and further marriages may lawfully be contracted.",
+    "breakaway_answer": "No. Repeated remarriage is restricted; fourth and further marriages are not treated as freely lawful in that way."
+  },
+  "eph-anathema1-en": {
+    "catholic_answer": "Yes. The Emmanuel is very God, and the Holy Virgin is Mother of God inasmuch as she bore the Word made flesh.",
+    "breakaway_answer": "No—not under that forced Theotokos settlement. She is confessed as Mother of Christ; divinity and humanity remain sharply distinguished as two qnome."
+  },
+  "con-s13-condemnation-of-communion-under-both-kinds-recently-revived-among-the-bo": {
+    "catholic_answer": "No. The approved custom of communion under one kind for the laity stands; the people are not bound to receive under both kinds.",
+    "breakaway_answer": "Yes. The sacrament should be given to the people under both kinds; withholding the cup from the laity is refused."
+  },
+  "flo-florence-s13-p8-en": {
+    "catholic_answer": "Yes. One and the same Son is perfect in divinity and humanity, acknowledged in two natures without confusion, change, division, or separation.",
+    "breakaway_answer": "No. After the union he is confessed as one united nature of the Word incarnate, not ‘in two natures’ as that definition requires."
+  },
+  "trent-s6-justification-canon30-en": {
+    "catholic_answer": "Yes. Guilt and eternal punishment may be remitted while a debt of temporal punishment still remains to be paid in this world or in Purgatory.",
+    "breakaway_answer": "No. When justification remits guilt, no such remaining temporal debt in Purgatory is taught; Christ’s satisfaction covers the sinner without that residual penalty scheme."
+  },
+  "trent-s24-matrimony-canon1-en": {
+    "catholic_answer": "Yes. Matrimony is truly and properly one of the seven sacraments of the evangelic law, instituted by Christ and conferring grace.",
+    "breakaway_answer": "No. Matrimony is an honorable estate, but it is not a sacrament of the New Law conferring grace in that sevenfold list."
+  },
+  "con2-canon6-en": {
+    "catholic_answer": "Yes. She is exactly and truly the Mother of God, because God the Word begotten of the Father was in these last days made flesh and born of her.",
+    "breakaway_answer": "No—not as that forced ‘exactly and truly’ Theotokos confession. Mother of Christ language is preferred, keeping divinity and humanity distinct."
+  },
+  "con2-canon7-en": {
+    "catholic_answer": "Yes. ‘In two natures’ names the unconfused hypostatic union in which divinity and humanity each remain what they were in the one Lord Jesus Christ.",
+    "breakaway_answer": "No. That ‘in two natures’ settlement is refused; after the union he is confessed as one united nature of the Word incarnate."
+  },
+  "con2-canon8-en": {
+    "catholic_answer": "Yes. Either expression, rightly used, means the hypostatic union of Godhead and humanity in one Christ without mixture or confusion of the natures.",
+    "breakaway_answer": "No. The binding reception of that regulation of the phrases is refused; after the union he is confessed as one united nature of the Word incarnate."
+  },
+  "con2-canon14-en": {
+    "catholic_answer": "Yes. That letter is to be rejected, not defended; its denial of the Word made man of Mary Mother of God and its attack on Cyril and Ephesus are condemned.",
+    "breakaway_answer": "No. That letter’s sharper distinction of divinity and humanity may be defended; the Cyrilline anathematizing settlement is not accepted as binding in that way."
+  },
+  "nic1-synodal-letter-en": {
+    "catholic_answer": "Yes. Melitian clergy may be received under the synod’s terms, but Meletius himself is granted no authority or privilege; succession among those received requires the people’s election and the bishop of Alexandria’s concurrence.",
+    "breakaway_answer": "No. The parallel hierarchy and Meletius’s claims are not extinguished under that Alexandrian settlement; the schism’s episcopal legitimacy is not surrendered on those terms."
+  },
+  "lat4-constitution3-en": {
+    "catholic_answer": "Yes. Every heresy raised against that faith is excommunicated and anathematized; those condemned are handed over for due punishment, clerics being first degraded from their orders.",
+    "breakaway_answer": "No. Lay preaching and apostolic poverty outside that episcopal license are not condemned heresy under that regime; the anathematizing of such dissenters is refused."
+  },
+  "pa-ch4-canon1-en": {
+    "catholic_answer": "Yes. Anyone who has the temerity to reject that definition of the Roman pontiff’s infallible teaching authority is anathematized.",
+    "breakaway_answer": "No. That definition of infallible papal teaching authority is refused; rejecting it is not treated as anathema, because doctrinal definitions are not bound by that personal privilege."
+  },
+  "pa-ch3-canon1-en": {
+    "catholic_answer": "Yes. He has the full and supreme power of jurisdiction over the whole Church in faith and morals and in discipline and government, ordinary and immediate over all churches and pastors.",
+    "breakaway_answer": "No. He does not hold that full and supreme ordinary jurisdiction over the whole Church; national or independent Catholic structures govern without that absolute papal power."
+  },
+  "pa-ch1-canon1-en": {
+    "catholic_answer": "Yes. Peter was appointed prince of all the apostles and visible head of the whole Church militant, receiving a primacy of true and proper jurisdiction directly from Christ—not honor only.",
+    "breakaway_answer": "No. That primacy of true jurisdiction over the whole militant Church is refused; a primacy of honor only, or a rejected papal claim, is taught instead."
+  },
+  "trent-s6-justification-canon9-en": {
+    "catholic_answer": "No. Justification is not by faith alone in that sense; cooperation and a preparation and disposition of the will are required to obtain the grace of justification.",
+    "breakaway_answer": "Yes. The impious is justified by faith alone; nothing else is required to cooperate in obtaining that grace, and the will’s preparatory works are not necessary in that sense."
+  },
+  "trent-s7-baptism-canon13-en": {
+    "catholic_answer": "Yes. Little children after baptism are reckoned among the faithful; they are not to be rebaptized when they reach discretion, and it is not better to omit their baptism for lack of their own act of faith.",
+    "breakaway_answer": "No. Without their own actual faith, infants are not reckoned among the faithful by that baptism; believers’ baptism at years of discretion is required, and infant baptism is refused or redone."
+  },
+  "trent-s13-eucharist-canon1-en": {
+    "catholic_answer": "Yes. The whole Christ is contained truly, really, and substantially in the sacrament—not only as in a sign, figure, or virtue.",
+    "breakaway_answer": "No—not under that ‘truly, really, and substantially’ definition. Christ’s body is received in a heavenly and spiritual manner; the local substantial containment of that kind is refused."
+  }
+}

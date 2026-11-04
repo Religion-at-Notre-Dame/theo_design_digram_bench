@@ -33,6 +33,9 @@ RENAME = {
     "Church of the East / Nestorians": "Church of the East",
     "Oriental Orthodox / non-union churches": "Oriental Orthodox churches",
     "Oriental Orthodox churches": "Oriental Orthodox churches",
+    "Armenian Apostolic Church": "Armenian Apostolic Church",
+    "Coptic Orthodox Church": "Coptic Orthodox Church",
+    "Syriac Orthodox Church": "Syriac Orthodox Church",
     "Eastern Orthodox (rejection of union)": "Eastern Orthodox churches",
     "Eastern Orthodox": "Eastern Orthodox churches",
     "Eastern Orthodox churches": "Eastern Orthodox churches",
@@ -40,6 +43,10 @@ RENAME = {
     "Hussites": "Hussites",
     "Protestant Reformers": "Protestant churches",
     "Protestant churches": "Protestant churches",
+    "Lutheran churches": "Lutheran churches",
+    "Reformed / Calvinist churches": "Reformed / Calvinist churches",
+    "Anabaptist / Radical Reformation churches": "Anabaptist / Radical Reformation churches",
+    "Anglican Communion / Church of England": "Anglican Communion / Church of England",
     "Old Catholics": "Old Catholic churches",
     "Old Catholic churches": "Old Catholic churches",
     "Arian churches": "Arian churches",
@@ -58,15 +65,24 @@ def resolve(old: str | None) -> str | None:
     return None
 
 
-def assign_from_citation(council: str, citation: str) -> str | None:
+def assign_from_citation(council: str, citation: str, entry_id: str = "") -> str | None:
     """Re-attach breakaways after corpus citation renames (precise loci only)."""
     cit = (citation or "").lower()
+    eid = entry_id or ""
     if council == "Council of Florence":
         # Union decrees / refused communion after Florence sessions.
-        if "(florence) s6" in cit:
+        if "(florence) s6" in cit or eid.startswith("flo-florence-s6-"):
             return "Eastern Orthodox churches"
-        if "(florence) s8" in cit or "(florence) s11" in cit:
-            return "Oriental Orthodox churches"
+        if "(florence) s8" in cit or eid.startswith("flo-florence-s8-"):
+            return "Armenian Apostolic Church"
+        if "(florence) s11" in cit or eid.startswith("flo-florence-s11-"):
+            return "Coptic Orthodox Church"
+    if council == "Council of Chalcedon" and "definition" in cit:
+        return "Oriental Orthodox churches"
+    if council == "Second Council of Constantinople":
+        return "Oriental Orthodox churches"
+    if council == "Council of Trent":
+        return "Lutheran churches"
     if council == "Second Council of Lyons" and "palaeologus" in cit:
         return "Eastern Orthodox churches"
     return None
@@ -93,6 +109,7 @@ def main() -> int:
             assigned_name = assign_from_citation(
                 entry.get("council") or "",
                 entry.get("canonical_citation") or "",
+                entry.get("id") or "",
             )
             if assigned_name:
                 new = assigned_name

@@ -1,0 +1,760 @@
+[
+  {
+    "id": "chal-canon1-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 1",
+    "question": "Should the canons of the Holy Fathers made in every synod even until now remain in force?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon2-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 2",
+    "question": "May a bishop ordain for money, put to sale a grace which cannot be sold, or nominate church officers for money?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon3-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 3",
+    "question": "May a bishop, clergyman, or monk hire possessions, engage in business, or occupy himself in worldly engagements for gain?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon4-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 4",
+    "question": "May anyone build or found a monastery or oratory contrary to the will of the city’s bishop, and are monks in every city and district subject to the bishop?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon5-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 5",
+    "question": "Concerning bishops or clergymen who go about from city to city, do the canons enacted by the Holy Fathers still retain their force?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon6-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 6",
+    "question": "May a presbyter, deacon, or anyone of the ecclesiastical order be ordained at large without being particularly appointed to a church, martyry, or monastery?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon7-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 7",
+    "question": "May those once enrolled among the clergy or made monks accept a military charge or any secular dignity without returning to their first calling?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon8-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 8",
+    "question": "Must the clergy of poor-houses, monasteries, and martyries remain under the authority of the bishops in every city according to the tradition of the holy Fathers?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon9-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 9",
+    "question": "If a clergyman has a matter against another clergyman, must he first lay it before his own bishop rather than forsake him and run to secular courts?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon10-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 10",
+    "question": "Is it lawful for a clergyman to be enrolled at the same time in the churches of two cities?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon11-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 11",
+    "question": "Should the poor and those needing assistance travel, after examination, with letters merely pacifical from the church, and not with letters commendatory?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon12-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 12",
+    "question": "May a bishop, by means of imperial rescripts, divide one province into two so that there are two metropolitans in one province?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon13-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 13",
+    "question": "May strange and unknown clergymen without letters commendatory from their own bishop officiate in another city?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon14-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 14",
+    "question": "Where readers and singers are permitted to marry, may any of them take a wife that is heterodox?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon15-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 15",
+    "question": "May a woman receive the laying on of hands as a deaconess under forty years of age, and if after ministering she marries, is she anathematized along with the man united to her?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon16-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 16",
+    "question": "Is it lawful for a virgin who has dedicated herself to the Lord God, or for monks, to marry?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon17-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 17",
+    "question": "Shall outlying or rural parishes in every province remain subject to the bishops who now have jurisdiction over them, especially if governed peaceably for thirty years?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon18-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 18",
+    "question": "If clergymen or monks are detected conspiring, banding together, or hatching plots against their bishops or fellow clergy, must they be deposed from their rank?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon19-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 19",
+    "question": "Must the bishops of every province assemble twice in the year where the metropolitan approves, to settle ecclesiastical matters that have arisen?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon20-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 20",
+    "question": "Is it lawful for clergymen officiating in one church to be appointed to the church of another city, except those driven by necessity from their own country?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon21-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 21",
+    "question": "Are clergymen and laymen bringing charges against bishops or clergymen to be received loosely and without examination as accusers, or must their own character first be investigated?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon22-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 22",
+    "question": "Is it lawful for clergymen, after the death of their bishop, to seize what belongs to him?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon23-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 23",
+    "question": "May clergymen and monks without authority from their own bishop—or while under his excommunication—remain long in imperial Constantinople raising disturbances and troubling the ecclesiastical state?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon24-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 24",
+    "question": "Must monasteries once consecrated with the bishop’s consent remain monasteries forever, with their property preserved, and never again become secular dwellings?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon25-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 25",
+    "question": "Must the ordinations of bishops take place within three months, unless an inevitable necessity requires the term of delay to be prolonged?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon26-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 26",
+    "question": "Must every church having a bishop also have a steward from among its own clergy to manage church business under the bishop’s sanction?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon27-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 27",
+    "question": "Shall those who forcibly carry off women under pretence of marriage, and the aiders or abettors of such ravishers, be degraded if clergymen and anathematized if laymen?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon28-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 28",
+    "question": "Following the Fathers and the canon of the One Hundred and Fifty Bishops at Constantinople, does the most holy throne of New Rome receive equal privileges with old Rome in ecclesiastical matters?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Canon 28 (New Rome privileges) is an intra-Chalcedonian Rome–Constantinople ranking dispute; EO accept Chalcedon, and lasting East–West primacy contrast is better located at Florence/Lyons, not as a Chalcedon breakaway locus."
+  },
+  {
+    "id": "chal-canon29-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 29",
+    "question": "Is it sacrilege to degrade a bishop to the rank of a presbyter, and if bishops are removed from episcopal functions for just cause, ought they still to have the position of a presbyter?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword hit is council name 'chalcedon' on a disciplinary/administrative canon; OO rupture is the Definition (already tagged), not these canons."
+  },
+  {
+    "id": "chal-canon30-en",
+    "council": "Council of Chalcedon",
+    "citation": "Chalcedon canon 30",
+    "question": "May the Egyptian bishops postpone for the present their subscription to Archbishop Leo’s letter until the ordination of a new archbishop of Alexandria, without opposing the Catholic Faith?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Procedural postponement for Egyptian subscription to Leo’s Tome; process/narrative, not the dogmatic Definition already tagged for Oriental Orthodox churches."
+  },
+  {
+    "id": "con-s13-condemnation-of-communion-under-both-kinds-recently-revived-among-the-bo",
+    "council": "Council of Constance",
+    "citation": "Constance S13 [Condemnation of communion under both kinds, recently revived among the Bohemians by Jakoubek of Stribro]",
+    "question": "Ought the Christian people to receive the holy sacrament of the Eucharist under the forms of both bread and wine, and may the laity communicate under wine and even after a meal without the need of a fast, contrary to the Church’s approved custom?",
+    "hits": [
+      "both kinds"
+    ],
+    "verdict": "CANDIDATE_NEW_TAG",
+    "breakaway_group": "Hussites",
+    "reason": "Constance explicitly condemns Bohemian/Hussite utraquism (communion under both kinds); core recoverable Hussite contrast already used elsewhere for Constance."
+  },
+  {
+    "id": "eph-anathema1-en",
+    "council": "Council of Ephesus",
+    "citation": "Ephesus, Cyril anathema 1",
+    "question": "Is the Emmanuel very God, and is the Holy Virgin therefore the Mother of God (Theotokos), inasmuch as in the flesh she bore the Word of God made flesh?",
+    "hits": [
+      "mother of god",
+      "theotokos"
+    ],
+    "verdict": "CANDIDATE_NEW_TAG",
+    "breakaway_group": "Church of the East",
+    "reason": "Cyril anathema 1 is the Theotokos locus; sibling Cyril anathemas are already tagged Church of the East; recoverable Nestorian/CoE disagreement."
+  },
+  {
+    "id": "flo-florence-s7-p20-en",
+    "council": "Council of Florence",
+    "citation": "Florence (Florence) S7 para. 20",
+    "question": "May improperly conducted councils, even those involving universal pontiffs, be annulled, as when Leo moved from the second Ephesus to establish Chalcedon?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Anti-Basel narrative citing Chalcedon/Leo as historical precedent for annulling improper councils; not a Filioque/christology union term or lasting breakaway locus."
+  },
+  {
+    "id": "flo-florence-s9-p13-en",
+    "council": "Council of Florence",
+    "citation": "Florence (Florence) S9 para. 13",
+    "question": "Must the pope and sacred synod, following Moses and Pope Leo, tell the Christian people to depart from the tents of these impious men and deal with them as Leo dealt with Dioscorus at Chalcedon?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Rhetorical exhortation against Basel using Leo/Dioscorus at Chalcedon as analogy; ceremony/polemic narrative, not a recoverable OO/EO doctrinal contrast row."
+  },
+  {
+    "id": "flo-florence-s13-p3-en",
+    "council": "Council of Florence",
+    "citation": "Florence (Florence) S13 para. 3",
+    "question": "Was Abdala found orthodox except on the Spirit’s procession, Christ’s two natures, and his two wills and principles of action?",
+    "hits": [
+      "two natures"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Envoy examination narrative about Abdala’s orthodoxy; agent excludes pure examination/envoy narrative—doctrinal two-natures stake is better in S13 p8."
+  },
+  {
+    "id": "flo-florence-s13-p8-en",
+    "council": "Council of Florence",
+    "citation": "Florence (Florence) S13 para. 8",
+    "question": "Is one and the same Son of God and of man perfect in divinity and humanity, true God and true man, acknowledged in two natures without confusion, change, division, or separation?",
+    "hits": [
+      "two natures"
+    ],
+    "verdict": "CANDIDATE_NEW_TAG",
+    "breakaway_group": "Syriac Orthodox Church",
+    "reason": "Florence S13 Syrian union requires Chalcedonian two-natures confession; parallel to tagged Armenian/Coptic Florence Chalcedon rows; Syriac session previously untagged."
+  },
+  {
+    "id": "flo-florence-s14-p3-en",
+    "council": "Council of Florence",
+    "citation": "Florence (Florence) S14 para. 3",
+    "question": "Did Andrew work to eliminate Nestorius’s claim that Christ is only a man and Mary not Mother of God, and Macarius’s assertion of only one divine will in Christ?",
+    "hits": [
+      "mother of god"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Narrative praise of Andrew’s work against Nestorius/Macarius; not a decree stating a contested claim for contrast."
+  },
+  {
+    "id": "flo-florence-s14-p6-en",
+    "council": "Council of Florence",
+    "citation": "Florence (Florence) S14 para. 6",
+    "question": "Must all seven sacraments of the Roman church be confessed and approved just as she holds, teaches, and preaches?",
+    "hits": [
+      "seven sacraments"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Profession formula in Chaldean/Maronite union bull; Maronites are not breakaways, and seven-sacrament contrast is clearer at Trent than as a CoE Florence locus."
+  },
+  {
+    "id": "trent-s6-justification-canon30-en",
+    "council": "Council of Trent",
+    "citation": "Trent S6 Justification canon 30",
+    "question": "After Justification, is every penitent’s guilt remitted and eternal punishment blotted out so that no debt of temporal punishment remains in this world or in Purgatory?",
+    "hits": [
+      "purgatory"
+    ],
+    "verdict": "CANDIDATE_NEW_TAG",
+    "breakaway_group": "Lutheran churches",
+    "reason": "Anathema denying residual temporal punishment / Purgatory after justification; classic Reformational disagreement; Trent already uses Lutheran churches for purgatory decree."
+  },
+  {
+    "id": "trent-s7-sacraments-canon3-en",
+    "council": "Council of Trent",
+    "citation": "Trent S7 Sacraments in General canon 3",
+    "question": "Are the seven sacraments unequal in worth, so that one may be more worthy than another?",
+    "hits": [
+      "seven sacraments"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Canon presupposes seven sacraments and asks about inequality among them; Reformational interlocutors deny the sevenfold set, so recoverable Yes/No contrast on this wording is weak—prefer already-tagged seven-sacraments canons."
+  },
+  {
+    "id": "trent-s21-communion-preamble-en",
+    "council": "Council of Trent",
+    "citation": "Trent S21 Decree on Communion under Both Kinds, Preamble",
+    "question": "Did the Synod address errors about communion under both species and the communion of infants regarding the Eucharist?",
+    "hits": [
+      "both kinds"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Preamble that the synod will address both-species/infant-communion errors; no contested doctrinal claim yet (unlike S21 canons/chapters)."
+  },
+  {
+    "id": "trent-s22-mass-canon3-en",
+    "council": "Council of Trent",
+    "citation": "Trent S22 Sacrifice of the Mass canon 3",
+    "question": "Is the Mass a propitiatory sacrifice that may be offered for the living and the dead, and not only praise, thanksgiving, or bare commemoration?",
+    "hits": [
+      "propitiatory"
+    ],
+    "verdict": "CANDIDATE_NEW_TAG",
+    "breakaway_group": "Lutheran churches",
+    "reason": "Canon anathematizing denial that the Mass is propitiatory for living and dead; sibling S22 chapters already tagged Lutheran churches."
+  },
+  {
+    "id": "trent-s24-matrimony-canon1-en",
+    "council": "Council of Trent",
+    "citation": "Trent S24 Matrimony canon 1",
+    "question": "Is matrimony truly and properly one of the seven sacraments of the evangelic law, instituted by Christ and conferring grace?",
+    "hits": [
+      "seven sacraments"
+    ],
+    "verdict": "CANDIDATE_NEW_TAG",
+    "breakaway_group": "Lutheran churches",
+    "reason": "Canon that matrimony is truly one of the seven sacraments conferring grace; clear Lutheran/Reformational rejection point."
+  },
+  {
+    "id": "lat4-constitution1-en",
+    "council": "Fourth Lateran Council",
+    "citation": "Fourth Lateran Council, constitution 1 (Firmiter)",
+    "question": "Is there only one true God, Father, Son, and Holy Ghost—three Persons but one essence— the Son from the Father only and the Holy Ghost equally from both, consubstantial, coequal, and coeternal?",
+    "hits": [
+      "consubstantial"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Firmiter restates Latin Trinitarian faith (incl. Spirit from both) primarily against dualists/Cathars; do not back-project EO Filioque schism onto Lateran IV as the rupture locus (Cathars cleared; EO already separated)."
+  },
+  {
+    "id": "lat4-constitution60-en",
+    "council": "Fourth Lateran Council",
+    "citation": "Fourth Lateran Council, constitution 60",
+    "question": "Are abbots forbidden to overreach into episcopal matters such as deciding matrimonial cases, imposing public penances, or granting letters of indulgence without special concession?",
+    "hits": [
+      "indulgence"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Disciplinary limit on abbots granting letters of indulgence / episcopal functions; not the Reformational indulgence theology dispute (Trent S25 already tagged)."
+  },
+  {
+    "id": "con2-canon1-en",
+    "council": "Second Council of Constantinople",
+    "citation": "Constantinople II canon 1",
+    "question": "Is the nature or essence of the Father, the Son, and the Holy Ghost one, with one force and power, a consubstantial Trinity and one Godhead worshipped in three Persons?",
+    "hits": [
+      "consubstantial"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Reaffirms consubstantial Trinity; no lasting breakaway uniquely tied to this Con2 locus (Arian rupture is Nicaea I; OO/EO affirm the Trinity)."
+  },
+  {
+    "id": "con2-canon2-en",
+    "council": "Second Council of Constantinople",
+    "citation": "Constantinople II canon 2",
+    "question": "Does the Word of God have two nativities—one from eternity of the Father without time or body, and another in these last days, made flesh of the holy and glorious Mary, Mother of God and ever-virgin?",
+    "hits": [
+      "mother of god"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Two nativities + Mother of God language; CoE Theotokos stake is cleaner at Ephesus/anathema1 and con2-canon6—avoid stacking a weaker Con2 nativity contrast."
+  },
+  {
+    "id": "con2-canon6-en",
+    "council": "Second Council of Constantinople",
+    "citation": "Constantinople II canon 6",
+    "question": "Is the holy, glorious, and ever-virgin Mary exactly and truly the Mother of God, because God the Word begotten of the Father before all ages was in these last days made flesh and born of her?",
+    "hits": [
+      "mother of god"
+    ],
+    "verdict": "CANDIDATE_NEW_TAG",
+    "breakaway_group": "Church of the East",
+    "reason": "Requires true (not merely honorific) confession of Mary as Mother of God; recoverable CoE/Nestorian disagreement parallel to Ephesus Theotokos tags."
+  },
+  {
+    "id": "con2-canon7-en",
+    "council": "Second Council of Constantinople",
+    "citation": "Constantinople II canon 7",
+    "question": "When we say Christ is in two natures, do we mean an unconfused hypostatic union in which each nature remains what it was, not a division of the one Lord Jesus into separate parties?",
+    "hits": [
+      "two natures"
+    ],
+    "verdict": "CANDIDATE_NEW_TAG",
+    "breakaway_group": "Oriental Orthodox churches",
+    "reason": "Defends Chalcedonian 'in two natures' hypostatic union; same OO stake as already-tagged con2-canon5 and Chalcedon definition."
+  },
+  {
+    "id": "con2-canon8-en",
+    "council": "Second Council of Constantinople",
+    "citation": "Constantinople II canon 8",
+    "question": "Does confessing two natures, or the one nature of God the Word made flesh, mean a hypostatic union of Godhead and humanity in one Christ, without mixture or confusion of the natures?",
+    "hits": [
+      "two natures"
+    ],
+    "verdict": "CANDIDATE_NEW_TAG",
+    "breakaway_group": "Oriental Orthodox churches",
+    "reason": "Regulates 'two natures' vs 'one nature of the Word made flesh' toward unconfused hypostatic union; lasting miaphysite vs Chalcedonian contrast."
+  },
+  {
+    "id": "con2-canon9-en",
+    "council": "Second Council of Constantinople",
+    "citation": "Constantinople II canon 9",
+    "question": "Is Christ to be venerated by one adoration as God the Word made man together with his flesh, not by two separate adorations of the Word and of the man, nor by collapsing the natures into one mixed essence?",
+    "hits": [
+      "two natures"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Targets two separate adorations or mixed essence; Oriental Orthodox generally share one-adoration of the incarnate Word, so recoverable disagreement with Catholics on this locus is unclear."
+  },
+  {
+    "id": "con2-canon14-en",
+    "council": "Second Council of Constantinople",
+    "citation": "Constantinople II canon 14",
+    "question": "Must the letter said to be of Ibas to Maris the Persian—denying that the Word of God was made man of Mary the Mother of God, and attacking Cyril and Ephesus—be rejected rather than defended?",
+    "hits": [
+      "mother of god"
+    ],
+    "verdict": "CANDIDATE_NEW_TAG",
+    "breakaway_group": "Church of the East",
+    "reason": "Condemns defending Ibas’s letter denying the Word was made man of Mary Mother of God; Nestorians/CoE are the lasting opposing communion."
+  },
+  {
+    "id": "nic2-definition-en",
+    "council": "Second Council of Nicaea",
+    "citation": "Nicaea II, Decree (Horos) on sacred images",
+    "question": "Just as the figure of the precious Cross is set forth, must venerable and holy images of Christ, the Mother of God, the angels, and the saints be set forth in churches and given relative veneration, not the worship due to God alone?",
+    "hits": [
+      "mother of god"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Keyword is Mother of God inside the icon decree; contested claim is image veneration. Iconoclasts are not kept as a lasting breakaway under the formal definition."
+  },
+  {
+    "id": "lat2-canon5-en",
+    "council": "Second Lateran Council",
+    "citation": "Lateran II canon 5",
+    "question": "Are the goods of deceased bishops not to be seized by anyone, but left freely at the disposal of the treasurer and clergy for the needs of the church and the poor?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "False-positive 'chalcedon' citation for goods of deceased bishops; shared disciplinary rule, no breakaway contrast."
+  },
+  {
+    "id": "lg-53-en",
+    "council": "Second Vatican Council",
+    "citation": "LG 53",
+    "question": "Is the Virgin Mary, who at the message of the angel received the Word of God in her heart and in her body and gave Life to the world, acknowledged and honored as being truly the Mother of God and Mother of the Redeemer?",
+    "hits": [
+      "mother of god"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Vatican II Marian teaching; Protestant separation long predates LG—do not invent Reformational breakaway onto Vatican II Mother of God loci."
+  },
+  {
+    "id": "lg-54-en",
+    "council": "Second Vatican Council",
+    "citation": "LG 54",
+    "question": "In expounding the doctrine on the Church, does this Holy Synod intend to describe diligently both the role of the Blessed Virgin in the mystery of the Incarnate Word and the Mystical Body, and the duties of redeemed mankind toward the Mother of God?",
+    "hits": [
+      "mother of god"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Vatican II Marian exposition intent; no new lasting breakaway from this locus."
+  },
+  {
+    "id": "lg-61-en",
+    "council": "Second Vatican Council",
+    "citation": "LG 61",
+    "question": "Predestined from eternity to be the Mother of God, was the Blessed Virgin on this earth the virgin Mother of the Redeemer and, above all others and in a singular way, the generous associate and humble handmaid of the Lord?",
+    "hits": [
+      "mother of god"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Vatican II Marian associate-of-Redeemer language; keyword Theotokos false lead for a modern council without a new rupture community."
+  },
+  {
+    "id": "lg-63-en",
+    "council": "Second Vatican Council",
+    "citation": "LG 63",
+    "question": "By reason of the gift and role of divine maternity, is the Blessed Virgin also intimately united with the Church, and as St. Ambrose taught, is the Mother of God a type of the Church in the order of faith, charity, and perfect union with Christ?",
+    "hits": [
+      "mother of god"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Vatican II Mary as type of the Church; intra-reception / ecumenical text, not a breakaway-creating decision."
+  },
+  {
+    "id": "lg-66-en",
+    "council": "Second Vatican Council",
+    "citation": "LG 66",
+    "question": "Placed by the grace of God as God's Mother next to her Son and exalted above all angels and men, is Mary justly honored by a special cult in the Church, from earliest times under the title of Mother of God?",
+    "hits": [
+      "mother of god"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Vatican II Marian cult; do not back-project Protestant Marian disagreements onto Vatican II as the rupture locus."
+  },
+  {
+    "id": "lg-69-en",
+    "council": "Second Vatican Council",
+    "citation": "LG 69",
+    "question": "Does the entire body of the faithful pour forth instant supplications to the Mother of God and Mother of men that she, who aided the beginnings of the Church by her intercession, may now also implore unity among all who believe in Christ?",
+    "hits": [
+      "mother of god"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Vatican II intercession/unity petition to Mary; not a decision that created a lasting separated communion."
+  },
+  {
+    "id": "sc-103-en",
+    "council": "Second Vatican Council",
+    "citation": "SC 103",
+    "question": "In celebrating the annual cycle of Christ's mysteries, does holy Church honor with especial love the Blessed Mary, Mother of God, who is joined by an inseparable bond to the saving work of her Son?",
+    "hits": [
+      "mother of god"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Liturgical calendar honor of Mary Mother of God; no breakaway group formed from SC 103."
+  },
+  {
+    "id": "ur-13-en",
+    "council": "Second Vatican Council",
+    "citation": "UR 13",
+    "question": "Did the first divisions in the East arise when the dogmatic formulae of Ephesus and Chalcedon were challenged, and later when communion between the Eastern Patriarchates and the Roman See was dissolved?",
+    "hits": [
+      "chalcedon"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Historical description of Ephesus/Chalcedon and East–West divisions in Unitatis Redintegratio; narrative about existing schisms, not a new contested decree."
+  },
+  {
+    "id": "con3-exposition-p9-en",
+    "council": "Third Council of Constantinople",
+    "citation": "Constantinople III, Exposition of faith para. 9",
+    "question": "Is our Lord Jesus Christ true God, one of the holy Trinity, perfect in divinity and perfect in humanity, the same truly God and truly man, consubstantial with the Father as regards his divinity and with us as regards his humanity, acknowledged in two natures without confusion, change, separation, or division?",
+    "hits": [
+      "consubstantial",
+      "two natures"
+    ],
+    "verdict": "SKIP",
+    "breakaway_group": null,
+    "reason": "Con3 reaffirms Chalcedonian two natures primarily vs Monothelites (cleared); OO non-reception already marked at Chalcedon definition—do not invent a Con3 OO breakaway locus."
+  }
+]

@@ -1,7 +1,7 @@
 {
   "description": "Verified Step 1 entries whose decision is linked to a breakaway group under the project formal definition, with matching council passage text.",
-  "entry_count": 130,
-  "passage_count": 130,
+  "entry_count": 156,
+  "passage_count": 156,
   "missing_record_ids": [],
   "by_breakaway": [
     {
@@ -9,16 +9,36 @@
       "count": 1
     },
     {
+      "breakaway": "Melitian schism (Egypt)",
+      "count": 1
+    },
+    {
       "breakaway": "Church of the East",
-      "count": 15
+      "count": 18
     },
     {
       "breakaway": "Oriental Orthodox churches",
-      "count": 60
+      "count": 4
+    },
+    {
+      "breakaway": "Armenian Apostolic Church",
+      "count": 33
+    },
+    {
+      "breakaway": "Coptic Orthodox Church",
+      "count": 25
+    },
+    {
+      "breakaway": "Syriac Orthodox Church",
+      "count": 10
     },
     {
       "breakaway": "Eastern Orthodox churches",
       "count": 18
+    },
+    {
+      "breakaway": "Waldensians",
+      "count": 1
     },
     {
       "breakaway": "Wycliffites / Lollards",
@@ -26,57 +46,85 @@
     },
     {
       "breakaway": "Hussites",
-      "count": 4
+      "count": 5
     },
     {
-      "breakaway": "Protestant churches",
-      "count": 24
+      "breakaway": "Lutheran churches",
+      "count": 26
+    },
+    {
+      "breakaway": "Reformed / Calvinist churches",
+      "count": 1
+    },
+    {
+      "breakaway": "Anabaptist / Radical Reformation churches",
+      "count": 1
+    },
+    {
+      "breakaway": "Anglican Communion / Church of England",
+      "count": 1
     },
     {
       "breakaway": "Old Catholic churches",
       "count": 2
+    },
+    {
+      "breakaway": "Polish National Catholic Church",
+      "count": 1
+    },
+    {
+      "breakaway": "Philippine Independent Church (Aglipayan)",
+      "count": 1
+    },
+    {
+      "breakaway": "Mariavite Church (Old Catholic Church of the Mariavites)",
+      "count": 1
     }
   ],
   "by_council": [
     {
       "council": "Council of Florence",
-      "count": 70
+      "count": 80
     },
     {
       "council": "Council of Trent",
-      "count": 24
+      "count": 29
     },
     {
       "council": "Council of Ephesus",
-      "count": 15
+      "count": 16
     },
     {
       "council": "Council of Constance",
-      "count": 10
+      "count": 11
     },
     {
       "council": "Second Council of Lyons",
       "count": 6
     },
     {
+      "council": "Second Council of Constantinople",
+      "count": 5
+    },
+    {
       "council": "First Vatican Council",
-      "count": 2
+      "count": 5
     },
     {
       "council": "First Council of Nicaea",
-      "count": 1
+      "count": 2
     },
     {
       "council": "Council of Chalcedon",
       "count": 1
     },
     {
-      "council": "Second Council of Constantinople",
+      "council": "Fourth Lateran Council",
       "count": 1
     }
   ],
   "passage_text_status": {
-    "full": 130
+    "full": 156
   },
   "files": {
     "entries": "outputs/step1/breakaways/entries.jsonl",

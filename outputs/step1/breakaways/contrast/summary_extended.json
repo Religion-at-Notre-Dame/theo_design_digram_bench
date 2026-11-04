@@ -1,0 +1,50 @@
+{
+  "artifact": "contrast_extended.jsonl",
+  "status": "TEST — not status quo",
+  "n_total": 119,
+  "n_strict_explicit_trace": 82,
+  "n_extended_opposition": 37,
+  "n_skipped_nondisagreement": 37,
+  "n_source_breakaways": 156,
+  "by_contrast_kind": {
+    "explicit_trace": 82,
+    "inferred_opposition": 37,
+    "skipped_ceremony_or_narrative": 21,
+    "skipped_likely_shared": 11,
+    "skipped_inferred_opposition": 5
+  },
+  "by_breakaway_group": {
+    "Lutheran churches": 26,
+    "Church of the East": 18,
+    "Armenian Apostolic Church": 17,
+    "Eastern Orthodox churches": 17,
+    "Coptic Orthodox Church": 10,
+    "Syriac Orthodox Church": 10,
+    "Oriental Orthodox churches": 4,
+    "Hussites": 4,
+    "Wycliffites / Lollards": 2,
+    "Old Catholic churches": 2,
+    "Arian churches": 1,
+    "Melitian schism (Egypt)": 1,
+    "Waldensians": 1,
+    "Reformed / Calvinist churches": 1,
+    "Anabaptist / Radical Reformation churches": 1,
+    "Anglican Communion / Church of England": 1,
+    "Polish National Catholic Church": 1,
+    "Philippine Independent Church (Aglipayan)": 1,
+    "Mariavite Church (Old Catholic Church of the Mariavites)": 1
+  },
+  "by_council": {
+    "Council of Florence": 49,
+    "Council of Trent": 29,
+    "Council of Ephesus": 16,
+    "Council of Constance": 6,
+    "Second Council of Constantinople": 5,
+    "Second Council of Lyons": 5,
+    "First Vatican Council": 5,
+    "First Council of Nicaea": 2,
+    "Council of Chalcedon": 1,
+    "Fourth Lateran Council": 1
+  },
+  "note": "Disagreement-only. Strict rows copy contrast.jsonl. Extended rows are inferred opposition only; ceremony/shared loci are skipped (not padded)."
+}

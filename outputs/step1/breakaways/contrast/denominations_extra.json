@@ -1,0 +1,244 @@
+{
+  "description": "Supplemental denominations (start years) beyond groups_catalog.json — merged by match_denominations_to_councils.py. Not full lineage nodes; used for ±50y council pairing and AI contrast expansion.",
+  "denominations": [
+    {
+      "id": "extra-covenanting-scotland",
+      "name": "Scottish Covenanters",
+      "start_year": 1638,
+      "broke_from": "presbyterian-churches",
+      "summary": "National Covenant / rejection of episcopacy and royal liturgical impositions in Scotland."
+    },
+    {
+      "id": "extra-particular-baptists",
+      "name": "Particular Baptists",
+      "start_year": 1638,
+      "broke_from": "baptist-churches",
+      "summary": "Calvinistic Baptists; believers’ baptism and Reformed soteriology against infant baptism and Catholic sacramental order."
+    },
+    {
+      "id": "extra-general-baptists",
+      "name": "General Baptists",
+      "start_year": 1609,
+      "broke_from": "baptist-churches",
+      "summary": "Arminian Baptists; believers’ baptism against infant baptism and Catholic sacramental order."
+    },
+    {
+      "id": "extra-shakers",
+      "name": "United Society of Believers (Shakers)",
+      "start_year": 1747,
+      "broke_from": "quakers",
+      "summary": "Celibate communal restorationism; reject historic sacramental and hierarchical Catholic order."
+    },
+    {
+      "id": "extra-swedenborgian-us",
+      "name": "General Church of the New Jerusalem",
+      "start_year": 1897,
+      "broke_from": "swedenborgian",
+      "summary": "Swedenborgian New Church body; rejects Nicene-Catholic dogma as received in favor of Swedenborg’s revelations."
+    },
+    {
+      "id": "extra-elca",
+      "name": "Evangelical Lutheran Church in America",
+      "start_year": 1988,
+      "broke_from": "lutheran-churches",
+      "summary": "Mainline Lutheran; justification and sacramental theology distinct from Tridentine Catholic definitions."
+    },
+    {
+      "id": "extra-rcus",
+      "name": "Reformed Church in the United States",
+      "start_year": 1934,
+      "broke_from": "reformed-calvinist",
+      "summary": "German Reformed confessional body; Protestant against Trent and papal jurisdiction."
+    },
+    {
+      "id": "extra-wisconsin-synod",
+      "name": "Wisconsin Evangelical Lutheran Synod",
+      "start_year": 1850,
+      "broke_from": "lutheran-churches",
+      "summary": "Confessional Lutheran; rejects Trent on justification, Mass, and papal primacy."
+    },
+    {
+      "id": "extra-brethren-christ",
+      "name": "Brethren in Christ Church",
+      "start_year": 1778,
+      "broke_from": "church-of-the-brethren",
+      "summary": "Anabaptist-Pietist; believers’ baptism against Catholic infant baptism and hierarchy."
+    },
+    {
+      "id": "extra-apostolic-christian",
+      "name": "Apostolic Christian Church",
+      "start_year": 1830,
+      "broke_from": "anabaptist-radical",
+      "summary": "Froehlich Anabaptist; believers’ baptism and separation from Catholic sacramental order."
+    },
+    {
+      "id": "extra-molokan",
+      "name": "Molokans",
+      "start_year": 1765,
+      "broke_from": "eastern-orthodox",
+      "summary": "Russian Spiritual Christian dissent; reject Orthodox/Catholic ritual and hierarchy."
+    },
+    {
+      "id": "extra-dukhobors",
+      "name": "Doukhobors",
+      "start_year": 1750,
+      "broke_from": "eastern-orthodox",
+      "summary": "Russian Spiritual Christian; reject sacraments and clergy as Catholic/Orthodox churches define them."
+    },
+    {
+      "id": "extra-old-ritualist-priestless",
+      "name": "Priestless Old Believers (Bespopovtsy)",
+      "start_year": 1666,
+      "broke_from": "russian-old-believers",
+      "summary": "Old Believer priestless wing; reject Nikonian (and by extension Latinizing) liturgical settlement."
+    },
+    {
+      "id": "extra-ukrainian-autocephalous",
+      "name": "Ukrainian Autocephalous Orthodox Church",
+      "start_year": 1921,
+      "broke_from": "eastern-orthodox",
+      "summary": "Ukrainian autocephaly against Moscow; still non-Roman, rejects Vatican I papal definitions."
+    },
+    {
+      "id": "extra-united-methodist",
+      "name": "United Methodist Church",
+      "start_year": 1968,
+      "broke_from": "methodist",
+      "summary": "Mainline Methodist union; Protestant against papal primacy and Tridentine sacramental definitions."
+    },
+    {
+      "id": "extra-church-god-prophecy",
+      "name": "Church of God of Prophecy",
+      "start_year": 1923,
+      "broke_from": "methodist",
+      "summary": "Holiness-Pentecostal; rejects Catholic hierarchical and sacramental claims."
+    },
+    {
+      "id": "extra-bible-presbyterian",
+      "name": "Bible Presbyterian Church",
+      "start_year": 1937,
+      "broke_from": "presbyterian",
+      "summary": "Confessional Presbyterian separatist; rejects Trent and papal jurisdiction."
+    },
+    {
+      "id": "extra-associate-reformed",
+      "name": "Associate Reformed Presbyterian Church",
+      "start_year": 1782,
+      "broke_from": "presbyterian",
+      "summary": "Scottish-American Reformed; Protestant against Trent and papacy."
+    },
+    {
+      "id": "extra-rca",
+      "name": "Reformed Church in America",
+      "start_year": 1628,
+      "broke_from": "reformed",
+      "summary": "Dutch Reformed in America; Protestant against Trent and papal primacy."
+    },
+    {
+      "id": "extra-united-reformed-uk",
+      "name": "United Reformed Church",
+      "start_year": 1972,
+      "broke_from": "presbyterian",
+      "summary": "UK Reformed union; Protestant against Catholic magisterium."
+    },
+    {
+      "id": "extra-church-scotland",
+      "name": "Church of Scotland",
+      "start_year": 1560,
+      "broke_from": "presbyterian",
+      "summary": "National Presbyterian church; rejects papal jurisdiction and Trent."
+    },
+    {
+      "id": "extra-american-baptist",
+      "name": "American Baptist Churches USA",
+      "start_year": 1907,
+      "broke_from": "baptist",
+      "summary": "Baptist; believers’ baptism against Catholic infant baptism and hierarchy."
+    },
+    {
+      "id": "extra-cooperative-baptist",
+      "name": "Cooperative Baptist Fellowship",
+      "start_year": 1991,
+      "broke_from": "baptist",
+      "summary": "Baptist fellowship; Protestant against Catholic sacramental and papal claims."
+    },
+    {
+      "id": "extra-mennonite-church-usa",
+      "name": "Mennonite Church USA",
+      "start_year": 2002,
+      "broke_from": "mennonite",
+      "summary": "Anabaptist; believers’ baptism and peace church against Catholic sacramental order."
+    },
+    {
+      "id": "extra-friend-united",
+      "name": "Friends United Meeting",
+      "start_year": 1902,
+      "broke_from": "quakers",
+      "summary": "Quaker; reject outward sacraments as Catholic churches define them."
+    },
+    {
+      "id": "extra-moravian-unity",
+      "name": "Moravian Church (Unitas Fratrum worldwide)",
+      "start_year": 1727,
+      "broke_from": "moravian",
+      "summary": "Herrnhut renewal of Unitas Fratrum; Protestant against papal and Tridentine claims."
+    },
+    {
+      "id": "extra-cumberland-presbyterian",
+      "name": "Cumberland Presbyterian Church",
+      "start_year": 1810,
+      "broke_from": "presbyterian",
+      "summary": "Revivalist Presbyterian; Protestant against Trent and papacy."
+    },
+    {
+      "id": "extra-worldwide-church-god",
+      "name": "Grace Communion International (ex-WCG)",
+      "start_year": 1934,
+      "broke_from": "restoration",
+      "summary": "Armstrongite origins; historically rejected Catholic Trinity and festal calendar."
+    },
+    {
+      "id": "extra-unity-school",
+      "name": "Unity Church",
+      "start_year": 1889,
+      "broke_from": "restoration",
+      "summary": "New Thought; rejects Catholic sacramental realism and dogma."
+    },
+    {
+      "id": "extra-religious-science",
+      "name": "Centers for Spiritual Living",
+      "start_year": 1927,
+      "broke_from": "restoration",
+      "summary": "Religious Science; rejects Catholic sacramental and hierarchical claims."
+    },
+    {
+      "id": "extra-chaldean-syrian",
+      "name": "Chaldean Syrian Church of India",
+      "start_year": 1862,
+      "broke_from": "church-of-the-east",
+      "summary": "East Syriac Indian church; dyophysite against Cyrilline Ephesine settlement."
+    },
+    {
+      "id": "extra-missionary-church",
+      "name": "Missionary Church",
+      "start_year": 1969,
+      "broke_from": "anabaptist",
+      "summary": "Anabaptist-evangelical; believers’ baptism against Catholic sacramental order."
+    },
+    {
+      "id": "extra-grace-brethren",
+      "name": "Charis Fellowship (Grace Brethren)",
+      "start_year": 1939,
+      "broke_from": "church-of-the-brethren",
+      "summary": "Brethren; believers’ baptism and threefold communion against Catholic sacramental system."
+    },
+    {
+      "id": "extra-open-brethren",
+      "name": "Open Brethren",
+      "start_year": 1828,
+      "broke_from": "anglican",
+      "summary": "Open Brethren; reject Catholic priesthood and sacramental system."
+    }
+  ],
+  "note": "Catalog name/id duplicates removed; matcher is authoritative."
+}

@@ -1,0 +1,107 @@
+{
+  "flo-florence-s8-p29-en": {
+    "question": "In the sacrifice of the altar, must a little water be mixed with the wine in the chalice?",
+    "catholic_answer": "Yes. While the chalice is offered, a little water is to be mixed with the wine.",
+    "breakaway_answer": "No. The wine is offered unmixed; mixing water with the wine at the altar is not required."
+  },
+  "flo-florence-s8-p31-en": {
+    "question": "Does the Holy Spirit proceed from the Father and the Son, are the penitent cleansed after death by purifying pains, and does the Roman pontiff hold primacy over the whole Church?",
+    "catholic_answer": "Yes. The Spirit proceeds from the Father and the Son; the penitent may be cleansed after death by purifying pains; and the Roman pontiff holds primacy over the whole Church.",
+    "breakaway_answer": "No. The Spirit proceeds from the Father; that purgatory formulation of purifying pains is not received; and Roman universal primacy is refused."
+  },
+  "flo-florence-s8-p27-en": {
+    "question": "Must the Constantinopolitan creed be sung with the Filioque, and must Chalcedon’s two natures and the sixth council’s two wills be accepted?",
+    "catholic_answer": "Yes. The creed is to be received with ‘and the Son,’ and Chalcedon’s two natures in one person and the sixth council’s two wills are to be accepted.",
+    "breakaway_answer": "No. The Filioque addition is refused, and Christ is confessed in the miaphysite settlement rather than under those two-natures and two-wills union terms."
+  },
+  "flo-florence-s11-p24-en": {
+    "question": "May fourth and further marriages be lawfully contracted when no canonical impediment exists?",
+    "catholic_answer": "Yes. When no canonical impediment exists, not only second and third but also fourth and further marriages may lawfully be contracted.",
+    "breakaway_answer": "No. Repeated remarriage is restricted; fourth and further marriages are not treated as freely lawful in that way."
+  },
+  "eph-anathema1-en": {
+    "question": "Is the Emmanuel very God, and is the Holy Virgin therefore Mother of God (Theotokos) because she bore the Word of God made flesh?",
+    "catholic_answer": "Yes. The Emmanuel is very God, and the Holy Virgin is Mother of God inasmuch as she bore the Word made flesh.",
+    "breakaway_answer": "No—not under that forced Theotokos settlement. She is confessed as Mother of Christ; divinity and humanity remain sharply distinguished as two qnome."
+  },
+  "con-s13-condemnation-of-communion-under-both-kinds-recently-revived-among-the-bo": {
+    "question": "Must the Christian people receive the Eucharist under both bread and wine, so that the laity communicate under the wine as well?",
+    "catholic_answer": "No. The approved custom of communion under one kind for the laity stands; the people are not bound to receive under both kinds.",
+    "breakaway_answer": "Yes. The sacrament should be given to the people under both kinds; withholding the cup from the laity is refused."
+  },
+  "flo-florence-s13-p8-en": {
+    "question": "Is one and the same Son perfect in divinity and humanity, true God and true man, acknowledged in two natures without confusion, change, division, or separation?",
+    "catholic_answer": "Yes. One and the same Son is perfect in divinity and humanity, acknowledged in two natures without confusion, change, division, or separation.",
+    "breakaway_answer": "No. After the union he is confessed as one united nature of the Word incarnate, not ‘in two natures’ as that definition requires."
+  },
+  "trent-s6-justification-canon30-en": {
+    "question": "After justification, can a debt of temporal punishment remain to be paid in this world or in Purgatory, even when guilt and eternal punishment are remitted?",
+    "catholic_answer": "Yes. Guilt and eternal punishment may be remitted while a debt of temporal punishment still remains to be paid in this world or in Purgatory.",
+    "breakaway_answer": "No. When justification remits guilt, no such remaining temporal debt in Purgatory is taught; Christ’s satisfaction covers the sinner without that residual penalty scheme."
+  },
+  "trent-s24-matrimony-canon1-en": {
+    "question": "Is matrimony truly and properly one of the seven sacraments of the New Law, instituted by Christ and conferring grace?",
+    "catholic_answer": "Yes. Matrimony is truly and properly one of the seven sacraments of the evangelic law, instituted by Christ and conferring grace.",
+    "breakaway_answer": "No. Matrimony is an honorable estate, but it is not a sacrament of the New Law conferring grace in that sevenfold list."
+  },
+  "con2-canon6-en": {
+    "question": "Is the ever-virgin Mary exactly and truly the Mother of God, because God the Word was made flesh and born of her?",
+    "catholic_answer": "Yes. She is exactly and truly the Mother of God, because God the Word begotten of the Father was in these last days made flesh and born of her.",
+    "breakaway_answer": "No—not as that forced ‘exactly and truly’ Theotokos confession. Mother of Christ language is preferred, keeping divinity and humanity distinct."
+  },
+  "con2-canon7-en": {
+    "question": "When we say Christ is in two natures, do we mean an unconfused hypostatic union in which each nature remains what it was?",
+    "catholic_answer": "Yes. ‘In two natures’ names the unconfused hypostatic union in which divinity and humanity each remain what they were in the one Lord Jesus Christ.",
+    "breakaway_answer": "No. That ‘in two natures’ settlement is refused; after the union he is confessed as one united nature of the Word incarnate."
+  },
+  "con2-canon8-en": {
+    "question": "Does confessing two natures—or the one nature of God the Word made flesh—mean a hypostatic union of Godhead and humanity in one Christ without mixture or confusion?",
+    "catholic_answer": "Yes. Either expression, rightly used, means the hypostatic union of Godhead and humanity in one Christ without mixture or confusion of the natures.",
+    "breakaway_answer": "No. The binding reception of that regulation of the phrases is refused; after the union he is confessed as one united nature of the Word incarnate."
+  },
+  "con2-canon14-en": {
+    "question": "Must the letter said to be of Ibas to Maris—denying that the Word was made man of Mary Mother of God and attacking Cyril and Ephesus—be rejected rather than defended?",
+    "catholic_answer": "Yes. That letter is to be rejected, not defended; its denial of the Word made man of Mary Mother of God and its attack on Cyril and Ephesus are condemned.",
+    "breakaway_answer": "No. That letter’s sharper distinction of divinity and humanity may be defended; the Cyrilline anathematizing settlement is not accepted as binding in that way."
+  },
+  "nic1-synodal-letter-en": {
+    "question": "Must Melitian clergy be received only under the Alexandrian settlement that strips Meletius of authority and places succession under the bishop of Alexandria’s ratification?",
+    "catholic_answer": "Yes. Melitian clergy may be received under the synod’s terms, but Meletius himself is granted no authority or privilege; succession among those received requires the people’s election and the bishop of Alexandria’s concurrence.",
+    "breakaway_answer": "No. The parallel hierarchy and Meletius’s claims are not extinguished under that Alexandrian settlement; the schism’s episcopal legitimacy is not surrendered on those terms."
+  },
+  "lat4-constitution3-en": {
+    "question": "Must everyone who raises a heresy against the Catholic faith as there explained be excommunicated and anathematized as a heretic under that regime?",
+    "catholic_answer": "Yes. Every heresy raised against that faith is excommunicated and anathematized; those condemned are handed over for due punishment, clerics being first degraded from their orders.",
+    "breakaway_answer": "No. Lay preaching and apostolic poverty outside that episcopal license are not condemned heresy under that regime; the anathematizing of such dissenters is refused."
+  },
+  "pa-ch4-canon1-en": {
+    "question": "Must anyone who rejects the definition of the Roman pontiff’s infallible teaching authority be anathematized?",
+    "catholic_answer": "Yes. Anyone who has the temerity to reject that definition of the Roman pontiff’s infallible teaching authority is anathematized.",
+    "breakaway_answer": "No. That definition of infallible papal teaching authority is refused; rejecting it is not treated as anathema, because doctrinal definitions are not bound by that personal privilege."
+  },
+  "pa-ch3-canon1-en": {
+    "question": "Does the Roman pontiff hold full and supreme ordinary jurisdiction over the whole Church in faith, morals, discipline, and government—not merely an office of supervision and guidance?",
+    "catholic_answer": "Yes. He has the full and supreme power of jurisdiction over the whole Church in faith and morals and in discipline and government, ordinary and immediate over all churches and pastors.",
+    "breakaway_answer": "No. He does not hold that full and supreme ordinary jurisdiction over the whole Church; national or independent Catholic structures govern without that absolute papal power."
+  },
+  "pa-ch1-canon1-en": {
+    "question": "Was blessed Peter appointed by Christ as prince of the apostles and visible head of the whole Church militant, receiving a primacy of true jurisdiction and not of honor only?",
+    "catholic_answer": "Yes. Peter was appointed prince of all the apostles and visible head of the whole Church militant, receiving a primacy of true and proper jurisdiction directly from Christ—not honor only.",
+    "breakaway_answer": "No. That primacy of true jurisdiction over the whole militant Church is refused; a primacy of honor only, or a rejected papal claim, is taught instead."
+  },
+  "trent-s6-justification-canon9-en": {
+    "question": "Is the impious justified by faith alone, such that nothing else is required to cooperate in obtaining the grace of justification, and no preparation of the will is necessary?",
+    "catholic_answer": "No. Justification is not by faith alone in that sense; cooperation and a preparation and disposition of the will are required to obtain the grace of justification.",
+    "breakaway_answer": "Yes. The impious is justified by faith alone; nothing else is required to cooperate in obtaining that grace, and the will’s preparatory works are not necessary in that sense."
+  },
+  "trent-s7-baptism-canon13-en": {
+    "question": "After baptism, are little children to be reckoned among the faithful even without actual faith of their own, so that omitting their baptism—or rebaptizing them later—is forbidden?",
+    "catholic_answer": "Yes. Little children after baptism are reckoned among the faithful; they are not to be rebaptized when they reach discretion, and it is not better to omit their baptism for lack of their own act of faith.",
+    "breakaway_answer": "No. Without their own actual faith, infants are not reckoned among the faithful by that baptism; believers’ baptism at years of discretion is required, and infant baptism is refused or redone."
+  },
+  "trent-s13-eucharist-canon1-en": {
+    "question": "In the Eucharist, are the body and blood—together with the soul and divinity, and so the whole Christ—contained truly, really, and substantially, and not only as in a sign, figure, or virtue?",
+    "catholic_answer": "Yes. The whole Christ is contained truly, really, and substantially in the sacrament—not only as in a sign, figure, or virtue.",
+    "breakaway_answer": "No—not under that ‘truly, really, and substantially’ definition. Christ’s body is received in a heavenly and spiritual manner; the local substantial containment of that kind is refused."
+  }
+}

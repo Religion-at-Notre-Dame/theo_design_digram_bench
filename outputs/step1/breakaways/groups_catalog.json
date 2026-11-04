@@ -80,7 +80,7 @@
       "confidence": "established",
       "summary": "Egyptian rigorist schism contemporary with early Arian controversies.",
       "council_link_in_corpus": "Nicaea I addresses Melitian settlement",
-      "in_step1_breakaways": false,
+      "in_step1_breakaways": true,
       "lineage": [
         "catholic-church",
         "melitians"
@@ -326,7 +326,7 @@
       "confidence": "established",
       "summary": "Poor of Lyons dissenting movement forming lasting communities; later joined Reformed Protestantism.",
       "council_link_in_corpus": "Lateran III/IV context",
-      "in_step1_breakaways": false,
+      "in_step1_breakaways": true,
       "lineage": [
         "catholic-church",
         "waldensians"
@@ -495,7 +495,8 @@
             "canonical_citation": "Trent S6 Justification canon 4"
           }
         ]
-      }
+      },
+      "notes": "Trent loci are tagged Lutheran churches (primary interlocutor); this communion typically shares the Reformational rejection. Trent loci tagged Lutheran churches (primary interlocutor); this communion typically shares the Reformational rejection."
     },
     {
       "id": "anabaptist",
@@ -527,7 +528,8 @@
             "note": "Trent defends Catholic sacramental order; Anabaptist break is also vs magisterial Reformation."
           }
         ]
-      }
+      },
+      "notes": "Trent loci are tagged Lutheran churches (primary interlocutor); this communion typically shares the Reformational rejection. Trent loci tagged Lutheran churches (primary interlocutor); this communion typically shares the Reformational rejection."
     },
     {
       "id": "anglican",
@@ -563,7 +565,8 @@
             "note": "Jurisdictional break is the 1534 Act of Supremacy (not in this council corpus)."
           }
         ]
-      }
+      },
+      "notes": "Trent loci are tagged Lutheran churches (primary interlocutor); this communion typically shares the Reformational rejection. Trent loci tagged Lutheran churches (primary interlocutor); this communion typically shares the Reformational rejection."
     },
     {
       "id": "petite-eglise",
@@ -665,7 +668,7 @@
       "confidence": "established",
       "summary": "Independent Catholic jurisdiction among Polish immigrants; historically allied with Old Catholics.",
       "council_link_in_corpus": null,
-      "in_step1_breakaways": false,
+      "in_step1_breakaways": true,
       "lineage": [
         "catholic-church",
         "polish-national-catholic"
@@ -691,7 +694,7 @@
       "confidence": "established",
       "summary": "National church separating from Rome under Gregorio Aglipay amid colonial transition.",
       "council_link_in_corpus": null,
-      "in_step1_breakaways": false,
+      "in_step1_breakaways": true,
       "lineage": [
         "catholic-church",
         "philippine-independent"
@@ -723,7 +726,7 @@
         "summary": "Rejected Roman suppression of the Mariavite congregation and excommunication of its leaders (1906), forming an independent hierarchy after failed appeals to Rome."
       },
       "council_link_in_corpus": null,
-      "in_step1_breakaways": false,
+      "in_step1_breakaways": true,
       "lineage": [
         "catholic-church",
         "mariavite"

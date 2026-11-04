@@ -21,13 +21,25 @@ DOCUMENTS_DIR = ROOT / "data" / "councils" / "documents"
 # Stable historical order for summary tables
 BREAKAWAY_ORDER = [
     "Arian churches",
+    "Melitian schism (Egypt)",
     "Church of the East",
     "Oriental Orthodox churches",
+    "Armenian Apostolic Church",
+    "Coptic Orthodox Church",
+    "Syriac Orthodox Church",
     "Eastern Orthodox churches",
+    "Waldensians",
     "Wycliffites / Lollards",
     "Hussites",
+    "Lutheran churches",
+    "Reformed / Calvinist churches",
+    "Anabaptist / Radical Reformation churches",
+    "Anglican Communion / Church of England",
     "Protestant churches",
     "Old Catholic churches",
+    "Polish National Catholic Church",
+    "Philippine Independent Church (Aglipayan)",
+    "Mariavite Church (Old Catholic Church of the Mariavites)",
 ]
 
 
@@ -165,6 +177,10 @@ def main() -> int:
         "| `entries.jsonl` | Question + citation + breakaway |",
         "| `passages.jsonl` | Full council passage text for each locus |",
         "| `summary.json` | Counts by group and council |",
+        "| `groups_catalog.json` | Lineage reference (any separation degree) |",
+        "| `groups.md` / `groups_lineage.html` | Catalog table + interactive graph |",
+        "| `groups_degree1_coverage.md` | Which degree-1 groups have council loci |",
+        "| `contrast/` | Catholic vs breakaway NL Q&A |",
         "",
         "## By breakaway group",
         "",
@@ -177,13 +193,31 @@ def main() -> int:
     lines.extend(
         [
             "",
+            "## Contrast database",
+            "",
+            "Natural-language questions with Catholic vs breakaway answers "
+            "(explicit-trace subset): [`contrast/`](contrast/). "
+            "Viewer: [`contrast/contrast.html`](contrast/contrast.html).",
+            "",
+            "## Degree-1 coverage",
+            "",
+            "Which catalog degree-1 groups have council loci vs summary-only: "
+            "[`groups_degree1_coverage.md`](groups_degree1_coverage.md).",
+            "",
+            "## Lineage catalog",
+            "",
+            "[`groups_catalog.json`](groups_catalog.json) tracks breakaways at any "
+            "separation degree (including >1). Re-audit with "
+            "`python scripts/step1/audit_fix_groups_catalog.py`.",
+            "",
             "## Regenerate",
             "",
             "```bash",
+            "python scripts/step1/refine_breakaway_labels.py",
             "python scripts/step1/compile_breakaways.py",
-            "python scripts/step1/export_graph.py "
-            "--entries outputs/step1/breakaways/entries.jsonl "
-            "--out outputs/step1/breakaways/council_map.mmd",
+            "python scripts/step1/build_contrast_db.py",
+            "python scripts/step1/export_contrast_viz.py",
+            "python scripts/step1/export_groups_viz.py",
             "```",
             "",
         ]

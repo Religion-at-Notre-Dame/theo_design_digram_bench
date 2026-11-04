@@ -1,0 +1,108 @@
+{
+  "total": 63,
+  "candidate_new_tag_count": 10,
+  "skip_count": 53,
+  "candidate_new_tag_ids": [
+    "con-s13-condemnation-of-communion-under-both-kinds-recently-revived-among-the-bo",
+    "eph-anathema1-en",
+    "flo-florence-s13-p8-en",
+    "trent-s6-justification-canon30-en",
+    "trent-s22-mass-canon3-en",
+    "trent-s24-matrimony-canon1-en",
+    "con2-canon6-en",
+    "con2-canon7-en",
+    "con2-canon8-en",
+    "con2-canon14-en"
+  ],
+  "candidates": [
+    {
+      "id": "con-s13-condemnation-of-communion-under-both-kinds-recently-revived-among-the-bo",
+      "breakaway_group": "Hussites",
+      "hits": [
+        "both kinds"
+      ]
+    },
+    {
+      "id": "eph-anathema1-en",
+      "breakaway_group": "Church of the East",
+      "hits": [
+        "mother of god",
+        "theotokos"
+      ]
+    },
+    {
+      "id": "flo-florence-s13-p8-en",
+      "breakaway_group": "Syriac Orthodox Church",
+      "hits": [
+        "two natures"
+      ]
+    },
+    {
+      "id": "trent-s6-justification-canon30-en",
+      "breakaway_group": "Lutheran churches",
+      "hits": [
+        "purgatory"
+      ]
+    },
+    {
+      "id": "trent-s22-mass-canon3-en",
+      "breakaway_group": "Lutheran churches",
+      "hits": [
+        "propitiatory"
+      ]
+    },
+    {
+      "id": "trent-s24-matrimony-canon1-en",
+      "breakaway_group": "Lutheran churches",
+      "hits": [
+        "seven sacraments"
+      ]
+    },
+    {
+      "id": "con2-canon6-en",
+      "breakaway_group": "Church of the East",
+      "hits": [
+        "mother of god"
+      ]
+    },
+    {
+      "id": "con2-canon7-en",
+      "breakaway_group": "Oriental Orthodox churches",
+      "hits": [
+        "two natures"
+      ]
+    },
+    {
+      "id": "con2-canon8-en",
+      "breakaway_group": "Oriental Orthodox churches",
+      "hits": [
+        "two natures"
+      ]
+    },
+    {
+      "id": "con2-canon14-en",
+      "breakaway_group": "Church of the East",
+      "hits": [
+        "mother of god"
+      ]
+    }
+  ],
+  "skip_by_council": {
+    "Council of Chalcedon": 30,
+    "Council of Florence": 5,
+    "Council of Trent": 2,
+    "Fourth Lateran Council": 2,
+    "Second Council of Constantinople": 3,
+    "Second Council of Nicaea": 1,
+    "Second Lateran Council": 1,
+    "Second Vatican Council": 8,
+    "Third Council of Constantinople": 1
+  },
+  "candidate_by_group": {
+    "Hussites": 1,
+    "Church of the East": 3,
+    "Syriac Orthodox Church": 1,
+    "Lutheran churches": 3,
+    "Oriental Orthodox churches": 2
+  }
+}

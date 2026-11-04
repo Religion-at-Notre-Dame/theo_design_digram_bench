@@ -53,17 +53,24 @@ python scripts/step1/draft_entries.py
 
 python scripts/step1/verify_entries.py --write-status
 python scripts/step1/clean_breakaways.py  # apply formal breakaway definition
+python scripts/step1/refine_breakaway_labels.py  # precise degree-1 labels (Armenian/Coptic/Lutheran…)
+python scripts/step1/naturalize_questions.py     # heuristic NL questions (or draft --mode llm if keyed)
 python scripts/step1/compile_breakaways.py  # breakaway-only subset -> outputs/step1/breakaways/
+python scripts/step1/build_contrast_db.py   # Catholic vs breakaway contrast rows
+python scripts/step1/export_contrast_viz.py
 python scripts/step1/coverage_report.py   # also checks every corpus record_id is covered
 python scripts/step1/export_graph.py      # schism-only Mermaid map
 python scripts/step1/export_overview.py   # chronological HTML overview of all councils
+python scripts/step1/export_groups_viz.py # lineage catalog HTML
 ```
 
 - Coverage checklist: [`scripts/step1/coverage_inventory.json`](scripts/step1/coverage_inventory.json) — **comprehensive** (1:1 with English loci in `data/councils/`).
 - Current verified set: **1760** entries in [`outputs/step1/entries.jsonl`](outputs/step1/entries.jsonl) (`corpus_complete=True`).
-- Breakaway subset: **130** entries in [`outputs/step1/breakaways/`](outputs/step1/breakaways/) (questions + full passage text).
+- Breakaway subset: **148** entries in [`outputs/step1/breakaways/`](outputs/step1/breakaways/) (questions + full passage text).
+- Contrast DB: **74** explicit-trace rows in [`outputs/step1/breakaways/contrast/`](outputs/step1/breakaways/contrast/).
+- Degree-1 coverage notes: [`outputs/step1/breakaways/groups_degree1_coverage.md`](outputs/step1/breakaways/groups_degree1_coverage.md).
 - Only `status: verified` entries count; the verifier resolves `record_id` and matches `canonical_citation` to the corpus.
-- Next improvement: re-draft with `--mode llm` for more natural questions (same citations).
+- Optional: re-draft with `draft_entries.py --mode llm` when `OPENAI_API_KEY` / `STEP1_API_KEY` is set (same citations).
 - See [`outputs/step1/README.md`](outputs/step1/README.md) for the entry schema.
 
 ## Step 2 — Mapping Moral Teaching from CST Documents and Papal Encyclicals

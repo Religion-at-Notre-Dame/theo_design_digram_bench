@@ -1,0 +1,416 @@
+[
+  {
+    "id": "con-s8-sentence-condemning-various-articles-of-john-wyclif-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Preamble rhetoric that the faith has been attacked and defended; no contested doctrinal claim of Wyclif/Lollardy.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "con-s8-condemnation-of-wyclif-s-books-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Disciplinary condemnation of books as a corpus; no specific article-claim both sides can answer differently here.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "con-s8-condemnation-of-260-other-articles-of-wyclif-25-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Process report that Oxford found and the synod condemns 260 articles; no discrete doctrinal disagreement stated.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "con-s15-sentence-condemning-260-articles-wyclif-31-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Formal sentence condemning the collected articles; process text, not a recoverable article-level contrast.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "con-s15-sentence-of-degradation-against-j-hus-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Degradation/process against Hus; agent excludes ‘did Constance condemn Hus’ style loci without a doctrine claim.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "eph-canon1-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Disciplinary deposition of metropolitans joining ‘apostates’/Celestius; CoE rupture is christology, not this process canon.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "eph-canon3-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Clergy restoration and non-submission rules vs Nestorius’s party; disciplinary, not a stated christological contrast.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "eph-canon5-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Disciplinary rule that uncanonical restorations by Nestorius leave the condemned deposed.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "eph-canon8-en",
+    "verdict": "SKIP_OTHER",
+    "reason": "Cyprus vs Antioch ordination liberty; jurisdictional, not Church of the East christological rupture.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "eph-cyril-letter3-en",
+    "verdict": "SKIP_WEAK",
+    "reason": "Letter opening on opposing Nestorius rather than silence; no specific Ephesine claim without guessing from later anathemas.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s6-definition-of-the-holy-ecumenical-synod-of-florence-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Union-definition header with imperial agreement; narrative frame, not a contested doctrine.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s6-p2-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Naming eastern deputies as parties to the definition; ceremonial/narrative.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s6-p3-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Rhetorical claim that the wall of division is removed; union narrative, not Filioque/primacy content.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s6-p4-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Mother-church rejoicing at restored love/union; ceremony/narrative.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s6-p5-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Union works to be accepted as works of God; praise rhetoric, no discrete dogma contrast.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s6-p6-en",
+    "verdict": "ADD",
+    "reason": "Florence equates ‘from Father and Son’ with ‘from Father through Son’; EO historically deny that equivalence and Filioque.",
+    "suggested_breakaway_polarity": "No"
+  },
+  {
+    "id": "flo-florence-s8-p1-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Bull rejoicing at long-desired Armenian union; narrative, not doctrine.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p2-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "God confirming Armenians in same bond with the apostolic see; union narrative.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p3-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Council experts inquired of envoys; process/ceremony.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p4-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "After debates Florence gave a summary of Roman faith; procedural frame, not a contested claim.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p8-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Seven new-Law sacraments that confer grace; Armenian/OO mysteries agree in substance, not a rupture point.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p9-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Schema of what each sacrament does; OO do not distinctly reject this as the Florence rupture.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p10-en",
+    "verdict": "SKIP_WEAK",
+    "reason": "Latin matter/form/minister essentials; cannot honestly assert OO disagreement on this paragraph without guessing.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p11-en",
+    "verdict": "SKIP_WEAK",
+    "reason": "Indelible character on baptism/confirmation/orders; Latin category, not the distinctive Armenian rupture.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p12-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Baptism as gate of spiritual life with water and Trinitarian form; shared.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p13-en",
+    "verdict": "SKIP_WEAK",
+    "reason": "Confirmation chrism and bishop as ordinary minister; practice differs, but not a clean recoverable doctrinal contrast without overclaiming.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p14-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Penance via contrition, confession, satisfaction and priestly absolution; broadly shared with OO.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p15-en",
+    "verdict": "SKIP_WEAK",
+    "reason": "Extreme unction only when death expected; OO anointing practice differs in timing, but disagreement on this locus is uncertain.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p16-en",
+    "verdict": "SKIP_WEAK",
+    "reason": "Orders by porrectio of instruments; medieval Latin formula, not Armenian christological rupture.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p17-en",
+    "verdict": "ADD",
+    "reason": "Florence teaches absolute indissolubility despite separation for fornication; Armenian/OO historically allow ecclesiastical divorce and remarriage.",
+    "suggested_breakaway_polarity": "No"
+  },
+  {
+    "id": "flo-florence-s8-p18-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Offering the Athanasian rule to envoys; presentation frame, not the contested Filioque content spelled out here.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p19-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Athanasian Trinity worship without confounding persons; shared dogma with Armenians.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p20-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Athanasian true God and true man, one Christ by personal unity; OO can affirm this wording; Chalcedon two natures is elsewhere.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p21-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Necessity of holding this catholic faith firmly for salvation; shared framing, not distinctive disagreement.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p22-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Inclusion of the earlier Greek union decree by reference; ceremony/cross-reference.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p23-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Alignment of Annunciation and related feast days; feast/calendar, not contested dogma.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p24-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Armenian envoys accept the decree for patriarch and people; envoy-acceptance ceremony.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p25-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Public recitation of acceptance in Armenian then Latin; ceremonial process.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p26-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Envoys declare the decree completely acceptable; envoy acceptance, not a doctrine locus.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p27-en",
+    "verdict": "ADD",
+    "reason": "Acceptance package requires Filioque creed, Chalcedon two natures, and two wills; Armenian Apostolic historically rejects Chalcedon/Filioque terms.",
+    "suggested_breakaway_polarity": "No"
+  },
+  {
+    "id": "flo-florence-s8-p29-en",
+    "verdict": "ADD",
+    "reason": "Requires mixing water with wine at the altar; classic Armenian unreformed practice used unmixed wine—recoverable disagreement on that claim.",
+    "suggested_breakaway_polarity": "No"
+  },
+  {
+    "id": "flo-florence-s8-p30-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Listing that the Athanasian creed was given; presentation item, not a contested assertion here.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p31-en",
+    "verdict": "ADD",
+    "reason": "Greek-union block teaches Filioque, purgatory, and papal primacy; Armenians/OO historically reject those Latin terms.",
+    "suggested_breakaway_polarity": "No"
+  },
+  {
+    "id": "flo-florence-s8-p32-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Fixed feast calendar dates (25 Mar, 24 Jun, etc.); feast days, not dogma.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s8-p33-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Envoys promise obedience to the apostolic see; envoy-acceptance ceremony per audit rules.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s11-bull-of-union-with-the-copts-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Bull rejoicing at new union including Jacobites; narrative.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s11-p2-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Report that Greeks, Armenians, and Egyptian Jacobites were united; narrative of unions.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s11-p3-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Mutual love and one purity of faith as pleasing to Christ; rhetorical union praise.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s11-p4-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Examination of Abbot Andrew and delivery of doctrine; process/ceremony.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s11-p6-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "One creator God, no nature of evil, author of both Testaments; shared anti-dualist/creator dogma with Copts.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s11-p7-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Canon including deuterocanonicals; Coptic/OO accept these books—both would affirm.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s11-p8-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Anti-Manichaean dual principles plus real incarnation; Manichaean/shared lines, not OO rupture.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s11-p9-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Anathemas of Manes, Valentinus, Arius, Apollinarius, Nestorius et al.; Copts share these condemnations.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s11-p10-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Liberation from the devil only by faith in Christ who unlocked heaven; shared soteriological claim.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s11-p11-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Mosaic ceremonial law ended after Christ; Copts do not stake on Mosaic prescriptions as necessary—agreement.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s11-p12-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Infant baptism urgency vs 40/80-day deferral; both sides affirm infant baptism, not a distinctive rupture.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s11-p13-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Clean/unclean food laws no longer bind under the gospel; shared with Copts.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s11-p15-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Embracing Nicaea (consubstantial Son) and Constantinople (Spirit is God); Copts affirm—not the rupture.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s11-p16-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Embracing Ephesus I, one person, Theotokos; Copts/OO affirm Ephesus—shared.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s11-p22-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Factual report of Roman consecration formulae; Copts do not contest that Rome uses these words.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s11-p23-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Wheat bread substance changed regardless of bake day; Copts affirm real change of the gifts—agreement on the claim.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "flo-florence-s11-p24-en",
+    "verdict": "ADD",
+    "reason": "Florence allows fourth and further marriages when no impediment; Eastern/Coptic canonical tradition historically treats fourth marriage as illicit.",
+    "suggested_breakaway_polarity": "No"
+  },
+  {
+    "id": "flo-florence-s11-p25-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Abbot Andrew accepts the decree for Jacobites; envoy acceptance ceremony.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "trent-s5-original-sin-canon1-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Adam’s fall, loss of holiness, death, captivity, harm to the race; Lutherans affirm original sin here—both Yes.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "trent-s7-sacraments-canon12-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Minister in mortal sin still confects if essentials observed; Augsburg VIII agrees wicked ministers validly administer—both Yes.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "trent-s22-mass-ch9-en",
+    "verdict": "SKIP_CEREMONY",
+    "reason": "Preliminary remark that following canons will condemn errors; process meta, not a Mass doctrine claim.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "trent-s22-mass-preamble-en",
+    "verdict": "ADD",
+    "reason": "Preamble frames Eucharist as true singular sacrifice to be retained against error; Lutherans historically deny propitiatory Mass sacrifice.",
+    "suggested_breakaway_polarity": "No"
+  },
+  {
+    "id": "lyo2-profession-palaeologus-p1-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Trinity coessential/consubstantial/coeternal; EO affirm—shared.",
+    "suggested_breakaway_polarity": null
+  },
+  {
+    "id": "lyo2-profession-palaeologus-p2-en",
+    "verdict": "SKIP_SHARED",
+    "reason": "Son true God and true man in two natures, one person; EO Chalcedonian affirmation—shared.",
+    "suggested_breakaway_polarity": null
+  }
+]
