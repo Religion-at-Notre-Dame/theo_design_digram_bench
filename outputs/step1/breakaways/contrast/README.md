@@ -24,6 +24,9 @@ established historical positions (see include/exclude rules in `agent.md`).
 | `denomination_council_matches_temporal.md` | Temporal nearest-council match list |
 | `match_contrast.html` | **Match-list Q&A viewer** (group → questions) |
 | `match_contrast.json` | Data behind the match-list viewer |
+| `contrast_step1.html` | **Step 1 final** Q&A viewer (Pairing filter) |
+| `contrast_step1.jsonl` | Step 1 final contrast rows |
+| `STEP1_FINAL_REPORT.md` | Comprehensive method + accuracy report |
 
 Regenerate the match list (then AI / viewers) with:
 

@@ -221,6 +221,15 @@ THEME_LOCI: list[tuple[tuple[str, ...], tuple[str, ...]]] = [
 ]
 
 
+def _token_in(blob: str, key: str) -> bool:
+    """Whole-token match so 'arian' does not hit 'trinitarian'."""
+    return re.search(rf"(^|[^a-z0-9]){re.escape(key)}([^a-z0-9]|$)", blob or "") is not None
+
+
+def _any_token(blob: str, keys: tuple[str, ...] | list[str]) -> bool:
+    return any(_token_in(blob, k) for k in keys)
+
+
 def _scrub(s: str) -> str:
     s = re.sub(
         r"(?i)\b(?:Catholic Church|Roman Church|Roman pontiff|Trent|Florence|"
@@ -282,7 +291,7 @@ def preferred_council(group: dict, window_councils: list[dict], by_id: dict) -> 
     pref = None
     # longer keys first for specificity
     for key, council in sorted(DOCTRINAL_COUNCIL.items(), key=lambda kv: -len(kv[0])):
-        if key in blob:
+        if _token_in(blob, key):
             pref = council
             break
     if pref:
@@ -316,7 +325,7 @@ def _pick_locus(
     fam = _family_blob(group, by_id or {group["id"]: group})
     # Theme routing only when the themed locus belongs to this council
     for keys, locus_ids in THEME_LOCI:
-        if not any(k in fam for k in keys):
+        if not _any_token(fam, keys):
             continue
         pool = [
             entries_by_id[lid]
@@ -380,7 +389,12 @@ def _ai_breakaway_answer(group: dict, question: str, council: str, by_id: dict) 
             "No. There are not seven sacraments of the New Law in that list; the Gospel "
             "sacraments are Baptism and the Lord’s Supper."
         )
-    if "transubstant" in q or "substance of bread" in q:
+    if (
+        "transubstant" in q
+        or "substance of bread" in q
+        or ("truly" in q and "really" in q and "substantially" in q)
+        or ("whole christ" in q and "eucharist" in q)
+    ):
         return (
             "No. Bread and wine are not converted in substance that way; Christ is "
             "received without that metaphysics."
@@ -397,10 +411,15 @@ def _ai_breakaway_answer(group: dict, question: str, council: str, by_id: dict) 
             "No. Justification is by faith apart from that cooperating scheme of infused "
             "justice and condign merit."
         )
-    if "infant" in q and "baptis" in q:
+    if ("infant" in q or "little children" in q) and "baptis" in q:
         return (
             "No. Baptism belongs to believers upon confession of faith; infants are not "
             "baptized into the church as that requirement states."
+        )
+    if "reckon" in q and "faithful" in q and "baptis" in q:
+        return (
+            "No. Without their own confession of faith, the baptized are not reckoned among "
+            "the faithful that way; believers’ baptism is required."
         )
     if "both kinds" in q or ("bread and wine" in q and "laity" in q):
         return (
@@ -423,9 +442,25 @@ def _ai_breakaway_answer(group: dict, question: str, council: str, by_id: dict) 
             "the Son as a required formula is refused."
         )
     if "consubstantial" in q or ("true god from true god" in q):
+        # Only nontrinitarian families reject the Nicene homoousios.
+        if _any_token(
+            fam,
+            (
+                "arian",
+                "unitarian",
+                "oneness",
+                "jehovah",
+                "latter-day",
+                "lds",
+                "iglesia",
+            ),
+        ):
+            return (
+                "No. The Son is not of one substance with the Father; he is created or "
+                "otherwise not true God in the same sense as the Father."
+            )
         return (
-            "No. The Son is not of one substance with the Father; he is created or "
-            "otherwise not true God in the same sense as the Father."
+            "Yes. The Son is true God from true God, of one substance with the Father."
         )
     if "deuterocanon" in q or ("canon of scripture" in q):
         return (
@@ -434,8 +469,9 @@ def _ai_breakaway_answer(group: dict, question: str, council: str, by_id: dict) 
         )
 
     # Family defaults by council pairing
-    if council == "Council of Trent" or any(
-        k in fam for k in ("luther", "reformed", "baptist", "methodist", "anglican", "anabaptist")
+    if council == "Council of Trent" or _any_token(
+        fam,
+        ("luther", "reformed", "baptist", "methodist", "anglican", "anabaptist"),
     ):
         return (
             "No. That requirement is refused; justification, sacraments, and ministry are "

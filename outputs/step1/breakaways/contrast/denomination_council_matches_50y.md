@@ -10,8 +10,8 @@ Temporal (nearest-year) pairing:
 - Catalog groups: **118**
 - Extra denominations kept: **34** (skipped 0 catalog duplicates)
 - Total breakaway nodes: **152**
-- Matched to a primary council: **152** — **complete**
-- Unmatched: **0**
+- Matched to a primary council: **151**
+- Unmatched: **1**
 - Filtered Catholic-aligned: **12**
 
 | Start | Group | Primary council | Reason | Source |
@@ -47,7 +47,6 @@ Temporal (nearest-year) pairing:
 | 1638 | Scottish Covenanters | Council of Trent | doctrinal | extra |
 | 1650 | Seventh Day Baptist churches | Council of Trent | doctrinal | catalog |
 | 1652 | Religious Society of Friends (Quakers) | Council of Trent | doctrinal | catalog |
-| 1666 | Priestless Old Believers (Bespopovtsy) | Council of Florence | doctrinal | extra |
 | 1666 | Russian Old Believers | Council of Florence | doctrinal | catalog |
 | 1693 | Amish | Council of Trent | doctrinal | catalog |
 | 1708 | Church of the Brethren (Schwarzenau Brethren) | Council of Trent | doctrinal | catalog |
@@ -155,11 +154,11 @@ Temporal (nearest-year) pairing:
 | 1968 | United Methodist Church | Council of Trent | doctrinal | extra |
 | 1969 | Missionary Church | Council of Trent | doctrinal | extra |
 | 1970 | Bible Methodist Connection of Churches | Council of Trent | doctrinal | catalog |
-| 1970 | Sedevacantist independent chapels and societies | Second Vatican Council | doctrinal | catalog |
+| 1970 | Sedevacantist independent chapels and societies | Second Vatican Council | nearest_year | catalog |
 | 1972 | United Reformed Church | Council of Trent | doctrinal | extra |
 | 1973 | Presbyterian Church in America | Council of Trent | doctrinal | catalog |
 | 1977 | Continuing Anglican churches | Council of Trent | doctrinal | catalog |
-| 1978 | Palmarian Catholic Church | First Council of Nicaea | doctrinal | catalog |
+| 1978 | Palmarian Catholic Church | Second Vatican Council | doctrinal | catalog |
 | 1981 | Evangelical Presbyterian Church | Council of Trent | doctrinal | catalog |
 | 1982 | Vineyard Movement | Council of Trent | doctrinal | catalog |
 | 1988 | Evangelical Lutheran Church in America | Council of Trent | doctrinal | extra |
@@ -171,4 +170,4 @@ Temporal (nearest-year) pairing:
 
 ## Unmatched
 
-_None — every breakaway node has a primary council._
+- **Priestless Old Believers (Bespopovtsy)** (1666) — no_council_within_±50y

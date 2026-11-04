@@ -1,5 +1,6 @@
 {
   "window_years": 50,
+  "window_direction": "symmetric",
   "match_mode": "doctrinal",
   "primary_selection": "doctrinal preference over nearest-year when known",
   "n_catalog_groups": 118,
@@ -8,22 +9,22 @@
   "extra_skipped_dup": [],
   "n_denominations_total": 152,
   "n_catholic_aligned_excluded": 12,
-  "n_matched": 152,
-  "n_unmatched": 0,
+  "n_matched": 151,
+  "n_unmatched": 1,
   "n_outside_window": null,
   "n_differs_from_doctrinal": null,
   "by_primary_council": {
     "Council of Trent": 107,
     "First Vatican Council": 11,
-    "Council of Florence": 9,
     "Council of Chalcedon": 8,
-    "First Council of Nicaea": 5,
+    "Council of Florence": 8,
     "Council of Constance": 5,
+    "First Council of Nicaea": 4,
+    "Second Vatican Council": 4,
     "Council of Ephesus": 3,
-    "Second Vatican Council": 3,
     "Fourth Lateran Council": 1
   },
-  "complete": true,
+  "complete": false,
   "matches": [
     {
       "group_id": "novatianists",
@@ -895,30 +896,6 @@
       "nearest_council": "Council of Trent",
       "nearest_distance_years": 89,
       "primary_council": "Council of Trent",
-      "primary_reason": "doctrinal",
-      "match_mode": "doctrinal"
-    },
-    {
-      "group_id": "extra-old-ritualist-priestless",
-      "group_name": "Priestless Old Believers (Bespopovtsy)",
-      "start_year": 1666,
-      "separation_degree": 2,
-      "in_step1_breakaways": false,
-      "source": "denominations_extra",
-      "councils_within_window": [
-        {
-          "council": "Council of Florence",
-          "council_span": [
-            1431,
-            1445
-          ],
-          "distance_years": 235,
-          "doctrinal_force": true
-        }
-      ],
-      "nearest_council": "Council of Trent",
-      "nearest_distance_years": 103,
-      "primary_council": "Council of Florence",
       "primary_reason": "doctrinal",
       "match_mode": "doctrinal"
     },
@@ -4195,7 +4172,7 @@
       "nearest_council": "Second Vatican Council",
       "nearest_distance_years": 5,
       "primary_council": "Second Vatican Council",
-      "primary_reason": "doctrinal",
+      "primary_reason": "nearest_year",
       "match_mode": "doctrinal"
     },
     {
@@ -4303,15 +4280,6 @@
       "source": "groups_catalog",
       "councils_within_window": [
         {
-          "council": "First Council of Nicaea",
-          "council_span": [
-            325,
-            325
-          ],
-          "distance_years": 1653,
-          "doctrinal_force": true
-        },
-        {
           "council": "Second Vatican Council",
           "council_span": [
             1962,
@@ -4322,7 +4290,7 @@
       ],
       "nearest_council": "Second Vatican Council",
       "nearest_distance_years": 13,
-      "primary_council": "First Council of Nicaea",
+      "primary_council": "Second Vatican Council",
       "primary_reason": "doctrinal",
       "match_mode": "doctrinal"
     },
@@ -4583,5 +4551,12 @@
       "match_mode": "doctrinal"
     }
   ],
-  "unmatched": []
+  "unmatched": [
+    {
+      "id": "extra-old-ritualist-priestless",
+      "name": "Priestless Old Believers (Bespopovtsy)",
+      "start_year": 1666,
+      "reason": "no_council_within_±50y"
+    }
+  ]
 }

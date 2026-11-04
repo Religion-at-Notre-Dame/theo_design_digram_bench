@@ -97,9 +97,24 @@ python3 scripts/step1/export_match_contrast_viz.py --mode both
 | `contrast_ai_temporal.jsonl` | AI disagreement rows on temporal councils |
 | `match_contrast_temporal.html` | Q&A viewer for the temporal list |
 
+## Final product (doctrinal, comprehensive)
+
+```bash
+python3 scripts/step1/build_contrast_step1.py
+```
+
+| File | Role |
+|------|------|
+| [`contrast_step1.jsonl`](contrast_step1.jsonl) | Canonical rows: every doctrinal match-list group |
+| [`contrast_step1.html`](contrast_step1.html) | Q&A viewer |
+| [`STEP1_FINAL.md`](STEP1_FINAL.md) | Product notes |
+
+Each row: disagreement question, Catholic answer, breakaway answer, Catholic citation
+(`canonical_citation` / `record_id` / `source_entry_id` / `passage_excerpt`).
+
 ## Still optional
 
 - [ ] Grow the church list further if fuller coverage is desired.
 - [ ] Re-label remaining umbrella tags on `entries.jsonl` using the specific group list.
-- [ ] Promote strong temporal AI rows (esp. Vatican I/II) into strict contrast after review.
-- [ ] Decide whether Step 1 “official” viz defaults to temporal or doctrinal.
+- [ ] Spot-check / promote low-confidence AI rows into high-confidence strict.
+- [ ] Temporal track remains available as a council-coverage audit only.

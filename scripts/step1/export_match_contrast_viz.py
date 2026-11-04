@@ -35,11 +35,11 @@ MODE_PATHS = {
         "ai": OUT_DIR / "contrast_ai_temporal.jsonl",
         "html": OUT_DIR / "match_contrast_temporal.html",
         "json": OUT_DIR / "match_contrast_temporal.json",
-        "title": "Breakaway match list — questions & answers (temporal / nearest council)",
+        "title": "Breakaway match list — questions & answers (temporal / ≤50y after)",
         "description": (
-            "Comprehensive time-based pairing: each breakaway’s primary council is the "
-            "nearest council by start year. Questions from strict contrast and temporal AI fills. "
-            "Disagreement-only. Use this to finish Step 1 council coverage."
+            "Time-based pairing: nearest prior or concurrent council; in-window only if "
+            "the rupture is during the council or ≤50y after it ends (not before). "
+            "Disagreement-only."
         ),
     },
 }
@@ -199,6 +199,16 @@ def build_payload(mode: str = "doctrinal") -> dict:
 
 def build_html(data: dict) -> str:
     payload = json.dumps(data, ensure_ascii=False)
+    pairing_filter_html = ""
+    if data.get("has_pairing_filter"):
+        pairing_filter_html = """
+      <label>Pairing
+        <select id="filter-pairing">
+          <option value="all">All loci (comprehensive)</option>
+          <option value="doctrinal">Doctrinal primary only</option>
+          <option value="temporal">Temporal (≤50y after council) only</option>
+        </select>
+      </label>"""
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -448,11 +458,9 @@ def build_html(data: dict) -> str:
     <div class="stats">
       <div class="stat"><strong id="stat-groups">0</strong><span>breakaway groups</span></div>
       <div class="stat"><strong id="stat-q">0</strong><span>questions</span></div>
-      <div class="stat"><strong id="stat-strict">0</strong><span>with strict rows</span></div>
-      <div class="stat"><strong id="stat-ai">0</strong><span>AI-only</span></div>
-      <div class="stat"><strong id="stat-pending">0</strong><span>pending</span></div>
     </div>
     <div class="controls">
+      {pairing_filter_html}
       <label>Status
         <select id="filter-status">
           <option value="">All</option>
@@ -488,14 +496,55 @@ def build_html(data: dict) -> str:
     const elStatus = document.getElementById("filter-status");
     const elCouncil = document.getElementById("filter-council");
     const elSearch = document.getElementById("filter-search");
+    const elPairing = document.getElementById("filter-pairing");
 
-    document.getElementById("stat-groups").textContent = DATA.n_groups;
-    document.getElementById("stat-q").textContent = DATA.n_questions;
-    document.getElementById("stat-strict").textContent = DATA.n_groups_strict;
-    document.getElementById("stat-ai").textContent = DATA.n_groups_ai_only;
-    document.getElementById("stat-pending").textContent = DATA.n_pending;
+    function pairingMode() {{
+      return elPairing ? elPairing.value : "all";
+    }}
 
-    const councils = [...new Set(DATA.groups.map(g => g.primary_council))].sort();
+    function questionsFor(g) {{
+      const qs = g.questions || [];
+      const mode = pairingMode();
+      if (mode === "doctrinal") {{
+        return qs.filter(r => (r.council || "") === (g.primary_council || ""));
+      }}
+      if (mode === "temporal") {{
+        // Forward window only: during council or ≤50y after — not before.
+        if (g.temporal_within_window === false) return [];
+        const tc = g.temporal_council || "";
+        if (!tc) return [];
+        return qs.filter(r => (r.council || "") === tc);
+      }}
+      return qs;
+    }}
+
+    function activeCouncilLabel(g) {{
+      const mode = pairingMode();
+      if (mode === "temporal") return g.temporal_council || g.primary_council || "";
+      if (mode === "doctrinal") return g.primary_council || "";
+      return g.primary_council || "";
+    }}
+
+    function refreshStats() {{
+      let nQ = 0;
+      let nGroups = 0;
+      for (const g of DATA.groups) {{
+        if (pairingMode() === "temporal" && g.temporal_within_window === false) continue;
+        if (pairingMode() === "temporal" && !g.temporal_council) continue;
+        nGroups += 1;
+        nQ += questionsFor(g).length;
+      }}
+      if (pairingMode() === "all") nGroups = DATA.n_groups;
+      document.getElementById("stat-groups").textContent = nGroups;
+      document.getElementById("stat-q").textContent = nQ;
+    }}
+
+    refreshStats();
+
+    const councils = [...new Set(DATA.groups.flatMap(g => {{
+      const set = [g.primary_council, g.temporal_council].filter(Boolean);
+      return set;
+    }}))].sort();
     for (const c of councils) {{
       const opt = document.createElement("option");
       opt.value = c;
@@ -511,18 +560,30 @@ def build_html(data: dict) -> str:
       const st = elStatus.value;
       const council = elCouncil.value;
       const q = elSearch.value.trim().toLowerCase();
+      const mode = pairingMode();
       filtered = DATA.groups.filter(g => {{
-        if (st && g.status !== st) return false;
-        if (council && g.primary_council !== council) return false;
+        const qs = questionsFor(g);
+        // Temporal mode: only groups whose rupture is during/≤50y after the council.
+        if (mode === "temporal" && g.temporal_within_window === false) return false;
+        if (mode === "temporal" && !g.temporal_council) return false;
+        if (st === "pending" && qs.length) return false;
+        if (st && st !== "pending" && g.status !== st) return false;
+        if (council) {{
+          if (mode === "temporal" && (g.temporal_council || "") !== council) return false;
+          if (mode === "doctrinal" && (g.primary_council || "") !== council) return false;
+          if (mode === "all" && !qs.some(r => (r.council || "") === council) &&
+              g.primary_council !== council && g.temporal_council !== council) return false;
+        }}
         if (!q) return true;
         const blob = [
-          g.group_name, g.primary_council, g.group_id,
-          ...g.questions.map(r => r.question + " " + r.breakaway_answer)
+          g.group_name, g.primary_council, g.temporal_council || "", g.group_id,
+          ...qs.map(r => r.question + " " + r.breakaway_answer)
         ].join(" ").toLowerCase();
         return blob.includes(q);
       }});
       gIndex = 0;
       qIndex = 0;
+      refreshStats();
       renderToc();
       render();
     }}
@@ -530,11 +591,14 @@ def build_html(data: dict) -> str:
     function renderToc() {{
       elToc.innerHTML = "";
       filtered.forEach((g, i) => {{
+        const qs = questionsFor(g);
+        const councilLabel = activeCouncilLabel(g);
+        const differ = g.differs_from_temporal ? " · ≠ temporal" : "";
         const b = document.createElement("button");
         b.type = "button";
         b.innerHTML =
           `<span class="dot ${{g.status}}"></span>${{escapeHtml(g.group_name)}}` +
-          `<span class="sub">${{g.start_year}} · ${{escapeHtml(g.primary_council)}} · ${{g.n_questions}} q</span>`;
+          `<span class="sub">${{g.start_year}} · ${{escapeHtml(councilLabel)}} · ${{qs.length}} q${{differ}}</span>`;
         if (i === gIndex) b.classList.add("active");
         b.addEventListener("click", () => {{ gIndex = i; qIndex = 0; renderToc(); render(); }});
         elToc.appendChild(b);
@@ -555,17 +619,29 @@ def build_html(data: dict) -> str:
         return;
       }}
       const g = filtered[Math.max(0, Math.min(gIndex, filtered.length - 1))];
-      const qs = g.questions || [];
+      const qs = questionsFor(g);
       const statusPill = `<span class="pill ${{g.status}}">${{g.status}}</span>`;
+      const mode = pairingMode();
+      const modePill = `<span class="pill">${{mode}}</span>`;
 
       let body = "";
       if (!qs.length) {{
+        const want = mode === "temporal"
+          ? (g.temporal_council || "nearest prior council")
+          : (g.primary_council || "doctrinal primary");
         body = `
           <p class="empty">
-            No disagreement question yet for this breakaway.
-            Primary council pairing is <strong>${{escapeHtml(g.primary_council)}}</strong>
-            (${{escapeHtml(g.primary_reason || "paired")}}).
-            Rows appear here after a strict or AI contrast draft is linked to this group.
+            No disagreement questions under <strong>${{escapeHtml(mode)}}</strong> pairing
+            for council <strong>${{escapeHtml(want)}}</strong>.
+            ${{mode === "temporal"
+              ? `Temporal window is during the council or ≤50y <em>after</em> it (not before).
+                 Years after: ${{g.temporal_distance_years ?? "?"}}.
+                 Doctrinal primary: <strong>${{escapeHtml(g.primary_council || "")}}</strong>.`
+              : (g.differs_from_temporal
+                ? `Doctrinal primary is <strong>${{escapeHtml(g.primary_council)}}</strong>;
+                   temporal nearest prior is <strong>${{escapeHtml(g.temporal_council || "")}}</strong>
+                   (${{g.temporal_distance_years ?? "?"}}y after). Switch Pairing to compare.`
+                : "Try Pairing → All loci, or another council filter.")}}
           </p>`;
       }} else {{
         qIndex = Math.max(0, Math.min(qIndex, qs.length - 1));
@@ -600,12 +676,17 @@ def build_html(data: dict) -> str:
           <h2>${{escapeHtml(g.group_name)}}</h2>
           <div class="meta-row">
             ${{statusPill}}
+            ${{modePill}}
             <span class="pill">${{g.start_year}}</span>
-            <span>${{escapeHtml(g.primary_council)}}</span>
-            <span>${{escapeHtml(g.primary_reason)}}</span>
-            ${{g.primary_distance_years != null ? `<span>Δ ${{g.primary_distance_years}}y</span>` : ""}}
-            ${{g.differs_from_doctrinal && g.doctrinal_council ? `<span>doctrinal alt: ${{escapeHtml(g.doctrinal_council)}}</span>` : ""}}
-            <span>${{g.n_questions}} question${{g.n_questions === 1 ? "" : "s"}}</span>
+            <span>doctrinal: ${{escapeHtml(g.primary_council || "")}}</span>
+            <span>temporal: ${{escapeHtml(g.temporal_council || "")}}${{
+              g.temporal_distance_years != null
+                ? ` (${{g.temporal_distance_years}}y after${{g.temporal_within_window === false ? ", outside +50y" : ""}})`
+                : ""
+            }}</span>
+            ${{g.differs_from_temporal ? `<span class="pill">pairings differ</span>` : ""}}
+            <span>${{qs.length}} question${{qs.length === 1 ? "" : "s"}} in view</span>
+            <span>${{g.n_questions}} total</span>
           </div>
         </div>
         ${{body}}`;
@@ -619,6 +700,7 @@ def build_html(data: dict) -> str:
       if (active) active.scrollIntoView({{ block: "nearest" }});
     }}
 
+    if (elPairing) elPairing.addEventListener("change", applyFilter);
     elStatus.addEventListener("change", applyFilter);
     elCouncil.addEventListener("change", applyFilter);
     elSearch.addEventListener("input", applyFilter);
@@ -629,7 +711,8 @@ def build_html(data: dict) -> str:
       if (e.key === "ArrowUp" && gIndex > 0) {{ gIndex -= 1; qIndex = 0; renderToc(); render(); }}
       if (e.key === "ArrowDown" && gIndex < filtered.length - 1) {{ gIndex += 1; qIndex = 0; renderToc(); render(); }}
       if (e.key === "ArrowLeft" && qIndex > 0) {{ qIndex -= 1; render(); }}
-      if (e.key === "ArrowRight" && g.questions && qIndex < g.questions.length - 1) {{ qIndex += 1; render(); }}
+      const qs = questionsFor(g);
+      if (e.key === "ArrowRight" && qs.length && qIndex < qs.length - 1) {{ qIndex += 1; render(); }}
     }});
 
     applyFilter();

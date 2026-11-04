@@ -127,6 +127,11 @@ FORCE_COUNCIL_BY_ID: dict[str, str] = {
 }
 
 
+def _token_in(blob: str, key: str) -> bool:
+    """Whole-token match so 'arian' does not hit 'trinitarian'."""
+    return re.search(rf"(^|[^a-z0-9]){re.escape(key)}([^a-z0-9]|$)", blob or "") is not None
+
+
 def _norm_name(s: str) -> str:
     s = (s or "").lower().replace("’", "'").replace("–", "-").replace("—", "-")
     s = re.sub(r"\s+", " ", s).strip()
@@ -149,6 +154,19 @@ def _year_distance(rupture: int, start: int, end: int) -> int:
         return 0
     if rupture < start:
         return start - rupture
+    return rupture - end
+
+
+def _years_after_council(rupture: int, start: int, end: int) -> int | None:
+    """Years after council end; 0 if during the council; None if before it starts.
+
+    Temporal pairing uses this (forward-only): a breakaway may attach to a council
+    only when it arises during or after that council, not up to N years before.
+    """
+    if rupture < start:
+        return None
+    if rupture <= end:
+        return 0
     return rupture - end
 
 
@@ -271,8 +289,8 @@ def preferred_council(
         return _pick("First Vatican Council", "doctrinal")
 
     blob = _family_blob(group, by_id)
-    for key, council in DOCTRINAL_COUNCIL.items():
-        if key in blob:
+    for key, council in sorted(DOCTRINAL_COUNCIL.items(), key=lambda kv: -len(kv[0])):
+        if _token_in(blob, key):
             if council in names_in or allow_force_outside:
                 return council, "doctrinal"
 
@@ -435,6 +453,25 @@ def build_matches(
     return matches, unmatched
 
 
+def _all_council_distances_after(y: int, councils: list[dict]) -> list[dict]:
+    """Councils at or before rupture year, sorted by years-after (forward distance)."""
+    rows = []
+    for c in councils:
+        after = _years_after_council(y, c["year_start"], c["year_end"])
+        if after is None:
+            continue
+        rows.append(
+            {
+                "council": c["council"],
+                "council_span": [c["year_start"], c["year_end"]],
+                "distance_years": after,
+                "years_after": after,
+            }
+        )
+    rows.sort(key=lambda x: (x["distance_years"], x["council_span"][0]))
+    return rows
+
+
 def build_matches_temporal(
     denominations: list[dict],
     councils: list[dict],
@@ -442,10 +479,11 @@ def build_matches_temporal(
     *,
     window: int,
 ) -> tuple[list[dict], list[dict]]:
-    """Nearest-council matches for comprehensive temporal coverage.
+    """Forward-window temporal matches: council → breakaway within +window years after.
 
-    Always assigns a primary = absolute nearest council (complete).
-    Also records councils within ±window and the doctrinal alternative.
+    Only pairs a group to a council if the rupture is during or after that council
+    (never up to N years *before* the council). Primary = nearest such council.
+    `within_window` is true when years-after ≤ window.
     """
     matches = []
     unmatched = []
@@ -454,16 +492,21 @@ def build_matches_temporal(
         if y is None:
             unmatched.append({**d, "reason": "no_start_year"})
             continue
-        all_dist = _all_council_distances(y, councils)
-        if not all_dist:
-            unmatched.append({**d, "reason": "no_councils_loaded"})
+        after_dist = _all_council_distances_after(y, councils)
+        if not after_dist:
+            unmatched.append({**d, "reason": "no_council_at_or_before_start_year"})
             continue
-        nearest = all_dist[0]
-        within = [c for c in all_dist if c["distance_years"] <= window]
+        nearest = after_dist[0]
+        within = [c for c in after_dist if c["distance_years"] <= window]
         in_window = nearest["distance_years"] <= window
         primary = nearest["council"]
-        reason = "nearest_year" if in_window else "nearest_outside_window"
+        reason = (
+            "nearest_after_within_window" if in_window else "nearest_after_outside_window"
+        )
 
+        # Doctrinal alt still uses symmetric ±window for comparison notes.
+        all_sym = _all_council_distances(y, councils)
+        within_sym = [c for c in all_sym if c["distance_years"] <= window]
         group = {
             "id": d["id"],
             "name": d["name"],
@@ -471,7 +514,7 @@ def build_matches_temporal(
             "disagreement": d.get("disagreement") or {},
         }
         doctrinal, doctrinal_reason = preferred_council(
-            group, within, by_id, allow_force_outside=True
+            group, within_sym, by_id, allow_force_outside=True
         )
 
         matches.append(
@@ -483,11 +526,12 @@ def build_matches_temporal(
                 "in_step1_breakaways": d.get("in_step1_breakaways"),
                 "source": d.get("source"),
                 "councils_within_window": within,
-                "councils_by_distance": all_dist[:5],
+                "councils_by_distance": after_dist[:5],
                 "primary_council": primary,
                 "primary_reason": reason,
                 "primary_distance_years": nearest["distance_years"],
                 "within_window": in_window,
+                "window_direction": "after_only",
                 "doctrinal_council": doctrinal,
                 "doctrinal_reason": doctrinal_reason,
                 "differs_from_doctrinal": bool(doctrinal and doctrinal != primary),
@@ -568,14 +612,15 @@ def write_outputs(
     n_differ = sum(1 for m in matches if m.get("differs_from_doctrinal"))
 
     primary_selection = (
-        "absolute nearest council by start/rupture year (temporal); "
-        "always complete even outside ±window"
+        "nearest prior/during council by start/rupture year (temporal); "
+        f"in-window only if within +{window}y after council end (not before)"
         if mode == "temporal"
         else "doctrinal preference over nearest-year when known"
     )
 
     summary = {
         "window_years": window,
+        "window_direction": "after_only" if mode == "temporal" else "symmetric",
         "match_mode": mode,
         "primary_selection": primary_selection,
         "n_catalog_groups": stats.get("n_catalog"),
@@ -605,20 +650,21 @@ def write_outputs(
 
     if mode == "temporal":
         md = [
-            f"# Denominations ↔ councils (temporal / nearest-year, ±{window}y window)",
+            f"# Denominations ↔ councils (temporal / +{window}y after council only)",
             "",
             "Comprehensive **time-based** pairing: each breakaway’s primary council is the",
-            "**nearest** council by start/rupture year. Used to finish Step 1 coverage across",
-            "councils that doctrinal preference compresses away (esp. Vatican I/II, Lateran V).",
+            "**nearest prior or concurrent** council by start/rupture year. A match is",
+            f"**in-window** only when the rupture is during the council or within **+{window}y",
+            "after** it ends — never by being up to N years *before* the council.",
             "",
             "Doctrinal pairing remains in [`denomination_council_matches_50y.md`](denomination_council_matches_50y.md).",
             "",
             f"- Catalog groups: **{stats.get('n_catalog')}**",
             f"- Extra denominations kept: **{stats.get('n_extra_kept')}**",
             f"- Total breakaway nodes: **{len(denominations)}**",
-            f"- Matched (always nearest): **{len(matches)}**"
+            f"- Matched (nearest prior/during): **{len(matches)}**"
             + (" — **complete**" if not unmatched else ""),
-            f"- Outside ±{window}y window (still assigned nearest): **{n_outside}**",
+            f"- Outside +{window}y-after window (still assigned nearest prior): **{n_outside}**",
             f"- Differs from doctrinal primary: **{n_differ}**",
             f"- Unmatched: **{len(unmatched)}**",
             "",
@@ -630,8 +676,8 @@ def write_outputs(
         md.extend(
             [
                 "",
-                "| Start | Group | Nearest council | Dist (y) | In ±window | Doctrinal alt |",
-                "|------:|------|-----------------|--------:|:----------:|---------------|",
+                f"| Start | Group | Nearest prior council | Years after | In +{window}y | Doctrinal alt |",
+                "|------:|------|-----------------------|------------:|:-------------:|---------------|",
             ]
         )
         for m in sorted(matches, key=lambda x: (x["start_year"], x["group_name"])):
